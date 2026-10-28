@@ -1,0 +1,201 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Jaya Administrator
+  - button "16":
+    - text: "16"
+    - img
+  - text: Jaya [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Dashboard":
+        - /url: /
+    - listitem: Operasional
+- heading "Dashboard Operasional" [level=2]
+- paragraph: Periode Permintaan Muat
+- button "Harian"
+- button "Mingguan"
+- button "Bulanan"
+- button "Tahunan"
+- button "Pilih Tanggal"
+- combobox:
+  - option "Semua Tipe Order" [selected]
+  - option "FTL (Full Truck Load)"
+  - option "LTL (Less Than Truck Load)"
+  - option "FCL (Full Container Load)"
+  - option "LCL (Less Than Container Load)"
+- button "Export"
+- heading "Volume dan Aktivitas" [level=2]
+- text: Total Order
+- tooltip "Jumlah seluruh order, kecuali order dengan status \"Dibatalkan\""
+- heading "30" [level=4]
+- text: — vs periode lalu
+- heading "Jenis Pengiriman" [level=3]
+- img
+- text: FTL 60% FCL 23% LTL 17%
+- heading "Tren Volume Order" [level=3]
+- img: 20 15 10 5 0 Minggu 1 Minggu 2 Minggu 3 Minggu 4 Minggu 5
+- heading "Produktivitas Vendor" [level=2]
+- text: Total Vendor Digunakan
+- heading "4" [level=4]
+- text: — vs periode lalu Rata-rata Trip per Vendor
+- heading "4,25" [level=4]
+- text: — vs periode lalu
+- heading "5 Vendor Paling Produktif" [level=3]
+- table:
+  - rowgroup:
+    - row "No Vendor Trip Selesai Order Terkirim":
+      - columnheader "No"
+      - columnheader "Vendor"
+      - columnheader "Trip Selesai"
+      - columnheader "Order Terkirim"
+  - rowgroup:
+    - row "1. Nusantara Logistik Utama 7 Trip 8 Order":
+      - cell "1."
+      - cell "Nusantara Logistik Utama"
+      - cell "7 Trip"
+      - cell "8 Order"
+    - row "2. Wahana Logistik 0 Trip 0 Order":
+      - cell "2."
+      - cell "Wahana Logistik"
+      - cell "0 Trip"
+      - cell "0 Order"
+    - row "3. Alexa Powell Trucks 0 Trip 0 Order":
+      - cell "3."
+      - cell "Alexa Powell Trucks"
+      - cell "0 Trip"
+      - cell "0 Order"
+    - row "4. PT Jalur Besi Transindo 0 Trip 0 Order":
+      - cell "4."
+      - cell "PT Jalur Besi Transindo"
+      - cell "0 Trip"
+      - cell "0 Order"
+- heading "Performa Pengiriman" [level=2]
+- text: Jumlah Order Tepat Waktu
+- heading "4" [level=4]
+- text: — vs periode lalu Jumlah Order Terlambat
+- heading "2" [level=4]
+- text: — vs periode lalu Jumlah Kendala Pengiriman
+- heading "1" [level=4]
+- text: — vs periode lalu
+- heading "Ketepatan Waktu" [level=3]
+- img: Tepat Waktu 67%
+- heading "Daftar Keterlambatan Pengiriman" [level=3]
+- textbox "Cari data"
+- table:
+  - rowgroup:
+    - row "No Vendor Keterlambatan Persentase Keterlambatan Aksi":
+      - columnheader "No"
+      - columnheader "Vendor":
+        - button "Vendor"
+      - columnheader "Keterlambatan":
+        - button "Keterlambatan"
+      - columnheader "Persentase Keterlambatan":
+        - button "Persentase Keterlambatan"
+      - columnheader "Aksi"
+  - rowgroup:
+    - row "1. Nusantara Logistik Utama 2 dari 6 33% Lihat detail keterlambatan Nusantara Logistik Utama":
+      - cell "1."
+      - cell "Nusantara Logistik Utama"
+      - cell "2 dari 6"
+      - cell "33%"
+      - cell "Lihat detail keterlambatan Nusantara Logistik Utama":
+        - button "Lihat detail keterlambatan Nusantara Logistik Utama"
+- paragraph: Menampilkan 1–1 data dari 1 data
+- region "Notifications alt+T"
+- alert

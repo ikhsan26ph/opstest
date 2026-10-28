@@ -1,0 +1,563 @@
+{
+  "source": "order-edit-status_requirement-20261021.md",
+  "screens": {
+    "SCR-01": "Daftar Order / Order Tidak Aktif",
+    "SCR-02": "Edit Order"
+  },
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "Kontrol form Edit FTL pada status Ditugaskan sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-003"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD1771932058, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Kontrol form Edit FTL pada status Proses Pengiriman sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-004",
+        "OE-REQ-005"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD2550908343, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "Kontrol form Edit FTL pada status Terkirim sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-004",
+        "OE-REQ-005"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD0211382256, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "Kontrol form Edit LTL pada status Ditugaskan sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-003"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD1268219681, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "Kontrol form Edit FCL pada status Ditugaskan sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-003"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD1262399636, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "Kontrol form Edit LCL pada status Ditugaskan sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-003"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD1268071076, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "Kontrol form Edit FTL pada status Menunggu Penugasan sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD1527228499, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "title": "Kontrol form Edit FCL pada status Menunggu Penugasan sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD2546285137, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "title": "Kontrol form Edit LTL pada status Menunggu Penugasan sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD2034007463, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0010",
+      "title": "Kontrol form Edit FCL pada status Proses Pengiriman sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-004",
+        "OE-REQ-005"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD0327836588, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0011",
+      "title": "Kontrol form Edit LTL pada status Proses Pengiriman sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-004",
+        "OE-REQ-005"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD1250969862, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0012",
+      "title": "Kontrol form Edit LCL pada status Terkirim sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-004",
+        "OE-REQ-005"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD0173587094, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0013",
+      "title": "Kontrol form Edit FCL pada status Terkirim sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-004",
+        "OE-REQ-005"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD0173502745, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0014",
+      "title": "Kontrol form Edit LTL pada status Terkirim sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-004",
+        "OE-REQ-005"
+      ],
+      "steps": [
+        "Pada Daftar Order tampilkan Filter.",
+        "Cari ORD0173474018, buka Aksi > Edit.",
+        "Periksa field editable/locked dan kontrol tambah lokasi tanpa Simpan."
+      ],
+      "expected": [
+        "Jenis pengiriman tetap sesuai order.",
+        "Batas field mengikuti status pada requirement terbaru.",
+        "PIC, keterangan barang, tanggal muat dan harga dapat diakses sesuai form yang tersedia."
+      ]
+    },
+    {
+      "id": "SCN-0015",
+      "title": "Draft Isi Data Pengiriman dapat dilanjutkan melalui wizard existing (UI)",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Cari ORD2506282223 pada Daftar Order.",
+        "Buka Aksi > Lanjutkan Pengisian."
+      ],
+      "expected": [
+        "Wizard draft tersedia untuk melanjutkan perubahan sesuai flow existing."
+      ]
+    },
+    {
+      "id": "SCN-0016",
+      "title": "Order Dibatalkan tidak menyediakan akses Edit di UI",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001"
+      ],
+      "steps": [
+        "Buka Order Tidak Aktif.",
+        "Pada ORD8851102035 buka Aksi."
+      ],
+      "expected": [
+        "Tidak tersedia aksi Edit untuk status Dibatalkan."
+      ]
+    },
+    {
+      "id": "SCN-0017",
+      "title": "Order Ditolak tidak dapat diedit",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001"
+      ],
+      "steps": [
+        "Filter status Ditolak pada Daftar Order.",
+        "Pilih order yang memenuhi precondition untuk memeriksa akses edit."
+      ],
+      "expected": [
+        "Edit tidak tersedia."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0018",
+      "title": "Order status Isi Data Muatan dapat diubah sesuai aturan existing",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Filter status Isi Data Muatan pada Daftar Order.",
+        "Pilih order yang memenuhi precondition untuk memeriksa akses edit."
+      ],
+      "expected": [
+        "Order dapat diubah sesuai baseline existing."
+      ]
+    },
+    {
+      "id": "SCN-0019",
+      "title": "Order status Isi Data Vendor dapat diubah sesuai aturan existing",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Filter status Isi Data Vendor pada Daftar Order.",
+        "Pilih order yang memenuhi precondition untuk memeriksa akses edit."
+      ],
+      "expected": [
+        "Order dapat diubah sesuai baseline existing."
+      ]
+    },
+    {
+      "id": "SCN-0020",
+      "title": "Order status Review Order dapat diubah sesuai aturan existing",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Filter status Review Order pada Daftar Order.",
+        "Pilih order yang memenuhi precondition untuk memeriksa akses edit."
+      ],
+      "expected": [
+        "Order dapat diubah sesuai baseline existing."
+      ]
+    },
+    {
+      "id": "SCN-0021",
+      "title": "Order status Menunggu Konfirmasi dapat diubah sesuai aturan existing",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Filter status Menunggu Konfirmasi pada Daftar Order.",
+        "Pilih order yang memenuhi precondition untuk memeriksa akses edit."
+      ],
+      "expected": [
+        "Order dapat diubah sesuai baseline existing."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0022",
+      "title": "Order status Konfirmasi Jadwal dapat diubah sesuai aturan existing",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Filter status Konfirmasi Jadwal pada Daftar Order.",
+        "Pilih order yang memenuhi precondition untuk memeriksa akses edit."
+      ],
+      "expected": [
+        "Order dapat diubah sesuai baseline existing."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0023",
+      "title": "Kontrol form Edit LCL pada status Menunggu Penugasan sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-002"
+      ],
+      "steps": [
+        "Cari order LCL berstatus Menunggu Penugasan.",
+        "Buka form Edit dan bandingkan pembatasan field."
+      ],
+      "expected": [
+        "Kontrol mengikuti matriks status untuk LCL."
+      ]
+    },
+    {
+      "id": "SCN-0024",
+      "title": "Kontrol form Edit LCL pada status Proses Pengiriman sesuai matriks UI",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-001",
+        "OE-REQ-004"
+      ],
+      "steps": [
+        "Cari order LCL berstatus Proses Pengiriman.",
+        "Buka form Edit dan bandingkan pembatasan field."
+      ],
+      "expected": [
+        "Kontrol mengikuti matriks status untuk LCL."
+      ]
+    },
+    {
+      "id": "SCN-0025",
+      "title": "Perubahan Order tersimpan dan tercatat pada audit trail",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-006"
+      ],
+      "steps": [
+        "Gunakan pilot-proposal.json pada order QA ORD0211382256.",
+        "Setelah persetujuan, ubah Deskripsi Barang sesuai diff lalu Simpan.",
+        "Buka ulang Order dan Riwayat Perubahan; cocokkan nilai sebelum/sesudah.",
+        "Pulihkan nilai semula dan verifikasi audit pemulihan."
+      ],
+      "expected": [
+        "Nilai perubahan tersimpan.",
+        "Perubahan serta pemulihan tercatat pada audit trail."
+      ]
+    },
+    {
+      "id": "SCN-0026",
+      "title": "Perubahan data Order tercermin pada Driver Hub",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OE-REQ-007"
+      ],
+      "steps": [
+        "Gunakan order QA dengan penugasan APP yang dapat dibuka sopir.",
+        "Catat nilai awal di OPS dan Driver Hub.",
+        "Setelah persetujuan, ubah field yang ditampilkan Driver Hub dan Simpan.",
+        "Buka ulang/refresh detail order di Driver Hub dan cocokkan nilai.",
+        "Pulihkan data dan bandingkan lagi."
+      ],
+      "expected": [
+        "Driver Hub menampilkan nilai terbaru pada data order yang memang ditampilkan aplikasi."
+      ]
+    }
+  ],
+  "scopeClarification": {
+    "revisionId": "SCOPE20261021062337",
+    "at": "2026-10-21T06:23:37.623810+00:00",
+    "classification": "user clarification; supersedes prior inferred OPS scope",
+    "quote": "Ditolak, Menunggu Konfirmasi, Konfirmasi Jadwal\nstatus ini pada order ops tidak ada!",
+    "excludedOrderStatuses": [
+      "Ditolak",
+      "Menunggu Konfirmasi",
+      "Konfirmasi Jadwal"
+    ],
+    "excludedEditScenarioIds": [
+      "SCN-0017",
+      "SCN-0021",
+      "SCN-0022"
+    ],
+    "activeOrderStatuses": [
+      "Isi Data Pengiriman",
+      "Isi Data Muatan",
+      "Isi Data Vendor",
+      "Review Order",
+      "Menunggu Penugasan",
+      "Ditugaskan",
+      "Proses Pengiriman",
+      "Terkirim",
+      "Dibatalkan"
+    ],
+    "runtimeRerun": false,
+    "productActivationRequiredForOpsScope": false
+  }
+}

@@ -1,0 +1,170 @@
+{
+ "total": 15,
+ "vendors": [
+  "Kerinci Cargo Group",
+  "Nusantara Logistik Utama"
+ ],
+ "res": [
+  {
+   "term": "ORD0221467425",
+   "expected": 1,
+   "got": 1,
+   "match": true,
+   "empty": 0,
+   "sampleGot": [
+    "ORD0221467425 • Kerinci Cargo Group LTL Kota Denpasar → Kota Pekanbaru"
+   ]
+  },
+  {
+   "term": "ORD01735",
+   "expected": 0,
+   "got": 0,
+   "match": true,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "Nusantara",
+   "expected": 13,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "nusantara logistik",
+   "expected": 13,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "FCL",
+   "expected": 2,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "LTL",
+   "expected": 3,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "LCL",
+   "expected": 0,
+   "got": 0,
+   "match": true,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "FTL",
+   "expected": 10,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "Surabaya",
+   "expected": 13,
+   "got": 13,
+   "match": true,
+   "empty": 0,
+   "sampleGot": [
+    "ORD0218760775 • Nusantara Logistik Utama FTL Kota Surabaya, Kota Surabaya → Kota Bandung, Kota Surabaya • Truck Trailer 40ft × 1",
+    "ORD0218730224 • Nusantara Logistik Utama FTL Kota Surabaya → Kota Bandung, Kota Surabaya • Truck Trailer 40ft × 1"
+   ]
+  },
+  {
+   "term": "Kota Makassar",
+   "expected": 1,
+   "got": 1,
+   "match": true,
+   "empty": 0,
+   "sampleGot": [
+    "ORD0059771455 • Nusantara Logistik Utama FCL Kota Surabaya → Kota Makassar • 40 HC • Door to Door"
+   ]
+  },
+  {
+   "term": "Kabupaten Mojokerto",
+   "expected": 1,
+   "got": 1,
+   "match": true,
+   "empty": 0,
+   "sampleGot": [
+    "ORD0065597914 • Nusantara Logistik Utama FTL Kabupaten Mojokerto → Kota Surabaya • Fuso Box × 1"
+   ]
+  },
+  {
+   "term": "Truck Trailer",
+   "expected": 9,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "Fuso Box",
+   "expected": 1,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "40 HC",
+   "expected": 2,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "Door to Door",
+   "expected": 1,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "Door to CY",
+   "expected": 1,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "× 2",
+   "expected": 2,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "Surabaya → Kota Bandung",
+   "expected": 10,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  },
+  {
+   "term": "Kerinci Cargo Group",
+   "expected": 2,
+   "got": 0,
+   "match": false,
+   "empty": 1,
+   "sampleGot": []
+  }
+ ]
+}

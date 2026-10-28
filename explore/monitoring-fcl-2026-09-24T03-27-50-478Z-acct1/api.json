@@ -1,0 +1,1464 @@
+[
+ {
+  "at": "2026-09-24T03:27:54.078Z",
+  "method": "POST",
+  "path": "/api/auth/login",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Login successful",
+   "data": {
+    "accessToken": "[REDACTED_TOKEN]",
+    "user": {
+     "id": "db523d55-3c99-4825-944d-4a1b596c70a8",
+     "email": "[REDACTED]",
+     "name": "Admin",
+     "role": "ADMIN",
+     "kind": "ADMIN"
+    }
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T03:27:55.867Z",
+  "method": "GET",
+  "path": "/api/setting/general",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "OK",
+   "data": {
+    "systemVersion": "1.0.0",
+    "globalEnabled": true,
+    "activeCount": 10,
+    "totalCount": 10,
+    "notifications": [
+     {
+      "notifKey": "notif.order_selesai",
+      "label": "Order Selesai",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.order_dibatalkan",
+      "label": "Order Dibatalkan",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.order_ditugaskan",
+      "label": "Order Telah Ditugaskan",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_muat",
+      "label": "Tahap Pengiriman - Selesai Muat",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_bongkar",
+      "label": "Tahap Pengiriman - Selesai Bongkar",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_alihkan",
+      "label": "Tahap Pengiriman - Alihkan Armada/Petugas",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.kendala_armada",
+      "label": "Reminder Kendala Armada",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.armada_no_update",
+      "label": "Reminder Armada Tidak Update",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.armada_overdue",
+      "label": "Reminder Armada Melewati SLA",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.kir_armada",
+      "label": "Reminder Masa Berlaku KIR & Pajak Armada",
+      "category": "KIR Armada",
+      "channels": [
+       "EMAIL",
+       "PUSH"
+      ],
+      "enabled": true
+     }
+    ]
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T03:27:56.111Z",
+  "method": "GET",
+  "path": "/api/setting/system",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "OK",
+   "data": {
+    "inviteExpiryValue": 2,
+    "inviteExpiryUnit": "JAM",
+    "notifRadiusKm": 5,
+    "noUpdateValue": 30,
+    "noUpdateUnit": "MENIT",
+    "corridorKm": 3,
+    "deviationMinConsecutivePoints": 3,
+    "deviationMinDurationMin": 10,
+    "historicalCorridorMinTrips": 5,
+    "potensiTerlambatMinLatenessMin": 15,
+    "whatsappCs": null,
+    "fleetCheckMode": "NONE",
+    "fleetCheckKir": true,
+    "fleetCheckPajak": true,
+    "fleetBasisFtl": "TARGET_WAKTU",
+    "fleetToleransiHari": 0,
+    "fleetReminderBefore": [
+     30,
+     14,
+     7
+    ],
+    "fleetReminderAfter": [
+     30,
+     14,
+     7
+    ],
+    "fleetReminderRecipient": "SHIPPER",
+    "fleetReminderChannel": "EMAIL"
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T03:27:56.697Z",
+  "method": "GET",
+  "path": "/api/monitoring-tracking/summary",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Monitoring summary retrieved",
+   "data": {
+    "config": {
+     "gpsOfflineThresholdMin": 30,
+     "gpsOfflineValue": 30,
+     "gpsOfflineUnit": "MENIT",
+     "monitoringRefreshSec": 10,
+     "trackingIntervalMin": 5,
+     "lastUpdate": "2026-09-24T03:27:56.661Z"
+    },
+    "scorecard": {
+     "totalArmada": 20,
+     "tidakUpdate": 19,
+     "melewatiSla": 5,
+     "jumlahKendala": 1,
+     "keluarJalur": 0,
+     "potensiTerlambat": 7
+    },
+    "legend": {
+     "ALL": 20,
+     "BERANGKAT_MUAT": 7,
+     "SAMPAI_MUAT": 0,
+     "SELESAI_MUAT": 9,
+     "BERANGKAT_BONGKAR": 4,
+     "SAMPAI_BONGKAR": 0,
+     "SELESAI_BONGKAR": 0,
+     "KENDALA": 1,
+     "TIDAK_UPDATE": 19,
+     "MELEWATI_SLA": 5,
+     "KELUAR_JALUR": 0,
+     "POTENSI_TERLAMBAT": 7
+    }
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T03:27:56.793Z",
+  "method": "GET",
+  "path": "/api/monitoring-tracking/fleet",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Fleet retrieved",
+   "data": [
+    {
+     "assignmentId": "a5c6ccfd-c108-4ba6-bdee-3bf80595ff54",
+     "orderId": "ORD8849924264",
+     "nopol": "L9180EL",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336827,
+     "lng": 112.7293372,
+     "lastGpsTime": "2026-09-10T10:04:00.000Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "7f0d16e5-80ec-4e31-af1f-96a9fddd6ad9",
+     "orderId": "ORD8849924264",
+     "nopol": "L9180EL",
+     "status": "BERANGKAT_MUAT",
+     "isKendala": true,
+     "isTidakUpdate": true,
+     "isMelewatiSla": true,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336827,
+     "lng": 112.7293372,
+     "lastGpsTime": null,
+     "isGpsFallback": true,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "76199c58-57c1-4cc2-8d46-97f1e184b1f8",
+     "orderId": "ORD8851083707",
+     "nopol": "L9001BB",
+     "status": "BERANGKAT_BONGKAR",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": true,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336727,
+     "lng": 112.7293444,
+     "lastGpsTime": "2026-09-08T05:00:00.000Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "cc8e706d-71bf-4765-a294-961defe511f2",
+     "orderId": "ORD8851083707",
+     "nopol": "L8009BB",
+     "status": "BERANGKAT_BONGKAR",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": true,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336727,
+     "lng": 112.7293444,
+     "lastGpsTime": "2026-09-08T05:00:00.000Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "a7287aab-5762-4642-8aa7-40df29032217",
+     "orderId": "ORD8855762870",
+     "nopol": "B1111LO",
+     "status": "BERANGKAT_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -6.20596,
+     "lng": 106.82776,
+     "lastGpsTime": "2026-09-10T17:00:00.000Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "d7ef2a96-97db-41e9-83f7-2419ba495314",
+     "orderId": "ORD8939795982",
+     "nopol": "L1090EL",
+     "status": "BERANGKAT_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": true,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336727,
+     "lng": 112.7293444,
+     "lastGpsTime": null,
+     "isGpsFallback": true,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "953389ed-fb31-4912-9fe7-9a8ce379a57b",
+     "orderId": "ORD8939795982",
+     "nopol": "B2138LL",
+     "status": "BERANGKAT_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": true,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336727,
+     "lng": 112.7293444,
+     "lastGpsTime": null,
+     "isGpsFallback": true,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "dc85b8b3-4975-4934-9423-a1eb13fa4c7f",
+     "orderId": "ORD0173105981",
+     "nopol": "L1090EL",
+     "status": "BERANGKAT_BONGKAR",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": true,
+     "lat": -7.2336827,
+     "lng": 112.7293372,
+     "lastGpsTime": "2026-09-24T01:36:05.573Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "d900a471-7c94-4a12-a060-82be72870271",
+     "orderId": "ORD0173105981",
+     "nopol": "L9180EL",
+     "status": "BERANGKAT_BONGKAR",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": true,
+     "lat": -7.2336827,
+     "lng": 112.7293372,
+     "lastGpsTime": "2026-09-24T01:36:05.573Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "ad73ef89-caf1-4b51-a783-aa1d2dc47d1b",
+     "orderId": "ORD0173206791",
+     "nopol": "L1090EL",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": true,
+     "lat": -7.2336827,
+     "lng": 112.7293372,
+     "lastGpsTime": "2026-09-24T01:37:49.445Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "88259b47-989d-4d98-9820-f9575d8f8bfa",
+     "orderId": "ORD0212503970",
+     "nopol": "L1090EL",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336827,
+     "lng": 112.7293372,
+     "lastGpsTime": "2026-09-24T01:38:31.316Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "2ec6e544-860a-40c8-9154-578f37538d44",
+     "orderId": "ORD0173131181",
+     "nopol": "L1090EL",
+     "status": "BERANGKAT_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": true,
+     "lat": -7.2336827,
+     "lng": 112.7293372,
+     "lastGpsTime": null,
+     "isGpsFallback": true,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "695a836c-1c83-4e65-ad78-24b0a87f4327",
+     "orderId": "ORD0217664995",
+     "nopol": "M3233PP",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": true,
+     "lat": -7.5634508,
+     "lng": 112.641951,
+     "lastGpsTime": "2026-09-24T02:46:53.710Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "bf838297-c2b7-45a1-bfbf-6311bca7f8e2",
+     "orderId": "ORD0217664995",
+     "nopol": "L4234PP",
+     "status": "BERANGKAT_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": true,
+     "lat": -7.5634508,
+     "lng": 112.641951,
+     "lastGpsTime": null,
+     "isGpsFallback": true,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "bbf89c30-b1ee-40ce-97c6-f8b2c826ea79",
+     "orderId": "ORD0219508697",
+     "nopol": "L 9878 KL",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": false,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": true,
+     "lat": -7.2336792,
+     "lng": 112.7293537,
+     "lastGpsTime": "2026-09-24T03:27:42.276Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "afd5102f-d311-4b5a-b107-56dec55f10ea",
+     "orderId": "ORD9523666757",
+     "nopol": "L1090EL",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.5634508,
+     "lng": 112.641951,
+     "lastGpsTime": "2026-09-16T02:09:18.780Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "75462c22-f397-45d5-ae4d-cc703c79a38c",
+     "orderId": "ORD9719032965",
+     "nopol": "L1090EL",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336563,
+     "lng": 112.7293373,
+     "lastGpsTime": "2026-09-22T07:27:28.242Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "f2da8e17-b92f-4d60-9040-b3789a550c60",
+     "orderId": "ORD9965441127",
+     "nopol": "L1090EL",
+     "status": "BERANGKAT_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -7.2336929,
+     "lng": 112.7294307,
+     "lastGpsTime": null,
+     "isGpsFallback": true,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "6b24d46c-da96-437d-9412-82224eae062d",
+     "orderId": "ORD0213664177",
+     "nopol": "BM 6767 J",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -8.746569,
+     "lng": 115.2112667,
+     "lastGpsTime": "2026-09-24T02:07:15.041Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    },
+    {
+     "assignmentId": "1fc1622b-e0ee-498a-8483-e73214c21f15",
+     "orderId": "ORD0213664177",
+     "nopol": "BM 6767 J",
+     "status": "SELESAI_MUAT",
+     "isKendala": false,
+     "isTidakUpdate": true,
+     "isMelewatiSla": false,
+     "isKeluarJalur": false,
+     "isPotensiTerlambat": false,
+     "lat": -8.746569,
+     "lng": 115.2112667,
+     "lastGpsTime": "2026-09-24T02:06:25.782Z",
+     "isGpsFallback": false,
+     "customerId": null,
+     "customerName": null,
+     "customerType": null
+    }
+   ],
+   "meta": {
+    "customers": [],
+    "orders": [
+     {
+      "orderId": "ORD0173105981",
+      "nopol": "L1090EL"
+     },
+     {
+      "orderId": "ORD0173131181",
+      "nopol": "L1090EL"
+     },
+     {
+      "orderId": "ORD0173206791",
+      "nopol": "L1090EL"
+     },
+     {
+      "orderId": "ORD0212503970",
+      "nopol": "L1090EL"
+     },
+     {
+      "orderId": "ORD0213664177",
+      "nopol": "BM 6767 J"
+     },
+     {
+      "orderId": "ORD0217664995",
+      "nopol": "M3233PP"
+     },
+     {
+      "orderId": "ORD0219508697",
+      "nopol": "L 9878 KL"
+     },
+     {
+      "orderId": "ORD8849924264",
+      "nopol": "L9180EL"
+     },
+     {
+      "orderId": "ORD8851083707",
+      "nopol": "L9001BB"
+     },
+     {
+      "orderId": "ORD8855762870",
+      "nopol": "B1111LO"
+     },
+     {
+      "orderId": "ORD8939795982",
+      "nopol": "L1090EL"
+     },
+     {
+      "orderId": "ORD9523666757",
+      "nopol": "L1090EL"
+     },
+     {
+      "orderId": "ORD9719032965",
+      "nopol": "L1090EL"
+     },
+     {
+      "orderId": "ORD9965441127",
+      "nopol": "L1090EL"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T03:27:56.900Z",
+  "method": "GET",
+  "path": "/api/monitoring-tracking/nearby-muat",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Nearby muat retrieved",
+   "data": []
+  }
+ },
+ {
+  "at": "2026-09-24T03:27:57.160Z",
+  "method": "GET",
+  "path": "/api/monitoring-tracking/cases",
+  "query": "?type=ALL",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Cases retrieved",
+   "data": [
+    {
+     "assignmentId": "dc85b8b3-4975-4934-9423-a1eb13fa4c7f",
+     "orderId": "ORD0173105981",
+     "jenis": "BERISIKO_TERLAMBAT",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "QA Sopir G20260924-013528",
+     "deskripsi": "Diperkirakan tiba 1 jam 39 menit melewati SLA",
+     "waktuLaporan": "24/09/2026 03:27",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "d900a471-7c94-4a12-a060-82be72870271",
+     "orderId": "ORD0173105981",
+     "jenis": "BERISIKO_TERLAMBAT",
+     "nopol": "L9180EL",
+     "noKontainer": null,
+     "namaDriver": "Marwanto",
+     "deskripsi": "Diperkirakan tiba 1 jam 39 menit melewati SLA",
+     "waktuLaporan": "24/09/2026 03:27",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "ad73ef89-caf1-4b51-a783-aa1d2dc47d1b",
+     "orderId": "ORD0173206791",
+     "jenis": "BERISIKO_TERLAMBAT",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "Marwanto",
+     "deskripsi": "Diperkirakan tiba 1 jam 37 menit melewati SLA",
+     "waktuLaporan": "24/09/2026 03:27",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "2ec6e544-860a-40c8-9154-578f37538d44",
+     "orderId": "ORD0173131181",
+     "jenis": "BERISIKO_TERLAMBAT",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "Marwanto",
+     "deskripsi": "Diperkirakan tiba 1 jam 20 menit melewati SLA",
+     "waktuLaporan": "24/09/2026 03:27",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "695a836c-1c83-4e65-ad78-24b0a87f4327",
+     "orderId": "ORD0217664995",
+     "jenis": "BERISIKO_TERLAMBAT",
+     "nopol": "M3233PP",
+     "noKontainer": null,
+     "namaDriver": "Julian",
+     "deskripsi": "Diperkirakan tiba 1 jam 14 menit melewati SLA",
+     "waktuLaporan": "24/09/2026 03:27",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "bf838297-c2b7-45a1-bfbf-6311bca7f8e2",
+     "orderId": "ORD0217664995",
+     "jenis": "BERISIKO_TERLAMBAT",
+     "nopol": "L4234PP",
+     "noKontainer": null,
+     "namaDriver": "Julian",
+     "deskripsi": "Diperkirakan tiba 1 jam 38 menit melewati SLA",
+     "waktuLaporan": "24/09/2026 03:27",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "bbf89c30-b1ee-40ce-97c6-f8b2c826ea79",
+     "orderId": "ORD0219508697",
+     "jenis": "BERISIKO_TERLAMBAT",
+     "nopol": "L 9878 KL",
+     "noKontainer": null,
+     "namaDriver": "Septian",
+     "deskripsi": "Diperkirakan tiba 290 hari 18 jam 42 menit melewati SLA",
+     "waktuLaporan": "24/09/2026 03:27",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "695a836c-1c83-4e65-ad78-24b0a87f4327",
+     "orderId": "ORD0217664995",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "M3233PP",
+     "noKontainer": null,
+     "namaDriver": "Julian",
+     "deskripsi": "Tidak update lebih dari 41 menit",
+     "waktuLaporan": "24/09/2026 02:46",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "6b24d46c-da96-437d-9412-82224eae062d",
+     "orderId": "ORD0213664177",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "BM 6767 J",
+     "noKontainer": "MSCB6576759",
+     "namaDriver": "Septian",
+     "deskripsi": "Tidak update lebih dari 1 jam 20 menit",
+     "waktuLaporan": "24/09/2026 02:07",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "1fc1622b-e0ee-498a-8483-e73214c21f15",
+     "orderId": "ORD0213664177",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "BM 6767 J",
+     "noKontainer": "MSCU8988760",
+     "namaDriver": "Septian",
+     "deskripsi": "Tidak update lebih dari 1 jam 21 menit",
+     "waktuLaporan": "24/09/2026 02:06",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "88259b47-989d-4d98-9820-f9575d8f8bfa",
+     "orderId": "ORD0212503970",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "Marwanto",
+     "deskripsi": "Tidak update lebih dari 1 jam 49 menit",
+     "waktuLaporan": "24/09/2026 01:38",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "ad73ef89-caf1-4b51-a783-aa1d2dc47d1b",
+     "orderId": "ORD0173206791",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "Marwanto",
+     "deskripsi": "Tidak update lebih dari 1 jam 50 menit",
+     "waktuLaporan": "24/09/2026 01:37",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "dc85b8b3-4975-4934-9423-a1eb13fa4c7f",
+     "orderId": "ORD0173105981",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "QA Sopir G20260924-013528",
+     "deskripsi": "Tidak update lebih dari 1 jam 51 menit",
+     "waktuLaporan": "24/09/2026 01:36",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "d900a471-7c94-4a12-a060-82be72870271",
+     "orderId": "ORD0173105981",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L9180EL",
+     "noKontainer": null,
+     "namaDriver": "Marwanto",
+     "deskripsi": "Tidak update lebih dari 1 jam 51 menit",
+     "waktuLaporan": "24/09/2026 01:36",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "d7ef2a96-97db-41e9-83f7-2419ba495314",
+     "orderId": "ORD8939795982",
+     "jenis": "MELEWATI_SLA",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "Rahmat Nurdiansyah",
+     "deskripsi": "Terlambat 3 jam 15 menit",
+     "waktuLaporan": "24/09/2026 00:12",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "953389ed-fb31-4912-9fe7-9a8ce379a57b",
+     "orderId": "ORD8939795982",
+     "jenis": "MELEWATI_SLA",
+     "nopol": "B2138LL",
+     "noKontainer": null,
+     "namaDriver": "Jonatan",
+     "deskripsi": "Terlambat 3 jam 15 menit",
+     "waktuLaporan": "24/09/2026 00:12",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "75462c22-f397-45d5-ae4d-cc703c79a38c",
+     "orderId": "ORD9719032965",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L1090EL",
+     "noKontainer": "EMCU53454353",
+     "namaDriver": "Sukri",
+     "deskripsi": "Tidak update lebih dari 1 hari 20 jam",
+     "waktuLaporan": "22/09/2026 07:27",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "afd5102f-d311-4b5a-b107-56dec55f10ea",
+     "orderId": "ORD9523666757",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L1090EL",
+     "noKontainer": "MRTU20987543",
+     "namaDriver": "Sukri",
+     "deskripsi": "Tidak update lebih dari 8 hari 1 jam 18 menit",
+     "waktuLaporan": "16/09/2026 02:09",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "a7287aab-5762-4642-8aa7-40df29032217",
+     "orderId": "ORD8855762870",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "B1111LO",
+     "noKontainer": null,
+     "namaDriver": "Sukri",
+     "deskripsi": "Tidak update lebih dari 13 hari 10 jam 27 menit",
+     "waktuLaporan": "10/09/2026 17:00",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "a5c6ccfd-c108-4ba6-bdee-3bf80595ff54",
+     "orderId": "ORD8849924264",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L9180EL",
+     "noKontainer": null,
+     "namaDriver": "Rahmat Nurdiansyah",
+     "deskripsi": "Tidak update lebih dari 13 hari 17 jam 23 menit",
+     "waktuLaporan": "10/09/2026 10:04",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "76199c58-57c1-4cc2-8d46-97f1e184b1f8",
+     "orderId": "ORD8851083707",
+     "jenis": "MELEWATI_SLA",
+     "nopol": "L9001BB",
+     "noKontainer": null,
+     "namaDriver": "Sukri",
+     "deskripsi": "Terlambat 14 hari 22 jam 27 menit",
+     "waktuLaporan": "09/09/2026 05:00",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "cc8e706d-71bf-4765-a294-961defe511f2",
+     "orderId": "ORD8851083707",
+     "jenis": "MELEWATI_SLA",
+     "nopol": "L8009BB",
+     "noKontainer": null,
+     "namaDriver": "Sukri",
+     "deskripsi": "Terlambat 14 hari 22 jam 27 menit",
+     "waktuLaporan": "09/09/2026 05:00",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "7f0d16e5-80ec-4e31-af1f-96a9fddd6ad9",
+     "orderId": "ORD8849924264",
+     "jenis": "MELEWATI_SLA",
+     "nopol": "L9180EL",
+     "noKontainer": null,
+     "namaDriver": "Rahmat Nurdiansyah",
+     "deskripsi": "Terlambat 15 hari 11 jam 41 menit",
+     "waktuLaporan": "08/09/2026 15:46",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "7f0d16e5-80ec-4e31-af1f-96a9fddd6ad9",
+     "orderId": "ORD8849924264",
+     "jenis": "KENDALA",
+     "nopol": "L9180EL",
+     "noKontainer": null,
+     "namaDriver": "Rahmat Nurdiansyah",
+     "deskripsi": "Ban bocor",
+     "waktuLaporan": "08/09/2026 07:02",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "76199c58-57c1-4cc2-8d46-97f1e184b1f8",
+     "orderId": "ORD8851083707",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L9001BB",
+     "noKontainer": null,
+     "namaDriver": "Sukri",
+     "deskripsi": "Tidak update lebih dari 15 hari 22 jam 27 menit",
+     "waktuLaporan": "08/09/2026 05:00",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "cc8e706d-71bf-4765-a294-961defe511f2",
+     "orderId": "ORD8851083707",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L8009BB",
+     "noKontainer": null,
+     "namaDriver": "Sukri",
+     "deskripsi": "Tidak update lebih dari 15 hari 22 jam 27 menit",
+     "waktuLaporan": "08/09/2026 05:00",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "7f0d16e5-80ec-4e31-af1f-96a9fddd6ad9",
+     "orderId": "ORD8849924264",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L9180EL",
+     "noKontainer": null,
+     "namaDriver": "Rahmat Nurdiansyah",
+     "deskripsi": "Belum ada update sejak 15 hari 20 jam 42 menit lalu",
+     "waktuLaporan": "-",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "d7ef2a96-97db-41e9-83f7-2419ba495314",
+     "orderId": "ORD8939795982",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "Rahmat Nurdiansyah",
+     "deskripsi": "Belum ada update sejak 14 hari 18 jam 43 menit lalu",
+     "waktuLaporan": "-",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "953389ed-fb31-4912-9fe7-9a8ce379a57b",
+     "orderId": "ORD8939795982",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "B2138LL",
+     "noKontainer": null,
+     "namaDriver": "Jonatan",
+     "deskripsi": "Belum ada update sejak 13 hari 19 jam 8 menit lalu",
+     "waktuLaporan": "-",
+     "lacakEnabled": false,
+     "lacakTooltip": "Tersedia jika ditugaskan ke sopir"
+    },
+    {
+     "assignmentId": "f2da8e17-b92f-4d60-9040-b3789a550c60",
+     "orderId": "ORD9965441127",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L1090EL",
+     "noKontainer": "LABB345678",
+     "namaDriver": "Sukri",
+     "deskripsi": "Belum ada update sejak 2 hari 22 jam 49 menit lalu",
+     "waktuLaporan": "-",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "2ec6e544-860a-40c8-9154-578f37538d44",
+     "orderId": "ORD0173131181",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L1090EL",
+     "noKontainer": null,
+     "namaDriver": "Marwanto",
+     "deskripsi": "Belum ada update sejak 1 jam 33 menit lalu",
+     "waktuLaporan": "-",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    },
+    {
+     "assignmentId": "bf838297-c2b7-45a1-bfbf-6311bca7f8e2",
+     "orderId": "ORD0217664995",
+     "jenis": "TIDAK_UPDATE",
+     "nopol": "L4234PP",
+     "noKontainer": null,
+     "namaDriver": "Julian",
+     "deskripsi": "Belum ada update sejak 41 menit lalu",
+     "waktuLaporan": "-",
+     "lacakEnabled": true,
+     "lacakTooltip": null
+    }
+   ]
+  }
+ },
+ {
+  "at": "2026-09-24T03:28:08.269Z",
+  "method": "GET",
+  "path": "/api/setting/general",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "OK",
+   "data": {
+    "systemVersion": "1.0.0",
+    "globalEnabled": true,
+    "activeCount": 10,
+    "totalCount": 10,
+    "notifications": [
+     {
+      "notifKey": "notif.order_selesai",
+      "label": "Order Selesai",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.order_dibatalkan",
+      "label": "Order Dibatalkan",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.order_ditugaskan",
+      "label": "Order Telah Ditugaskan",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_muat",
+      "label": "Tahap Pengiriman - Selesai Muat",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_bongkar",
+      "label": "Tahap Pengiriman - Selesai Bongkar",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_alihkan",
+      "label": "Tahap Pengiriman - Alihkan Armada/Petugas",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.kendala_armada",
+      "label": "Reminder Kendala Armada",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.armada_no_update",
+      "label": "Reminder Armada Tidak Update",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.armada_overdue",
+      "label": "Reminder Armada Melewati SLA",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.kir_armada",
+      "label": "Reminder Masa Berlaku KIR & Pajak Armada",
+      "category": "KIR Armada",
+      "channels": [
+       "EMAIL",
+       "PUSH"
+      ],
+      "enabled": true
+     }
+    ]
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T03:28:08.304Z",
+  "method": "GET",
+  "path": "/api/monitoring-tracking/track/orders",
+  "query": "?scope=active",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Trackable orders retrieved",
+   "data": [
+    {
+     "orderId": "ORD0173105981",
+     "nopols": [
+      {
+       "nopol": "L9180EL",
+       "label": "L9180EL",
+       "assignmentId": "d900a471-7c94-4a12-a060-82be72870271"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD0173131181",
+     "nopols": [
+      {
+       "nopol": "L1090EL",
+       "label": "L1090EL",
+       "assignmentId": "2ec6e544-860a-40c8-9154-578f37538d44"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD0173560594",
+     "nopols": [
+      {
+       "nopol": "L1090EL",
+       "label": "L1090EL / QAK14928b8",
+       "assignmentId": "39c448e1-5ed7-4c70-a712-75f6e7ac53f1"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD0213664177",
+     "nopols": [
+      {
+       "nopol": "BM 6767 J",
+       "label": "BM 6767 J / MSCU8988760",
+       "assignmentId": "1fc1622b-e0ee-498a-8483-e73214c21f15"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD0217664995",
+     "nopols": [
+      {
+       "nopol": "D3232SS",
+       "label": "D3232SS",
+       "assignmentId": "7dbc6387-4f94-45c5-b20b-2fa1022fd71b"
+      },
+      {
+       "nopol": "L4234PP",
+       "label": "L4234PP",
+       "assignmentId": "bf838297-c2b7-45a1-bfbf-6311bca7f8e2"
+      },
+      {
+       "nopol": "M3233PP",
+       "label": "M3233PP",
+       "assignmentId": "695a836c-1c83-4e65-ad78-24b0a87f4327"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD0219508697",
+     "nopols": [
+      {
+       "nopol": "L 9878 KL",
+       "label": "L 9878 KL",
+       "assignmentId": "bbf89c30-b1ee-40ce-97c6-f8b2c826ea79"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD0219586047",
+     "nopols": [
+      {
+       "nopol": "L 9876 KO",
+       "label": "L 9876 KO",
+       "assignmentId": "30bc2e5a-816a-4043-9bfb-8a87c81296e5"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD8407225847",
+     "nopols": [
+      {
+       "nopol": "L1090EL",
+       "label": "L1090EL / ko123",
+       "assignmentId": "baae3b18-bba9-48a6-b978-d6570a15f352"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD8849482554",
+     "nopols": [
+      {
+       "nopol": "L1090EL",
+       "label": "L1090EL",
+       "assignmentId": "841902fc-fb09-4c23-9501-787249e3e320"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD8849924264",
+     "nopols": [
+      {
+       "nopol": "L9180EL",
+       "label": "L9180EL",
+       "assignmentId": "a5c6ccfd-c108-4ba6-bdee-3bf80595ff54"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD8850666561",
+     "nopols": [
+      {
+       "nopol": "L1090EL",
+       "label": "L1090EL",
+       "assignmentId": "2d68ffa3-9c75-4793-be0d-06501a6d9e6e"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD8851083707",
+     "nopols": [
+      {
+       "nopol": "L8009BB",
+       "label": "L8009BB",
+       "assignmentId": "cc8e706d-71bf-4765-a294-961defe511f2"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD9523666757",
+     "nopols": [
+      {
+       "nopol": "L1090EL",
+       "label": "L1090EL / MRTU20987543",
+       "assignmentId": "afd5102f-d311-4b5a-b107-56dec55f10ea"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD9719032965",
+     "nopols": [
+      {
+       "nopol": "L1090EL",
+       "label": "L1090EL / EMCU53454353",
+       "assignmentId": "75462c22-f397-45d5-ae4d-cc703c79a38c"
+      }
+     ]
+    },
+    {
+     "orderId": "ORD9965441127",
+     "nopols": [
+      {
+       "nopol": "L1090EL",
+       "label": "L1090EL / LABB345678",
+       "assignmentId": "f2da8e17-b92f-4d60-9040-b3789a550c60"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "at": "2026-09-24T03:28:11.816Z",
+  "method": "GET",
+  "path": "/api/setting/general",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "OK",
+   "data": {
+    "systemVersion": "1.0.0",
+    "globalEnabled": true,
+    "activeCount": 10,
+    "totalCount": 10,
+    "notifications": [
+     {
+      "notifKey": "notif.order_selesai",
+      "label": "Order Selesai",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.order_dibatalkan",
+      "label": "Order Dibatalkan",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.order_ditugaskan",
+      "label": "Order Telah Ditugaskan",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_muat",
+      "label": "Tahap Pengiriman - Selesai Muat",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_bongkar",
+      "label": "Tahap Pengiriman - Selesai Bongkar",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_alihkan",
+      "label": "Tahap Pengiriman - Alihkan Armada/Petugas",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.kendala_armada",
+      "label": "Reminder Kendala Armada",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.armada_no_update",
+      "label": "Reminder Armada Tidak Update",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.armada_overdue",
+      "label": "Reminder Armada Melewati SLA",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.kir_armada",
+      "label": "Reminder Masa Berlaku KIR & Pajak Armada",
+      "category": "KIR Armada",
+      "channels": [
+       "EMAIL",
+       "PUSH"
+      ],
+      "enabled": true
+     }
+    ]
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T03:28:12.267Z",
+  "method": "POST",
+  "path": "/api/auth/logout",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Logged out"
+  }
+ }
+]

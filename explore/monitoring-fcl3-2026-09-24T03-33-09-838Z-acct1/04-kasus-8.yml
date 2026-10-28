@@ -1,0 +1,399 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 34/5000 0,68%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "99+":
+    - text: 99+
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Monitoring
+- heading "Monitoring" [level=2]
+- text: Total Armada
+- paragraph: "20"
+- paragraph: Armada dalam proses pengiriman
+- text: Tidak Update
+- paragraph: "19"
+- paragraph: ">30 menit tanpa sinyal GPS"
+- text: Melewati SLA
+- paragraph: "5"
+- paragraph: Melewati estimasi waktu tiba
+- text: Jumlah Kendala
+- paragraph: "1"
+- paragraph: Butuh tindakan segera
+- text: Keluar Jalur
+- paragraph: "0"
+- paragraph: Keluar dari rute yang direncanakan
+- text: Berpotensi Terlambat
+- paragraph: "7"
+- paragraph: Berpotensi akan terlambat tiba
+- button "Semua Tahapan 20"
+- button "Berangkat Muat 7"
+- button "Sampai Tempat Muat 0"
+- button "Selesai Muat 9"
+- button "Berangkat Bongkar 4"
+- button "Sampai Tempat Bongkar 0"
+- button "Selesai Bongkar 0"
+- button "Kendala 1"
+- button "Keluar Jalur 0"
+- button "Berpotensi Terlambat 7"
+- button "Tidak Update 19"
+- button "Melewati SLA 5"
+- text: "Pembaruan terakhir: 24 Sep, 10.33"
+- button
+- button:
+  - img
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- link "OpenStreetMap":
+  - /url: https://www.openstreetmap.org/copyright
+- button "Perbesar": +
+- button "Perkecil": −
+- button "Layar penuh"
+- button "Semua Customer":
+  - text: Semua Customer
+  - img
+- button "Data Kasus"
+- button "Armada Terdekat"
+- button "Refresh"
+- button "Semua Kasus":
+  - text: Semua Kasus
+  - img
+- link "Riwayat":
+  - /url: /monitoring/riwayat
+- button "L 1090 EL • QA Sopir G20260924-013528"
+- paragraph: Diperkirakan tiba 1 jam 45 menit melewat…
+- button "Lihat"
+- paragraph: 24/09/2026 03:33
+- text: Berisiko Terlambat
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- button "L 9180 EL • Marwanto"
+- paragraph: Diperkirakan tiba 1 jam 45 menit melewat…
+- button "Lihat"
+- paragraph: 24/09/2026 03:33
+- text: Berisiko Terlambat
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0173105981&nopol=L9180EL
+- button "L 1090 EL • Marwanto"
+- paragraph: Diperkirakan tiba 1 jam 43 menit melewat…
+- button "Lihat"
+- paragraph: 24/09/2026 03:33
+- text: Berisiko Terlambat
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- button "L 1090 EL • Marwanto"
+- paragraph: Diperkirakan tiba 1 jam 25 menit melewat…
+- button "Lihat"
+- paragraph: 24/09/2026 03:33
+- text: Berisiko Terlambat
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0173131181&nopol=L1090EL
+- button "M 3233 PP • Julian"
+- paragraph: Diperkirakan tiba 1 jam 20 menit melewat…
+- button "Lihat"
+- paragraph: 24/09/2026 03:33
+- text: Berisiko Terlambat
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0217664995&nopol=M3233PP
+- button "L 4234 PP • Julian"
+- paragraph: Diperkirakan tiba 1 jam 43 menit melewat…
+- button "Lihat"
+- paragraph: 24/09/2026 03:33
+- text: Berisiko Terlambat
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0217664995&nopol=L4234PP
+- button "L 9878 KL • Septian"
+- paragraph: Diperkirakan tiba 211 hari 8 jam 5 menit…
+- button "Lihat"
+- paragraph: 24/09/2026 03:33
+- text: Berisiko Terlambat
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0219508697&nopol=L%209878%20KL
+- button "M 3233 PP • Julian"
+- paragraph: Tidak update lebih dari 46 menit
+- paragraph: 24/09/2026 02:46
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0217664995&nopol=M3233PP
+- 'button "BM 6767 J • Septian No. Kontainer: MSCB6576759"':
+  - text: BM 6767 J • Septian
+  - paragraph: "No. Kontainer: MSCB6576759"
+- paragraph: Tidak update lebih dari 1 jam 26 menit
+- paragraph: 24/09/2026 02:07
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0213664177&nopol=BM%206767%20J
+- 'button "BM 6767 J • Septian No. Kontainer: MSCU8988760"':
+  - text: BM 6767 J • Septian
+  - paragraph: "No. Kontainer: MSCU8988760"
+- paragraph: Tidak update lebih dari 1 jam 26 menit
+- paragraph: 24/09/2026 02:06
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0213664177&nopol=BM%206767%20J
+- button "L 1090 EL • Marwanto"
+- paragraph: Tidak update lebih dari 1 jam 54 menit
+- paragraph: 24/09/2026 01:38
+- text: Tidak Update
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- button "L 1090 EL • Marwanto"
+- paragraph: Tidak update lebih dari 1 jam 55 menit
+- paragraph: 24/09/2026 01:37
+- text: Tidak Update
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- button "L 1090 EL • QA Sopir G20260924-013528"
+- paragraph: Tidak update lebih dari 1 jam 57 menit
+- paragraph: 24/09/2026 01:36
+- text: Tidak Update
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- button "L 9180 EL • Marwanto"
+- paragraph: Tidak update lebih dari 1 jam 57 menit
+- paragraph: 24/09/2026 01:36
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0173105981&nopol=L9180EL
+- button "L 1090 EL • Rahmat Nurdiansyah"
+- paragraph: Terlambat 3 jam 21 menit
+- paragraph: 24/09/2026 00:12
+- text: Melewati SLA
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD8939795982&nopol=L1090EL
+- button "B 2138 LL • Jonatan"
+- paragraph: Terlambat 3 jam 21 menit
+- paragraph: 24/09/2026 00:12
+- text: Melewati SLA
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- 'button "L 1090 EL • Sukri No. Kontainer: EMCU53454353"':
+  - text: L 1090 EL • Sukri
+  - paragraph: "No. Kontainer: EMCU53454353"
+- paragraph: Tidak update lebih dari 1 hari 20 jam 5 …
+- button "Lihat"
+- paragraph: 22/09/2026 07:27
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD9719032965&nopol=L1090EL
+- 'button "L 1090 EL • Sukri No. Kontainer: MRTU20987543"':
+  - text: L 1090 EL • Sukri
+  - paragraph: "No. Kontainer: MRTU20987543"
+- paragraph: Tidak update lebih dari 8 hari 1 jam 24 …
+- button "Lihat"
+- paragraph: 16/09/2026 02:09
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD9523666757&nopol=L1090EL
+- button "B 1111 LO • Sukri"
+- paragraph: Tidak update lebih dari 13 hari 10 jam 3…
+- button "Lihat"
+- paragraph: 10/09/2026 17:00
+- text: Tidak Update
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- button "L 9180 EL • Rahmat Nurdiansyah"
+- paragraph: Tidak update lebih dari 13 hari 17 jam 2…
+- button "Lihat"
+- paragraph: 10/09/2026 10:04
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD8849924264&nopol=L9180EL
+- button "L 9001 BB • Sukri"
+- paragraph: Terlambat 14 hari 22 jam 33 menit
+- paragraph: 09/09/2026 05:00
+- text: Melewati SLA
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- button "L 8009 BB • Sukri"
+- paragraph: Terlambat 14 hari 22 jam 33 menit
+- paragraph: 09/09/2026 05:00
+- text: Melewati SLA
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD8851083707&nopol=L8009BB
+- button "L 9180 EL • Rahmat Nurdiansyah"
+- paragraph: Terlambat 15 hari 11 jam 47 menit
+- paragraph: 08/09/2026 15:46
+- text: Melewati SLA
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD8849924264&nopol=L9180EL
+- button "L 9180 EL • Rahmat Nurdiansyah"
+- paragraph: Ban bocor
+- paragraph: 08/09/2026 07:02
+- text: Kendala
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD8849924264&nopol=L9180EL
+- button "L 9001 BB • Sukri"
+- paragraph: Tidak update lebih dari 15 hari 22 jam 3…
+- button "Lihat"
+- paragraph: 08/09/2026 05:00
+- text: Tidak Update
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- button "L 8009 BB • Sukri"
+- paragraph: Tidak update lebih dari 15 hari 22 jam 3…
+- button "Lihat"
+- paragraph: 08/09/2026 05:00
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD8851083707&nopol=L8009BB
+- button "L 9180 EL • Rahmat Nurdiansyah"
+- paragraph: Belum ada update sejak 15 hari 20 jam 47…
+- button "Lihat"
+- paragraph: "-"
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD8849924264&nopol=L9180EL
+- button "L 1090 EL • Rahmat Nurdiansyah"
+- paragraph: Belum ada update sejak 14 hari 18 jam 49…
+- button "Lihat"
+- paragraph: "-"
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD8939795982&nopol=L1090EL
+- button "B 2138 LL • Jonatan"
+- paragraph: Belum ada update sejak 13 hari 19 jam 13…
+- button "Lihat"
+- paragraph: "-"
+- text: Tidak Update
+- button "Lacak" [disabled]
+- tooltip "Tersedia jika ditugaskan ke sopir"
+- 'button "L 1090 EL • Sukri No. Kontainer: LABB345678"':
+  - text: L 1090 EL • Sukri
+  - paragraph: "No. Kontainer: LABB345678"
+- paragraph: Belum ada update sejak 2 hari 22 jam 54 …
+- button "Lihat"
+- paragraph: "-"
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD9965441127&nopol=L1090EL
+- button "L 1090 EL • Marwanto"
+- paragraph: Belum ada update sejak 1 jam 38 menit la…
+- button "Lihat"
+- paragraph: "-"
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0173131181&nopol=L1090EL
+- button "L 4234 PP • Julian"
+- paragraph: Belum ada update sejak 47 menit lalu
+- paragraph: "-"
+- text: Tidak Update
+- link "Lacak":
+  - /url: /tracking-location?orderCode=ORD0217664995&nopol=L4234PP
+- region "Notifications alt+T"
+- alert

@@ -1,0 +1,222 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "77":
+    - text: "77"
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Manajemen Vendor
+- heading "Manajemen Vendor" [level=2]
+- link "Tambah Vendor":
+  - /url: /manajemen-vendor/tambah
+- button "Filter"
+- button "Riwayat"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Nama Vendor
+- textbox "Masukkan Nama Vendor"
+- text: Alias
+- textbox "Masukkan Alias"
+- text: Status
+- button "Pilih Status":
+  - text: Pilih Status
+  - img
+- text: Email
+- textbox "Masukkan Email"
+- text: No. WhatsApp
+- textbox "Masukkan No. WhatsApp"
+- text: Pengelola
+- button "Pilih Pengelola":
+  - text: Pilih Pengelola
+  - img
+- text: CS Penanggung Jawab
+- button "Pilih CS Penanggung Jawab":
+  - text: Pilih CS Penanggung Jawab
+  - img
+- text: No. WhatsApp CS
+- textbox "Masukkan No. WhatsApp CS"
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "Nama Vendor Alias Email No. WhatsApp Pengelola CS Penanggung Jawab No. WhatsApp CS Status":
+      - columnheader "Nama Vendor Alias"
+      - columnheader "Email No. WhatsApp"
+      - columnheader "Pengelola"
+      - columnheader "CS Penanggung Jawab No. WhatsApp CS"
+      - columnheader "Status"
+      - columnheader
+  - rowgroup:
+    - row:
+      - cell
+    - row "PT. Jaya Wihaya - indahpermatajaya2@yopmail.com 624234234235235 Vendor CS Vendor 628432523523552 Aktif":
+      - cell "PT. Jaya Wihaya -"
+      - cell "indahpermatajaya2@yopmail.com 624234234235235"
+      - cell "Vendor"
+      - cell "CS Vendor 628432523523552"
+      - cell "Aktif"
+      - cell:
+        - button "Aksi"
+    - row "PT. Indah Permata Jaya IPJA indahpermatajaya@yopmail.com 62838343523432 Vendor CS Vendor 624535353453455 Aktif":
+      - cell "PT. Indah Permata Jaya IPJA"
+      - cell "indahpermatajaya@yopmail.com 62838343523432"
+      - cell "Vendor"
+      - cell "CS Vendor 624535353453455"
+      - cell "Aktif"
+      - cell:
+        - button "Aksi"
+    - row "PT Jalur Besi Transindo Jya JBL indahkusumajaya@yopmail.com 6245235423532625 Vendor CS Vendor 624324523423423 Aktif":
+      - cell "PT Jalur Besi Transindo Jya JBL"
+      - cell "indahkusumajaya@yopmail.com 6245235423532625"
+      - cell "Vendor"
+      - cell "CS Vendor 624324523423423"
+      - cell "Aktif"
+      - cell:
+        - button "Aksi"
+    - row "PT Jalur Besi Transindo JBT jbt.bidder25@yopmail.com 6282139240985621 Vendor CS Vendor 62821628729898 Aktif":
+      - cell "PT Jalur Besi Transindo JBT"
+      - cell "jbt.bidder25@yopmail.com 6282139240985621"
+      - cell "Vendor"
+      - cell "CS Vendor 62821628729898"
+      - cell "Aktif"
+      - cell:
+        - button "Aksi"
+    - row "PT. Ikatan Kuat IKIK [REDACTED] 6283830011881 Vendor CS Vendor 6283830011881 Aktif":
+      - cell "PT. Ikatan Kuat IKIK"
+      - cell "[REDACTED] 6283830011881"
+      - cell "Vendor"
+      - cell "CS Vendor 6283830011881"
+      - cell "Aktif"
+      - cell:
+        - button "Aksi"
+    - row "Alexa Powell Trucks APT alexapowell@yopmail.com 6285752092839 Vendor CS Vendor 6285752092839 Aktif":
+      - cell "Alexa Powell Trucks APT"
+      - cell "alexapowell@yopmail.com 6285752092839"
+      - cell "Vendor"
+      - cell "CS Vendor 6285752092839"
+      - cell "Aktif"
+      - cell:
+        - button "Aksi"
+    - row "Wahana Logistik WLG kampusmail8@gmail.com 6281237910281 Vendor CS Vendor 6281990162810 Aktif":
+      - cell "Wahana Logistik WLG"
+      - cell "kampusmail8@gmail.com 6281237910281"
+      - cell "Vendor"
+      - cell "CS Vendor 6281990162810"
+      - cell "Aktif"
+      - cell:
+        - button "Aksi"
+    - row "Nusantara Logistik Utama NLU nusantara@yopmail.com 6281232460612 Admin PH-Bid 6281232671910 Aktif":
+      - cell "Nusantara Logistik Utama NLU"
+      - cell "nusantara@yopmail.com 6281232460612"
+      - cell "Admin"
+      - cell "PH-Bid 6281232671910"
+      - cell "Aktif"
+      - cell:
+        - button "Aksi"
+- paragraph: Menampilkan 1–8 data dari 8 data
+- region "Notifications alt+T"
+- alert

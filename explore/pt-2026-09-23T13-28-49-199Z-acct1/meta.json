@@ -1,0 +1,170 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "list",
+   "ok": true,
+   "info": {
+    "snap": "01-pt-list.yml",
+    "shot": "01-pt-list.png"
+   }
+  },
+  {
+   "step": "aksi-menus",
+   "ok": true,
+   "info": [
+    {
+     "i": 0,
+     "row": "ORD0150788933FTL Nusantara Logistik Utama Kota Bandung - Kota Surabaya L 1098 POL Indrajaya APP Selesai ",
+     "items": []
+    },
+    {
+     "i": 1,
+     "row": "ORD0149116896FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya L1111LO Indrajaya APP Selesai ",
+     "items": []
+    },
+    {
+     "i": 2,
+     "row": "ORD0135699597FTL PT. Ikatan Kuat Kota Surabaya - Kabupaten Bogor E832AA Julian APP Belum Berangkat ",
+     "items": []
+    },
+    {
+     "i": 3,
+     "row": "ORD0065468154FTL Alexa Powell Trucks Kota Surabaya - Kabupaten Mojokerto L9001BB Ludwig APP Selesai ",
+     "items": []
+    },
+    {
+     "i": 4,
+     "row": "ORD0061555399FCLCY to Door Nusantara Logistik Utama Kota Surabaya - Multidrop KO123 Dalam Perjalanan ",
+     "items": []
+    },
+    {
+     "i": 5,
+     "row": "ORD9965441127FCLDoor to Door Nusantara Logistik Utama Kabupaten Bogor - Kota Makassar LABB345678 Muat: L1090EL • Sukri Dalam Perjalanan ",
+     "items": []
+    },
+    {
+     "i": 6,
+     "row": "ORD9719032965FCLDoor to Door Nusantara Logistik Utama Kota Surabaya - Kota Makassar EMCU53454353 APP Muat: L1090EL • Sukri Dalam Perjalanan ",
+     "items": []
+    },
+    {
+     "i": 7,
+     "row": "ORD8407225847FCLDoor to Door Nusantara Logistik Utama Kota Surabaya - Kota Makassar ko123 Muat: L1090EL • Rahmat Nurdiansyah Belum Berangkat ",
+     "items": []
+    },
+    {
+     "i": 8,
+     "row": "ORD9523666757FCLDoor to Door Nusantara Logistik Utama Kota Surabaya - Kota Makassar MRTU20987543 APP Muat: L1090EL • Sukri Dalam Perjalanan ",
+     "items": []
+    },
+    {
+     "i": 9,
+     "row": "ORD8939795982FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya B2138LL Jonatan Dalam Perjalanan ",
+     "items": []
+    },
+    {
+     "i": 10,
+     "row": "ORD8939795982FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya B9988LL Sukri APP Selesai ",
+     "items": []
+    },
+    {
+     "i": 11,
+     "row": "ORD9027710531FTL Nusantara Logistik Utama Kabupaten Bogor - Kota Semarang L1090EL Rahmat Nurdiansyah APP Selesai ",
+     "items": []
+    },
+    {
+     "i": 12,
+     "row": "ORD8939795982FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya L1090EL Rahmat Nurdiansyah APP Dialihkan ",
+     "items": []
+    },
+    {
+     "i": 13,
+     "row": "ORD8939795982FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya L9180EL Sukri Belum Berangkat ",
+     "items": []
+    },
+    {
+     "i": 14,
+     "row": "ORD8929973577FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya L9180EL Rahmat Nurdiansyah APP Selesai ",
+     "items": []
+    },
+    {
+     "i": 15,
+     "row": "ORD8929845367LTL Nusantara Logistik Utama Kota Surabaya - Kota Bandung L1111LO Rahmat Nurdiansyah APP Selesai ",
+     "items": []
+    },
+    {
+     "i": 16,
+     "row": "ORD8925038186FTL Nusantara Logistik Utama Kota Surabaya - Kota Bandung L9180EL Rahmat Nurdiansyah APP Selesai ",
+     "items": []
+    },
+    {
+     "i": 17,
+     "row": "ORD8924736516FCLDoor to CY Nusantara Logistik Utama Kota Surabaya - Kota Makassar KO123 APP Muat: L9180EL • Rahmat Nurdiansyah Selesai ",
+     "items": []
+    },
+    {
+     "i": 18,
+     "row": "ORD8855762870FTL Nusantara Logistik Utama Kota Administrasi Jakarta Utara - Kota Administrasi Jakarta Utara B1111LO Sukri Dalam Perjalanan ",
+     "items": []
+    },
+    {
+     "i": 19,
+     "row": "ORD8852894517FTL Nusantara Logistik Utama Kota Surabaya - Kota Semarang S33DS Rahmat Nurdiansyah APP Selesai ",
+     "items": []
+    }
+   ]
+  },
+  {
+   "step": "filter-status-options",
+   "ok": false,
+   "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Pilih Status', exact: true })\n    - locator resolved to <button type=\"button\" aria-expanded=\"false\" aria-haspopup=\"listbox\" class=\"flex w-full items-center justify-between rounded-lg border "
+  },
+  {
+   "step": "tambah-form",
+   "ok": true,
+   "info": {
+    "url": "https://ops-staging.prahu-hub.com/penugasan-tracking/tambah",
+    "snap": "02-pt-tambah.yml",
+    "shot": "02-pt-tambah.png"
+   }
+  },
+  {
+   "step": "visit-order",
+   "ok": true,
+   "info": {
+    "snap": "03-order.yml"
+   }
+  },
+  {
+   "step": "visit-vendor",
+   "ok": true,
+   "info": {
+    "snap": "04-vendor.yml"
+   }
+  },
+  {
+   "step": "visit-unit",
+   "ok": true,
+   "info": {
+    "snap": "05-unit.yml"
+   }
+  },
+  {
+   "step": "visit-sopir",
+   "ok": true,
+   "info": {
+    "snap": "06-sopir.yml"
+   }
+  },
+  {
+   "step": "visit-monitoring",
+   "ok": true,
+   "info": {
+    "snap": "07-monitoring.yml"
+   }
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "aksi-row0",
+   "ok": true,
+   "info": []
+  },
+  {
+   "step": "aksi-ftl",
+   "ok": true,
+   "info": {
+    "row": "ORD0150788933FTL Nusantara Logistik Utama Kota Bandung - Kota Surabaya L 1098 POL Indrajaya APP Selesai ",
+    "popup": []
+   }
+  },
+  {
+   "step": "aksi-ltl",
+   "ok": true,
+   "info": {
+    "row": "ORD8929845367LTL Nusantara Logistik Utama Kota Surabaya - Kota Bandung L1111LO Rahmat Nurdiansyah APP Selesai ",
+    "popup": []
+   }
+  },
+  {
+   "step": "aksi-fcl-d2d",
+   "ok": true,
+   "info": {
+    "row": "ORD9965441127FCLDoor to Door Nusantara Logistik Utama Kabupaten Bogor - Kota Makassar LABB345678 Muat: L1090EL • Sukri Dalam Perjalanan ",
+    "popup": []
+   }
+  },
+  {
+   "step": "aksi-fcl-cy2door",
+   "ok": true,
+   "info": {
+    "row": "ORD0061555399FCLCY to Door Nusantara Logistik Utama Kota Surabaya - Multidrop KO123 Dalam Perjalanan ",
+    "popup": []
+   }
+  },
+  {
+   "step": "aksi-fcl-door2cy",
+   "ok": true,
+   "info": {
+    "row": "ORD8924736516FCLDoor to CY Nusantara Logistik Utama Kota Surabaya - Kota Makassar KO123 APP Muat: L9180EL • Rahmat Nurdiansyah Selesai ",
+    "popup": []
+   }
+  },
+  {
+   "step": "filter-panel",
+   "ok": true,
+   "info": {
+    "before": "02-filter-before.yml",
+    "afterFilterClick": "03-filter-after-click.yml",
+    "Pilih Status": [
+     {
+      "role": "listbox",
+      "tag": "DIV",
+      "text": "Pilih Status\nBelum Berangkat\nDalam Perjalanan\nSelesai"
+     }
+    ],
+    "Pilih Tahapan": [
+     {
+      "role": "listbox",
+      "tag": "DIV",
+      "text": "Pilih Tahapan\nBerangkat Muat\nSelesai Muat\nBerangkat Bongkar\nSelesai Bongkar"
+     }
+    ],
+    "Pilih Jenis Order": [
+     {
+      "role": "listbox",
+      "tag": "DIV",
+      "text": "Pilih Jenis Order\nFTL - Full Truck Load\nFCL - Full Container Load\nLTL - Less Than Truckload\nLCL - Less Than Container Load"
+     }
+    ]
+   }
+  },
+  {
+   "step": "tambah-ftl",
+   "ok": true,
+   "info": {
+    "snap": "04-tambah-ftl.yml",
+    "shot": "04-tambah-ftl.png",
+    "inputs": []
+   }
+  },
+  {
+   "step": "tambah-ltl",
+   "ok": true,
+   "info": {
+    "snap": "05-tambah-ltl.yml",
+    "shot": "05-tambah-ltl.png",
+    "inputs": []
+   }
+  },
+  {
+   "step": "tambah-fcl",
+   "ok": true,
+   "info": {
+    "snap": "06-tambah-fcl.yml",
+    "shot": "06-tambah-fcl.png",
+    "inputs": []
+   }
+  }
+ ]
+}

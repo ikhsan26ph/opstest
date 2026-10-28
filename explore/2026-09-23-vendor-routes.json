@@ -1,0 +1,757 @@
+[
+  {
+    "account": "vendor",
+    "route": "/vendor-portal/order",
+    "started": "2026-09-23T02:49:02.366Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/order?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/lookup/wilayah/cities?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/lookup/droppoints?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/vendor-portal/order",
+    "title": "Prahu Hub - TMS",
+    "headerUser": "PT. Ikatan KuatVendorPT. Ikatan KuatVendorIKIKpengirim.ph2021@gmail.com",
+    "breadcrumb": [
+      "Beranda",
+      "Order"
+    ],
+    "headings": [
+      "H2: Daftar Order"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Semua Jenis",
+      "Semua Kota",
+      "Pilih Tanggal",
+      "Semua Tipe",
+      "Semua Drop Point",
+      "Semua Status",
+      "Reset",
+      "Terapkan"
+    ],
+    "ths": [
+      "ID Order",
+      "Kota AsalWarehouse Asal",
+      "Kota TujuanWarehouse Tujuan",
+      "Total HargaStatus"
+    ],
+    "rows": 2,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan ID Order",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Pengirim",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Penerima",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /vendor-portal/order"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": [
+      "Tidak ada data."
+    ]
+  },
+  {
+    "account": "vendor",
+    "route": "/penugasan-tracking",
+    "started": "2026-09-23T02:49:05.474Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/penugasan-tracking?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/city?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendors/options?limit=999&pengelola=ALL",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/orders?hasPenugasan=false&status=DRAFT,ASSIGNED,MENUNGGU_PENUGASAN&page=1&limit=1",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/penugasan-tracking",
+    "title": "Penugasan Tracking | Prahu Hub - TMS",
+    "headerUser": "PT. Ikatan KuatVendorPT. Ikatan KuatVendorIKIKpengirim.ph2021@gmail.com",
+    "breadcrumb": [
+      "Beranda",
+      "Penugasan Tracking"
+    ],
+    "headings": [
+      "H2: Penugasan Tracking"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Pilih Jenis Order",
+      "Pilih Rute",
+      "Pilih Status",
+      "Pilih Tahapan",
+      "Pilih Tanggal",
+      "Reset",
+      "Terapkan"
+    ],
+    "ths": [
+      "ID Order",
+      "Rute",
+      "No. Polisi/No. KontainerSopir",
+      "Status"
+    ],
+    "rows": 2,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan ID Order",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan No. Polisi/No. Kontainer",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Sopir/Petugas",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": [
+      "Tidak ada data."
+    ]
+  },
+  {
+    "account": "vendor",
+    "route": "/vendor-portal/master/armada",
+    "started": "2026-09-23T02:49:08.395Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/lookup/jenis-armada?limit=200",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/profile",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/armadas?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/vendor-portal/master/armada",
+    "title": "Prahu Hub - TMS",
+    "headerUser": "PT. Ikatan KuatVendorPT. Ikatan KuatVendorIKIKpengirim.ph2021@gmail.com",
+    "breadcrumb": [
+      "Beranda",
+      "Master Armada"
+    ],
+    "headings": [
+      "H2: Master Armada"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Pilih Jenis Armada",
+      "Pilih Status",
+      "Reset",
+      "Terapkan"
+    ],
+    "ths": [
+      "No",
+      "Jenis Armada",
+      "Nomor Polisi",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 2,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan No. Polisi",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /vendor-portal/order",
+      "Tambah Armada -> /vendor-portal/master/armada/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": [
+      "Tidak ada data."
+    ]
+  },
+  {
+    "account": "vendor",
+    "route": "/vendor-portal/master/sopir",
+    "started": "2026-09-23T02:49:11.412Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/profile",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/sopirs?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/lookup/wilayah/provinces?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/vendor-portal/master/sopir",
+    "title": "Prahu Hub - TMS",
+    "headerUser": "PT. Ikatan KuatVendorPT. Ikatan KuatVendorIKIKpengirim.ph2021@gmail.com",
+    "breadcrumb": [
+      "Beranda",
+      "Master Sopir"
+    ],
+    "headings": [
+      "H2: Master Sopir"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Pilih Status",
+      "Reset",
+      "Terapkan"
+    ],
+    "ths": [
+      "No",
+      "Nama Sopir",
+      "No. WhatsApp",
+      "Kode Akses",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 2,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Sopir",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan No. WhatsApp",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /vendor-portal/order",
+      "Tambah Sopir -> /vendor-portal/master/sopir/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": [
+      "Tidak ada data."
+    ]
+  },
+  {
+    "account": "vendor",
+    "route": "/vendor-portal/akun-saya",
+    "started": "2026-09-23T02:49:14.299Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/profile",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/vendor-portal/akun-saya",
+    "title": "Prahu Hub - TMS",
+    "headerUser": "PT. Ikatan KuatVendorPT. Ikatan KuatVendorIKIKpengirim.ph2021@gmail.com",
+    "breadcrumb": [
+      "Beranda",
+      "Akun Saya"
+    ],
+    "headings": [
+      "H2: Akun Saya",
+      "H3: Informasi Umum",
+      "H3: Informasi Perusahaan",
+      "H3: Nomor WhatsApp Customer Service"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Edit Informasi",
+      "Ubah Password"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [],
+    "combos": [],
+    "links": [
+      "Beranda -> /vendor-portal/order"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "account": "vendor",
+    "route": "/vendor-portal/setting/preferensi-notifikasi",
+    "started": "2026-09-23T02:49:17.103Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendor/setting/notification-preference",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/vendor-portal/setting/preferensi-notifikasi",
+    "title": "Prahu Hub - TMS",
+    "headerUser": "PT. Ikatan KuatVendorPT. Ikatan KuatVendorIKIKpengirim.ph2021@gmail.com",
+    "breadcrumb": [
+      "Beranda",
+      "Pusat Notifikasi",
+      "Preferensi"
+    ],
+    "headings": [
+      "H2: Preferensi Notifikasi",
+      "H3: Order (5/5)",
+      "H3: Tracking (7/7)",
+      "H3: Monitoring & Tracking (1/1)",
+      "H3: KIR Armada (2/2)"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Batal",
+      "Simpan"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /vendor-portal/order",
+      "Pusat Notifikasi -> /vendor-portal/notifikasi"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  }
+]

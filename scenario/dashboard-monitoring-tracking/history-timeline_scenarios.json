@@ -1,0 +1,133 @@
+{
+  "source": "history-timeline_improvement-20261021.md",
+  "screens": {
+    "SCR-01": "Dashboard Tracking & Location > History Tracking"
+  },
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "Timeline tersedia di History Tracking Dashboard",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "HT-REQ-001"
+      ],
+      "steps": [
+        "Buka Dashboard Tracking & Location.",
+        "Pilih order dan nopol yang tersedia lalu Cari.",
+        "Klik Timeline pada History Tracking."
+      ],
+      "expected": [
+        "Timeline tampil di halaman Dashboard."
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Detail kendala tampil langsung pada Timeline Dashboard",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "HT-REQ-002"
+      ],
+      "steps": [
+        "Pada tab Riwayat Tracking pilih ORD0150788933 / L 1098 POL.",
+        "Klik Cari lalu Timeline."
+      ],
+      "expected": [
+        "Tampil waktu dan keterangan kendala pada Dashboard."
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "Detail kendala Dashboard sesuai Timeline Penugasan Tracking",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "HT-REQ-002"
+      ],
+      "steps": [
+        "Catat tiga kendala pada Timeline Dashboard ORD0150788933.",
+        "Buka Penugasan Tracking, tampilkan Filter, masukkan ID order lalu Terapkan.",
+        "Buka Aksi > Detail > Timeline dan tunggu pemuatan selesai.",
+        "Bandingkan waktu, keterangan, dan jumlah kendala."
+      ],
+      "expected": [
+        "Data kendala yang sama tampil pada kedua halaman."
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "Foto kendala dapat dilihat tanpa input ulang order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "HT-REQ-002",
+        "HT-REQ-003"
+      ],
+      "steps": [
+        "Buka Timeline Dashboard ORD0150788933.",
+        "Perbesar foto kendala pertama lalu Tutup."
+      ],
+      "expected": [
+        "Foto terbuka di halaman yang sama.",
+        "ID order, nopol, dan tiga kendala tetap tampil setelah preview ditutup."
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "Foto vertikal mempertahankan orientasi pada thumbnail dan preview",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-01",
+      "requirements": [
+        "HT-REQ-004"
+      ],
+      "steps": [
+        "Buka foto kendala pertama ORD0150788933.",
+        "Periksa dimensi asli, thumbnail dan tampilan preview."
+      ],
+      "expected": [
+        "Foto vertikal tetap vertikal tanpa rotasi paksa atau distorsi."
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "Foto horizontal mempertahankan orientasi pada thumbnail dan preview",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-01",
+      "requirements": [
+        "HT-REQ-004"
+      ],
+      "steps": [
+        "Pada Tracking Terkini pilih ORD0327836588 / L1090EL lalu Cari dan Timeline.",
+        "Perbesar foto pertama Selesai Muat.",
+        "Periksa dimensi asli, thumbnail dan tampilan preview."
+      ],
+      "expected": [
+        "Foto horizontal tetap horizontal tanpa rotasi paksa atau distorsi."
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "Pilihan order dipertahankan setelah menutup preview foto tracking",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-01",
+      "requirements": [
+        "HT-REQ-003"
+      ],
+      "steps": [
+        "Pada Timeline Dashboard ORD0327836588 buka foto Selesai Muat.",
+        "Tutup preview foto."
+      ],
+      "expected": [
+        "Tetap di Dashboard; order terpilih dan Timeline aktif sehingga tidak perlu mengetik ulang order."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /vendor-portal/order
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - link "Order":
+          - /url: /vendor-portal/order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Armada":
+              - /url: /vendor-portal/master/armada
+          - listitem:
+            - link "Master Sopir":
+              - /url: /vendor-portal/master/sopir
+      - listitem:
+        - link "Akun Saya":
+          - /url: /vendor-portal/akun-saya
+      - listitem:
+        - link "Pusat Notifikasi":
+          - /url: /vendor-portal/setting/preferensi-notifikasi
+    - heading [level=2]
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: PT. Ikatan Kuat Vendor
+  - button:
+    - img
+  - text: IKIK [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /vendor-portal/order
+    - listitem: Akun Saya
+- heading "Akun Saya" [level=2]
+- button "Edit Informasi"
+- button "Ubah Password"
+- heading "Informasi Umum" [level=3]
+- term: Nama Perusahaan
+- definition: ":"
+- definition: PT. Ikatan Kuat
+- term: Alias Perusahaan
+- definition: ":"
+- definition: IKIK
+- term: No. WhatsApp
+- definition: ":"
+- definition: "6283830011881"
+- term: Email
+- definition: ":"
+- definition: [REDACTED]
+- term: Nama PIC Perusahaan
+- definition: ":"
+- definition: Ikhsan
+- heading "Informasi Perusahaan" [level=3]
+- term: Provinsi Asal
+- definition: ":"
+- definition: Jawa Timur
+- term: Kota/Kab. Asal
+- definition: ":"
+- definition: Kota Surabaya
+- term: Kecamatan Asal
+- definition: ":"
+- definition: Benowo
+- term: Desa/Kelurahan Asal
+- definition: ":"
+- definition: Romokalisari
+- term: Kode Pos
+- definition: ":"
+- definition: "60192"
+- term: Alamat
+- definition: ":"
+- definition: Jalan Romokalisari
+- term: Catatan Tambahan
+- definition: ":"
+- definition: "-"
+- term: Dokumen Tambahan
+- definition: ":"
+- definition: "-"
+- heading "Nomor WhatsApp Customer Service" [level=3]
+- paragraph:
+  - text: Digunakan sebagai
+  - strong: kontak bantuan
+  - text: pada setiap penugasan di Driver Hub.
+- paragraph: No. WhatsApp CS
+- paragraph: "6283830011881"
+- region "Notifications alt+T"
+- alert

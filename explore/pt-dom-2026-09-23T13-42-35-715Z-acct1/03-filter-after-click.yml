@@ -1,0 +1,392 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 21/5000 0,42%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "92":
+    - text: "92"
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Penugasan Tracking
+- heading "Penugasan Tracking" [level=2]
+- button "Tambah Penugasan"
+- button "Filter"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data ID Order
+- textbox "Masukkan ID Order"
+- text: Jenis Order
+- button "Pilih Jenis Order":
+  - text: Pilih Jenis Order
+  - img
+- text: Kota Asal
+- button "Pilih Rute":
+  - text: Pilih Rute
+  - img
+- text: Kota Tujuan
+- button "Pilih Rute":
+  - text: Pilih Rute
+  - img
+- text: No. Polisi / Kontainer
+- textbox "Masukkan No. Polisi/No. Kontainer"
+- text: Sopir / Petugas
+- textbox "Masukkan Nama Sopir/Petugas"
+- text: Status
+- button "Pilih Status":
+  - text: Pilih Status
+  - img
+- text: Tahapan Tracking
+- button "Pilih Tahapan":
+  - text: Pilih Tahapan
+  - img
+- text: Tanggal Permintaan Muat
+- button "Pilih Tanggal"
+- text: Nama Vendor
+- button "Semua Vendor":
+  - text: Semua Vendor
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "ID Order Vendor Rute No. Polisi/No. Kontainer Sopir Status":
+      - columnheader "ID Order Vendor"
+      - columnheader "Rute"
+      - columnheader "No. Polisi/No. Kontainer Sopir"
+      - columnheader "Status"
+      - columnheader
+  - rowgroup:
+    - row:
+      - cell
+    - row "ORD0150788933 FTL Nusantara Logistik Utama Kota Bandung - Kota Surabaya L 1098 POL Indrajaya APP Selesai":
+      - cell "ORD0150788933 FTL Nusantara Logistik Utama":
+        - paragraph: ORD0150788933 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Bandung - Kota Surabaya"
+      - cell "L 1098 POL Indrajaya APP":
+        - paragraph: L 1098 POL
+        - paragraph: Indrajaya APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - row "ORD0149116896 FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya L1111LO Indrajaya APP Selesai":
+      - cell "ORD0149116896 FTL Nusantara Logistik Utama":
+        - paragraph: ORD0149116896 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Surabaya"
+      - cell "L1111LO Indrajaya APP":
+        - paragraph: L1111LO
+        - paragraph: Indrajaya APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - row "ORD0135699597 FTL PT. Ikatan Kuat Kota Surabaya - Kabupaten Bogor E832AA Julian APP Belum Berangkat":
+      - cell "ORD0135699597 FTL PT. Ikatan Kuat":
+        - paragraph: ORD0135699597 FTL
+        - paragraph: PT. Ikatan Kuat
+      - cell "Kota Surabaya - Kabupaten Bogor"
+      - cell "E832AA Julian APP":
+        - paragraph: E832AA
+        - paragraph: Julian APP
+      - cell "Belum Berangkat"
+      - cell:
+        - button "Aksi"
+    - row "ORD0065468154 FTL Alexa Powell Trucks Kota Surabaya - Kabupaten Mojokerto L9001BB Ludwig APP Selesai":
+      - cell "ORD0065468154 FTL Alexa Powell Trucks":
+        - paragraph: ORD0065468154 FTL
+        - paragraph: Alexa Powell Trucks
+      - cell "Kota Surabaya - Kabupaten Mojokerto"
+      - cell "L9001BB Ludwig APP":
+        - paragraph: L9001BB
+        - paragraph: Ludwig APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - row "ORD0061555399 FCL CY to Door Nusantara Logistik Utama Kota Surabaya - Multidrop KO123 Dalam Perjalanan":
+      - cell "ORD0061555399 FCL CY to Door Nusantara Logistik Utama":
+        - paragraph: ORD0061555399 FCL CY to Door
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Multidrop":
+        - text: Kota Surabaya -
+        - button "Multidrop"
+      - cell "KO123":
+        - paragraph: KO123
+      - cell "Dalam Perjalanan"
+      - cell:
+        - button "Aksi"
+    - 'row "ORD9965441127 FCL Door to Door Nusantara Logistik Utama Kabupaten Bogor - Kota Makassar LABB345678 Muat: L1090EL • Sukri Dalam Perjalanan"':
+      - cell "ORD9965441127 FCL Door to Door Nusantara Logistik Utama":
+        - paragraph: ORD9965441127 FCL Door to Door
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kabupaten Bogor - Kota Makassar"
+      - 'cell "LABB345678 Muat: L1090EL • Sukri"':
+        - paragraph: LABB345678
+        - paragraph: "Muat: L1090EL • Sukri"
+      - cell "Dalam Perjalanan"
+      - cell:
+        - button "Aksi"
+    - 'row "ORD9719032965 FCL Door to Door Nusantara Logistik Utama Kota Surabaya - Kota Makassar EMCU53454353 APP Muat: L1090EL • Sukri Dalam Perjalanan"':
+      - cell "ORD9719032965 FCL Door to Door Nusantara Logistik Utama":
+        - paragraph: ORD9719032965 FCL Door to Door
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Makassar"
+      - 'cell "EMCU53454353 APP Muat: L1090EL • Sukri"':
+        - paragraph: EMCU53454353 APP
+        - paragraph: "Muat: L1090EL • Sukri"
+      - cell "Dalam Perjalanan"
+      - cell:
+        - button "Aksi"
+    - 'row "ORD8407225847 FCL Door to Door Nusantara Logistik Utama Kota Surabaya - Kota Makassar ko123 Muat: L1090EL • Rahmat Nurdiansyah Belum Berangkat"':
+      - cell "ORD8407225847 FCL Door to Door Nusantara Logistik Utama":
+        - paragraph: ORD8407225847 FCL Door to Door
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Makassar"
+      - 'cell "ko123 Muat: L1090EL • Rahmat Nurdiansyah"':
+        - paragraph: ko123
+        - paragraph: "Muat: L1090EL • Rahmat Nurdiansyah"
+      - cell "Belum Berangkat"
+      - cell:
+        - button "Aksi"
+    - 'row "ORD9523666757 FCL Door to Door Nusantara Logistik Utama Kota Surabaya - Kota Makassar MRTU20987543 APP Muat: L1090EL • Sukri Dalam Perjalanan"':
+      - cell "ORD9523666757 FCL Door to Door Nusantara Logistik Utama":
+        - paragraph: ORD9523666757 FCL Door to Door
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Makassar"
+      - 'cell "MRTU20987543 APP Muat: L1090EL • Sukri"':
+        - paragraph: MRTU20987543 APP
+        - paragraph: "Muat: L1090EL • Sukri"
+      - cell "Dalam Perjalanan"
+      - cell:
+        - button "Aksi"
+    - row "ORD8939795982 FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya B2138LL Jonatan Dalam Perjalanan":
+      - cell "ORD8939795982 FTL Nusantara Logistik Utama":
+        - paragraph: ORD8939795982 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Surabaya"
+      - cell "B2138LL Jonatan":
+        - paragraph: B2138LL
+        - paragraph: Jonatan
+      - cell "Dalam Perjalanan"
+      - cell:
+        - button "Aksi"
+    - row "ORD8939795982 FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya B9988LL Sukri APP Selesai":
+      - cell "ORD8939795982 FTL Nusantara Logistik Utama":
+        - paragraph: ORD8939795982 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Surabaya"
+      - cell "B9988LL Sukri APP":
+        - paragraph: B9988LL
+        - paragraph: Sukri APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - row "ORD9027710531 FTL Nusantara Logistik Utama Kabupaten Bogor - Kota Semarang L1090EL Rahmat Nurdiansyah APP Selesai":
+      - cell "ORD9027710531 FTL Nusantara Logistik Utama":
+        - paragraph: ORD9027710531 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kabupaten Bogor - Kota Semarang"
+      - cell "L1090EL Rahmat Nurdiansyah APP":
+        - paragraph: L1090EL
+        - paragraph: Rahmat Nurdiansyah APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - row "ORD8939795982 FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya L1090EL Rahmat Nurdiansyah APP Dialihkan":
+      - cell "ORD8939795982 FTL Nusantara Logistik Utama":
+        - paragraph: ORD8939795982 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Surabaya"
+      - cell "L1090EL Rahmat Nurdiansyah APP":
+        - paragraph: L1090EL
+        - paragraph: Rahmat Nurdiansyah APP
+      - cell "Dialihkan"
+      - cell:
+        - button "Aksi"
+    - row "ORD8939795982 FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya L9180EL Sukri Belum Berangkat":
+      - cell "ORD8939795982 FTL Nusantara Logistik Utama":
+        - paragraph: ORD8939795982 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Surabaya"
+      - cell "L9180EL Sukri":
+        - paragraph: L9180EL
+        - paragraph: Sukri
+      - cell "Belum Berangkat"
+      - cell:
+        - button "Aksi"
+    - row "ORD8929973577 FTL Nusantara Logistik Utama Kota Surabaya - Kota Surabaya L9180EL Rahmat Nurdiansyah APP Selesai":
+      - cell "ORD8929973577 FTL Nusantara Logistik Utama":
+        - paragraph: ORD8929973577 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Surabaya"
+      - cell "L9180EL Rahmat Nurdiansyah APP":
+        - paragraph: L9180EL
+        - paragraph: Rahmat Nurdiansyah APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - row "ORD8929845367 LTL Nusantara Logistik Utama Kota Surabaya - Kota Bandung L1111LO Rahmat Nurdiansyah APP Selesai":
+      - cell "ORD8929845367 LTL Nusantara Logistik Utama":
+        - paragraph: ORD8929845367 LTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Bandung"
+      - cell "L1111LO Rahmat Nurdiansyah APP":
+        - paragraph: L1111LO
+        - paragraph: Rahmat Nurdiansyah APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - row "ORD8925038186 FTL Nusantara Logistik Utama Kota Surabaya - Kota Bandung L9180EL Rahmat Nurdiansyah APP Selesai":
+      - cell "ORD8925038186 FTL Nusantara Logistik Utama":
+        - paragraph: ORD8925038186 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Bandung"
+      - cell "L9180EL Rahmat Nurdiansyah APP":
+        - paragraph: L9180EL
+        - paragraph: Rahmat Nurdiansyah APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - 'row "ORD8924736516 FCL Door to CY Nusantara Logistik Utama Kota Surabaya - Kota Makassar KO123 APP Muat: L9180EL • Rahmat Nurdiansyah Selesai"':
+      - cell "ORD8924736516 FCL Door to CY Nusantara Logistik Utama":
+        - paragraph: ORD8924736516 FCL Door to CY
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Makassar"
+      - 'cell "KO123 APP Muat: L9180EL • Rahmat Nurdiansyah"':
+        - paragraph: KO123 APP
+        - paragraph: "Muat: L9180EL • Rahmat Nurdiansyah"
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+    - row "ORD8855762870 FTL Nusantara Logistik Utama Kota Administrasi Jakarta Utara - Kota Administrasi Jakarta Utara B1111LO Sukri Dalam Perjalanan":
+      - cell "ORD8855762870 FTL Nusantara Logistik Utama":
+        - paragraph: ORD8855762870 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Administrasi Jakarta Utara - Kota Administrasi Jakarta Utara"
+      - cell "B1111LO Sukri":
+        - paragraph: B1111LO
+        - paragraph: Sukri
+      - cell "Dalam Perjalanan"
+      - cell:
+        - button "Aksi"
+    - row "ORD8852894517 FTL Nusantara Logistik Utama Kota Surabaya - Kota Semarang S33DS Rahmat Nurdiansyah APP Selesai":
+      - cell "ORD8852894517 FTL Nusantara Logistik Utama":
+        - paragraph: ORD8852894517 FTL
+        - paragraph: Nusantara Logistik Utama
+      - cell "Kota Surabaya - Kota Semarang"
+      - cell "S33DS Rahmat Nurdiansyah APP":
+        - paragraph: S33DS
+        - paragraph: Rahmat Nurdiansyah APP
+      - cell "Selesai"
+      - cell:
+        - button "Aksi"
+- paragraph: Menampilkan 1–20 data dari 32 data
+- button "Halaman pertama" [disabled]
+- button "Sebelumnya" [disabled]
+- button "1"
+- button "2"
+- button "Berikutnya"
+- button "Halaman terakhir"
+- region "Notifications alt+T"
+- alert

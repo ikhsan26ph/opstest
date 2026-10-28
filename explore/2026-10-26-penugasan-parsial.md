@@ -1,0 +1,13 @@
+# Live exploration Simpan Parsial Penugasan — PS20261026
+
+OPS staging, 26 Oktober2026. Akun1 config/env.md, header Admin/Administrator. Satu login form aktual (`Masukkan Email`, `Masukkan Password`, `Login`) HTTP200. URL /login→/; navigasi sidebar Penugasan Tracking→/penugasan-tracking, tombol Tambah Penugasan→/penugasan-tracking/tambah. Teks pencarian aktual `Cari order...`, bukan Cari Order. Browser MCP gagal membuka karena profil sedang digunakan; dipakai Chromium Playwright lokal terpisah, bukan mengambil alih browser lain. Timezone aktual Asia/Jakarta, viewport1440×1000.
+
+Read-only exploration awal pada ORD1444636669 FTL5 dan ORD0386540809 FCL1; tidak ada save data existing. Sebelum pemilihan order tombol footer Simpan, sesudah dipilih FTL/FCL menjadi Simpan Semua. FTL tiap card h3 Armada N, tombol Simpan. FCL jadwal kosong hanya menampilkan form kapal dan pesan petunjuk, Simpan Semua disabled, tanpa kontainer. Pilihan Direct/Connecting. ClosingTime menggunakan datetime; ETD/ETA/ETDConnecting date-only. Connecting dapat ditambah dan dihapus (Hapus muncul setelah >1row).
+
+GET live Pilih Order: `/api/orders?penugasanBelumLengkap=true&status=DRAFT,ASSIGNED,MENUNGGU_PENUGASAN,DITUGASKAN&page=1&limit=100`. Keberadaan query bukan verdict bisnis; test runtime kemudian membuktikan order partial tetap muncul dan order lengkap hilang.
+
+Setelah exploration/harvest/smoke, eksekusi QA terpisah: enam order baru,14unit, modePengurus. Konfirmasi sebelum POST berjudul Konfirmasi Penugasan, tombol Periksa Kembali/Simpan. Setelah partial201 pop-up Penugasan Berhasil dengan Daftar Penugasan/Tugaskan Armada Lain; setelah remaining0 hanya daftar. Read-only muncul segera setelah partial dan bertahan reopen. Perbedaan tanggal pada reopen dikonfirmasi Asia/Jakarta; payload/GET mempertahankan timestamp. Sumber requirement tekstual bukan disimpulkan dari UI.
+
+Setelah seluruh ownQA lengkap, tambahan gate tiap field dan kontrol master dipilih lokal pada order existing tanpa save; guard tetap0denied dan total17mutasi hanya ownQA. Local input dibuang lewat navigasi. Klik Batal setelah kontrol lokal tidak menampilkan halaman daftar dalam12detik; harness berpindah melalui route daftar yang sudah teramati. Tidak ada assertion requirement Batal; tidak dipromosikan menjadi defect baru.
+
+Bukti: artifacts/evidence/PS20261026, khusus01-list-smoke,02-add-initial,03-ftl-existing-readonly,04-fcl-existing-empty,network.json,meta.json. Laporan terkoreksi42checks41P1F: reports/penugasan-parsial_test-report-20261026.md. Satu temuan aktif (tanggal); temuan judul ditarik sesuai klarifikasi user bahwa Konfirmasi Penugasan merujuk pop-up, bukan judul. Tidak ada runtime rerun. Batasan lengkap ada pada laporan. LogoutHTTP200 /login, browserclosed; tidak commit/push.

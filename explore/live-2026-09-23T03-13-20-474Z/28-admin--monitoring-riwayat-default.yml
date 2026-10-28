@@ -1,0 +1,403 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "77":
+    - text: "77"
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem:
+      - link "Monitoring":
+        - /url: /monitoring
+    - listitem: Riwayat Kasus
+- link "← Kembali":
+  - /url: /monitoring
+- heading "Riwayat Kasus" [level=2]
+- button "Filter"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Nopol/No. Kontainer
+- textbox "Masukkan Nopol/No. Kontainer"
+- text: Nama Sopir
+- textbox "Masukkan Nama Sopir"
+- text: Tanggal Kasus Dari
+- textbox "Tanggal Kasus Dari":
+  - /placeholder: DD/MM/YYYY
+- img
+- text: Tanggal Kasus Sampai
+- textbox "Tanggal Kasus Sampai":
+  - /placeholder: DD/MM/YYYY
+- img
+- text: Deskripsi Kasus
+- textbox "Masukkan Deskripsi Kasus"
+- text: Keterangan
+- textbox "Masukkan Keterangan"
+- text: Kasus
+- button "Pilih Kasus":
+  - text: Pilih Kasus
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "No. Nopol/No. Kontainer Nama Sopir Kasus Deskripsi Kasus Tanggal Kasus Tanggal Selesai Alasan Selesai":
+      - columnheader "No."
+      - columnheader "Nopol/No. Kontainer Nama Sopir"
+      - columnheader "Kasus Deskripsi Kasus"
+      - columnheader "Tanggal Kasus Tanggal Selesai"
+      - columnheader "Alasan Selesai"
+  - rowgroup:
+    - row:
+      - cell
+    - row "1 L1090EL Sukri Tidak Update Tidak update lebih dari 30 menit 10/09/2026 17:01 22/09/2026 14:28 Otomatis - GPS terdeteksi":
+      - cell "1"
+      - cell "L1090EL Sukri":
+        - paragraph: L1090EL
+        - paragraph: Sukri
+      - cell "Tidak Update Tidak update lebih dari 30 menit":
+        - text: Tidak Update
+        - paragraph: Tidak update lebih dari 30 menit
+      - cell "10/09/2026 17:01 22/09/2026 14:28":
+        - paragraph: 10/09/2026 17:01
+        - paragraph: 22/09/2026 14:28
+      - cell "Otomatis - GPS terdeteksi"
+    - row "2 L1090EL Sukri Melewati SLA Terlambat 1 hari 3 jam 36 menit 08/09/2026 14:20 22/09/2026 14:28 Otomatis - Order Selesai":
+      - cell "2"
+      - cell "L1090EL Sukri":
+        - paragraph: L1090EL
+        - paragraph: Sukri
+      - cell "Melewati SLA Terlambat 1 hari 3 jam 36 menit":
+        - text: Melewati SLA
+        - paragraph: Terlambat 1 hari 3 jam 36 menit
+      - cell "08/09/2026 14:20 22/09/2026 14:28":
+        - paragraph: 08/09/2026 14:20
+        - paragraph: 22/09/2026 14:28
+      - cell "Otomatis - Order Selesai"
+    - row "3 L1090EL Sukri Keluar Jalur Keluar jalur 2 menit yang lalu 3.1 km dari titik prediksi rute terdekat. 10/09/2026 16:57 22/09/2026 14:28 Otomatis - Kembali ke Jalur":
+      - cell "3"
+      - cell "L1090EL Sukri":
+        - paragraph: L1090EL
+        - paragraph: Sukri
+      - cell "Keluar Jalur Keluar jalur 2 menit yang lalu 3.1 km dari titik prediksi rute terdekat.":
+        - text: Keluar Jalur
+        - paragraph: Keluar jalur 2 menit yang lalu 3.1 km dari titik prediksi rute terdekat.
+      - cell "10/09/2026 16:57 22/09/2026 14:28":
+        - paragraph: 10/09/2026 16:57
+        - paragraph: 22/09/2026 14:28
+      - cell "Otomatis - Kembali ke Jalur"
+    - row "4 B9988LL Sukri Tidak Update Belum ada update sejak 30 menit lalu 10/09/2026 15:50 22/09/2026 14:28 Otomatis - GPS terdeteksi":
+      - cell "4"
+      - cell "B9988LL Sukri":
+        - paragraph: B9988LL
+        - paragraph: Sukri
+      - cell "Tidak Update Belum ada update sejak 30 menit lalu":
+        - text: Tidak Update
+        - paragraph: Belum ada update sejak 30 menit lalu
+      - cell "10/09/2026 15:50 22/09/2026 14:28":
+        - paragraph: 10/09/2026 15:50
+        - paragraph: 22/09/2026 14:28
+      - cell "Otomatis - GPS terdeteksi"
+    - row "5 L9180EL Rahmat Nurdiansyah Melewati SLA Terlambat 10 jam 28 menit 10/09/2026 05:04 10/09/2026 15:34 Otomatis - Order Selesai":
+      - cell "5"
+      - cell "L9180EL Rahmat Nurdiansyah":
+        - paragraph: L9180EL
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Melewati SLA Terlambat 10 jam 28 menit":
+        - text: Melewati SLA
+        - paragraph: Terlambat 10 jam 28 menit
+      - cell "10/09/2026 05:04 10/09/2026 15:34":
+        - paragraph: 10/09/2026 05:04
+        - paragraph: 10/09/2026 15:34
+      - cell "Otomatis - Order Selesai"
+    - row "6 L1090EL Sukri Tidak Update Tidak update lebih dari 31 menit 09/09/2026 20:54 10/09/2026 14:28 Otomatis - GPS terdeteksi":
+      - cell "6"
+      - cell "L1090EL Sukri":
+        - paragraph: L1090EL
+        - paragraph: Sukri
+      - cell "Tidak Update Tidak update lebih dari 31 menit":
+        - text: Tidak Update
+        - paragraph: Tidak update lebih dari 31 menit
+      - cell "09/09/2026 20:54 10/09/2026 14:28":
+        - paragraph: 09/09/2026 20:54
+        - paragraph: 10/09/2026 14:28
+      - cell "Otomatis - GPS terdeteksi"
+    - row "7 L1090EL Sukri Keluar Jalur Keluar jalur 2 menit yang lalu 3.0 km dari titik prediksi rute terdekat. 09/09/2026 20:41 10/09/2026 14:28 Otomatis - Kembali ke Jalur":
+      - cell "7"
+      - cell "L1090EL Sukri":
+        - paragraph: L1090EL
+        - paragraph: Sukri
+      - cell "Keluar Jalur Keluar jalur 2 menit yang lalu 3.0 km dari titik prediksi rute terdekat.":
+        - text: Keluar Jalur
+        - paragraph: Keluar jalur 2 menit yang lalu 3.0 km dari titik prediksi rute terdekat.
+      - cell "09/09/2026 20:41 10/09/2026 14:28":
+        - paragraph: 09/09/2026 20:41
+        - paragraph: 10/09/2026 14:28
+      - cell "Otomatis - Kembali ke Jalur"
+    - row "8 B1111LO Sukri Tidak Update Belum ada update sejak 1 hari 22 jam 12 menit lalu 10/09/2026 13:38 10/09/2026 13:48 Otomatis - GPS terdeteksi":
+      - cell "8"
+      - cell "B1111LO Sukri":
+        - paragraph: B1111LO
+        - paragraph: Sukri
+      - cell "Tidak Update Belum ada update sejak 1 hari 22 jam 12 menit lalu":
+        - text: Tidak Update
+        - paragraph: Belum ada update sejak 1 hari 22 jam 12 menit lalu
+      - cell "10/09/2026 13:38 10/09/2026 13:48":
+        - paragraph: 10/09/2026 13:38
+        - paragraph: 10/09/2026 13:48
+      - cell "Otomatis - GPS terdeteksi"
+    - row "9 L1090EL Sukri Tidak Update Tidak update lebih dari 31 menit 09/09/2026 18:44 09/09/2026 20:18 Otomatis - GPS terdeteksi":
+      - cell "9"
+      - cell "L1090EL Sukri":
+        - paragraph: L1090EL
+        - paragraph: Sukri
+      - cell "Tidak Update Tidak update lebih dari 31 menit":
+        - text: Tidak Update
+        - paragraph: Tidak update lebih dari 31 menit
+      - cell "09/09/2026 18:44 09/09/2026 20:18":
+        - paragraph: 09/09/2026 18:44
+        - paragraph: 09/09/2026 20:18
+      - cell "Otomatis - GPS terdeteksi"
+    - row "10 B1111LO Sukri Tidak Update Belum ada update sejak 1 hari 3 jam 52 menit lalu 09/09/2026 19:18 09/09/2026 19:30 Otomatis - GPS terdeteksi":
+      - cell "10"
+      - cell "B1111LO Sukri":
+        - paragraph: B1111LO
+        - paragraph: Sukri
+      - cell "Tidak Update Belum ada update sejak 1 hari 3 jam 52 menit lalu":
+        - text: Tidak Update
+        - paragraph: Belum ada update sejak 1 hari 3 jam 52 menit lalu
+      - cell "09/09/2026 19:18 09/09/2026 19:30":
+        - paragraph: 09/09/2026 19:18
+        - paragraph: 09/09/2026 19:30
+      - cell "Otomatis - GPS terdeteksi"
+    - row "11 L1090EL Sukri Berisiko Terlambat Diperkirakan tiba 4 jam 54 menit melewati SLA 09/09/2026 17:56 09/09/2026 18:56 Otomatis - Proyeksi Kedatangan Membaik":
+      - cell "11"
+      - cell "L1090EL Sukri":
+        - paragraph: L1090EL
+        - paragraph: Sukri
+      - cell "Berisiko Terlambat Diperkirakan tiba 4 jam 54 menit melewati SLA":
+        - text: Berisiko Terlambat
+        - paragraph: Diperkirakan tiba 4 jam 54 menit melewati SLA
+      - cell "09/09/2026 17:56 09/09/2026 18:56":
+        - paragraph: 09/09/2026 17:56
+        - paragraph: 09/09/2026 18:56
+      - cell "Otomatis - Proyeksi Kedatangan Membaik"
+    - row "12 S33DS Rahmat Nurdiansyah Keluar Jalur Keluar jalur 1 menit yang lalu 3.0 km dari titik prediksi rute terdekat. 09/09/2026 16:28 09/09/2026 18:12 Otomatis - Kembali ke Jalur":
+      - cell "12"
+      - cell "S33DS Rahmat Nurdiansyah":
+        - paragraph: S33DS
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Keluar Jalur Keluar jalur 1 menit yang lalu 3.0 km dari titik prediksi rute terdekat.":
+        - text: Keluar Jalur
+        - paragraph: Keluar jalur 1 menit yang lalu 3.0 km dari titik prediksi rute terdekat.
+      - cell "09/09/2026 16:28 09/09/2026 18:12":
+        - paragraph: 09/09/2026 16:28
+        - paragraph: 09/09/2026 18:12
+      - cell "Otomatis - Kembali ke Jalur"
+    - row "13 S33DS Rahmat Nurdiansyah Melewati SLA Terlambat 6 jam 31 menit 09/09/2026 03:03 09/09/2026 18:12 Otomatis - Order Selesai":
+      - cell "13"
+      - cell "S33DS Rahmat Nurdiansyah":
+        - paragraph: S33DS
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Melewati SLA Terlambat 6 jam 31 menit":
+        - text: Melewati SLA
+        - paragraph: Terlambat 6 jam 31 menit
+      - cell "09/09/2026 03:03 09/09/2026 18:12":
+        - paragraph: 09/09/2026 03:03
+        - paragraph: 09/09/2026 18:12
+      - cell "Otomatis - Order Selesai"
+    - row "14 L1111LO Rahmat Nurdiansyah Tidak Update Tidak update lebih dari 31 menit 09/09/2026 11:58 09/09/2026 18:12 Otomatis - GPS terdeteksi":
+      - cell "14"
+      - cell "L1111LO Rahmat Nurdiansyah":
+        - paragraph: L1111LO
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Tidak Update Tidak update lebih dari 31 menit":
+        - text: Tidak Update
+        - paragraph: Tidak update lebih dari 31 menit
+      - cell "09/09/2026 11:58 09/09/2026 18:12":
+        - paragraph: 09/09/2026 11:58
+        - paragraph: 09/09/2026 18:12
+      - cell "Otomatis - GPS terdeteksi"
+    - row "15 L1111LO Rahmat Nurdiansyah Berisiko Terlambat Diperkirakan tiba 57 menit melewati SLA 09/09/2026 11:58 09/09/2026 18:12 Otomatis - Proyeksi Kedatangan Membaik":
+      - cell "15"
+      - cell "L1111LO Rahmat Nurdiansyah":
+        - paragraph: L1111LO
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Berisiko Terlambat Diperkirakan tiba 57 menit melewati SLA":
+        - text: Berisiko Terlambat
+        - paragraph: Diperkirakan tiba 57 menit melewati SLA
+      - cell "09/09/2026 11:58 09/09/2026 18:12":
+        - paragraph: 09/09/2026 11:58
+        - paragraph: 09/09/2026 18:12
+      - cell "Otomatis - Proyeksi Kedatangan Membaik"
+    - row "16 S33DS Rahmat Nurdiansyah Tidak Update Tidak update lebih dari 30 menit 09/09/2026 10:37 09/09/2026 16:10 Otomatis - GPS terdeteksi":
+      - cell "16"
+      - cell "S33DS Rahmat Nurdiansyah":
+        - paragraph: S33DS
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Tidak Update Tidak update lebih dari 30 menit":
+        - text: Tidak Update
+        - paragraph: Tidak update lebih dari 30 menit
+      - cell "09/09/2026 10:37 09/09/2026 16:10":
+        - paragraph: 09/09/2026 10:37
+        - paragraph: 09/09/2026 16:10
+      - cell "Otomatis - GPS terdeteksi"
+    - row "17 S33DS Rahmat Nurdiansyah Tidak Update Tidak update lebih dari 30 menit 09/09/2026 09:55 09/09/2026 10:36 Otomatis - GPS terdeteksi":
+      - cell "17"
+      - cell "S33DS Rahmat Nurdiansyah":
+        - paragraph: S33DS
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Tidak Update Tidak update lebih dari 30 menit":
+        - text: Tidak Update
+        - paragraph: Tidak update lebih dari 30 menit
+      - cell "09/09/2026 09:55 09/09/2026 10:36":
+        - paragraph: 09/09/2026 09:55
+        - paragraph: 09/09/2026 10:36
+      - cell "Otomatis - GPS terdeteksi"
+    - row "18 S33DS Rahmat Nurdiansyah Berisiko Terlambat Diperkirakan tiba 16 hari 8 jam 53 menit melewati SLA 09/09/2026 09:34 09/09/2026 10:34 Otomatis - Proyeksi Kedatangan Membaik":
+      - cell "18"
+      - cell "S33DS Rahmat Nurdiansyah":
+        - paragraph: S33DS
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Berisiko Terlambat Diperkirakan tiba 16 hari 8 jam 53 menit melewati SLA":
+        - text: Berisiko Terlambat
+        - paragraph: Diperkirakan tiba 16 hari 8 jam 53 menit melewati SLA
+      - cell "09/09/2026 09:34 09/09/2026 10:34":
+        - paragraph: 09/09/2026 09:34
+        - paragraph: 09/09/2026 10:34
+      - cell "Otomatis - Proyeksi Kedatangan Membaik"
+    - row "19 L1090EL Rahmat Nurdiansyah Tidak Update Tidak update lebih dari 30 menit 09/09/2026 07:31 09/09/2026 08:08 Otomatis - GPS terdeteksi":
+      - cell "19"
+      - cell "L1090EL Rahmat Nurdiansyah":
+        - paragraph: L1090EL
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Tidak Update Tidak update lebih dari 30 menit":
+        - text: Tidak Update
+        - paragraph: Tidak update lebih dari 30 menit
+      - cell "09/09/2026 07:31 09/09/2026 08:08":
+        - paragraph: 09/09/2026 07:31
+        - paragraph: 09/09/2026 08:08
+      - cell "Otomatis - GPS terdeteksi"
+    - row "20 L1090EL Rahmat Nurdiansyah Keluar Jalur Keluar jalur 1 menit yang lalu 3.0 km dari titik prediksi rute terdekat. 08/09/2026 21:44 09/09/2026 07:34 Otomatis - Kembali ke Jalur":
+      - cell "20"
+      - cell "L1090EL Rahmat Nurdiansyah":
+        - paragraph: L1090EL
+        - paragraph: Rahmat Nurdiansyah
+      - cell "Keluar Jalur Keluar jalur 1 menit yang lalu 3.0 km dari titik prediksi rute terdekat.":
+        - text: Keluar Jalur
+        - paragraph: Keluar jalur 1 menit yang lalu 3.0 km dari titik prediksi rute terdekat.
+      - cell "08/09/2026 21:44 09/09/2026 07:34":
+        - paragraph: 08/09/2026 21:44
+        - paragraph: 09/09/2026 07:34
+      - cell "Otomatis - Kembali ke Jalur"
+- paragraph: Menampilkan 1–20 data dari 28 data
+- button "Halaman pertama" [disabled]
+- button "Sebelumnya" [disabled]
+- button "1"
+- button "2"
+- button "Berikutnya"
+- button "Halaman terakhir"
+- region "Notifications alt+T"
+- alert

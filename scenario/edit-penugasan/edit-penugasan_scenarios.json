@@ -1,0 +1,669 @@
+{
+  "source": "Requirement user 26 Oktober 2026 dengan klarifikasi sopir Master pengganti melanjutkan tahap terakhir",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "Belum Berangkat membuka Edit dengan data awal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Form Edit terbuka dengan Nopol Sopir mode sesuai data tersimpan"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Nopol wajib kosong menolak save tanpa request edit",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Form menampilkan validasi dan assignment tidak berubah"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "Belum Berangkat simpan perubahan Nopol manual",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Nopol baru tersimpan dan sopir serta mode sebelumnya tetap"
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "Belum Berangkat simpan perubahan Sopir manual",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Nama sopir baru tersimpan manual dan mode Sopir nonaktif"
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "Belum Berangkat memilih Sopir master dan mode Sopir tersimpan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Sopir master Sigit Ananta dan mode Sopir persisten meski nopol manual"
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "Belum Berangkat mengganti Sopir master A ke B",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Sopir master baru Radit Purnama tersimpan"
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "Belum Berangkat mode Sopir menjadi Pengurus tersimpan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Mode Pengurus tersimpan tanpa mengganti identitas Sopir master"
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "title": "Belum Berangkat mode Pengurus menjadi Sopir tersimpan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Mode Sopir tersimpan dengan Master yang sama"
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "title": "Batal setelah perubahan lokal tidak menyimpan",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Nopol dan Sopir server tidak berubah setelah Batal"
+      ]
+    },
+    {
+      "id": "SCN-0010",
+      "title": "Sopir manual wajib kosong menolak save",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Tidak ada request simpan jika nama Sopir kosong"
+      ]
+    },
+    {
+      "id": "SCN-0011",
+      "title": "Perubahan unit pertama tidak mengubah sibling",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Unit2 tetap Belum Berangkat dan seluruh data assignment sama dengan baseline"
+      ]
+    },
+    {
+      "id": "SCN-0012",
+      "title": "Dalam Perjalanan Berangkat Muat membuka Edit",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Edit enabled saat perjalanan dimulai dan data terakhir terisi"
+      ]
+    },
+    {
+      "id": "SCN-0013",
+      "title": "Dalam Perjalanan Berangkat Muat simpan Nopol baru",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Nopol baru tersimpan saat status Dalam Perjalanan"
+      ]
+    },
+    {
+      "id": "SCN-0014",
+      "title": "Dalam Perjalanan mengganti Sopir Master A ke B",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Pada own QA unit1 setelah Berangkat Muat, mulai dari Master Radit Purnama dan mode Sopir",
+        "Ganti Master menjadi Sigit Ananta",
+        "Simpan dan konfirmasi; cocokkan ID/nama/mode tersimpan pada GET",
+        "Hasil DH dinilai terpisah pada SCN-0031"
+      ],
+      "expected": [
+        "Sopir Master Sigit tersimpan setelah Berangkat Muat"
+      ]
+    },
+    {
+      "id": "SCN-0015",
+      "title": "Dalam Perjalanan mengganti Sopir Master menjadi manual",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Pada own QA yang sudah Berangkat Muat, mulai dari Sopir Master",
+        "Pilih Isi Data Manual dan isi QA-EP20261026-062548-A MID MANUAL",
+        "Amati mode Sopir disabled lalu simpan melalui konfirmasi",
+        "Cocokkan nama manual, tanpa master ID, mode Pengurus; hasil DH terpisah SCN-0032"
+      ],
+      "expected": [
+        "Sopir manual tersimpan dan mode Sopir disabled"
+      ]
+    },
+    {
+      "id": "SCN-0016",
+      "title": "Dalam Perjalanan Selesai Muat mengubah mode menjadi Pengurus",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Mode Pengurus dapat tersimpan setelah muat selesai"
+      ]
+    },
+    {
+      "id": "SCN-0017",
+      "title": "Dalam Perjalanan Selesai Muat mengubah mode menjadi Sopir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Mode Sopir dapat disimpan kembali dengan Master yang sama"
+      ]
+    },
+    {
+      "id": "SCN-0018",
+      "title": "Dalam Perjalanan Berangkat Bongkar simpan Nopol Sopir dan mode sekaligus",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Ketiga perubahan tersimpan pada tahap bongkar"
+      ]
+    },
+    {
+      "id": "SCN-0019",
+      "title": "Reopen dan refresh memuat perubahan terakhir saat Dalam Perjalanan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Nopol Sopir mode terbaru tetap sesuai setelah reload"
+      ]
+    },
+    {
+      "id": "SCN-0020",
+      "title": "Sibling tetap utuh setelah edit tiga tahap perjalanan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka daftar dan filter order QA ORD2996154854",
+        "Pilih unit target melalui Aksi > Edit",
+        "Lakukan perubahan/validasi sesuai judul; jika simpan valid, konfirmasi Simpan",
+        "Cocokkan field/mode dan data GET; simpan snapshot hasil"
+      ],
+      "expected": [
+        "Unit kedua tidak berubah oleh tracking dan edit unit pertama"
+      ]
+    },
+    {
+      "id": "SCN-0021",
+      "title": "FCL Belum Berangkat simpan Nopol dan Sopir manual",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Buka Edit FCL ORD2978757955 / PSCU2610003 saat Belum Berangkat",
+        "Ubah nopol QA26113 menjadi QAEP26FCL dan Sopir manual menjadi QA-EP20261026-062548 FCL MANUAL",
+        "Biarkan field Jadwal Kapal terisi seperti hasil prefill, tanpa mengubah tanggal",
+        "Klik Simpan; amati helper Berangkat (ETD) harus setelah Closing Time dan tidak ada PUT"
+      ],
+      "expected": [
+        "Nopol Sopir baru tersimpan dan mode manual tetap Pengurus"
+      ]
+    },
+    {
+      "id": "SCN-0022",
+      "title": "FCL simpan setelah ETD dan ETA diisi ulang sesuai baseline",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka Edit FCL QA PSCU2610003 pada status yang dicatat dalam hasil",
+        "Jalankan perubahan nopol/sopir/mode yang dinyatakan pada judul",
+        "Workaround: isi ulang ETD27/10/2026 dan ETA29/10/2026 sesuai baseline yang valid; Closing Time26/10/2026 09:00 tetap",
+        "Simpan dan konfirmasi; cocokkan detail serta tracking-context dan tanggal server",
+        "Kegagalan tanpa workaround SCN-0021 tetap failed, tidak diganti menjadi passed"
+      ],
+      "expected": [
+        "Nopol Sopir manual tersimpan dengan workaround tanggal tanpa mengubah tanggal bisnis"
+      ]
+    },
+    {
+      "id": "SCN-0023",
+      "title": "FCL Belum Berangkat mengganti manual ke Master dan mode Sopir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005"
+      ],
+      "steps": [
+        "Buka Edit FCL QA PSCU2610003 pada status yang dicatat dalam hasil",
+        "Jalankan perubahan nopol/sopir/mode yang dinyatakan pada judul",
+        "Workaround: isi ulang ETD27/10/2026 dan ETA29/10/2026 sesuai baseline yang valid; Closing Time26/10/2026 09:00 tetap",
+        "Simpan dan konfirmasi; cocokkan detail serta tracking-context dan tanggal server",
+        "Kegagalan tanpa workaround SCN-0021 tetap failed, tidak diganti menjadi passed"
+      ],
+      "expected": [
+        "Master Sopir dan mode Sopir tersimpan dengan workaround tanggal"
+      ]
+    },
+    {
+      "id": "SCN-0024",
+      "title": "FCL Dalam Perjalanan simpan Nopol dan Sopir Master baru",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka Edit FCL QA PSCU2610003 pada status yang dicatat dalam hasil",
+        "Jalankan perubahan nopol/sopir/mode yang dinyatakan pada judul",
+        "Workaround: isi ulang ETD27/10/2026 dan ETA29/10/2026 sesuai baseline yang valid; Closing Time26/10/2026 09:00 tetap",
+        "Simpan dan konfirmasi; cocokkan detail serta tracking-context dan tanggal server",
+        "Kegagalan tanpa workaround SCN-0021 tetap failed, tidak diganti menjadi passed"
+      ],
+      "expected": [
+        "Edit enabled dan perubahan tersimpan setelah Berangkat Muat dengan workaround tanggal"
+      ]
+    },
+    {
+      "id": "SCN-0025",
+      "title": "FCL Dalam Perjalanan mengubah mode Sopir ke Pengurus",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka Edit FCL QA PSCU2610003 pada status yang dicatat dalam hasil",
+        "Jalankan perubahan nopol/sopir/mode yang dinyatakan pada judul",
+        "Workaround: isi ulang ETD27/10/2026 dan ETA29/10/2026 sesuai baseline yang valid; Closing Time26/10/2026 09:00 tetap",
+        "Simpan dan konfirmasi; cocokkan detail serta tracking-context dan tanggal server",
+        "Kegagalan tanpa workaround SCN-0021 tetap failed, tidak diganti menjadi passed"
+      ],
+      "expected": [
+        "Mode Pengurus tersimpan saat status Dalam Perjalanan dengan workaround tanggal"
+      ]
+    },
+    {
+      "id": "SCN-0026",
+      "title": "Pulihkan field bisnis FCL lama sesuai baseline",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka Edit FCL QA PSCU2610003 pada status yang dicatat dalam hasil",
+        "Jalankan perubahan nopol/sopir/mode yang dinyatakan pada judul",
+        "Workaround: isi ulang ETD27/10/2026 dan ETA29/10/2026 sesuai baseline yang valid; Closing Time26/10/2026 09:00 tetap",
+        "Simpan dan konfirmasi; cocokkan detail serta tracking-context dan tanggal server",
+        "Kegagalan tanpa workaround SCN-0021 tetap failed, tidak diganti menjadi passed"
+      ],
+      "expected": [
+        "Nopol Sopir mode kontainer segel dan jadwal kembali persis baseline; hanya status setup tetap berjalan"
+      ]
+    },
+    {
+      "id": "SCN-0027",
+      "title": "LCL BELUM_BERANGKAT entry Edit dan kontrol tersedia read-only",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan akun pengelola Admin/Administrator (akun1)",
+        "Filter order ORD2985878185 dan pilih assignment 71eb8ed9-4ace-43d4-8fc6-36584852921f",
+        "Aksi > Edit; cocokkan prefill nopol, sopir dan mode dengan GET",
+        "Periksa kontrol tersedia tanpa menekan Simpan; pastikan tidak ada mutasi"
+      ],
+      "expected": [
+        "Edit terbuka dengan data sumber; kontrol Nopol Sopir mode tersedia, tanpa menyimpan"
+      ]
+    },
+    {
+      "id": "SCN-0028",
+      "title": "LCL IN_PROGRESS entry Edit dan kontrol tersedia read-only",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan akun pengelola Vendor",
+        "Filter order ORD2557653613 dan pilih assignment d8329159-d74f-4884-a596-1ab56e10b05f",
+        "Aksi > Edit; cocokkan prefill nopol, sopir dan mode dengan GET",
+        "Periksa kontrol tersedia tanpa menekan Simpan; pastikan tidak ada mutasi"
+      ],
+      "expected": [
+        "Edit terbuka dengan data sumber; kontrol Nopol Sopir mode tersedia, tanpa menyimpan"
+      ]
+    },
+    {
+      "id": "SCN-0029",
+      "title": "LTL BELUM_BERANGKAT entry Edit dan kontrol tersedia read-only",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan akun pengelola Vendor",
+        "Filter order ORD1268219681 dan pilih assignment 32885d91-4ef1-454a-80bc-f1f089675c1d",
+        "Aksi > Edit; cocokkan prefill nopol, sopir dan mode dengan GET",
+        "Periksa kontrol tersedia tanpa menekan Simpan; pastikan tidak ada mutasi"
+      ],
+      "expected": [
+        "Edit terbuka dengan data sumber; kontrol Nopol Sopir mode tersedia, tanpa menyimpan"
+      ]
+    },
+    {
+      "id": "SCN-0030",
+      "title": "LTL IN_PROGRESS entry Edit dan kontrol tersedia read-only",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan akun pengelola Admin/Administrator (akun1)",
+        "Filter order ORD1964760321 dan pilih assignment 15dcf5fd-752a-4abe-82e7-e70aae3baa5d",
+        "Aksi > Edit; cocokkan prefill nopol, sopir dan mode dengan GET",
+        "Periksa kontrol tersedia tanpa menekan Simpan; pastikan tidak ada mutasi"
+      ],
+      "expected": [
+        "Edit terbuka dengan data sumber; kontrol Nopol Sopir mode tersedia, tanpa menyimpan"
+      ]
+    },
+    {
+      "id": "SCN-0031",
+      "title": "DH penggantian Sopir Master melanjutkan tahap terakhir dan hilang dari sopir lama",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Pastikan perjalanan QA telah mencapai tahap tertentu",
+        "Ganti sopir melalui Master dan mode Sopir di OPS",
+        "Periksa DH Master pengganti menerima dan melanjutkan tahap terakhir; periksa assignment hilang dari DH lama pada transaksi pergantian Master"
+      ],
+      "expected": [
+        "DH sopir lama tidak lagi menampilkan assignment terkait",
+        "DH sopir Master pengganti menerima penugasan dan melanjutkan tahap terakhir pengiriman"
+      ]
+    },
+    {
+      "id": "SCN-0032",
+      "title": "DH penggantian Sopir manual tidak masuk sopir baru dan hilang dari sopir lama",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "Pastikan baseline assignment QA muncul di DH sopir lama",
+        "Edit menjadi Sopir manual melalui OPS",
+        "Refresh/reopen DH lama; pastikan hilang dan tidak ada distribusi assignment baru ke Sopir manual"
+      ],
+      "expected": [
+        "Assignment pada DH sopir lama hilang",
+        "Sopir manual tidak menerima assignment DH baru"
+      ]
+    },
+    {
+      "id": "SCN-0033",
+      "title": "Batas field Edit FCL selain Nopol Sopir dan mode",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-02",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Buka Edit FCL milik QA",
+        "Amati NoKontainer NoSegel dan Jadwal Kapal masih editable",
+        "Minta keputusan apakah daftar tiga field adalah pembatasan"
+      ],
+      "expected": [
+        "Field tambahan dinilai berdasarkan scope yang dikonfirmasi user"
+      ]
+    }
+  ]
+}

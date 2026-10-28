@@ -1,0 +1,354 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Jaya Administrator
+  - button "16":
+    - text: "16"
+    - img
+  - text: Jaya [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Master Unit
+- heading "Master Unit" [level=2]
+- tablist:
+  - tab "Armada"
+  - tab "Jenis Armada" [selected]
+  - tab "Jenis Kontainer"
+- link "Tambah Jenis Armada":
+  - /url: /master/jenis-armada/tambah
+- button "Filter"
+- button "Riwayat"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Jenis Armada
+- textbox "Masukkan Jenis Armada"
+- text: Dimensi Area Kargo
+- textbox "Panjang"
+- text: cm
+- textbox "Lebar"
+- text: cm
+- textbox "Tinggi"
+- text: cm Volume
+- textbox [disabled]: "0"
+- text: m³ Kapasitas
+- textbox "Masukkan Kapasitas"
+- text: kg Status
+- button "Pilih Status":
+  - text: Pilih Status
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "No Jenis Armada Dimensi Area Kargo Volume Kapasitas Status Aksi":
+      - columnheader "No"
+      - columnheader "Jenis Armada Dimensi Area Kargo"
+      - columnheader "Volume"
+      - columnheader "Kapasitas"
+      - columnheader "Status"
+      - columnheader "Aksi"
+  - rowgroup:
+    - row:
+      - cell
+    - 'row "1 Trailer 40 FT L : 1220 cm W : 240 cm H : 260 cm 76,13 m3 30.000 kg Aktif Edit Hapus"':
+      - cell "1"
+      - 'cell "Trailer 40 FT L : 1220 cm W : 240 cm H : 260 cm"'
+      - cell "76,13 m3":
+        - text: 76,13 m
+        - superscript: "3"
+      - cell "30.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "2 Trailer 20 FT L : 600 cm W : 240 cm H : 260 cm 37,44 m3 25.000 kg Aktif Edit Hapus"':
+      - cell "2"
+      - 'cell "Trailer 20 FT L : 600 cm W : 240 cm H : 260 cm"'
+      - cell "37,44 m3":
+        - text: 37,44 m
+        - superscript: "3"
+      - cell "25.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "3 Tronton Bak L : 950 cm W : 245 cm H : 260 cm 60,52 m3 18.000 kg Aktif Edit Hapus"':
+      - cell "3"
+      - 'cell "Tronton Bak L : 950 cm W : 245 cm H : 260 cm"'
+      - cell "60,52 m3":
+        - text: 60,52 m
+        - superscript: "3"
+      - cell "18.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "4 Tronton Wingbox L : 950 cm W : 245 cm H : 250 cm 58,19 m3 18.000 kg Aktif Edit Hapus"':
+      - cell "4"
+      - 'cell "Tronton Wingbox L : 950 cm W : 245 cm H : 250 cm"'
+      - cell "58,19 m3":
+        - text: 58,19 m
+        - superscript: "3"
+      - cell "18.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "5 Tronton Box L : 960 cm W : 240 cm H : 220 cm 50,69 m3 15.000 kg Aktif Edit Hapus"':
+      - cell "5"
+      - 'cell "Tronton Box L : 960 cm W : 240 cm H : 220 cm"'
+      - cell "50,69 m3":
+        - text: 50,69 m
+        - superscript: "3"
+      - cell "15.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "6 Fuso Gandeng L : 1200 cm W : 245 cm H : 180 cm 52,92 m3 30.000 kg Aktif Edit Hapus"':
+      - cell "6"
+      - 'cell "Fuso Gandeng L : 1200 cm W : 245 cm H : 180 cm"'
+      - cell "52,92 m3":
+        - text: 52,92 m
+        - superscript: "3"
+      - cell "30.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "7 Fuso Berat Bak L : 650 cm W : 235 cm H : 245 cm 37,42 m3 10.000 kg Aktif Edit Hapus"':
+      - cell "7"
+      - 'cell "Fuso Berat Bak L : 650 cm W : 235 cm H : 245 cm"'
+      - cell "37,42 m3":
+        - text: 37,42 m
+        - superscript: "3"
+      - cell "10.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "8 Fuso Box L : 620 cm W : 235 cm H : 235 cm 34,24 m3 10.000 kg Aktif Edit Hapus"':
+      - cell "8"
+      - 'cell "Fuso Box L : 620 cm W : 235 cm H : 235 cm"'
+      - cell "34,24 m3":
+        - text: 34,24 m
+        - superscript: "3"
+      - cell "10.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "9 CDD Long Box L : 530 cm W : 200 cm H : 210 cm 22,26 m3 6.000 kg Aktif Edit Hapus"':
+      - cell "9"
+      - 'cell "CDD Long Box L : 530 cm W : 200 cm H : 210 cm"'
+      - cell "22,26 m3":
+        - text: 22,26 m
+        - superscript: "3"
+      - cell "6.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "10 CDD Box L : 440 cm W : 200 cm H : 190 cm 16,72 m3 5.000 kg Aktif Edit Hapus"':
+      - cell "10"
+      - 'cell "CDD Box L : 440 cm W : 200 cm H : 190 cm"'
+      - cell "16,72 m3":
+        - text: 16,72 m
+        - superscript: "3"
+      - cell "5.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "11 CDD Bak L : 440 cm W : 200 cm H : 190 cm 16,72 m3 5.000 kg Aktif Edit Hapus"':
+      - cell "11"
+      - 'cell "CDD Bak L : 440 cm W : 200 cm H : 190 cm"'
+      - cell "16,72 m3":
+        - text: 16,72 m
+        - superscript: "3"
+      - cell "5.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "12 CDE Bak L : 320 cm W : 170 cm H : 180 cm 9,79 m3 2.600 kg Aktif Edit Hapus"':
+      - cell "12"
+      - 'cell "CDE Bak L : 320 cm W : 170 cm H : 180 cm"'
+      - cell "9,79 m3":
+        - text: 9,79 m
+        - superscript: "3"
+      - cell "2.600 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "13 CDE Box L : 320 cm W : 170 cm H : 170 cm 9,25 m3 2.200 kg Aktif Edit Hapus"':
+      - cell "13"
+      - 'cell "CDE Box L : 320 cm W : 170 cm H : 170 cm"'
+      - cell "9,25 m3":
+        - text: 9,25 m
+        - superscript: "3"
+      - cell "2.200 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "14 Pickup Box L : 235 cm W : 162 cm H : 130 cm 4,95 m3 1.000 kg Aktif Edit Hapus"':
+      - cell "14"
+      - 'cell "Pickup Box L : 235 cm W : 162 cm H : 130 cm"'
+      - cell "4,95 m3":
+        - text: 4,95 m
+        - superscript: "3"
+      - cell "1.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "15 Pickup Bak L : 235 cm W : 162 cm H : 130 cm 4,95 m3 1.000 kg Aktif Edit Hapus"':
+      - cell "15"
+      - 'cell "Pickup Bak L : 235 cm W : 162 cm H : 130 cm"'
+      - cell "4,95 m3":
+        - text: 4,95 m
+        - superscript: "3"
+      - cell "1.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "16 Van L : 220 cm W : 135 cm H : 130 cm 3,86 m3 720 kg Aktif Edit Hapus"':
+      - cell "16"
+      - 'cell "Van L : 220 cm W : 135 cm H : 130 cm"'
+      - cell "3,86 m3":
+        - text: 3,86 m
+        - superscript: "3"
+      - cell "720 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "17 Fuso Berat L : 570 cm W : 230 cm H : 220 cm 28,84 m3 8.000 kg Aktif Edit Hapus"':
+      - cell "17"
+      - 'cell "Fuso Berat L : 570 cm W : 230 cm H : 220 cm"'
+      - cell "28,84 m3":
+        - text: 28,84 m
+        - superscript: "3"
+      - cell "8.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - 'row "18 Truck Trailer 40ft L : 1200 cm W : 240 cm H : 250 cm 72 m3 26.000 kg Aktif Edit Hapus"':
+      - cell "18"
+      - 'cell "Truck Trailer 40ft L : 1200 cm W : 240 cm H : 250 cm"'
+      - cell "72 m3":
+        - text: 72 m
+        - superscript: "3"
+      - cell "26.000 kg"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+- paragraph: Menampilkan 1–18 data dari 18 data
+- region "Notifications alt+T"
+- alert

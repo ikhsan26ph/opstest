@@ -1,0 +1,16 @@
+- img "Auth background"
+- text: Lintas Karya Logistik
+- heading "Selamat Datang" [level=1]
+- paragraph: Silakan masukkan informasi akun anda
+- text: Email *
+- textbox "Masukkan Email"
+- text: Password *
+- textbox "Masukkan Password"
+- img
+- link "Lupa Password?":
+  - /url: /lupa-password
+- button "Login"
+- button:
+  - img
+- region "Notifications alt+T"
+- alert

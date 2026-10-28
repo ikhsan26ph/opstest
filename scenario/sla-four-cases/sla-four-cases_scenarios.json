@@ -1,0 +1,276 @@
+{
+  "source": "Klarifikasi user 27 Oktober 2026: tiga pemicu + multidrop dari request awal, semua berhenti SB terakhir.",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "key": "N",
+      "title": "N: SLA belum berjalan sebelum Berangkat Bongkar",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Simpan Berangkat Muat dan Selesai Muat untuk semua pickup",
+        "Periksa Progres sebelum Berangkat Bongkar"
+      ],
+      "expected": [
+        "Durasi SLA belum berjalan sebelum Berangkat Bongkar tersimpan"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "key": "N",
+      "title": "N: SLA mulai saat Berangkat Bongkar menuju Semarang",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Simpan Berangkat Bongkar setelah seluruh pickup selesai",
+        "Baca durasi dan ulangi pembacaan"
+      ],
+      "expected": [
+        "Durasi dihitung dari Berangkat Bongkar menuju Semarang"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "key": "N",
+      "title": "N: SLA berhenti pada Selesai Bongkar terakhir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Simpan Selesai Bongkar terakhir",
+        "Baca hasil durasi final sistem segera dan setelah jeda"
+      ],
+      "expected": [
+        "Durasi final berakhir pada timestamp Selesai Bongkar terakhir dan tidak bertambah"
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "key": "MP1",
+      "title": "MP1: SLA belum berjalan sebelum Berangkat Bongkar",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Simpan Berangkat Muat dan Selesai Muat untuk semua pickup",
+        "Periksa Progres sebelum Berangkat Bongkar"
+      ],
+      "expected": [
+        "Durasi SLA belum berjalan sebelum Berangkat Bongkar tersimpan"
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "key": "MP1",
+      "title": "MP1: SLA mulai saat Berangkat Bongkar menuju Semarang",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Simpan Berangkat Bongkar setelah seluruh pickup selesai",
+        "Baca durasi dan ulangi pembacaan"
+      ],
+      "expected": [
+        "Durasi dihitung dari Berangkat Bongkar menuju Semarang"
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "key": "MP1",
+      "title": "MP1: SLA berhenti pada Selesai Bongkar terakhir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Simpan Selesai Bongkar terakhir",
+        "Baca hasil durasi final sistem segera dan setelah jeda"
+      ],
+      "expected": [
+        "Durasi final berakhir pada timestamp Selesai Bongkar terakhir dan tidak bertambah"
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "key": "MP2",
+      "title": "MP2: SLA belum berjalan sebelum Berangkat Muat menuju Gresik",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Simpan Berangkat Muat dan Selesai Muat Surabaya",
+        "Periksa Progres sebelum Berangkat Muat ke Gresik"
+      ],
+      "expected": [
+        "Durasi SLA belum berjalan sebelum Berangkat Muat menuju Gresik tersimpan"
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "key": "MP2",
+      "title": "MP2: SLA mulai saat Berangkat Muat menuju Gresik",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Simpan Berangkat Muat menuju pickup Gresik setelah muat Surabaya selesai",
+        "Periksa durasi dan ulangi"
+      ],
+      "expected": [
+        "Durasi dihitung sejak Berangkat Muat menuju Gresik"
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "key": "MP2",
+      "title": "MP2: SLA berlanjut selama muat Gresik dan keberangkatan bongkar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Baca durasi setelah jeda saat muat Gresik",
+        "Simpan Selesai Muat Gresik dan Berangkat Bongkar Semarang",
+        "Baca ulang"
+      ],
+      "expected": [
+        "Durasi terus bertambah selama muat Gresik dan tidak reset saat Berangkat Bongkar"
+      ]
+    },
+    {
+      "id": "SCN-0010",
+      "key": "MP2",
+      "title": "MP2: SLA berhenti pada Selesai Bongkar terakhir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Simpan Selesai Bongkar terakhir",
+        "Baca hasil durasi final sistem segera dan setelah jeda"
+      ],
+      "expected": [
+        "Durasi final berakhir pada Selesai Bongkar terakhir dan tidak bertambah"
+      ]
+    },
+    {
+      "id": "SCN-0011",
+      "key": "MD",
+      "title": "MD: SLA belum berjalan sebelum Berangkat Bongkar pertama",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "Simpan Berangkat Muat dan Selesai Muat Surabaya",
+        "Periksa Progres sebelum Berangkat Bongkar pertama"
+      ],
+      "expected": [
+        "Durasi SLA belum berjalan sebelum Berangkat Bongkar pertama tersimpan"
+      ]
+    },
+    {
+      "id": "SCN-0012",
+      "key": "MD",
+      "title": "MD: SLA mulai saat Berangkat Bongkar pertama",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "Simpan Berangkat Bongkar menuju bongkar pertama di Semarang",
+        "Periksa durasi dan ulangi"
+      ],
+      "expected": [
+        "Durasi dihitung sejak Berangkat Bongkar pertama"
+      ]
+    },
+    {
+      "id": "SCN-0013",
+      "key": "MD",
+      "title": "MD: SLA tetap berjalan setelah Selesai Bongkar pertama",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "Simpan Selesai Bongkar pertama sementara bongkar kedua belum selesai",
+        "Baca Progres dan ulang setelah jeda"
+      ],
+      "expected": [
+        "SLA tetap berjalan sampai bongkar terakhir; durasi bertambah setelah Selesai Bongkar pertama"
+      ]
+    },
+    {
+      "id": "SCN-0014",
+      "key": "MD",
+      "title": "MD: SLA tidak reset saat Berangkat Bongkar kedua",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "Simpan Berangkat Bongkar menuju lokasi kedua",
+        "Periksa durasi dan riwayat"
+      ],
+      "expected": [
+        "SLA tetap mengacu pada Berangkat Bongkar pertama tanpa reset"
+      ]
+    },
+    {
+      "id": "SCN-0015",
+      "key": "MD",
+      "title": "MD: SLA berhenti pada Selesai Bongkar terakhir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "Simpan Selesai Bongkar kedua/terakhir",
+        "Baca hasil durasi final sistem segera dan setelah jeda"
+      ],
+      "expected": [
+        "Durasi final berakhir pada Selesai Bongkar terakhir dan tidak bertambah"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "buat-order",
+   "ok": true,
+   "info": {
+    "url": "https://ops-staging.prahu-hub.com/order/buat",
+    "snap": "01-buat-order.yml",
+    "shot": "01-buat-order.png"
+   }
+  }
+ ]
+}

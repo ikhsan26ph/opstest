@@ -1,0 +1,723 @@
+{
+  "source": "Requirement dan enam screenshot user 2026-10-26; penugasan-parsial_spec.md",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "FTL tombol Simpan per card dan Simpan Semua",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002"
+      ],
+      "steps": [
+        "FTL tombol Simpan per card dan Simpan Semua"
+      ],
+      "expected": [
+        "3 card, 3 Simpan, 1 Simpan Semua; jadwal kapal tidak tampil"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "FTL Simpan card kosong validasi hanya card terpilih",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "FTL Simpan card kosong validasi hanya card terpilih"
+      ],
+      "expected": [
+        "Card 2 error wajib; card 1 dan 3 tanpa error; tidak ada POST"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "FTL Simpan Semua menolak seluruh card belum lengkap",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "FTL Simpan Semua menolak seluruh card belum lengkap"
+      ],
+      "expected": [
+        "Tidak menyimpan card 2 meskipun lengkap; card 1 dan 3 divalidasi"
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "FTL simpan card tengah hanya menyimpan data card terpilih",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "FTL simpan card tengah hanya menyimpan data card terpilih"
+      ],
+      "expected": [
+        "Satu assignment QA26102; remainingCount 2; card tersimpan hilang dan input card lain bertahan"
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "FTL pop-up setelah simpan parsial menyediakan dua aksi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-006"
+      ],
+      "steps": [
+        "Pilih order QA dengan >1 unit belum ditugaskan",
+        "Lengkapi satu card saja, biarkan card lain kosong",
+        "Klik Simpan pada card, konfirmasikan dialog awal",
+        "Tunggu POST /api/penugasan 201 dan remainingCount >0",
+        "Periksa pop-up setelah sukses memiliki Daftar Penugasan dan Tugaskan Armada Lain; judul tidak dibatasi sesuai klarifikasi user"
+      ],
+      "expected": [
+        "Setelah simpan parsial berhasil dan masih ada sisa, pop-up menyediakan Daftar Penugasan dan Tugaskan Armada Lain; judul tidak ditentukan."
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "FTL aksi pop-up parsial dan lanjut armada tersisa",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-006"
+      ],
+      "steps": [
+        "FTL aksi pop-up parsial dan lanjut armada tersisa"
+      ],
+      "expected": [
+        "Daftar Penugasan dan Tugaskan Armada Lain; lanjut tetap di form dengan 2 card"
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "FTL progres parsial bertahan setelah refresh",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "FTL progres parsial bertahan setelah refresh"
+      ],
+      "expected": [
+        "Order tetap dapat dipilih dan hanya 2 card belum ditugaskan"
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "title": "FTL manual pengurus WhatsApp opsional",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003",
+        "REQ-001"
+      ],
+      "steps": [
+        "FTL manual pengurus WhatsApp opsional"
+      ],
+      "expected": [
+        "Mode pengurus tersedia; WhatsApp kosong tidak memblokir; card lain kosong diabaikan"
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "title": "FTL Daftar Penugasan setelah parsial dan buka kembali",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-006",
+        "REQ-005"
+      ],
+      "steps": [
+        "FTL Daftar Penugasan setelah parsial dan buka kembali"
+      ],
+      "expected": [
+        "Kembali daftar; QA tersimpan terlihat; buka form hanya sisa 1"
+      ]
+    },
+    {
+      "id": "SCN-0010",
+      "title": "FTL Simpan card terakhir menuntaskan order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-007",
+        "REQ-005"
+      ],
+      "steps": [
+        "FTL Simpan card terakhir menuntaskan order"
+      ],
+      "expected": [
+        "Assigned 3 remaining 0, pop-up hanya Daftar Penugasan, tanpa card"
+      ]
+    },
+    {
+      "id": "SCN-0011",
+      "title": "FTL order lengkap hilang dari Pilih Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "FTL order lengkap hilang dari Pilih Order"
+      ],
+      "expected": [
+        "Order selesai ditugaskan tidak dapat dipilih ulang"
+      ]
+    },
+    {
+      "id": "SCN-0012",
+      "title": "FCL jadwal kosong menyembunyikan seluruh form kontainer",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008"
+      ],
+      "steps": [
+        "FCL jadwal kosong menyembunyikan seluruh form kontainer"
+      ],
+      "expected": [
+        "Jadwal di atas, 0 card, Simpan Semua disabled dan pesan petunjuk"
+      ]
+    },
+    {
+      "id": "SCN-0013",
+      "title": "FCL Direct jadwal belum lengkap tetap menutup form",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL Direct jadwal belum lengkap tetap menutup form"
+      ],
+      "expected": [
+        "ETA kosong: 0 kontainer dan Simpan Semua disabled"
+      ]
+    },
+    {
+      "id": "SCN-0014",
+      "title": "FCL Direct lengkap membuka card di bawah jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-002"
+      ],
+      "steps": [
+        "FCL Direct lengkap membuka card di bawah jadwal"
+      ],
+      "expected": [
+        "3 kontainer dan 3 Simpan; jadwal sebelum card"
+      ]
+    },
+    {
+      "id": "SCN-0015",
+      "title": "FCL validasi card kosong tidak menjalar ke kontainer lain",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "FCL validasi card kosong tidak menjalar ke kontainer lain"
+      ],
+      "expected": [
+        "Empat field wajib card 2 error; card 1 dan 3 tidak error; tanpa POST FCL"
+      ]
+    },
+    {
+      "id": "SCN-0016",
+      "title": "FCL Simpan Semua gagal saat card lain belum lengkap",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "FCL Simpan Semua gagal saat card lain belum lengkap"
+      ],
+      "expected": [
+        "Card lengkap tidak disimpan, card 1 dan 3 divalidasi"
+      ]
+    },
+    {
+      "id": "SCN-0017",
+      "title": "FCL Direct simpan satu kontainer dan jadwal bersama",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003",
+        "REQ-005",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL Direct simpan satu kontainer dan jadwal bersama"
+      ],
+      "expected": [
+        "Satu kontainer PSCU2610002 tersimpan, sisa2 dan jadwal benar"
+      ]
+    },
+    {
+      "id": "SCN-0018",
+      "title": "FCL pop-up setelah simpan parsial menyediakan dua aksi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-006"
+      ],
+      "steps": [
+        "Pilih order QA dengan >1 unit belum ditugaskan",
+        "Lengkapi satu card saja, biarkan card lain kosong",
+        "Klik Simpan pada card, konfirmasikan dialog awal",
+        "Tunggu POST /api/penugasan 201 dan remainingCount >0",
+        "Periksa pop-up setelah sukses memiliki Daftar Penugasan dan Tugaskan Armada Lain; judul tidak dibatasi sesuai klarifikasi user"
+      ],
+      "expected": [
+        "Setelah simpan parsial berhasil dan masih ada sisa, pop-up menyediakan Daftar Penugasan dan Tugaskan Armada Lain; judul tidak ditentukan."
+      ]
+    },
+    {
+      "id": "SCN-0019",
+      "title": "FCL jadwal tersimpan menjadi informasi read-only",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-010"
+      ],
+      "steps": [
+        "FCL jadwal tersimpan menjadi informasi read-only"
+      ],
+      "expected": [
+        "Tidak ada field jadwal; informasi di atas dua kontainer tersisa"
+      ]
+    },
+    {
+      "id": "SCN-0020",
+      "title": "FCL read-only dan sisa kontainer bertahan setelah refresh",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-010",
+        "REQ-005"
+      ],
+      "steps": [
+        "FCL read-only dan sisa kontainer bertahan setelah refresh"
+      ],
+      "expected": [
+        "Refresh dan pilih order mempertahankan jadwal dan hanya2 card"
+      ]
+    },
+    {
+      "id": "SCN-0021",
+      "title": "FCL Simpan Semua hanya menyimpan seluruh kontainer tersisa",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004",
+        "REQ-007",
+        "REQ-010"
+      ],
+      "steps": [
+        "FCL Simpan Semua hanya menyimpan seluruh kontainer tersisa"
+      ],
+      "expected": [
+        "Dua sisa tersimpan, total3 remaining0, jadwal tidak berubah; pop-up final hanya daftar"
+      ]
+    },
+    {
+      "id": "SCN-0022",
+      "title": "FCL Connecting wajib lengkap selain kapal utama",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL Connecting wajib lengkap selain kapal utama"
+      ],
+      "expected": [
+        "Kapal utama lengkap tetapi connecting kosong: card tersembunyi"
+      ]
+    },
+    {
+      "id": "SCN-0023",
+      "title": "FCL Connecting tanpa ETD tidak membuka kontainer",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL Connecting tanpa ETD tidak membuka kontainer"
+      ],
+      "expected": [
+        "Port/kapal/voyage lengkap, ETD Connecting kosong: gate tertutup"
+      ]
+    },
+    {
+      "id": "SCN-0024",
+      "title": "FCL Connecting lengkap membuka form kontainer",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL Connecting lengkap membuka form kontainer"
+      ],
+      "expected": [
+        "2 card Door to CY dengan tombol Simpan"
+      ]
+    },
+    {
+      "id": "SCN-0025",
+      "title": "FCL tambahan connecting kosong menutup form sampai lengkap",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL tambahan connecting kosong menutup form sampai lengkap"
+      ],
+      "expected": [
+        "Row tambahan wajib lengkap; hapus row kosong membuka kembali"
+      ]
+    },
+    {
+      "id": "SCN-0026",
+      "title": "FCL seluruh connecting dan field utama mempengaruhi gate",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL seluruh connecting dan field utama mempengaruhi gate"
+      ],
+      "expected": [
+        "2 connecting lengkap membuka form; mengosongkan voyage/kapal menyembunyikan kembali"
+      ]
+    },
+    {
+      "id": "SCN-0027",
+      "title": "FCL Periksa Kembali tidak menyimpan dan mempertahankan input",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-003"
+      ],
+      "steps": [
+        "FCL Periksa Kembali tidak menyimpan dan mempertahankan input"
+      ],
+      "expected": [
+        "Konfirmasi awal dapat dibatalkan tanpa write"
+      ]
+    },
+    {
+      "id": "SCN-0028",
+      "title": "FCL Connecting parsial menyimpan dua connecting secara utuh",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-010"
+      ],
+      "steps": [
+        "FCL Connecting parsial menyimpan dua connecting secara utuh"
+      ],
+      "expected": [
+        "Satu kontainer, dua jadwal connecting tersimpan berurutan"
+      ]
+    },
+    {
+      "id": "SCN-0029",
+      "title": "FCL tanggal read-only konsisten setelah buka ulang di Asia Jakarta",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-010"
+      ],
+      "steps": [
+        "Pada FCL Door to CY QA ORD2978940632, isi Connecting: ETD27/10, ETA30/10, ETD Connecting28/10 dan29/10/2026",
+        "Simpan satu kontainer, konfirmasi, tunggu HTTP201 remainingCount1",
+        "Klik Daftar Penugasan, buka Tambah Penugasan, pilih order yang sama",
+        "Baca tanggal informasi jadwal kapal",
+        "Ulangi refresh dengan timezone browser terverifikasi Asia/Jakarta dan cocokkan dengan payload/GET Order"
+      ],
+      "expected": [
+        "ETD27/10 ETA30/10 Connecting28/10 dan29/10 tetap sama seperti input"
+      ]
+    },
+    {
+      "id": "SCN-0030",
+      "title": "FCL Connecting read-only menampilkan seluruh connecting dan sisa card",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-010",
+        "REQ-005"
+      ],
+      "steps": [
+        "FCL Connecting read-only menampilkan seluruh connecting dan sisa card"
+      ],
+      "expected": [
+        "Dua connecting nama/port/voyage urut benar, tanpa input jadwal, sisa1"
+      ]
+    },
+    {
+      "id": "SCN-0031",
+      "title": "FCL Connecting Simpan card terakhir pop-up final",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-007",
+        "REQ-010"
+      ],
+      "steps": [
+        "FCL Connecting Simpan card terakhir pop-up final"
+      ],
+      "expected": [
+        "Total2 tersimpan, remaining0; hanya daftar; jadwal tidak berubah"
+      ]
+    },
+    {
+      "id": "SCN-0032",
+      "title": "FTL Simpan Semua dari order tanpa penugasan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004",
+        "REQ-007"
+      ],
+      "steps": [
+        "FTL Simpan Semua dari order tanpa penugasan"
+      ],
+      "expected": [
+        "Dua armada dalam satu request; remaining0; pop-up final satu tombol"
+      ]
+    },
+    {
+      "id": "SCN-0033",
+      "title": "FCL CY to Door validasi Simpan Semua mengikuti field existing",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-004"
+      ],
+      "steps": [
+        "FCL CY to Door validasi Simpan Semua mengikuti field existing"
+      ],
+      "expected": [
+        "Tanpa armada/sopir muat; No. Kontainer dan No. Segel wajib pada dua card"
+      ]
+    },
+    {
+      "id": "SCN-0034",
+      "title": "FCL Simpan Semua order baru menyimpan jadwal dan seluruh kontainer",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004",
+        "REQ-007",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL Simpan Semua order baru menyimpan jadwal dan seluruh kontainer"
+      ],
+      "expected": [
+        "CY to Door dua assignment dan Direct satu payload; assigned2 remaining0; hanya daftar"
+      ]
+    },
+    {
+      "id": "SCN-0035",
+      "title": "FCL CY to CY Simpan satu card saat dua card lengkap",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003",
+        "REQ-005"
+      ],
+      "steps": [
+        "FCL CY to CY Simpan satu card saat dua card lengkap"
+      ],
+      "expected": [
+        "Hanya card1 tersimpan; data lengkap card2 tetap di form"
+      ]
+    },
+    {
+      "id": "SCN-0036",
+      "title": "FCL panel jadwal read-only dapat ditutup dibuka tanpa mengubah sisa",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-010"
+      ],
+      "steps": [
+        "FCL panel jadwal read-only dapat ditutup dibuka tanpa mengubah sisa"
+      ],
+      "expected": [
+        "Collapse/expand tidak mengubah input atau memicu write"
+      ]
+    },
+    {
+      "id": "SCN-0037",
+      "title": "FCL CY to CY Simpan Semua sisa satu card",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004",
+        "REQ-007",
+        "REQ-010"
+      ],
+      "steps": [
+        "FCL CY to CY Simpan Semua sisa satu card"
+      ],
+      "expected": [
+        "Simpan sisa saja, jadwal tidak di-submit ulang; final hanya daftar"
+      ]
+    },
+    {
+      "id": "SCN-0038",
+      "title": "Rekonsiliasi enam order dan empat belas unit QA tersimpan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-003",
+        "REQ-004",
+        "REQ-005"
+      ],
+      "steps": [
+        "Rekonsiliasi enam order dan empat belas unit QA tersimpan"
+      ],
+      "expected": [
+        "Semua14 unit unik di daftar; jumlah tiap order3/2/3/2/2/2; tidak duplikat"
+      ]
+    },
+    {
+      "id": "SCN-0039",
+      "title": "Seluruh order QA lengkap tidak muncul lagi pada Pilih Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "Seluruh order QA lengkap tidak muncul lagi pada Pilih Order"
+      ],
+      "expected": [
+        "Keenam order yang lengkap tidak muncul"
+      ]
+    },
+    {
+      "id": "SCN-0040",
+      "title": "FCL Direct setiap field wajib mengendalikan gate kontainer",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL Direct setiap field wajib mengendalikan gate kontainer"
+      ],
+      "expected": [
+        "Masing-masing Pelayaran/Nama/Voyage/Closing/ETD/ETA kosong menyembunyikan card"
+      ]
+    },
+    {
+      "id": "SCN-0041",
+      "title": "FCL Connecting pelabuhan wajib sebelum card tampil",
+      "category": "negative",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-008",
+        "REQ-009"
+      ],
+      "steps": [
+        "FCL Connecting pelabuhan wajib sebelum card tampil"
+      ],
+      "expected": [
+        "Kapal/voyage/ETD terisi tanpa pelabuhan tetap tersembunyi"
+      ]
+    },
+    {
+      "id": "SCN-0042",
+      "title": "Kontrol existing master dan mode penugasan tetap dapat digunakan secara lokal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Kontrol existing master dan mode penugasan tetap dapat digunakan secara lokal"
+      ],
+      "expected": [
+        "Master armada/sopir dapat dipilih, mode Sopir dan Pengurus dapat diganti; tanpa simpan data lama"
+      ]
+    }
+  ]
+}

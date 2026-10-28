@@ -1,0 +1,48 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "buat-order",
+   "ok": true,
+   "info": {
+    "url": "https://ops-staging.prahu-hub.com/order",
+    "snap": "01-buat-order.yml",
+    "shot": "01-buat-order.png"
+   }
+  },
+  {
+   "step": "jenis-FTL",
+   "ok": true,
+   "info": {
+    "snap": "02-jenis-FTL.yml",
+    "lists": []
+   }
+  },
+  {
+   "step": "jenis-FCL",
+   "ok": true,
+   "info": {
+    "snap": "03-jenis-FCL.yml",
+    "lists": []
+   }
+  },
+  {
+   "step": "jenis-LTL",
+   "ok": true,
+   "info": {
+    "snap": "04-jenis-LTL.yml",
+    "lists": []
+   }
+  },
+  {
+   "step": "jenis-LCL",
+   "ok": true,
+   "info": {
+    "snap": "05-jenis-LCL.yml",
+    "lists": []
+   }
+  }
+ ]
+}

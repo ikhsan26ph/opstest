@@ -1,0 +1,33 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "open",
+   "ok": true,
+   "info": "5/26/16.png"
+  },
+  {
+   "step": "terdekat-panels",
+   "info": {
+    "semua1": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nTidak ada armada terdekat",
+    "bongkar": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nMemuat...",
+    "semua2": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nTidak ada armada terdekat",
+    "z0": "5/26/16.png",
+    "bongkarNow": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nTidak ada armada terdekat"
+   }
+  },
+  {
+   "step": "terdekat",
+   "ok": true,
+   "info": {
+    "semua1": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nTidak ada armada terdekat",
+    "bongkar": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nMemuat...",
+    "semua2": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nTidak ada armada terdekat",
+    "z0": "5/26/16.png",
+    "z1": "no-card"
+   }
+  }
+ ]
+}

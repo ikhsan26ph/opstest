@@ -1,0 +1,67 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "open",
+   "ok": true,
+   "info": "5/26/16.png"
+  },
+  {
+   "step": "terdekat",
+   "ok": false,
+   "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for getByText('L 9878 KL', { exact: true }).last()\n"
+  },
+  {
+   "step": "track-web-fcl",
+   "ok": true,
+   "info": [
+    {
+     "q": "?orderCode=ORD9523666757&nopol=L1090EL",
+     "pos": null,
+     "markers": [
+      {
+       "lat": -7.5634508,
+       "lng": 112.641951,
+       "status": "BERANGKAT_MUAT",
+       "label": "Berangkat Muat",
+       "assignmentId": "afd5102f-d311-4b5a-b107-56dec55f10ea",
+       "nopol": "L1090EL",
+       "alamat": "Jalan Rungkut Alang-alang, Kalirungkut, Rungkut, Jawa Timur, 60293",
+       "time": "2026-09-16T02:09:11.719Z"
+      },
+      {
+       "lat": -7.5634508,
+       "lng": 112.641951,
+       "status": "SELESAI_MUAT",
+       "label": "Selesai Muat",
+       "assignmentId": "afd5102f-d311-4b5a-b107-56dec55f10ea",
+       "nopol": "L1090EL",
+       "alamat": "Jalan Rungkut Alang-alang, Kalirungkut, Rungkut, Jawa Timur, 60293",
+       "time": "2026-09-16T02:09:18.780Z"
+      }
+     ],
+     "msg": "Tracking retrieved"
+    },
+    {
+     "q": "?orderCode=ORD9965441127&nopol=L1090EL",
+     "pos": null,
+     "markers": [
+      {
+       "lat": -7.2336929,
+       "lng": 112.7294307,
+       "status": "BERANGKAT_MUAT",
+       "label": "Berangkat Muat",
+       "assignmentId": "f2da8e17-b92f-4d60-9040-b3789a550c60",
+       "nopol": "L1090EL",
+       "alamat": "Jl. Raya Cikuda Wanaherang, Wanaherang, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16965, Wanaherang, Gunungputri, Jawa Barat, 16965",
+       "time": "2026-09-22T07:55:14.220Z"
+      }
+     ],
+     "msg": "Tracking retrieved"
+    }
+   ]
+  }
+ ]
+}

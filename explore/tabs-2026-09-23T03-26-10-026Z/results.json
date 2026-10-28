@@ -1,0 +1,1821 @@
+{
+  "started": "2026-09-23T03:26:10.027Z",
+  "account": "subuser",
+  "events": [
+    {
+      "type": "request",
+      "path": "/api/system/status",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/setting/site",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/auth/refresh",
+      "method": "POST"
+    },
+    {
+      "type": "request",
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "type": "response",
+      "path": "/api/setting/site",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/system/status",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/auth/refresh",
+      "status": 401
+    },
+    {
+      "type": "response",
+      "path": "/api/auth/login",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/quota/summary",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/setting/general",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/notifications/unread-count",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/notifications/unread-count",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/notifications/unread-count",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/setting/general",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/quota/summary",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/notifications/unread-count",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/quota/summary",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/setting/general",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/notifications/unread-count",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/notifications/unread-count",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/monitoring-tracking/summary",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/monitoring-tracking/fleet",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/monitoring-tracking/nearby-muat",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/setting/system",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/monitoring-tracking/cases",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/notifications/unread-count",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/quota/summary",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/setting/general",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/system/status",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/setting/site",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/auth/refresh",
+      "method": "POST"
+    },
+    {
+      "type": "response",
+      "path": "/api/system/status",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/setting/site",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/auth/refresh",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/quota/summary",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/setting/general",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/notifications/unread-count",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/notifications/unread-count",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/armadas/vendors",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/notifications/unread-count",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/quota/summary",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/setting/general",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/armadas/vendors",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/armadas/vendors",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/armadas/vendors",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/notifications/unread-count",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/armadas/vendors",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/armadas/vendors",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/jenis-armada",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/jenis-armada",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/jenis-kontainers",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/jenis-kontainers",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/system/status",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/setting/site",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/auth/refresh",
+      "method": "POST"
+    },
+    {
+      "type": "response",
+      "path": "/api/system/status",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/setting/site",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/auth/refresh",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/quota/summary",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/setting/general",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/notifications/unread-count",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/notifications/unread-count",
+      "method": "GET"
+    },
+    {
+      "type": "request",
+      "path": "/api/monitoring-tracking/track/orders",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/setting/general",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/quota/summary",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/monitoring-tracking/track/orders",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/notifications/unread-count",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/monitoring-tracking/track/orders",
+      "method": "GET"
+    },
+    {
+      "type": "response",
+      "path": "/api/notifications/unread-count",
+      "status": 200
+    },
+    {
+      "type": "response",
+      "path": "/api/monitoring-tracking/track/orders",
+      "status": 200
+    },
+    {
+      "type": "request",
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "type": "response",
+      "path": "/api/auth/logout",
+      "status": 200
+    }
+  ],
+  "states": [
+    {
+      "account": "subuser",
+      "at": "2026-09-23T03:26:18.229Z",
+      "route": "/master/unit",
+      "label": "tab-Jenis Armada",
+      "selectedVerified": true,
+      "snapshot": "explore/tabs-2026-09-23T03-26-10-026Z/-master-unit-Jenis-Armada.yml",
+      "headers": [
+        "",
+        "",
+        "Kuota Order",
+        "Master Unit"
+      ],
+      "sidebar": [
+        {
+          "text": "Prahu Hub - TMS",
+          "href": "/"
+        },
+        {
+          "text": "Monitoring",
+          "href": "/monitoring"
+        },
+        {
+          "text": "Tracking & Location",
+          "href": "/tracking-location"
+        },
+        {
+          "text": "Progres Pengiriman",
+          "href": "/progres-pengiriman"
+        },
+        {
+          "text": "Operasional",
+          "href": "/dashboard-operasional"
+        },
+        {
+          "text": "Order",
+          "href": "/order"
+        },
+        {
+          "text": "Penugasan Tracking",
+          "href": "/penugasan-tracking"
+        },
+        {
+          "text": "Master Provinsi",
+          "href": "/master/provinsi"
+        },
+        {
+          "text": "Master Kota",
+          "href": "/master/kota"
+        },
+        {
+          "text": "Master Kecamatan",
+          "href": "/master/kecamatan"
+        },
+        {
+          "text": "Master Kelurahan",
+          "href": "/master/kelurahan"
+        },
+        {
+          "text": "Master Drop Point",
+          "href": "/master/customer"
+        },
+        {
+          "text": "Master Waktu Perjalanan",
+          "href": "/master/waktu-perjalanan"
+        },
+        {
+          "text": "Master Pelabuhan",
+          "href": "/master/pelabuhan"
+        },
+        {
+          "text": "Master Pelayaran",
+          "href": "/master/pelayaran"
+        },
+        {
+          "text": "Master Unit",
+          "href": "/master/unit"
+        },
+        {
+          "text": "Master Sopir",
+          "href": "/master/sopir"
+        },
+        {
+          "text": "Master CS",
+          "href": "/master/cs"
+        },
+        {
+          "text": "Manajemen Vendor",
+          "href": "/manajemen-vendor"
+        },
+        {
+          "text": "Pengaturan Akun",
+          "href": "/pengaturan-akun"
+        },
+        {
+          "text": "Akun Saya",
+          "href": "/akun-saya"
+        },
+        {
+          "text": "Pengaturan Sistem",
+          "href": "/setting/sistem"
+        },
+        {
+          "text": "Pengaturan Notifikasi",
+          "href": "/setting/general"
+        },
+        {
+          "text": "Preferensi Notifikasi",
+          "href": "/setting/preferensi-notifikasi"
+        }
+      ],
+      "testids": 0,
+      "selectors": [
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Prahu Hub - TMS Prahu Hub - TMS",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Dashboard",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Monitoring",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Tracking & Location",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Progres Pengiriman",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Operasional",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Order",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Penugasan Tracking",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Master Wilayah",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Provinsi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kota",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kecamatan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kelurahan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Master Operasional",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Drop Point",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Waktu Perjalanan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Pelabuhan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Pelayaran",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Unit",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Sopir",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master CS",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Manajemen Vendor",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Akun",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Akun Saya",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Sistem",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Pusat Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Preferensi Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "heading",
+          "name": "Kuota Order",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Aktifkan mode gelap",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Toggle Sidebar",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "16",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Logout",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Beranda",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "heading",
+          "name": "Master Unit",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "tab",
+          "name": "Armada",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "tab",
+          "name": "Jenis Armada",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "tab",
+          "name": "Jenis Kontainer",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Tambah Jenis Armada",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Filter",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Riwayat",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "textbox",
+          "name": "Masukkan Jenis Armada",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "textbox",
+          "name": "Panjang",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "textbox",
+          "name": "Lebar",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "textbox",
+          "name": "Tinggi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "textbox",
+          "name": "Masukkan Kapasitas",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Pilih Status",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Reset",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Terapkan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Edit",
+          "count": 18,
+          "visible": 18
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Hapus",
+          "count": 18,
+          "visible": 18
+        },
+        {
+          "kind": "placeholder",
+          "name": "Masukkan Jenis Armada",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Panjang",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Lebar",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Tinggi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Masukkan Kapasitas",
+          "count": 1,
+          "visible": 1
+        }
+      ]
+    },
+    {
+      "account": "subuser",
+      "at": "2026-09-23T03:26:19.162Z",
+      "route": "/master/unit",
+      "label": "tab-Jenis Kontainer",
+      "selectedVerified": true,
+      "snapshot": "explore/tabs-2026-09-23T03-26-10-026Z/-master-unit-Jenis-Kontainer.yml",
+      "headers": [
+        "",
+        "",
+        "Kuota Order",
+        "Master Unit"
+      ],
+      "sidebar": [
+        {
+          "text": "Prahu Hub - TMS",
+          "href": "/"
+        },
+        {
+          "text": "Monitoring",
+          "href": "/monitoring"
+        },
+        {
+          "text": "Tracking & Location",
+          "href": "/tracking-location"
+        },
+        {
+          "text": "Progres Pengiriman",
+          "href": "/progres-pengiriman"
+        },
+        {
+          "text": "Operasional",
+          "href": "/dashboard-operasional"
+        },
+        {
+          "text": "Order",
+          "href": "/order"
+        },
+        {
+          "text": "Penugasan Tracking",
+          "href": "/penugasan-tracking"
+        },
+        {
+          "text": "Master Provinsi",
+          "href": "/master/provinsi"
+        },
+        {
+          "text": "Master Kota",
+          "href": "/master/kota"
+        },
+        {
+          "text": "Master Kecamatan",
+          "href": "/master/kecamatan"
+        },
+        {
+          "text": "Master Kelurahan",
+          "href": "/master/kelurahan"
+        },
+        {
+          "text": "Master Drop Point",
+          "href": "/master/customer"
+        },
+        {
+          "text": "Master Waktu Perjalanan",
+          "href": "/master/waktu-perjalanan"
+        },
+        {
+          "text": "Master Pelabuhan",
+          "href": "/master/pelabuhan"
+        },
+        {
+          "text": "Master Pelayaran",
+          "href": "/master/pelayaran"
+        },
+        {
+          "text": "Master Unit",
+          "href": "/master/unit"
+        },
+        {
+          "text": "Master Sopir",
+          "href": "/master/sopir"
+        },
+        {
+          "text": "Master CS",
+          "href": "/master/cs"
+        },
+        {
+          "text": "Manajemen Vendor",
+          "href": "/manajemen-vendor"
+        },
+        {
+          "text": "Pengaturan Akun",
+          "href": "/pengaturan-akun"
+        },
+        {
+          "text": "Akun Saya",
+          "href": "/akun-saya"
+        },
+        {
+          "text": "Pengaturan Sistem",
+          "href": "/setting/sistem"
+        },
+        {
+          "text": "Pengaturan Notifikasi",
+          "href": "/setting/general"
+        },
+        {
+          "text": "Preferensi Notifikasi",
+          "href": "/setting/preferensi-notifikasi"
+        }
+      ],
+      "testids": 0,
+      "selectors": [
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Prahu Hub - TMS Prahu Hub - TMS",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Dashboard",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Monitoring",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Tracking & Location",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Progres Pengiriman",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Operasional",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Order",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Penugasan Tracking",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Master Wilayah",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Provinsi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kota",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kecamatan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kelurahan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Master Operasional",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Drop Point",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Waktu Perjalanan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Pelabuhan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Pelayaran",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Unit",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Sopir",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master CS",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Manajemen Vendor",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Akun",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Akun Saya",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Sistem",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Pusat Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Preferensi Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "heading",
+          "name": "Kuota Order",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Aktifkan mode gelap",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Toggle Sidebar",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "16",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Logout",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Beranda",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "heading",
+          "name": "Master Unit",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "tab",
+          "name": "Armada",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "tab",
+          "name": "Jenis Armada",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "tab",
+          "name": "Jenis Kontainer",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Tambah Jenis Kontainer",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Filter",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Riwayat",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "textbox",
+          "name": "Masukkan Jenis Kontainer",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "textbox",
+          "name": "Masukkan Volume",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Pilih Status",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Reset",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Terapkan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Masukkan Jenis Kontainer",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Panjang",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Lebar",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Tinggi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Masukkan Volume",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "placeholder",
+          "name": "Masukkan Kapasitas",
+          "count": 1,
+          "visible": 1
+        }
+      ]
+    },
+    {
+      "account": "subuser",
+      "at": "2026-09-23T03:26:21.848Z",
+      "route": "/tracking-location",
+      "label": "tab-Riwayat Tracking",
+      "selectedVerified": true,
+      "snapshot": "explore/tabs-2026-09-23T03-26-10-026Z/-tracking-location-Riwayat-Tracking.yml",
+      "headers": [
+        "",
+        "",
+        "Kuota Order",
+        "Tracking & Location",
+        "Riwayat Tracking Armada"
+      ],
+      "sidebar": [
+        {
+          "text": "Prahu Hub - TMS",
+          "href": "/"
+        },
+        {
+          "text": "Monitoring",
+          "href": "/monitoring"
+        },
+        {
+          "text": "Tracking & Location",
+          "href": "/tracking-location"
+        },
+        {
+          "text": "Progres Pengiriman",
+          "href": "/progres-pengiriman"
+        },
+        {
+          "text": "Operasional",
+          "href": "/dashboard-operasional"
+        },
+        {
+          "text": "Order",
+          "href": "/order"
+        },
+        {
+          "text": "Penugasan Tracking",
+          "href": "/penugasan-tracking"
+        },
+        {
+          "text": "Master Provinsi",
+          "href": "/master/provinsi"
+        },
+        {
+          "text": "Master Kota",
+          "href": "/master/kota"
+        },
+        {
+          "text": "Master Kecamatan",
+          "href": "/master/kecamatan"
+        },
+        {
+          "text": "Master Kelurahan",
+          "href": "/master/kelurahan"
+        },
+        {
+          "text": "Master Drop Point",
+          "href": "/master/customer"
+        },
+        {
+          "text": "Master Waktu Perjalanan",
+          "href": "/master/waktu-perjalanan"
+        },
+        {
+          "text": "Master Pelabuhan",
+          "href": "/master/pelabuhan"
+        },
+        {
+          "text": "Master Pelayaran",
+          "href": "/master/pelayaran"
+        },
+        {
+          "text": "Master Unit",
+          "href": "/master/unit"
+        },
+        {
+          "text": "Master Sopir",
+          "href": "/master/sopir"
+        },
+        {
+          "text": "Master CS",
+          "href": "/master/cs"
+        },
+        {
+          "text": "Manajemen Vendor",
+          "href": "/manajemen-vendor"
+        },
+        {
+          "text": "Pengaturan Akun",
+          "href": "/pengaturan-akun"
+        },
+        {
+          "text": "Akun Saya",
+          "href": "/akun-saya"
+        },
+        {
+          "text": "Pengaturan Sistem",
+          "href": "/setting/sistem"
+        },
+        {
+          "text": "Pengaturan Notifikasi",
+          "href": "/setting/general"
+        },
+        {
+          "text": "Preferensi Notifikasi",
+          "href": "/setting/preferensi-notifikasi"
+        }
+      ],
+      "testids": 0,
+      "selectors": [
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Prahu Hub - TMS Prahu Hub - TMS",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Dashboard",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Monitoring",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Tracking & Location",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Progres Pengiriman",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Operasional",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Order",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Penugasan Tracking",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Master Wilayah",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Provinsi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kota",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kecamatan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Kelurahan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Master Operasional",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Drop Point",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Waktu Perjalanan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Pelabuhan",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Pelayaran",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Unit",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master Sopir",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Master CS",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Manajemen Vendor",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Akun",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Akun Saya",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Sistem",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Pusat Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Pengaturan Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Preferensi Notifikasi",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "heading",
+          "name": "Kuota Order",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Aktifkan mode gelap",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Toggle Sidebar",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "16",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Logout",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "Beranda",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "heading",
+          "name": "Tracking & Location",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "tab",
+          "name": "Tracking Terkini",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "tab",
+          "name": "Riwayat Tracking",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Pilih ID Order",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Pilih Nopol/No. Kontainer",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Cari",
+          "count": 1,
+          "visible": 1
+        },
+        {
+          "kind": "role",
+          "role": "heading",
+          "name": "Riwayat Tracking Armada",
+          "count": 1,
+          "visible": 1
+        }
+      ]
+    }
+  ],
+  "auth": [
+    {
+      "action": "login",
+      "status": 200,
+      "path": "/monitoring",
+      "at": "2026-09-23T03:26:14.513Z"
+    },
+    {
+      "action": "logout",
+      "status": 200,
+      "path": "/login",
+      "at": "2026-09-23T03:26:22.393Z"
+    }
+  ],
+  "finished": "2026-09-23T03:26:22.393Z"
+}

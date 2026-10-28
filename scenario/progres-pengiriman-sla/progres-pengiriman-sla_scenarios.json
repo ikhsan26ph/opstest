@@ -1,0 +1,166 @@
+{
+  "source": "Pesan user26Oktober2026; progres-pengiriman-sla_requirement-20261026.md",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "Normal memakai Berangkat Bongkar sebagai awal durasi SLA",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Filter ORD2996154854 di Progres Pengiriman",
+        "Baca waktu dan status; Refresh",
+        "Cocokkan ID assignment dengan detail, stops/context, events dan Timeline",
+        "Hitung durasi per meta.lastUpdate"
+      ],
+      "expected": [
+        "Waktu berjalan mengikuti Berangkat Bongkar 06:39:00.366Z",
+        "Tidak berstatus Melewati SLA saat durasi baru 536.393 menit < SLA540"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Normal belum Berangkat Bongkar tidak memulai durasi SLA dari Berangkat Muat",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Filter ORD2983824248",
+        "Cocokkan dua assignment dan history QAST26N2",
+        "Periksa tidak ada event Berangkat Bongkar; baca progress"
+      ],
+      "expected": [
+        "Belum menghitung SLA perjalanan bongkar dari Berangkat Muat",
+        "Tidak memberi Melewati SLA berdasarkan waktu pickup awal saja"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "Normal mengakhiri durasi pada Selesai Bongkar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Census138assignment/2page100:14IN_PROGRESS semuanyaNORMAL",
+        "Baca kota muat, event dan status sampel terkait",
+        "Cari order exact di progres dan periksa response serta kontrol halaman",
+        "Investigasi prasyarat dan rencanakan setup ownQA"
+      ],
+      "expected": [
+        "Durasi final=SelesaiBongkar−BerangkatBongkar",
+        "Durasi final tidak terus bertambah"
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "Multipickup satu kota mulai Berangkat Bongkar ke kota tujuan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Census138assignment/2page100:14IN_PROGRESS semuanyaNORMAL",
+        "Baca kota muat, event dan status sampel terkait",
+        "Cari order exact di progres dan periksa response serta kontrol halaman",
+        "Investigasi prasyarat dan rencanakan setup ownQA"
+      ],
+      "expected": [
+        "Semua pickup satu kota dikecualikan dari SLA sebelum BerangkatBongkar",
+        "Akhir pada SelesaiBongkar"
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "Multipickup lintas kota mulai Berangkat Muat ke kota kedua",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Census138assignment/2page100:14IN_PROGRESS semuanyaNORMAL",
+        "Baca kota muat, event dan status sampel terkait",
+        "Cari order exact di progres dan periksa response serta kontrol halaman",
+        "Investigasi prasyarat dan rencanakan setup ownQA"
+      ],
+      "expected": [
+        "Awal event BerangkatMuat ke kota pickup kedua",
+        "Tidak memakai pickup pertama atau menunggu BerangkatBongkar",
+        "Akhir SelesaiBongkar terakhir"
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "Multidrop mulai Berangkat Bongkar pertama sampai Selesai Bongkar terakhir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "Census138assignment/2page100:14IN_PROGRESS semuanyaNORMAL",
+        "Baca kota muat, event dan status sampel terkait",
+        "Cari order exact di progres dan periksa response serta kontrol halaman",
+        "Investigasi prasyarat dan rencanakan setup ownQA"
+      ],
+      "expected": [
+        "Awal tidak direset pada BerangkatBongkar berikutnya",
+        "Berakhir setelah semua lokasi bongkar selesai"
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "Multipoint satu kota mengikuti awal Multipickup satu kota sampai bongkar terakhir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "Census138assignment/2page100:14IN_PROGRESS semuanyaNORMAL",
+        "Baca kota muat, event dan status sampel terkait",
+        "Cari order exact di progres dan periksa response serta kontrol halaman",
+        "Investigasi prasyarat dan rencanakan setup ownQA"
+      ],
+      "expected": [
+        "Awal BerangkatBongkar setelah pickup satu kota selesai",
+        "Akhir setelah bongkar terakhir"
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "title": "Multipoint lintas kota mengikuti Berangkat Muat kota kedua sampai bongkar terakhir",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-006"
+      ],
+      "steps": [
+        "Census138assignment/2page100:14IN_PROGRESS semuanyaNORMAL",
+        "Baca kota muat, event dan status sampel terkait",
+        "Cari order exact di progres dan periksa response serta kontrol halaman",
+        "Investigasi prasyarat dan rencanakan setup ownQA"
+      ],
+      "expected": [
+        "Awal BerangkatMuat03:17:58.720Z keSidoarjo pada sampel",
+        "Akhir bongkar terakhir Bekasi03:21:07.345Z",
+        "Tidak memakai pickupSurabaya atau resetpadaBongkarBandung/Bekasi"
+      ]
+    }
+  ]
+}

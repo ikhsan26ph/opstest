@@ -1,0 +1,3004 @@
+{
+ "authHeaderSeen": true,
+ "res": {
+  "/api/vendors": {
+   "status": 200,
+   "all": [
+    {
+     "id": "620951d3-5183-4449-975d-c17a8876df39",
+     "namaPerusahaan": "PT. Jaya Wihaya",
+     "aliasPerusahaan": null,
+     "email": "indahpermatajaya2@yopmail.com",
+     "whatsapp": "624234234235235",
+     "pengelola": "VENDOR",
+     "status": "AKTIF",
+     "registrationMethod": "DIBANTU_ADMIN",
+     "createdAt": "2026-09-15T01:36:08.386Z",
+     "whatsappCs": "628432523523552",
+     "customerService": null
+    },
+    {
+     "id": "a2238343-b088-4869-9e88-a8d3bffbea9d",
+     "namaPerusahaan": "PT. Indah Permata Jaya",
+     "aliasPerusahaan": "IPJA",
+     "email": "indahpermatajaya@yopmail.com",
+     "whatsapp": "62838343523432",
+     "pengelola": "VENDOR",
+     "status": "AKTIF",
+     "registrationMethod": "DIBANTU_ADMIN",
+     "createdAt": "2026-09-15T01:34:18.659Z",
+     "whatsappCs": "624535353453455",
+     "customerService": null
+    },
+    {
+     "id": "edee4eaa-d65c-4b29-a629-94d005e36bce",
+     "namaPerusahaan": "PT Jalur Besi Transindo Jya",
+     "aliasPerusahaan": "JBL",
+     "email": "indahkusumajaya@yopmail.com",
+     "whatsapp": "6245235423532625",
+     "pengelola": "VENDOR",
+     "status": "AKTIF",
+     "registrationMethod": "MANDIRI",
+     "createdAt": "2026-09-15T01:20:34.862Z",
+     "whatsappCs": "624324523423423",
+     "customerService": null
+    },
+    {
+     "id": "9044cd30-f6ec-4e70-aa01-e6247dc2f8d2",
+     "namaPerusahaan": "PT Jalur Besi Transindo",
+     "aliasPerusahaan": "JBT",
+     "email": "jbt.bidder25@yopmail.com",
+     "whatsapp": "6282139240985621",
+     "pengelola": "VENDOR",
+     "status": "AKTIF",
+     "registrationMethod": "DIBANTU_ADMIN",
+     "createdAt": "2026-09-09T03:34:53.202Z",
+     "whatsappCs": "62821628729898",
+     "customerService": null
+    },
+    {
+     "id": "442a697c-7629-41b8-862b-394a1af52ca5",
+     "namaPerusahaan": "PT. Ikatan Kuat",
+     "aliasPerusahaan": "IKIK",
+     "email": "[REDACTED]",
+     "whatsapp": "6283830011881",
+     "pengelola": "VENDOR",
+     "status": "AKTIF",
+     "registrationMethod": "MANDIRI",
+     "createdAt": "2026-09-09T03:33:09.782Z",
+     "whatsappCs": "6283830011881",
+     "customerService": null
+    },
+    {
+     "id": "d2661e44-eb87-48a6-853b-83e76ab4678c",
+     "namaPerusahaan": "Alexa Powell Trucks",
+     "aliasPerusahaan": "APT",
+     "email": "alexapowell@yopmail.com",
+     "whatsapp": "6285752092839",
+     "pengelola": "VENDOR",
+     "status": "AKTIF",
+     "registrationMethod": "MANDIRI",
+     "createdAt": "2026-09-08T07:24:35.390Z",
+     "whatsappCs": "6285752092839",
+     "customerService": null
+    },
+    {
+     "id": "bed09b23-a7fe-47c7-ad89-9cc7021639e3",
+     "namaPerusahaan": "Wahana Logistik",
+     "aliasPerusahaan": "WLG",
+     "email": "kampusmail8@gmail.com",
+     "whatsapp": "6281237910281",
+     "pengelola": "VENDOR",
+     "status": "AKTIF",
+     "registrationMethod": "DIBANTU_ADMIN",
+     "createdAt": "2026-09-03T03:00:22.964Z",
+     "whatsappCs": "6281990162810",
+     "customerService": null
+    },
+    {
+     "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "namaPerusahaan": "Nusantara Logistik Utama",
+     "aliasPerusahaan": "NLU",
+     "email": "nusantara@yopmail.com",
+     "whatsapp": "6281232460612",
+     "pengelola": "ADMIN",
+     "status": "AKTIF",
+     "registrationMethod": "DIBANTU_ADMIN",
+     "createdAt": "2026-09-03T02:58:23.970Z",
+     "whatsappCs": null,
+     "customerService": {
+      "id": "5a63415d-61da-4f48-9013-32240b5117d7",
+      "name": "PH-Bid",
+      "whatsapp": "6281232671910"
+     }
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 8,
+    "totalPage": 1
+   }
+  },
+  "/api/penugasan-tracking": {
+   "status": 200,
+   "all": [
+    {
+     "id": "d6be9745-038b-40d5-878c-f9073d11a6a1",
+     "penugasanId": "b16bec0a-0d4a-408d-afbc-27172e291362",
+     "order": {
+      "id": "f457dac2-4e02-43d7-b32e-e5f152b98f29",
+      "orderCode": "ORD0150788933",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Bandung",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Bandung",
+        "cityName": "Kota Bandung",
+        "address": "Jl. Dipatiukur No 16"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "L 1098 POL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "4b6810e3-584f-4bc3-b2ac-ad96598a4499",
+       "name": "Indrajaya"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": true,
+     "createdAt": "2026-09-23T08:06:56.745Z"
+    },
+    {
+     "id": "36c0962c-8136-4ca5-9813-2f9919405e2a",
+     "penugasanId": "dddb1880-3486-4792-8db4-f91ad45dcf43",
+     "order": {
+      "id": "8cb1d15b-fa2c-429b-8327-74b46a425651",
+      "orderCode": "ORD0149116896",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "9b919491-7480-44a2-bac4-f581567741fd",
+      "label": "L1111LO"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "4b6810e3-584f-4bc3-b2ac-ad96598a4499",
+       "name": "Indrajaya"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-23T07:38:59.765Z"
+    },
+    {
+     "id": "4869ac36-47d7-4aac-923f-0ee076f08e89",
+     "penugasanId": "d1d8948b-7ee6-4f94-9af2-f8529305c407",
+     "order": {
+      "id": "31e3727e-1690-461b-8050-9276fbd26a37",
+      "orderCode": "ORD0135699597",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kabupaten Bogor",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB Mill Wanaherang",
+        "cityName": "Kabupaten Bogor",
+        "address": "Jl. Raya Cikuda Wanaherang, Wanaherang, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16965"
+       }
+      ],
+      "vendor": {
+       "id": "442a697c-7629-41b8-862b-394a1af52ca5",
+       "nama": "PT. Ikatan Kuat",
+       "pengelola": "VENDOR"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "E832AA"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "35e0777c-3c5c-439c-9c86-6809362c9b46",
+       "name": "Julian"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "BELUM_BERANGKAT",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-23T03:56:13.832Z"
+    },
+    {
+     "id": "863519ef-43dc-49cd-8cc8-0d5a491d0af4",
+     "penugasanId": "b69da2f1-1a91-432c-a1d9-402a639033ee",
+     "order": {
+      "id": "16231a8b-46bf-4691-9424-5a0016e5495b",
+      "orderCode": "ORD0065468154",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kabupaten Mojokerto",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "Warehouse Krembangan Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Demak No. 380, morokrembangan"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB Mill Ngoro",
+        "cityName": "Kabupaten Mojokerto",
+        "address": "Jalan Raya Kembangsri No.100"
+       }
+      ],
+      "vendor": {
+       "id": "d2661e44-eb87-48a6-853b-83e76ab4678c",
+       "nama": "Alexa Powell Trucks",
+       "pengelola": "VENDOR"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "7965a5d2-cbd3-4496-b490-3c41a26da68f",
+      "label": "L9001BB"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "96572cf2-005a-4eb2-9748-246a499e56e5",
+       "name": "Ludwig"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-22T08:27:07.857Z"
+    },
+    {
+     "id": "90654099-f0b2-4493-a157-c53113cffe0c",
+     "penugasanId": "c2e4c9c7-b071-4c4c-beda-577f35baf721",
+     "order": {
+      "id": "ae1820d9-aa27-41d5-a022-b9671bd7599c",
+      "orderCode": "ORD0061555399",
+      "serviceType": "FCL",
+      "metodePengiriman": "CY_TO_DOOR",
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Bandung",
+      "tipePengiriman": "MULTIDROP",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL - Gudang Bandung",
+        "cityName": "Kota Bandung",
+        "address": "Jl. Dipatiukur No 16"
+       },
+       {
+        "dropPointName": "EL - Gudang Bandung [Gudang Surya]",
+        "cityName": "Kota Bandung",
+        "address": "Jl. Cikampek Raya No. 17"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "JENIS_KONTAINER",
+      "id": "076a41e8-7ad9-49c1-b032-9b497f578865",
+      "label": "KO123"
+     },
+     "petugas": {
+      "sopir": null,
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": true,
+     "usePengurus": true,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-22T07:20:49.339Z"
+    },
+    {
+     "id": "f2da8e17-b92f-4d60-9040-b3789a550c60",
+     "penugasanId": "6a0ab047-55f9-4f5e-84d8-7dde32336b85",
+     "order": {
+      "id": "c3fb455a-d22a-4b87-9d5a-10560a361488",
+      "orderCode": "ORD9965441127",
+      "serviceType": "FCL",
+      "metodePengiriman": "DOOR_TO_DOOR",
+      "kotaAsalName": "Kabupaten Bogor",
+      "kotaTujuanName": "Kota Makassar",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB Mill Wanaherang",
+        "cityName": "Kabupaten Bogor",
+        "address": "Jl. Raya Cikuda Wanaherang, Wanaherang, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16965"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL- Gudang Makassar",
+        "cityName": "Kota Makassar",
+        "address": "Jl. Penghibur No 78"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "JENIS_KONTAINER",
+      "id": "076a41e8-7ad9-49c1-b032-9b497f578865",
+      "label": "LABB345678"
+     },
+     "petugas": {
+      "sopir": null,
+      "subUser": null
+     },
+     "muat": {
+      "nopol": "L1090EL",
+      "sopir": "Sukri"
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": true,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-21T04:38:42.342Z"
+    },
+    {
+     "id": "75462c22-f397-45d5-ae4d-cc703c79a38c",
+     "penugasanId": "0afb2c95-a72a-400f-a9a8-e3f4d3aef45f",
+     "order": {
+      "id": "f11eeaa2-6906-48bd-9228-ae6e88fd52f9",
+      "orderCode": "ORD9719032965",
+      "serviceType": "FCL",
+      "metodePengiriman": "DOOR_TO_DOOR",
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Makassar",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL- Gudang Makassar",
+        "cityName": "Kota Makassar",
+        "address": "Jl. Penghibur No 78"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "JENIS_KONTAINER",
+      "id": "076a41e8-7ad9-49c1-b032-9b497f578865",
+      "label": "EMCU53454353"
+     },
+     "petugas": {
+      "sopir": null,
+      "subUser": null
+     },
+     "muat": {
+      "nopol": "L1090EL",
+      "sopir": "Sukri"
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": true,
+     "usePengurus": false,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-18T08:13:03.487Z"
+    },
+    {
+     "id": "baae3b18-bba9-48a6-b978-d6570a15f352",
+     "penugasanId": "7a88ab27-a26c-4f39-945d-f55412ad688b",
+     "order": {
+      "id": "81d07adc-fbb3-41c4-9e6a-2a7f65577c6a",
+      "orderCode": "ORD8407225847",
+      "serviceType": "FCL",
+      "metodePengiriman": "DOOR_TO_DOOR",
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Makassar",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL- Gudang Makassar",
+        "cityName": "Kota Makassar",
+        "address": "Jl. Penghibur No 78"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "JENIS_KONTAINER",
+      "id": "076a41e8-7ad9-49c1-b032-9b497f578865",
+      "label": "ko123"
+     },
+     "petugas": {
+      "sopir": null,
+      "subUser": null
+     },
+     "muat": {
+      "nopol": "L1090EL",
+      "sopir": "Rahmat Nurdiansyah"
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": true,
+     "status": "BELUM_BERANGKAT",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-17T02:09:13.775Z"
+    },
+    {
+     "id": "afd5102f-d311-4b5a-b107-56dec55f10ea",
+     "penugasanId": "5207674c-dedf-48ea-a8c0-3a1f8fa73dad",
+     "order": {
+      "id": "92e3db8d-9e33-45ed-b9a6-5d92c9ac137c",
+      "orderCode": "ORD9523666757",
+      "serviceType": "FCL",
+      "metodePengiriman": "DOOR_TO_DOOR",
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Makassar",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL- Gudang Makassar",
+        "cityName": "Kota Makassar",
+        "address": "Jl. Penghibur No 78"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "JENIS_KONTAINER",
+      "id": "076a41e8-7ad9-49c1-b032-9b497f578865",
+      "label": "MRTU20987543"
+     },
+     "petugas": {
+      "sopir": null,
+      "subUser": null
+     },
+     "muat": {
+      "nopol": "L1090EL",
+      "sopir": "Sukri"
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": true,
+     "usePengurus": false,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-16T02:08:09.805Z"
+    },
+    {
+     "id": "953389ed-fb31-4912-9fe7-9a8ce379a57b",
+     "penugasanId": "7712e865-1951-4c58-a1f4-1b06529fca6f",
+     "order": {
+      "id": "ad11c430-8a69-478f-a3cc-b9294c9864e6",
+      "orderCode": "ORD8939795982",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "B2138LL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "",
+       "name": "Jonatan"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": true,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-10T08:19:52.979Z"
+    },
+    {
+     "id": "d74a315b-a4b6-4a68-9057-ca5f61151dda",
+     "penugasanId": "7712e865-1951-4c58-a1f4-1b06529fca6f",
+     "order": {
+      "id": "ad11c430-8a69-478f-a3cc-b9294c9864e6",
+      "orderCode": "ORD8939795982",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "B9988LL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "eb57dca3-4a68-4ac2-9dd5-73b306c3d27c",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-10T08:19:52.973Z"
+    },
+    {
+     "id": "6fa3f5ec-02e0-4788-ac49-a443618f8d66",
+     "penugasanId": "60ff59fd-ec07-4514-af3f-d0a24ab71711",
+     "order": {
+      "id": "9625bbb6-ea88-430c-b236-a88e40ada2b5",
+      "orderCode": "ORD9027710531",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kabupaten Bogor",
+      "kotaTujuanName": "Kota Semarang",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB Mill Wanaherang",
+        "cityName": "Kabupaten Bogor",
+        "address": "Jl. Raya Cikuda Wanaherang, Wanaherang, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16965"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "Warehouse Gunung Pati",
+        "cityName": "Kota Semarang",
+        "address": "Semarang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "11e1ee12-09cd-43b4-b065-371b92cba538",
+      "label": "L1090EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-10T08:08:57.417Z"
+    },
+    {
+     "id": "d7ef2a96-97db-41e9-83f7-2419ba495314",
+     "penugasanId": "cf3004c3-cf44-49a1-a4b0-d583de5a4082",
+     "order": {
+      "id": "ad11c430-8a69-478f-a3cc-b9294c9864e6",
+      "orderCode": "ORD8939795982",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "11e1ee12-09cd-43b4-b065-371b92cba538",
+      "label": "L1090EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "DIALIHKAN",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-09T08:44:10.100Z"
+    },
+    {
+     "id": "72fc6b4a-b10d-4f25-9aec-67f784186ee3",
+     "penugasanId": "cf3004c3-cf44-49a1-a4b0-d583de5a4082",
+     "order": {
+      "id": "ad11c430-8a69-478f-a3cc-b9294c9864e6",
+      "orderCode": "ORD8939795982",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "5b18e11c-519d-4d28-8e18-dbed6c35a547",
+      "label": "L9180EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "eb57dca3-4a68-4ac2-9dd5-73b306c3d27c",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": true,
+     "status": "BELUM_BERANGKAT",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-09T08:44:10.093Z"
+    },
+    {
+     "id": "c197de8d-234d-46f1-b813-22b022fd4cc1",
+     "penugasanId": "7fca5460-6fe3-4513-8352-aa1a2bdd4541",
+     "order": {
+      "id": "3e1684c2-7148-40e1-a606-ea924bdecc79",
+      "orderCode": "ORD8929973577",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "5b18e11c-519d-4d28-8e18-dbed6c35a547",
+      "label": "L9180EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-09T05:00:09.734Z"
+    },
+    {
+     "id": "443abc4b-890e-4178-8ec6-1a7fd82b03e2",
+     "penugasanId": "35e10361-b3bd-4e27-a17c-f31b72e99cd5",
+     "order": {
+      "id": "e92e0375-2d60-4ef0-be13-7a5c8645f25f",
+      "orderCode": "ORD8929845367",
+      "serviceType": "LTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Bandung",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL - Gudang Bandung",
+        "cityName": "Kota Bandung",
+        "address": "Jl. Dipatiukur No 16"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "9b919491-7480-44a2-bac4-f581567741fd",
+      "label": "L1111LO"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-09T04:57:37.637Z"
+    },
+    {
+     "id": "478456f3-72f9-4997-bebb-ae5fc51c6c25",
+     "penugasanId": "88f4680b-dccf-49fe-886e-b726905f0986",
+     "order": {
+      "id": "7fe1666f-2c9e-450d-8eb1-c7cf84a7e79e",
+      "orderCode": "ORD8925038186",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Bandung",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL - Gudang Bandung",
+        "cityName": "Kota Bandung",
+        "address": "Jl. Dipatiukur No 16"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "5b18e11c-519d-4d28-8e18-dbed6c35a547",
+      "label": "L9180EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-09T03:37:58.569Z"
+    },
+    {
+     "id": "db65d2a2-22ad-4c89-8647-a60f63da7428",
+     "penugasanId": "e4355a80-af9d-49f2-aacc-b89a91f28ffd",
+     "order": {
+      "id": "5476abef-802d-48c5-a3b1-50f2a247c1a8",
+      "orderCode": "ORD8924736516",
+      "serviceType": "FCL",
+      "metodePengiriman": "DOOR_TO_CY",
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Makassar",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL- Gudang Makassar",
+        "cityName": "Kota Makassar",
+        "address": "Jl. Penghibur No 78"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "JENIS_KONTAINER",
+      "id": "076a41e8-7ad9-49c1-b032-9b497f578865",
+      "label": "KO123"
+     },
+     "petugas": {
+      "sopir": null,
+      "subUser": null
+     },
+     "muat": {
+      "nopol": "L9180EL",
+      "sopir": "Rahmat Nurdiansyah"
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-09T03:33:29.347Z"
+    },
+    {
+     "id": "a7287aab-5762-4642-8aa7-40df29032217",
+     "penugasanId": "21181419-431a-45a1-a4b8-31afcab6ca3c",
+     "order": {
+      "id": "928a5228-5139-4477-aa7c-259cdf056302",
+      "orderCode": "ORD8855762870",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Administrasi Jakarta Utara ",
+      "kotaTujuanName": "Kota Administrasi Jakarta Utara ",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Priok",
+        "cityName": "Kota Administrasi Jakarta Utara ",
+        "address": "Jl. Raya Sulawesi No.1, RT.7/RW.1, Ujung, Kec. Tj. Priok, Jkt Utara, Daerah Khusus Ibukota Jakarta 14310"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Marunda",
+        "cityName": "Kota Administrasi Jakarta Utara ",
+        "address": "Jl. Marunda Baru 18 No.36B, RT.7/RW.5, Marunda, Kec. Cilincing, Jkt Utara, Daerah Khusus Ibukota Jakarta 14150"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "B1111LO"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "eb57dca3-4a68-4ac2-9dd5-73b306c3d27c",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": true,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T08:25:34.101Z"
+    },
+    {
+     "id": "28b7a11e-95c7-4ede-968f-4dc99f75c352",
+     "penugasanId": "317f9fe4-5cd5-4b2c-b61d-7808d1c80c8f",
+     "order": {
+      "id": "9a239bc2-2354-451f-b6ef-a0fb6042eb9f",
+      "orderCode": "ORD8852894517",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Semarang",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "Warehouse Gunung Pati",
+        "cityName": "Kota Semarang",
+        "address": "Semarang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "S33DS"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:36:47.101Z"
+    },
+    {
+     "id": "6e7bf053-bb6c-49ae-a654-5739274adb74",
+     "penugasanId": "8ce4d1f0-205a-4ab3-be26-9631ca7351b7",
+     "order": {
+      "id": "c184749c-773f-44c5-af4d-26414001fdb8",
+      "orderCode": "ORD8852599515",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Semarang",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "Warehouse Gunung Pati",
+        "cityName": "Kota Semarang",
+        "address": "Semarang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "11e1ee12-09cd-43b4-b065-371b92cba538",
+      "label": "L1090EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "eb57dca3-4a68-4ac2-9dd5-73b306c3d27c",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:30:10.641Z"
+    },
+    {
+     "id": "c6299d93-1089-4d15-8c55-49ef194fb402",
+     "penugasanId": "44518bbb-49d5-45d5-ac80-539af0d44413",
+     "order": {
+      "id": "c184749c-773f-44c5-af4d-26414001fdb8",
+      "orderCode": "ORD8852599515",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Semarang",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "Warehouse Gunung Pati",
+        "cityName": "Kota Semarang",
+        "address": "Semarang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "11e1ee12-09cd-43b4-b065-371b92cba538",
+      "label": "L1090EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "eb57dca3-4a68-4ac2-9dd5-73b306c3d27c",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:30:10.638Z"
+    },
+    {
+     "id": "29195fbc-d1ea-4b7a-980a-62eca3db2c0d",
+     "penugasanId": "d13de21f-7240-40a3-be45-fc208071ba18",
+     "order": {
+      "id": "56984f87-90c9-433c-9dd5-bf8e121599a2",
+      "orderCode": "ORD8851727865",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "5b18e11c-519d-4d28-8e18-dbed6c35a547",
+      "label": "L9180EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "eb57dca3-4a68-4ac2-9dd5-73b306c3d27c",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:15:35.306Z"
+    },
+    {
+     "id": "550d84fd-d15d-48f3-b4ca-a9d41883f092",
+     "penugasanId": "48651b1a-79ea-462e-80d9-6448cbf1151f",
+     "order": {
+      "id": "56984f87-90c9-433c-9dd5-bf8e121599a2",
+      "orderCode": "ORD8851727865",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "5b18e11c-519d-4d28-8e18-dbed6c35a547",
+      "label": "L9180EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "eb57dca3-4a68-4ac2-9dd5-73b306c3d27c",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:15:35.271Z"
+    },
+    {
+     "id": "cc8e706d-71bf-4765-a294-961defe511f2",
+     "penugasanId": "75c6f563-baeb-47d3-85ef-7cd88b7bc5af",
+     "order": {
+      "id": "5eb7941e-3366-4daa-95c7-54bfddf875d9",
+      "orderCode": "ORD8851083707",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "L8009BB"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "eb57dca3-4a68-4ac2-9dd5-73b306c3d27c",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:11:34.044Z"
+    },
+    {
+     "id": "3f854e95-2823-4e99-9f2f-6b75cb2d9826",
+     "penugasanId": "bdccbff0-5ec5-4a66-9bcf-1b58fc13bf2f",
+     "order": {
+      "id": "59b37e84-6a06-47bb-9c13-ac7a0f045e01",
+      "orderCode": "ORD8851309000",
+      "serviceType": "LTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Semarang",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "Warehouse Gunung Pati",
+        "cityName": "Kota Semarang",
+        "address": "Semarang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "11e1ee12-09cd-43b4-b065-371b92cba538",
+      "label": "L1090EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:08:39.163Z"
+    },
+    {
+     "id": "76199c58-57c1-4cc2-8d46-97f1e184b1f8",
+     "penugasanId": "a1d9947d-f772-4f31-a327-7eaf92718d6e",
+     "order": {
+      "id": "5eb7941e-3366-4daa-95c7-54bfddf875d9",
+      "orderCode": "ORD8851083707",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Surabaya",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "L9001BB"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "",
+       "name": "Sukri"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": true,
+     "status": "DIALIHKAN",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:07:00.390Z"
+    },
+    {
+     "id": "166b9b16-0d9f-49ad-abd5-5f7debf5b704",
+     "penugasanId": "ab7b13e5-1f1e-486f-9dad-ffd6e8091f12",
+     "order": {
+      "id": "02b4f18e-c816-4567-9286-e6405ebd4135",
+      "orderCode": "ORD8850936301",
+      "serviceType": "LTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Semarang",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Krembangan",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rajawali 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "Warehouse Gunung Pati",
+        "cityName": "Kota Semarang",
+        "address": "Semarang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "5b18e11c-519d-4d28-8e18-dbed6c35a547",
+      "label": "L9180EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": true,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "SELESAI",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T07:02:34.178Z"
+    },
+    {
+     "id": "2d68ffa3-9c75-4793-be0d-06501a6d9e6e",
+     "penugasanId": "cdd727b5-b9fb-4b53-9c8d-9ae0a4eff372",
+     "order": {
+      "id": "1b4eb11a-d035-40af-ada4-770943734c53",
+      "orderCode": "ORD8850666561",
+      "serviceType": "LTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Semarang",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "BB WH Rungkut",
+        "cityName": "Kota Surabaya",
+        "address": "Jalan Rungkut Alang-alang"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "Warehouse Gunung Pati",
+        "cityName": "Kota Semarang",
+        "address": "Semarang"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "11e1ee12-09cd-43b4-b065-371b92cba538",
+      "label": "L1090EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "BELUM_BERANGKAT",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T06:58:51.700Z"
+    },
+    {
+     "id": "7f0d16e5-80ec-4e31-af1f-96a9fddd6ad9",
+     "penugasanId": "ac7576ec-537a-493e-9d4a-aed578d59f55",
+     "order": {
+      "id": "5e9f8f23-e5c4-4e82-affd-8bc82be8f57f",
+      "orderCode": "ORD8849924264",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Bandung",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL - Gudang Bandung [Gudang Surya]",
+        "cityName": "Kota Bandung",
+        "address": "Jl. Cikampek Raya No. 17"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "5b18e11c-519d-4d28-8e18-dbed6c35a547",
+      "label": "L9180EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": true,
+     "createdAt": "2026-09-08T06:45:35.983Z"
+    },
+    {
+     "id": "a5c6ccfd-c108-4ba6-bdee-3bf80595ff54",
+     "penugasanId": "0e3d355a-640d-48c6-8980-5aa8c8d55f16",
+     "order": {
+      "id": "5e9f8f23-e5c4-4e82-affd-8bc82be8f57f",
+      "orderCode": "ORD8849924264",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Bandung",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL - Gudang Bandung [Gudang Surya]",
+        "cityName": "Kota Bandung",
+        "address": "Jl. Cikampek Raya No. 17"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "5b18e11c-519d-4d28-8e18-dbed6c35a547",
+      "label": "L9180EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "IN_PROGRESS",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T06:45:35.973Z"
+    },
+    {
+     "id": "841902fc-fb09-4c23-9501-787249e3e320",
+     "penugasanId": "17a338d3-f0f4-4909-b06c-5b0afcb0b477",
+     "order": {
+      "id": "1594c6f1-54cb-4091-a45c-e5210906dc27",
+      "orderCode": "ORD8849482554",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kota Bandung",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "EL - Gudang Bandung [Gudang Surya]",
+        "cityName": "Kota Bandung",
+        "address": "Jl. Cikampek Raya No. 17"
+       }
+      ],
+      "vendor": {
+       "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+       "nama": "Nusantara Logistik Utama",
+       "pengelola": "ADMIN"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "11e1ee12-09cd-43b4-b065-371b92cba538",
+      "label": "L1090EL"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "ec017a17-af46-4147-ae9b-7ca98faac456",
+       "name": "Rahmat Nurdiansyah"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "BELUM_BERANGKAT",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-08T06:43:29.663Z"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 32,
+    "totalPage": 1
+   }
+  },
+  "/api/order": {
+   "status": 200,
+   "all": [
+    {
+     "id": "f457dac2-4e02-43d7-b32e-e5f152b98f29",
+     "orderCode": "ORD0150788933",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Bandung",
+     "warehouseAsalName": "EL - Gudang Bandung",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "BB WH Krembangan",
+     "totalHarga": "1982000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-23T08:06:28.950Z"
+    },
+    {
+     "id": "8cb1d15b-fa2c-429b-8327-74b46a425651",
+     "orderCode": "ORD0149116896",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "BB WH Krembangan",
+     "totalHarga": "14865000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-23T07:38:36.912Z"
+    },
+    {
+     "id": "31e3727e-1690-461b-8050-9276fbd26a37",
+     "orderCode": "ORD0135699597",
+     "serviceType": "FTL",
+     "vendorId": "442a697c-7629-41b8-862b-394a1af52ca5",
+     "vendorName": "PT. Ikatan Kuat",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kabupaten Bogor",
+     "warehouseTujuanName": "BB Mill Wanaherang",
+     "totalHarga": "4196885",
+     "status": "DITUGASKAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-23T03:54:59.624Z"
+    },
+    {
+     "id": "b40b076e-a89c-401f-8637-3dc977b54dd9",
+     "orderCode": "ORD0065597914",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kabupaten Mojokerto",
+     "warehouseAsalName": "BB Mill Ngoro",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "EL - Gudang Surabaya",
+     "totalHarga": "3000000",
+     "status": "MENUNGGU_PENUGASAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-22T08:26:37.917Z"
+    },
+    {
+     "id": "16231a8b-46bf-4691-9424-5a0016e5495b",
+     "orderCode": "ORD0065468154",
+     "serviceType": "FTL",
+     "vendorId": "d2661e44-eb87-48a6-853b-83e76ab4678c",
+     "vendorName": "Alexa Powell Trucks",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "Warehouse Krembangan Surabaya",
+     "kotaTujuanName": "Kabupaten Mojokerto",
+     "warehouseTujuanName": "BB Mill Ngoro",
+     "totalHarga": "3000000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-22T08:24:28.198Z"
+    },
+    {
+     "id": "ae1820d9-aa27-41d5-a022-b9671bd7599c",
+     "orderCode": "ORD0061555399",
+     "serviceType": "FCL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung",
+     "totalHarga": "11892000",
+     "status": "PROSES_PENGIRIMAN",
+     "tipePengiriman": "MULTIDROP",
+     "createdAt": "2026-09-22T07:19:15.412Z"
+    },
+    {
+     "id": "8427cd19-b24e-4d6a-aeb9-10d76b9f0d78",
+     "orderCode": "ORD0059771455",
+     "serviceType": "FCL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Makassar",
+     "warehouseTujuanName": "EL- Gudang Makassar",
+     "totalHarga": "11892000",
+     "status": "MENUNGGU_PENUGASAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-22T06:49:31.464Z"
+    },
+    {
+     "id": "da944057-46bf-4d19-8424-9ec717882754",
+     "orderCode": "ORD0059547619",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung",
+     "totalHarga": "9711800",
+     "status": "MENUNGGU_PENUGASAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-22T06:45:47.658Z"
+    },
+    {
+     "id": "c3fb455a-d22a-4b87-9d5a-10560a361488",
+     "orderCode": "ORD9965441127",
+     "serviceType": "FCL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kabupaten Bogor",
+     "warehouseAsalName": "BB Mill Wanaherang",
+     "kotaTujuanName": "Kota Makassar",
+     "warehouseTujuanName": "EL- Gudang Makassar",
+     "totalHarga": "12000000",
+     "status": "PROSES_PENGIRIMAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-21T04:37:21.155Z"
+    },
+    {
+     "id": "f11eeaa2-6906-48bd-9228-ae6e88fd52f9",
+     "orderCode": "ORD9719032965",
+     "serviceType": "FCL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Makassar",
+     "warehouseTujuanName": "EL- Gudang Makassar",
+     "totalHarga": "4162200",
+     "status": "PROSES_PENGIRIMAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-18T08:10:33.123Z"
+    },
+    {
+     "id": "92e3db8d-9e33-45ed-b9a6-5d92c9ac137c",
+     "orderCode": "ORD9523666757",
+     "serviceType": "FCL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Rungkut",
+     "kotaTujuanName": "Kota Makassar",
+     "warehouseTujuanName": "EL- Gudang Makassar",
+     "totalHarga": "22000000",
+     "status": "PROSES_PENGIRIMAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-16T01:54:26.784Z"
+    },
+    {
+     "id": "9625bbb6-ea88-430c-b236-a88e40ada2b5",
+     "orderCode": "ORD9027710531",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kabupaten Bogor",
+     "warehouseAsalName": "BB Mill Wanaherang",
+     "kotaTujuanName": "Kota Semarang",
+     "warehouseTujuanName": "Warehouse Gunung Pati",
+     "totalHarga": "3000000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-10T08:08:30.570Z"
+    },
+    {
+     "id": "ad11c430-8a69-478f-a3cc-b9294c9864e6",
+     "orderCode": "ORD8939795982",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Krembangan",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "BB WH Rungkut",
+     "totalHarga": "2011730",
+     "status": "PROSES_PENGIRIMAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-09T07:43:15.994Z"
+    },
+    {
+     "id": "c545787f-7627-4060-9d9e-6b5997f4b6a7",
+     "orderCode": "ORD8939717339",
+     "serviceType": "LTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Krembangan",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "BB WH Rungkut",
+     "totalHarga": "1189200",
+     "status": "MENUNGGU_PENUGASAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-09T07:41:57.405Z"
+    },
+    {
+     "id": "3e1684c2-7148-40e1-a606-ea924bdecc79",
+     "orderCode": "ORD8929973577",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Krembangan",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "BB WH Rungkut",
+     "totalHarga": "8919000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-09T04:59:33.585Z"
+    },
+    {
+     "id": "e92e0375-2d60-4ef0-be13-7a5c8645f25f",
+     "orderCode": "ORD8929845367",
+     "serviceType": "LTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung",
+     "totalHarga": "198200",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-09T04:57:25.381Z"
+    },
+    {
+     "id": "88b85b34-48ce-486a-bb44-40bc1e53bda8",
+     "orderCode": "ORD8925038898",
+     "serviceType": "FTL",
+     "vendorId": "9044cd30-f6ec-4e70-aa01-e6247dc2f8d2",
+     "vendorName": "PT Jalur Besi Transindo",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung",
+     "totalHarga": "7928000",
+     "status": "MENUNGGU_PENUGASAN",
+     "tipePengiriman": "MULTIPICKUP",
+     "createdAt": "2026-09-09T03:37:18.912Z"
+    },
+    {
+     "id": "7fe1666f-2c9e-450d-8eb1-c7cf84a7e79e",
+     "orderCode": "ORD8925038186",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung",
+     "totalHarga": "8010000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-09T03:37:18.193Z"
+    },
+    {
+     "id": "5476abef-802d-48c5-a3b1-50f2a247c1a8",
+     "orderCode": "ORD8924736516",
+     "serviceType": "FCL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Makassar",
+     "warehouseTujuanName": "EL- Gudang Makassar",
+     "totalHarga": "10299999",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-09T03:32:16.547Z"
+    },
+    {
+     "id": "081c34be-9431-4d54-ad47-1946da1239ba",
+     "orderCode": "ORD8921306495",
+     "serviceType": "FTL",
+     "vendorId": "d2661e44-eb87-48a6-853b-83e76ab4678c",
+     "vendorName": "Alexa Powell Trucks",
+     "kotaAsalName": "Kabupaten Bogor",
+     "warehouseAsalName": "BB Mill Wanaherang",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "BB WH Krembangan",
+     "totalHarga": "6200000",
+     "status": "MENUNGGU_PENUGASAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-09T02:35:06.570Z"
+    },
+    {
+     "id": "928a5228-5139-4477-aa7c-259cdf056302",
+     "orderCode": "ORD8855762870",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Administrasi Jakarta Utara ",
+     "warehouseAsalName": "BB WH Priok",
+     "kotaTujuanName": "Kota Administrasi Jakarta Utara ",
+     "warehouseTujuanName": "BB WH Marunda",
+     "totalHarga": "2000000",
+     "status": "PROSES_PENGIRIMAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T08:22:42.889Z"
+    },
+    {
+     "id": "9a239bc2-2354-451f-b6ef-a0fb6042eb9f",
+     "orderCode": "ORD8852894517",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Semarang",
+     "warehouseTujuanName": "Warehouse Gunung Pati",
+     "totalHarga": "4230000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T07:34:54.524Z"
+    },
+    {
+     "id": "4ea66aae-7b53-41d3-90b9-c9c83f0c3608",
+     "orderCode": "ORD8852857447",
+     "serviceType": "FTL",
+     "vendorId": "d2661e44-eb87-48a6-853b-83e76ab4678c",
+     "vendorName": "Alexa Powell Trucks",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung",
+     "totalHarga": "2000000",
+     "status": "MENUNGGU_PENUGASAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T07:34:17.455Z"
+    },
+    {
+     "id": "c184749c-773f-44c5-af4d-26414001fdb8",
+     "orderCode": "ORD8852599515",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Semarang",
+     "warehouseTujuanName": "Warehouse Gunung Pati",
+     "totalHarga": "7000000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T07:29:59.524Z"
+    },
+    {
+     "id": "56984f87-90c9-433c-9dd5-bf8e121599a2",
+     "orderCode": "ORD8851727865",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Krembangan",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "BB WH Rungkut",
+     "totalHarga": "3000000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T07:15:27.872Z"
+    },
+    {
+     "id": "59b37e84-6a06-47bb-9c13-ac7a0f045e01",
+     "orderCode": "ORD8851309000",
+     "serviceType": "LTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Krembangan",
+     "kotaTujuanName": "Kota Semarang",
+     "warehouseTujuanName": "Warehouse Gunung Pati",
+     "totalHarga": "400000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T07:08:29.008Z"
+    },
+    {
+     "id": "7521dbd9-ca32-47b8-bcb1-9a056433fa0e",
+     "orderCode": "ORD8851102035",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung",
+     "totalHarga": "12000000",
+     "status": "DIBATALKAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T07:05:02.105Z"
+    },
+    {
+     "id": "5eb7941e-3366-4daa-95c7-54bfddf875d9",
+     "orderCode": "ORD8851083707",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Krembangan",
+     "kotaTujuanName": "Kota Surabaya",
+     "warehouseTujuanName": "BB WH Rungkut",
+     "totalHarga": "1200000",
+     "status": "PROSES_PENGIRIMAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T07:04:43.717Z"
+    },
+    {
+     "id": "02b4f18e-c816-4567-9286-e6405ebd4135",
+     "orderCode": "ORD8850936301",
+     "serviceType": "LTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Krembangan",
+     "kotaTujuanName": "Kota Semarang",
+     "warehouseTujuanName": "Warehouse Gunung Pati",
+     "totalHarga": "200000",
+     "status": "SELESAI",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T07:02:16.336Z"
+    },
+    {
+     "id": "1b4eb11a-d035-40af-ada4-770943734c53",
+     "orderCode": "ORD8850666561",
+     "serviceType": "LTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "BB WH Rungkut",
+     "kotaTujuanName": "Kota Semarang",
+     "warehouseTujuanName": "Warehouse Gunung Pati",
+     "totalHarga": "100000",
+     "status": "DITUGASKAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T06:57:46.572Z"
+    },
+    {
+     "id": "5e9f8f23-e5c4-4e82-affd-8bc82be8f57f",
+     "orderCode": "ORD8849924264",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung [Gudang Surya]",
+     "totalHarga": "9850000",
+     "status": "PROSES_PENGIRIMAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T06:45:24.274Z"
+    },
+    {
+     "id": "1594c6f1-54cb-4091-a45c-e5210906dc27",
+     "orderCode": "ORD8849482554",
+     "serviceType": "FTL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung [Gudang Surya]",
+     "totalHarga": "11000000",
+     "status": "DITUGASKAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T06:38:02.568Z"
+    },
+    {
+     "id": "f52aae3f-569e-45d1-ae5e-afeaa5099153",
+     "orderCode": "ORD8849401052",
+     "serviceType": "FTL",
+     "vendorId": "bed09b23-a7fe-47c7-ad89-9cc7021639e3",
+     "vendorName": "Wahana Logistik",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Bandung",
+     "warehouseTujuanName": "EL - Gudang Bandung [Gudang Surya]",
+     "totalHarga": "6000000",
+     "status": "MENUNGGU_PENUGASAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-08T06:36:41.097Z"
+    },
+    {
+     "id": "81d07adc-fbb3-41c4-9e6a-2a7f65577c6a",
+     "orderCode": "ORD8407225847",
+     "serviceType": "FCL",
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kota Makassar",
+     "warehouseTujuanName": "EL- Gudang Makassar",
+     "totalHarga": "11000000",
+     "status": "DITUGASKAN",
+     "tipePengiriman": "NORMAL",
+     "createdAt": "2026-09-03T03:47:05.918Z"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 34,
+    "totalPage": 1
+   }
+  },
+  "/api/orders?hasPenugasan=false&status=DRAFT,ASSIGNED,MENUNGGU_PENUGASAN": {
+   "status": 200,
+   "all": [
+    {
+     "id": "b40b076e-a89c-401f-8637-3dc977b54dd9",
+     "orderCode": "ORD0065597914",
+     "serviceType": "FTL",
+     "kotaAsalId": "51e01a87-0558-4a0b-948c-a45d1322739b",
+     "kotaAsalName": "Kabupaten Mojokerto",
+     "kotaTujuanId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "kotaTujuanName": "Kota Surabaya",
+     "tanggalMuat": "2026-09-23T08:00:00.000Z",
+     "tanggalMuatInput": "2026-09-23T08:00:00.000Z",
+     "shipmentId": null,
+     "jenisArmadaId": "74d1f61b-6274-4a3c-93a9-cb27d6116d1f",
+     "jenisArmadaName": "Fuso Box",
+     "jenisArmadaKapasitasKg": "10000",
+     "jenisArmadaVolumeM3": "34.2395",
+     "transitKota": null,
+     "segmenEstimasiIds": null,
+     "waktuPerjalananId": "35f1380c-6c5d-45ca-9c84-6d38341282af",
+     "targetWaktuJam": "6",
+     "pelabuhanAsalId": null,
+     "pelabuhanAsalName": "",
+     "pelabuhanTujuanId": null,
+     "pelabuhanTujuanName": "",
+     "jenisKontainerId": null,
+     "jenisKontainerName": "",
+     "kontainerKapasitasKg": null,
+     "kontainerVolumeM3": null,
+     "jenisJadwal": null,
+     "pelayaranId": null,
+     "pelayaranName": "",
+     "namaKapal": "",
+     "voyage": "",
+     "closingTime": null,
+     "etd": null,
+     "eta": null,
+     "bandaraAsalId": null,
+     "bandaraAsalName": "",
+     "dropPointAsalId": null,
+     "dropPointAsalName": "",
+     "bandaraTujuanId": null,
+     "bandaraTujuanName": "",
+     "dropPointTujuanId": null,
+     "dropPointTujuanName": "",
+     "maskapaiId": null,
+     "maskapaiName": "",
+     "nomorPenerbangan": "",
+     "tipePengiriman": "NORMAL",
+     "jumlahArmada": 1,
+     "metodePengiriman": null,
+     "jenisArmadaDimensiId": "a8beeb45-4e8e-41fc-9294-b70c5d1818b6",
+     "totalNilaiBarang": "0",
+     "asuransiPersen": "0.2",
+     "asuransiAmount": "0",
+     "autoStuffingApplied": false,
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "waktuPerjalananJam": "6",
+     "estimasiWaktuId": null,
+     "gunakanKomponenHarga": false,
+     "ppn": "0",
+     "pph": "0",
+     "hargaDPP": "3000000",
+     "ppnAmount": "0",
+     "pphAmount": "0",
+     "totalHarga": "3000000",
+     "cancelledAt": null,
+     "cancelledById": null,
+     "cancelledByType": null,
+     "createdById": "db523d55-3c99-4825-944d-4a1b596c70a8",
+     "createdByType": "ADMIN",
+     "status": "MENUNGGU_PENUGASAN",
+     "cancelReason": null,
+     "deleted": false,
+     "createdAt": "2026-09-22T08:26:37.917Z",
+     "updatedAt": "2026-09-22T08:28:24.183Z",
+     "orderShipments": [],
+     "orderTransitKota": [],
+     "orderKapalConnecting": [],
+     "vendor": {
+      "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+      "pengelola": "ADMIN"
+     },
+     "pengirimRows": [
+      {
+       "cityName": "Kabupaten Mojokerto",
+       "urutan": 1
+      }
+     ],
+     "penerimaRows": [
+      {
+       "cityName": "Kota Surabaya",
+       "urutan": 1
+      }
+     ],
+     "_count": {
+      "orderShipments": 0,
+      "orderKapalConnecting": 0
+     },
+     "totalBerat": 0,
+     "totalVolume": 0
+    },
+    {
+     "id": "8427cd19-b24e-4d6a-aeb9-10d76b9f0d78",
+     "orderCode": "ORD0059771455",
+     "serviceType": "FCL",
+     "kotaAsalId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "kotaAsalName": "Kota Surabaya",
+     "kotaTujuanId": "b10c806d-c7f5-403d-a75c-5d2608df011e",
+     "kotaTujuanName": "Kota Makassar",
+     "tanggalMuat": "2026-09-23T21:05:00.000Z",
+     "tanggalMuatInput": "2026-09-23T21:05:00.000Z",
+     "shipmentId": null,
+     "jenisArmadaId": null,
+     "jenisArmadaName": "",
+     "jenisArmadaKapasitasKg": null,
+     "jenisArmadaVolumeM3": null,
+     "transitKota": null,
+     "segmenEstimasiIds": null,
+     "waktuPerjalananId": null,
+     "targetWaktuJam": null,
+     "pelabuhanAsalId": "2727fbbe-efa1-40e6-9d11-453e22f147a0",
+     "pelabuhanAsalName": "Tanjung Perak",
+     "pelabuhanTujuanId": "811e25ed-bd81-4012-8e19-68b9312324ee",
+     "pelabuhanTujuanName": "Makassar",
+     "jenisKontainerId": "076a41e8-7ad9-49c1-b032-9b497f578865",
+     "jenisKontainerName": "40 HC",
+     "kontainerKapasitasKg": "26000",
+     "kontainerVolumeM3": "86.2564",
+     "jenisJadwal": null,
+     "pelayaranId": null,
+     "pelayaranName": "",
+     "namaKapal": "",
+     "voyage": "",
+     "closingTime": null,
+     "etd": null,
+     "eta": null,
+     "bandaraAsalId": null,
+     "bandaraAsalName": "",
+     "dropPointAsalId": null,
+     "dropPointAsalName": "",
+     "bandaraTujuanId": null,
+     "bandaraTujuanName": "",
+     "dropPointTujuanId": null,
+     "dropPointTujuanName": "",
+     "maskapaiId": null,
+     "maskapaiName": "",
+     "nomorPenerbangan": "",
+     "tipePengiriman": "NORMAL",
+     "jumlahArmada": 1,
+     "metodePengiriman": "DOOR_TO_DOOR",
+     "jenisArmadaDimensiId": null,
+     "totalNilaiBarang": "0",
+     "asuransiPersen": "0.2",
+     "asuransiAmount": "0",
+     "autoStuffingApplied": false,
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "waktuPerjalananJam": null,
+     "estimasiWaktuId": null,
+     "gunakanKomponenHarga": true,
+     "ppn": "1.1",
+     "pph": "2",
+     "hargaDPP": "12000000",
+     "ppnAmount": "132000",
+     "pphAmount": "240000",
+     "totalHarga": "11892000",
+     "cancelledAt": null,
+     "cancelledById": null,
+     "cancelledByType": null,
+     "createdById": "db523d55-3c99-4825-944d-4a1b596c70a8",
+     "createdByType": "ADMIN",
+     "status": "MENUNGGU_PENUGASAN",
+     "cancelReason": null,
+     "deleted": false,
+     "createdAt": "2026-09-22T06:49:31.464Z",
+     "updatedAt": "2026-09-22T06:49:31.464Z",
+     "orderShipments": [],
+     "orderTransitKota": [],
+     "orderKapalConnecting": [],
+     "vendor": {
+      "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+      "pengelola": "ADMIN"
+     },
+     "pengirimRows": [
+      {
+       "cityName": "Kota Surabaya",
+       "urutan": 1
+      }
+     ],
+     "penerimaRows": [
+      {
+       "cityName": "Kota Makassar",
+       "urutan": 1
+      }
+     ],
+     "_count": {
+      "orderShipments": 0,
+      "orderKapalConnecting": 0
+     },
+     "totalBerat": 0,
+     "totalVolume": 0
+    },
+    {
+     "id": "da944057-46bf-4d19-8424-9ec717882754",
+     "orderCode": "ORD0059547619",
+     "serviceType": "FTL",
+     "kotaAsalId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "kotaAsalName": "Kota Surabaya",
+     "kotaTujuanId": "23200cbb-44b4-4f3c-85bf-b5c8be8e464a",
+     "kotaTujuanName": "Kota Bandung",
+     "tanggalMuat": "2026-09-23T22:06:00.000Z",
+     "tanggalMuatInput": "2026-09-23T22:06:00.000Z",
+     "shipmentId": null,
+     "jenisArmadaId": "3357eff4-1847-4ce8-9045-8691fab651c4",
+     "jenisArmadaName": "Truck Trailer 40ft",
+     "jenisArmadaKapasitasKg": "26000",
+     "jenisArmadaVolumeM3": "72",
+     "transitKota": null,
+     "segmenEstimasiIds": null,
+     "waktuPerjalananId": "907161cf-035f-41e7-bf28-7fe3565e4557",
+     "targetWaktuJam": "9",
+     "pelabuhanAsalId": null,
+     "pelabuhanAsalName": "",
+     "pelabuhanTujuanId": null,
+     "pelabuhanTujuanName": "",
+     "jenisKontainerId": null,
+     "jenisKontainerName": "",
+     "kontainerKapasitasKg": null,
+     "kontainerVolumeM3": null,
+     "jenisJadwal": null,
+     "pelayaranId": null,
+     "pelayaranName": "",
+     "namaKapal": "",
+     "voyage": "",
+     "closingTime": null,
+     "etd": null,
+     "eta": null,
+     "bandaraAsalId": null,
+     "bandaraAsalName": "",
+     "dropPointAsalId": null,
+     "dropPointAsalName": "",
+     "bandaraTujuanId": null,
+     "bandaraTujuanName": "",
+     "dropPointTujuanId": null,
+     "dropPointTujuanName": "",
+     "maskapaiId": null,
+     "maskapaiName": "",
+     "nomorPenerbangan": "",
+     "tipePengiriman": "NORMAL",
+     "jumlahArmada": 1,
+     "metodePengiriman": null,
+     "jenisArmadaDimensiId": "1da1d3f7-15ab-49c0-8bd8-f798d3bc1990",
+     "totalNilaiBarang": "0",
+     "asuransiPersen": "0.2",
+     "asuransiAmount": "0",
+     "autoStuffingApplied": false,
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "waktuPerjalananJam": "9",
+     "estimasiWaktuId": null,
+     "gunakanKomponenHarga": true,
+     "ppn": "1.1",
+     "pph": "2",
+     "hargaDPP": "9800000",
+     "ppnAmount": "107800",
+     "pphAmount": "196000",
+     "totalHarga": "9711800",
+     "cancelledAt": null,
+     "cancelledById": null,
+     "cancelledByType": null,
+     "createdById": "db523d55-3c99-4825-944d-4a1b596c70a8",
+     "createdByType": "ADMIN",
+     "status": "MENUNGGU_PENUGASAN",
+     "cancelReason": null,
+     "deleted": false,
+     "createdAt": "2026-09-22T06:45:47.658Z",
+     "updatedAt": "2026-09-22T06:45:47.658Z",
+     "orderShipments": [],
+     "orderTransitKota": [],
+     "orderKapalConnecting": [],
+     "vendor": {
+      "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+      "pengelola": "ADMIN"
+     },
+     "pengirimRows": [
+      {
+       "cityName": "Kota Surabaya",
+       "urutan": 1
+      }
+     ],
+     "penerimaRows": [
+      {
+       "cityName": "Kota Bandung",
+       "urutan": 1
+      }
+     ],
+     "_count": {
+      "orderShipments": 0,
+      "orderKapalConnecting": 0
+     },
+     "totalBerat": 0,
+     "totalVolume": 0
+    },
+    {
+     "id": "c545787f-7627-4060-9d9e-6b5997f4b6a7",
+     "orderCode": "ORD8939717339",
+     "serviceType": "LTL",
+     "kotaAsalId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "kotaAsalName": "Kota Surabaya",
+     "kotaTujuanId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "kotaTujuanName": "Kota Surabaya",
+     "tanggalMuat": "2026-09-09T20:03:00.000Z",
+     "tanggalMuatInput": "2026-09-09T20:03:00.000Z",
+     "shipmentId": null,
+     "jenisArmadaId": null,
+     "jenisArmadaName": "",
+     "jenisArmadaKapasitasKg": null,
+     "jenisArmadaVolumeM3": null,
+     "transitKota": null,
+     "segmenEstimasiIds": null,
+     "waktuPerjalananId": "d5bdaadf-eec1-485d-ad12-9d1997de54a6",
+     "targetWaktuJam": "2",
+     "pelabuhanAsalId": null,
+     "pelabuhanAsalName": "",
+     "pelabuhanTujuanId": null,
+     "pelabuhanTujuanName": "",
+     "jenisKontainerId": null,
+     "jenisKontainerName": "",
+     "kontainerKapasitasKg": null,
+     "kontainerVolumeM3": null,
+     "jenisJadwal": null,
+     "pelayaranId": null,
+     "pelayaranName": "",
+     "namaKapal": "",
+     "voyage": "",
+     "closingTime": null,
+     "etd": null,
+     "eta": null,
+     "bandaraAsalId": null,
+     "bandaraAsalName": "",
+     "dropPointAsalId": null,
+     "dropPointAsalName": "",
+     "bandaraTujuanId": null,
+     "bandaraTujuanName": "",
+     "dropPointTujuanId": null,
+     "dropPointTujuanName": "",
+     "maskapaiId": null,
+     "maskapaiName": "",
+     "nomorPenerbangan": "",
+     "tipePengiriman": "NORMAL",
+     "jumlahArmada": 1,
+     "metodePengiriman": null,
+     "jenisArmadaDimensiId": null,
+     "totalNilaiBarang": "0",
+     "asuransiPersen": "0.2",
+     "asuransiAmount": "0",
+     "autoStuffingApplied": false,
+     "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "vendorName": "Nusantara Logistik Utama",
+     "waktuPerjalananJam": "2",
+     "estimasiWaktuId": null,
+     "gunakanKomponenHarga": true,
+     "ppn": "1.1",
+     "pph": "2",
+     "hargaDPP": "1200000",
+     "ppnAmount": "13200",
+     "pphAmount": "24000",
+     "totalHarga": "1189200",
+     "cancelledAt": null,
+     "cancelledById": null,
+     "cancelledByType": null,
+     "createdById": "db523d55-3c99-4825-944d-4a1b596c70a8",
+     "createdByType": "ADMIN",
+     "status": "MENUNGGU_PENUGASAN",
+     "cancelReason": null,
+     "deleted": false,
+     "createdAt": "2026-09-09T07:41:57.405Z",
+     "updatedAt": "2026-09-09T07:41:57.405Z",
+     "orderShipments": [],
+     "orderTransitKota": [],
+     "orderKapalConnecting": [],
+     "vendor": {
+      "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+      "pengelola": "ADMIN"
+     },
+     "pengirimRows": [
+      {
+       "cityName": "Kota Surabaya",
+       "urutan": 1
+      }
+     ],
+     "penerimaRows": [
+      {
+       "cityName": "Kota Surabaya",
+       "urutan": 1
+      }
+     ],
+     "_count": {
+      "orderShipments": 0,
+      "orderKapalConnecting": 0
+     },
+     "totalBerat": 0,
+     "totalVolume": 0
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 4,
+    "totalPage": 1
+   }
+  },
+  "/api/armadas/vendors": {
+   "status": 200,
+   "all": [
+    {
+     "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "namaVendor": "Nusantara Logistik Utama",
+     "jumlahArmada": 4,
+     "tanggalUpdate": "2026-09-08T08:26:51.287Z"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 1,
+    "totalPage": 1
+   }
+  },
+  "/api/sopirs/vendors": {
+   "status": 200,
+   "all": [
+    {
+     "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "namaVendor": "Nusantara Logistik Utama",
+     "jumlahSopir": 4,
+     "tanggalUpdate": "2026-09-23T08:26:54.199Z"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 1,
+    "totalPage": 1
+   }
+  },
+  "/api/vendor/order": {
+   "status": 403,
+   "all": [],
+   "body": {
+    "success": false,
+    "message": "Token ini bukan token vendor"
+   }
+  },
+  "/api/vendor/armadas": {
+   "status": 403,
+   "all": [],
+   "body": {
+    "success": false,
+    "message": "Token ini bukan token vendor"
+   }
+  },
+  "/api/vendor/sopirs": {
+   "status": 403,
+   "all": [],
+   "body": {
+    "success": false,
+    "message": "Token ini bukan token vendor"
+   }
+  }
+ }
+}

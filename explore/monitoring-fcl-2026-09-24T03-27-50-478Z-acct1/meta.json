@@ -1,0 +1,33 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "monitoring",
+   "ok": true,
+   "info": "https://ops-staging.prahu-hub.com/monitoring"
+  },
+  {
+   "step": "monitoring-api",
+   "ok": true,
+   "info": {
+    "summary": 404,
+    "fleet": 404,
+    "cases": 404,
+    "nearby-muat": 404,
+    "nearby-bongkar": 404
+   }
+  },
+  {
+   "step": "tracking-location",
+   "ok": true,
+   "info": 404
+  },
+  {
+   "step": "penugasan-list",
+   "ok": true,
+   "info": 0
+  }
+ ]
+}

@@ -1,0 +1,2413 @@
+{
+  "source": "order-status-setup_request-20261021.md",
+  "screens": {
+    "SCR-01": "Buat Order / flow status OPS"
+  },
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "Buat order FTL Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C01-S1 pada data QA baru.",
+        "Siapkan kombinasi FTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C01-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Buat order FTL Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C01-S2 pada data QA baru.",
+        "Siapkan kombinasi FTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C01-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "Buat order FTL Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C01-S3 pada data QA baru.",
+        "Siapkan kombinasi FTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C01-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "Buat order FTL Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C01-S4 pada data QA baru.",
+        "Siapkan kombinasi FTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C01-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "Buat order FTL Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C01-S5 pada data QA baru.",
+        "Siapkan kombinasi FTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C01-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0006",
+      "title": "Buat order FTL Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C01-S6 pada data QA baru.",
+        "Siapkan kombinasi FTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C01-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0007",
+      "title": "Buat order FTL Multipickup berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C02-S1 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C02-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0008",
+      "title": "Buat order FTL Multipickup berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C02-S2 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C02-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "title": "Buat order FTL Multipickup berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C02-S3 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C02-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0010",
+      "title": "Buat order FTL Multipickup berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C02-S4 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C02-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0011",
+      "title": "Buat order FTL Multipickup berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C02-S5 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C02-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0012",
+      "title": "Buat order FTL Multipickup berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C02-S6 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C02-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0013",
+      "title": "Buat order FTL Multidrop berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C03-S1 pada data QA baru.",
+        "Siapkan kombinasi FTL Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C03-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0014",
+      "title": "Buat order FTL Multidrop berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C03-S2 pada data QA baru.",
+        "Siapkan kombinasi FTL Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C03-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0015",
+      "title": "Buat order FTL Multidrop berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C03-S3 pada data QA baru.",
+        "Siapkan kombinasi FTL Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C03-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0016",
+      "title": "Buat order FTL Multidrop berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C03-S4 pada data QA baru.",
+        "Siapkan kombinasi FTL Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C03-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0017",
+      "title": "Buat order FTL Multidrop berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C03-S5 pada data QA baru.",
+        "Siapkan kombinasi FTL Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C03-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0018",
+      "title": "Buat order FTL Multidrop berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C03-S6 pada data QA baru.",
+        "Siapkan kombinasi FTL Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C03-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0019",
+      "title": "Buat order FTL Multipoint berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C04-S1 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C04-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0020",
+      "title": "Buat order FTL Multipoint berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C04-S2 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C04-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0021",
+      "title": "Buat order FTL Multipoint berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C04-S3 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C04-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0022",
+      "title": "Buat order FTL Multipoint berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C04-S4 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C04-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0023",
+      "title": "Buat order FTL Multipoint berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C04-S5 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C04-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0024",
+      "title": "Buat order FTL Multipoint berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C04-S6 pada data QA baru.",
+        "Siapkan kombinasi FTL Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C04-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0025",
+      "title": "Buat order FCL Door to Door Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C05-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C05-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0026",
+      "title": "Buat order FCL Door to Door Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C05-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C05-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0027",
+      "title": "Buat order FCL Door to Door Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C05-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C05-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0028",
+      "title": "Buat order FCL Door to Door Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C05-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C05-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0029",
+      "title": "Buat order FCL Door to Door Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C05-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C05-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0030",
+      "title": "Buat order FCL Door to Door Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C05-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C05-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0031",
+      "title": "Buat order FCL Door to Door Multipickup berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C06-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C06-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0032",
+      "title": "Buat order FCL Door to Door Multipickup berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C06-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C06-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0033",
+      "title": "Buat order FCL Door to Door Multipickup berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C06-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C06-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0034",
+      "title": "Buat order FCL Door to Door Multipickup berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C06-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C06-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0035",
+      "title": "Buat order FCL Door to Door Multipickup berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C06-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C06-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0036",
+      "title": "Buat order FCL Door to Door Multipickup berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C06-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C06-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0037",
+      "title": "Buat order FCL Door to Door Multidrop berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C07-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C07-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0038",
+      "title": "Buat order FCL Door to Door Multidrop berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C07-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C07-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0039",
+      "title": "Buat order FCL Door to Door Multidrop berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C07-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C07-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0040",
+      "title": "Buat order FCL Door to Door Multidrop berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C07-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C07-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0041",
+      "title": "Buat order FCL Door to Door Multidrop berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C07-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C07-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0042",
+      "title": "Buat order FCL Door to Door Multidrop berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C07-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C07-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0043",
+      "title": "Buat order FCL Door to Door Multipoint berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C08-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C08-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0044",
+      "title": "Buat order FCL Door to Door Multipoint berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C08-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C08-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0045",
+      "title": "Buat order FCL Door to Door Multipoint berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C08-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C08-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0046",
+      "title": "Buat order FCL Door to Door Multipoint berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C08-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C08-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0047",
+      "title": "Buat order FCL Door to Door Multipoint berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C08-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C08-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0048",
+      "title": "Buat order FCL Door to Door Multipoint berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C08-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to Door Multipoint pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C08-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0049",
+      "title": "Buat order FCL Door to CY Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C09-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C09-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0050",
+      "title": "Buat order FCL Door to CY Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C09-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C09-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0051",
+      "title": "Buat order FCL Door to CY Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C09-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C09-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0052",
+      "title": "Buat order FCL Door to CY Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C09-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C09-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0053",
+      "title": "Buat order FCL Door to CY Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C09-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C09-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0054",
+      "title": "Buat order FCL Door to CY Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C09-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C09-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0055",
+      "title": "Buat order FCL Door to CY Multipickup berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C10-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C10-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0056",
+      "title": "Buat order FCL Door to CY Multipickup berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C10-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C10-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0057",
+      "title": "Buat order FCL Door to CY Multipickup berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C10-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C10-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0058",
+      "title": "Buat order FCL Door to CY Multipickup berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C10-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C10-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0059",
+      "title": "Buat order FCL Door to CY Multipickup berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C10-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C10-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0060",
+      "title": "Buat order FCL Door to CY Multipickup berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C10-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL Door to CY Multipickup pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C10-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0061",
+      "title": "Buat order FCL CY to Door Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C11-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C11-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0062",
+      "title": "Buat order FCL CY to Door Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C11-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C11-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0063",
+      "title": "Buat order FCL CY to Door Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C11-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C11-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0064",
+      "title": "Buat order FCL CY to Door Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C11-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C11-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0065",
+      "title": "Buat order FCL CY to Door Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C11-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C11-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0066",
+      "title": "Buat order FCL CY to Door Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C11-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C11-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0067",
+      "title": "Buat order FCL CY to Door Multidrop berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C12-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C12-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0068",
+      "title": "Buat order FCL CY to Door Multidrop berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C12-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C12-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0069",
+      "title": "Buat order FCL CY to Door Multidrop berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C12-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C12-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0070",
+      "title": "Buat order FCL CY to Door Multidrop berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C12-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C12-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0071",
+      "title": "Buat order FCL CY to Door Multidrop berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C12-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C12-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0072",
+      "title": "Buat order FCL CY to Door Multidrop berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C12-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to Door Multidrop pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C12-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0073",
+      "title": "Buat order FCL CY to CY Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C13-S1 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C13-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0074",
+      "title": "Buat order FCL CY to CY Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C13-S2 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C13-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0075",
+      "title": "Buat order FCL CY to CY Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C13-S3 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C13-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0076",
+      "title": "Buat order FCL CY to CY Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C13-S4 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C13-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0077",
+      "title": "Buat order FCL CY to CY Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C13-S5 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C13-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0078",
+      "title": "Buat order FCL CY to CY Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C13-S6 pada data QA baru.",
+        "Siapkan kombinasi FCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C13-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0079",
+      "title": "Buat order LTL Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C14-S1 pada data QA baru.",
+        "Siapkan kombinasi LTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C14-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0080",
+      "title": "Buat order LTL Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C14-S2 pada data QA baru.",
+        "Siapkan kombinasi LTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C14-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0081",
+      "title": "Buat order LTL Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C14-S3 pada data QA baru.",
+        "Siapkan kombinasi LTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C14-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0082",
+      "title": "Buat order LTL Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C14-S4 pada data QA baru.",
+        "Siapkan kombinasi LTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C14-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0083",
+      "title": "Buat order LTL Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C14-S5 pada data QA baru.",
+        "Siapkan kombinasi LTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C14-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0084",
+      "title": "Buat order LTL Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C14-S6 pada data QA baru.",
+        "Siapkan kombinasi LTL Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C14-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0085",
+      "title": "Buat order LCL Door to Door Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C15-S1 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C15-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0086",
+      "title": "Buat order LCL Door to Door Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C15-S2 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C15-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0087",
+      "title": "Buat order LCL Door to Door Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C15-S3 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C15-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0088",
+      "title": "Buat order LCL Door to Door Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C15-S4 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C15-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0089",
+      "title": "Buat order LCL Door to Door Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C15-S5 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C15-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0090",
+      "title": "Buat order LCL Door to Door Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C15-S6 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C15-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0091",
+      "title": "Buat order LCL CY to Door Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C16-S1 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C16-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0092",
+      "title": "Buat order LCL CY to Door Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C16-S2 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C16-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0093",
+      "title": "Buat order LCL CY to Door Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C16-S3 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C16-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0094",
+      "title": "Buat order LCL CY to Door Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C16-S4 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C16-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0095",
+      "title": "Buat order LCL CY to Door Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C16-S5 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C16-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0096",
+      "title": "Buat order LCL CY to Door Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C16-S6 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to Door Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C16-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0097",
+      "title": "Buat order LCL Door to CY Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C17-S1 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C17-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0098",
+      "title": "Buat order LCL Door to CY Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C17-S2 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C17-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0099",
+      "title": "Buat order LCL Door to CY Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C17-S3 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C17-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0100",
+      "title": "Buat order LCL Door to CY Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C17-S4 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C17-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0101",
+      "title": "Buat order LCL Door to CY Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C17-S5 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C17-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0102",
+      "title": "Buat order LCL Door to CY Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C17-S6 pada data QA baru.",
+        "Siapkan kombinasi LCL Door to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C17-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0103",
+      "title": "Buat order LCL CY to CY Normal berstatus Ditolak",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C18-S1 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Ditolak.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C18-S1 berstatus Ditolak dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0104",
+      "title": "Buat order LCL CY to CY Normal berstatus Isi Data Muatan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C18-S2 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Muatan.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C18-S2 berstatus Isi Data Muatan dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0105",
+      "title": "Buat order LCL CY to CY Normal berstatus Isi Data Vendor",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C18-S3 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Isi Data Vendor.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C18-S3 berstatus Isi Data Vendor dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0106",
+      "title": "Buat order LCL CY to CY Normal berstatus Review Order",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C18-S4 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Review Order.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C18-S4 berstatus Review Order dengan kombinasi yang diminta."
+      ]
+    },
+    {
+      "id": "SCN-0107",
+      "title": "Buat order LCL CY to CY Normal berstatus Menunggu Konfirmasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C18-S5 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Menunggu Konfirmasi.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C18-S5 berstatus Menunggu Konfirmasi dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    },
+    {
+      "id": "SCN-0108",
+      "title": "Buat order LCL CY to CY Normal berstatus Konfirmasi Jadwal",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "OS-REQ-001",
+        "OS-REQ-002",
+        "OS-REQ-003"
+      ],
+      "steps": [
+        "Gunakan penanda unik QA-OS20261021032243-C18-S6 pada data QA baru.",
+        "Siapkan kombinasi LCL CY to CY Normal pada flow OPS yang teramati.",
+        "Simpan melalui tahap/flow pembentuk status Konfirmasi Jadwal.",
+        "Baca ulang detail order dan cocokkan marker, jenis, tipe, metode, jumlah lokasi dan status."
+      ],
+      "expected": [
+        "Terdapat satu order baru unik untuk sel C18-S6 berstatus Konfirmasi Jadwal dengan kombinasi yang diminta."
+      ],
+      "applicableToOps": false,
+      "scopeDisposition": "excluded per latest user clarification; skip, do not set up AMS"
+    }
+  ],
+  "scopeClarification": {
+    "revisionId": "SCOPE20261021062337",
+    "at": "2026-10-21T06:23:37.623810+00:00",
+    "classification": "user clarification; supersedes prior inferred OPS scope",
+    "quote": "Ditolak, Menunggu Konfirmasi, Konfirmasi Jadwal\nstatus ini pada order ops tidak ada!",
+    "excludedOrderStatuses": [
+      "Ditolak",
+      "Menunggu Konfirmasi",
+      "Konfirmasi Jadwal"
+    ],
+    "excludedEditScenarioIds": [
+      "SCN-0017",
+      "SCN-0021",
+      "SCN-0022"
+    ],
+    "activeOrderStatuses": [
+      "Isi Data Pengiriman",
+      "Isi Data Muatan",
+      "Isi Data Vendor",
+      "Review Order",
+      "Menunggu Penugasan",
+      "Ditugaskan",
+      "Proses Pengiriman",
+      "Terkirim",
+      "Dibatalkan"
+    ],
+    "runtimeRerun": false,
+    "productActivationRequiredForOpsScope": false
+  }
+}

@@ -1,0 +1,403 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "77":
+    - text: "77"
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Master Kelurahan
+- heading "Master Kelurahan" [level=2]
+- link "Tambah Kelurahan":
+  - /url: /master/kelurahan/tambah
+- button "Filter"
+- button "Riwayat"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Kelurahan/Desa
+- textbox "Masukkan Kelurahan/Desa"
+- text: Kode Pos
+- textbox "Masukkan Kode Pos"
+- text: Kecamatan
+- textbox "Masukkan Kecamatan"
+- text: Provinsi
+- button "Pilih Provinsi":
+  - text: Pilih Provinsi
+  - img
+- text: Kota/Kab.
+- button "Pilih Kota/Kab.":
+  - text: Pilih Kota/Kab.
+  - img
+- text: Status
+- button "Pilih Status":
+  - text: Pilih Status
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "No Kelurahan/Desa Kode Pos Kecamatan Kota/Kab. Provinsi Status Aksi":
+      - columnheader "No"
+      - columnheader "Kelurahan/Desa Kode Pos"
+      - columnheader "Kecamatan"
+      - columnheader "Kota/Kab."
+      - columnheader "Provinsi"
+      - columnheader "Status"
+      - columnheader "Aksi"
+  - rowgroup:
+    - row:
+      - cell
+    - row "1 Bandar Utama 20613 Tebing Tinggi Kota Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "1"
+      - cell "Bandar Utama 20613":
+        - paragraph: Bandar Utama
+        - paragraph: "20613"
+      - cell "Tebing Tinggi Kota"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "2 Rambung 20633 Tebing Tinggi Kota Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "2"
+      - cell "Rambung 20633":
+        - paragraph: Rambung
+        - paragraph: "20633"
+      - cell "Tebing Tinggi Kota"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "3 Pasar Baru 20627 Tebing Tinggi Kota Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "3"
+      - cell "Pasar Baru 20627":
+        - paragraph: Pasar Baru
+        - paragraph: "20627"
+      - cell "Tebing Tinggi Kota"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "4 Badak Bejuang 20615 Tebing Tinggi Kota Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "4"
+      - cell "Badak Bejuang 20615":
+        - paragraph: Badak Bejuang
+        - paragraph: "20615"
+      - cell "Tebing Tinggi Kota"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "5 Mandailing 20626 Tebing Tinggi Kota Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "5"
+      - cell "Mandailing 20626":
+        - paragraph: Mandailing
+        - paragraph: "20626"
+      - cell "Tebing Tinggi Kota"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "6 Pasar Gambir 20628 Tebing Tinggi Kota Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "6"
+      - cell "Pasar Gambir 20628":
+        - paragraph: Pasar Gambir
+        - paragraph: "20628"
+      - cell "Tebing Tinggi Kota"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "7 Tebing Tinggi Lama 20632 Tebing Tinggi Kota Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "7"
+      - cell "Tebing Tinggi Lama 20632":
+        - paragraph: Tebing Tinggi Lama
+        - paragraph: "20632"
+      - cell "Tebing Tinggi Kota"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "8 Rantau Laban 20614 Rambutan Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "8"
+      - cell "Rantau Laban 20614":
+        - paragraph: Rantau Laban
+        - paragraph: "20614"
+      - cell "Rambutan"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "9 Sri Padang 20616 Rambutan Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "9"
+      - cell "Sri Padang 20616":
+        - paragraph: Sri Padang
+        - paragraph: "20616"
+      - cell "Rambutan"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "10 Karya Jaya 20611 Rambutan Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "10"
+      - cell "Karya Jaya 20611":
+        - paragraph: Karya Jaya
+        - paragraph: "20611"
+      - cell "Rambutan"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "11 Tanjung Marulak 20616 Rambutan Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "11"
+      - cell "Tanjung Marulak 20616":
+        - paragraph: Tanjung Marulak
+        - paragraph: "20616"
+      - cell "Rambutan"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "12 Tanjung Marulak Hilir 20616 Rambutan Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "12"
+      - cell "Tanjung Marulak Hilir 20616":
+        - paragraph: Tanjung Marulak Hilir
+        - paragraph: "20616"
+      - cell "Rambutan"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "13 Lalang 20614 Rambutan Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "13"
+      - cell "Lalang 20614":
+        - paragraph: Lalang
+        - paragraph: "20614"
+      - cell "Rambutan"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "14 Mekar Sentosa 20616 Rambutan Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "14"
+      - cell "Mekar Sentosa 20616":
+        - paragraph: Mekar Sentosa
+        - paragraph: "20616"
+      - cell "Rambutan"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "15 Padang Merbau 20624 Padang Hulu Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "15"
+      - cell "Padang Merbau 20624":
+        - paragraph: Padang Merbau
+        - paragraph: "20624"
+      - cell "Padang Hulu"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "16 Pabatu 20623 Padang Hulu Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "16"
+      - cell "Pabatu 20623":
+        - paragraph: Pabatu
+        - paragraph: "20623"
+      - cell "Padang Hulu"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "17 Tualang 20624 Padang Hulu Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "17"
+      - cell "Tualang 20624":
+        - paragraph: Tualang
+        - paragraph: "20624"
+      - cell "Padang Hulu"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "18 Lubuk Baru 20622 Padang Hulu Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "18"
+      - cell "Lubuk Baru 20622":
+        - paragraph: Lubuk Baru
+        - paragraph: "20622"
+      - cell "Padang Hulu"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "19 Lubuk Raya 20624 Padang Hulu Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "19"
+      - cell "Lubuk Raya 20624":
+        - paragraph: Lubuk Raya
+        - paragraph: "20624"
+      - cell "Padang Hulu"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+    - row "20 Persiakan 20624 Padang Hulu Kota Tebing Tinggi Sumatera Utara Aktif Edit Data Hapus Data":
+      - cell "20"
+      - cell "Persiakan 20624":
+        - paragraph: Persiakan
+        - paragraph: "20624"
+      - cell "Padang Hulu"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Data Hapus Data":
+        - button "Edit Data"
+        - button "Hapus Data"
+- paragraph: Menampilkan 1–20 data dari 83762 data
+- button "Halaman pertama" [disabled]
+- button "Sebelumnya" [disabled]
+- button "1"
+- button "2"
+- text: ...
+- button "4189"
+- button "Berikutnya"
+- button "Halaman terakhir"
+- region "Notifications alt+T"
+- alert

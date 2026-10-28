@@ -1,0 +1,15 @@
+# Edit Penugasan — live OPS 26 Oktober 2026
+
+Run EP20261026-062548, base OPS staging dari config/env.md; Chromium1440×1000 Asia/Jakarta. Sesi Admin/Administrator dan Vendor PT. Ikatan Kuat berurutan, masing-masing login200/logout200ke/login/browserclosed. Tidak retry auth atau commit/push. Device adb kosong, akunDHuntukrunbelum diberikan; historyappstest hanya panduan, bukan bukti runtimebaru.
+
+Requirement terbaru membolehkan Edit BelumBerangkat danDalamPerjalanan, menggantikan laranganlama. Aksi>Edit menuju /penugasan-tracking/<id>/edit. Source menu Admin untukdataVendormanaged dapat hanya Detail/Bagikan/Riwayat; pindahakunVendorpengelolaserta data yang cocok untukverifikasi. FieldArmada danSopir master/manual, modeSopir/Pengurus. Save membuka konfirmasi kedua; actualwrite **PUT /api/penugasan/<assignmentId> HTTP200**, bukan PATCH. Metode dikoreksi dari logrequestaktual pada rekonsiliasi. Snapshot/readiness/selector differences dijelaskan di report.
+
+Hasil33:29P/1F/3B/0S. FTL persistence dua status, tiga milestoneinprogress BerangkatMuat/SelesaiMuat/BerangkatBongkar lulus, nopol/manual/master/mode/cancel/required/coldreopen/sibling. FCLsave normal failed karena ETD/ETA prefill mundur; setelah inputulangbaseline savepassed. LCL/LTL entry read-only duastatus passed: LCLBelumAdminNusantara, LCLDalamVendorIK, LTLBelumVendorIK, LTLDalamAdminNusantara; tidak mengklaimsaveLCL/LTL.
+
+EP-FND-01 / SCN-0021: ownQAORD2978757955/PSCU2610003 BelumBerangkat. Closing26/1009:00WIB,ETD27/1000:00,ETA29/1000:00valid padaGET. EditprefillETD26/10,ETA28/10; ubahhanyanopol/sopir, Save menolak Berangkat (ETD) harus setelah Closing Time, tanpaPUT. Workaround ETD27/ETA29inputulang, serverdateidentikbaseline. PolaserupatemuanPS-FND-02yangusersudahsampaikandeveloper; akarpenyebabbersamabelumdiisolasi, dampakEditdicatat. Gagalawal tidakdiubahpassed olehworkaround.
+
+SCN-0031/32 blocked perangkat+akunDH: masterbaru menerimaawal/lamahilang danmanualbarutidakmenerima/lamahilang belumdiuji. Userditanyasejakawal; tidakdisimpulkandariPUT. SCN-0033 scopegap: NoKontainer/NoSegel/JadwalKapalmasiheditable; apakahpoin3hanyatigafieldbelumdijawab. Kontrol diamati, fieldtambahan tidakdiganti untukmengarangbug.
+
+Data: newORD2996154854FTL2unit markerQA-EP20261026-062548-A; unit1QAEP26A1BMasterRaditPurnama/PengurusIN_PROGRESSBerangkatBongkar,unit2QAEP26A2manualBelumBerangkattetap. ExistingownQAPSFCLunitPSCU2610003fieldbisnisdansharedOrderdipulihkanpersisbaseline,statuskiniIN_PROGRESSdengansatueventBMsetupdipertahankan. Existingreadonlyothers0mutasi. Total24requestallowed0denied:1POSTOrder201,1POSTPenugasan201duaunit,18PUTedit200,4POSTtracking200/4eventuniquepersisted,1fotosintetis. TidakmasukDataUserlain/master/setting/messagetool.
+
+Report reports/edit-penugasan_test-report-20261026.md dan Excel; results/edit-penugasan__EP20261026-062548.json; scenario/edit-penugasan source+coverage; artifacts/evidence/EP20261026-062548 evidence/status/reconciliation/blocked. Semua pending ditulis spesifik; tidakdinyatakanclear.

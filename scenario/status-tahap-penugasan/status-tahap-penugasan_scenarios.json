@@ -1,0 +1,904 @@
+{
+  "source": "Requirement user 26 Oktober2026 dan status-tahap-penugasan_spec.md",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "N Berangkat Muat alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983824248",
+        "Pilih alamat urutan 1 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Muat sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "N Selesai Muat alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983824248",
+        "Pilih alamat urutan 1 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Muat sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "N Berangkat Bongkar alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983824248",
+        "Pilih alamat urutan 1 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Bongkar sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "N Selesai Bongkar alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983824248",
+        "Pilih alamat urutan 1 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Bongkar sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "Normal status per armada tidak menimpa armada lain",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "Normal status per armada tidak menimpa armada lain"
+      ],
+      "expected": [
+        "Armada1 Selesai Bongkar, armada2 tetap Belum Berangkat"
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "Multipickup baseline belum berangkat",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "Multipickup baseline belum berangkat"
+      ],
+      "expected": [
+        "Belum Berangkat sebelum ada milestone"
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "MP Berangkat Muat hitungan 1 alamatOrder3",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983834604",
+        "Pilih alamat urutan 3 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Muat 1 sesuai jumlah progres, bukan nomor alamat 3"
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "title": "MP Selesai Muat hitungan 1 alamatOrder3",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983834604",
+        "Pilih alamat urutan 3 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Muat 1 sesuai jumlah progres, bukan nomor alamat 3"
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "title": "MP Berangkat Muat hitungan 2 alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983834604",
+        "Pilih alamat urutan 1 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Muat 2 sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0010",
+      "title": "MP Selesai Muat hitungan 2 alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983834604",
+        "Pilih alamat urutan 1 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Muat 2 sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0011",
+      "title": "MP Berangkat Muat hitungan 3 alamatOrder2",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983834604",
+        "Pilih alamat urutan 2 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Muat 3 sesuai jumlah progres, bukan nomor alamat 2"
+      ]
+    },
+    {
+      "id": "SCN-0012",
+      "title": "MP Selesai Muat hitungan 3 alamatOrder2",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983834604",
+        "Pilih alamat urutan 2 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Muat 3 sesuai jumlah progres, bukan nomor alamat 2"
+      ]
+    },
+    {
+      "id": "SCN-0013",
+      "title": "MP Berangkat Bongkar alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983834604",
+        "Pilih alamat urutan 1 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Bongkar sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0014",
+      "title": "MP Selesai Bongkar alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2983834604",
+        "Pilih alamat urutan 1 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Bongkar sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0015",
+      "title": "Multidrop baseline belum berangkat",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "Multidrop baseline belum berangkat"
+      ],
+      "expected": [
+        "Belum Berangkat sebelum milestone"
+      ]
+    },
+    {
+      "id": "SCN-0016",
+      "title": "MD Berangkat Muat alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984216989",
+        "Pilih alamat urutan 1 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Muat sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0017",
+      "title": "MD Selesai Muat alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984216989",
+        "Pilih alamat urutan 1 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Muat sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0018",
+      "title": "MD Berangkat Bongkar hitungan 1 alamatOrder3",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984216989",
+        "Pilih alamat urutan 3 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Bongkar 1 sesuai jumlah progres, bukan nomor alamat 3"
+      ]
+    },
+    {
+      "id": "SCN-0019",
+      "title": "MD Selesai Bongkar hitungan 1 alamatOrder3",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984216989",
+        "Pilih alamat urutan 3 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Bongkar 1 sesuai jumlah progres, bukan nomor alamat 3"
+      ]
+    },
+    {
+      "id": "SCN-0020",
+      "title": "MD Berangkat Bongkar hitungan 2 alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984216989",
+        "Pilih alamat urutan 1 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Bongkar 2 sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0021",
+      "title": "MD Selesai Bongkar hitungan 2 alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984216989",
+        "Pilih alamat urutan 1 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Bongkar 2 sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0022",
+      "title": "MD Berangkat Bongkar hitungan 3 alamatOrder2",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984216989",
+        "Pilih alamat urutan 2 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Bongkar 3 sesuai jumlah progres, bukan nomor alamat 2"
+      ]
+    },
+    {
+      "id": "SCN-0023",
+      "title": "MD Selesai Bongkar hitungan 3 alamatOrder2",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984216989",
+        "Pilih alamat urutan 2 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Bongkar 3 sesuai jumlah progres, bukan nomor alamat 2"
+      ]
+    },
+    {
+      "id": "SCN-0024",
+      "title": "Dua sisi multi lokasi lintas kota baseline",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002",
+        "REQ-003",
+        "REQ-005"
+      ],
+      "steps": [
+        "Dua sisi multi lokasi lintas kota baseline"
+      ],
+      "expected": [
+        "3 muat dan3 bongkar; Belum Berangkat"
+      ]
+    },
+    {
+      "id": "SCN-0025",
+      "title": "X Berangkat Muat hitungan 1 alamatOrder2",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 2 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Muat 1 sesuai jumlah progres, bukan nomor alamat 2"
+      ]
+    },
+    {
+      "id": "SCN-0026",
+      "title": "X Selesai Muat hitungan 1 alamatOrder2",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 2 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Muat 1 sesuai jumlah progres, bukan nomor alamat 2"
+      ]
+    },
+    {
+      "id": "SCN-0027",
+      "title": "X Berangkat Muat hitungan 2 alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 1 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Muat 2 sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0028",
+      "title": "X Selesai Muat hitungan 2 alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 1 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Muat 2 sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0029",
+      "title": "X Berangkat Muat hitungan 3 alamatOrder3",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 3 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Muat 3 sesuai jumlah progres, bukan nomor alamat 3"
+      ]
+    },
+    {
+      "id": "SCN-0030",
+      "title": "X Selesai Muat hitungan 3 alamatOrder3",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-002",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 3 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Muat 3 sesuai jumlah progres, bukan nomor alamat 3"
+      ]
+    },
+    {
+      "id": "SCN-0031",
+      "title": "Membuka tahap berikutnya tanpa simpan tidak mengubah status daftar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 3 pada sisi muat ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Tetap Selesai Muat3 meski form berikutnya sudah bongkar"
+      ]
+    },
+    {
+      "id": "SCN-0032",
+      "title": "X Berangkat Bongkar hitungan 1 alamatOrder2",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 2 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Bongkar 1 sesuai jumlah progres, bukan nomor alamat 2"
+      ]
+    },
+    {
+      "id": "SCN-0033",
+      "title": "X Selesai Bongkar hitungan 1 alamatOrder2",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 2 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Bongkar 1 sesuai jumlah progres, bukan nomor alamat 2"
+      ]
+    },
+    {
+      "id": "SCN-0034",
+      "title": "X Berangkat Bongkar hitungan 2 alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 1 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Bongkar 2 sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0035",
+      "title": "X Selesai Bongkar hitungan 2 alamatOrder1",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 1 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Bongkar 2 sesuai jumlah progres, bukan nomor alamat 1"
+      ]
+    },
+    {
+      "id": "SCN-0036",
+      "title": "X Berangkat Bongkar hitungan 3 alamatOrder3",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 3 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Berangkat Bongkar 3 sesuai jumlah progres, bukan nomor alamat 3"
+      ]
+    },
+    {
+      "id": "SCN-0037",
+      "title": "X Selesai Bongkar hitungan 3 alamatOrder3",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan own QA ORD2984503817",
+        "Pilih alamat urutan 3 pada sisi bongkar ketika diizinkan city group",
+        "Simpan milestone melalui UI; foto sintetis untuk Selesai",
+        "Buka ulang daftar, filter order, periksa kolom status unit yang sama",
+        "Cocokkan tahap/hitungan dengan urutan event nyata dan GET"
+      ],
+      "expected": [
+        "Selesai Bongkar 3 sesuai jumlah progres, bukan nomor alamat 3"
+      ]
+    },
+    {
+      "id": "SCN-0038",
+      "title": "FCL sampel read-only daftar tahap aktual",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005",
+        "REQ-003"
+      ],
+      "steps": [
+        "FCL sampel read-only daftar tahap aktual"
+      ],
+      "expected": [
+        "Selesai Bongkar 2 tampil langsung di daftar"
+      ]
+    },
+    {
+      "id": "SCN-0039",
+      "title": "LCL sampel read-only daftar tahap aktual",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "LCL sampel read-only daftar tahap aktual"
+      ],
+      "expected": [
+        "Berangkat Muat tampil langsung di daftar"
+      ]
+    },
+    {
+      "id": "SCN-0040",
+      "title": "LTL sampel read-only daftar tahap aktual",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-005"
+      ],
+      "steps": [
+        "LTL sampel read-only daftar tahap aktual"
+      ],
+      "expected": [
+        "Berangkat Muat tampil langsung di daftar"
+      ]
+    },
+    {
+      "id": "SCN-0041",
+      "title": "Rekonsiliasi32 event dan urutan alamat tersimpan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-005"
+      ],
+      "steps": [
+        "Rekonsiliasi32 event dan urutan alamat tersimpan"
+      ],
+      "expected": [
+        "4 order ownQA,32 event unik tersimpan; urutan alamat sesuai fixture"
+      ]
+    },
+    {
+      "id": "SCN-0042",
+      "title": "Multipoint menghitung alamat muat dan bongkar sesuai progres",
+      "category": "edge",
+      "priority": "medium",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-004"
+      ],
+      "steps": [
+        "Gunakan klarifikasi user bahwa poin4 adalah Multipoint",
+        "Tinjau 12 transisi UI existing pada ORD2984503817: tiga alamat muat dan tiga alamat bongkar",
+        "Cocokkan count setiap tahap 1→2→3 dengan urutan alamat2→1→3 dan rekonsiliasi event tersimpan"
+      ],
+      "expected": [
+        "Multipoint menerapkan hitungan jumlah alamat pada kedua sisi, bukan nomor alamat detail order"
+      ]
+    },
+    {
+      "id": "SCN-0043",
+      "title": "Navigasi Kembali tanpa refresh menampilkan tahap terbaru",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-005"
+      ],
+      "steps": [
+        "Navigasi Kembali tanpa refresh menampilkan tahap terbaru"
+      ],
+      "expected": [
+        "Unit2 tampil Berangkat Muat setelah save dan klik Kembali, tanpa goto/reload/filter ulang"
+      ]
+    }
+  ]
+}

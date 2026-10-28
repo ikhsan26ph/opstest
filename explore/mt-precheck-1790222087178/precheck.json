@@ -1,0 +1,217 @@
+{
+ "res": {
+  "ORD0173560594": {
+   "pen": [
+    {
+     "id": "39c448e1-5ed7-4c70-a712-75f6e7ac53f1",
+     "status": "BELUM_BERANGKAT",
+     "unit": "QAK14928b8",
+     "metode": "DOOR_TO_CY",
+     "muat": [
+      {
+       "dropPointName": "EL - Gudang Surabaya",
+       "cityName": "Kota Surabaya",
+       "address": "Jl. Rajawali No 109"
+      }
+     ],
+     "bongkar": [
+      {
+       "dropPointName": "EL- Gudang Makassar",
+       "cityName": "Kota Makassar",
+       "address": "Jl. Penghibur No 78"
+      }
+     ]
+    }
+   ],
+   "39c448e1-5ed7-4c70-a712-75f6e7ac53f1": {
+    "events": [
+     {
+      "kind": "PICKUP",
+      "status": "PENDING",
+      "dp": "EL - Gudang Surabaya",
+      "actions": [
+       {
+        "action": "PICKUP"
+       }
+      ],
+      "ev": []
+     },
+     {
+      "kind": "KAPAL_BERLAYAR",
+      "status": "PENDING",
+      "dp": "",
+      "actions": [],
+      "ev": []
+     },
+     {
+      "kind": "KAPAL_SANDAR",
+      "status": "PENDING",
+      "dp": "",
+      "actions": [],
+      "ev": []
+     },
+     {
+      "kind": "DOORING",
+      "status": "PENDING",
+      "dp": "",
+      "actions": [],
+      "ev": []
+     }
+    ],
+    "steps": []
+   }
+  },
+  "ORD0173531560": {
+   "pen": []
+  },
+  "ORD0173502745": {
+   "pen": [
+    {
+     "id": "777cd405-75a3-4171-8a94-3c8b326bc9b3",
+     "status": "SELESAI",
+     "unit": "QAK014137F",
+     "metode": "DOOR_TO_DOOR",
+     "muat": [
+      {
+       "dropPointName": "EL - Gudang Surabaya",
+       "cityName": "Kota Surabaya",
+       "address": "Jl. Rajawali No 109"
+      }
+     ],
+     "bongkar": [
+      {
+       "dropPointName": "EL- Gudang Makassar",
+       "cityName": "Kota Makassar",
+       "address": "Jl. Penghibur No 78"
+      }
+     ]
+    }
+   ],
+   "777cd405-75a3-4171-8a94-3c8b326bc9b3": {
+    "events": [
+     {
+      "kind": "PICKUP",
+      "status": "DONE",
+      "dp": "EL - Gudang Surabaya",
+      "actions": [
+       {
+        "action": "PICKUP"
+       }
+      ],
+      "ev": [
+       "Berangkat Muat",
+       "Selesai Muat"
+      ]
+     },
+     {
+      "kind": "KAPAL_BERLAYAR",
+      "status": "DONE",
+      "dp": "",
+      "actions": [],
+      "ev": []
+     },
+     {
+      "kind": "KAPAL_SANDAR",
+      "status": "DONE",
+      "dp": "",
+      "actions": [],
+      "ev": []
+     },
+     {
+      "kind": "DROP",
+      "status": "DONE",
+      "dp": "EL- Gudang Makassar",
+      "actions": [
+       {
+        "action": "DROP"
+       }
+      ],
+      "ev": [
+       "Berangkat Bongkar",
+       "Selesai Bongkar"
+      ]
+     }
+    ],
+    "steps": []
+   }
+  },
+  "ORD0173587094": {
+   "pen": [
+    {
+     "id": "31c703b3-2d41-428e-aefd-427b94e73f3e",
+     "status": "SELESAI",
+     "unit": "QAK14928bL",
+     "metode": "DOOR_TO_DOOR",
+     "muat": [
+      {
+       "dropPointName": "EL - Gudang Surabaya",
+       "cityName": "Kota Surabaya",
+       "address": "Jl. Rajawali No 109"
+      }
+     ],
+     "bongkar": [
+      {
+       "dropPointName": "EL- Gudang Makassar",
+       "cityName": "Kota Makassar",
+       "address": "Jl. Penghibur No 78"
+      }
+     ]
+    }
+   ],
+   "31c703b3-2d41-428e-aefd-427b94e73f3e": {
+    "events": [
+     {
+      "kind": "PICKUP",
+      "status": "DONE",
+      "dp": "EL - Gudang Surabaya",
+      "actions": [
+       {
+        "action": "PICKUP"
+       }
+      ],
+      "ev": [
+       "Berangkat Muat",
+       "Selesai Muat"
+      ]
+     },
+     {
+      "kind": "KAPAL_BERLAYAR",
+      "status": "DONE",
+      "dp": "",
+      "actions": [],
+      "ev": []
+     },
+     {
+      "kind": "KAPAL_SANDAR",
+      "status": "DONE",
+      "dp": "",
+      "actions": [],
+      "ev": []
+     },
+     {
+      "kind": "DROP",
+      "status": "DONE",
+      "dp": "EL- Gudang Makassar",
+      "actions": [
+       {
+        "action": "DROP"
+       }
+      ],
+      "ev": [
+       "Berangkat Bongkar",
+       "Selesai Bongkar"
+      ]
+     }
+    ],
+    "steps": []
+   }
+  }
+ },
+ "orders": [
+  {
+   "c": "ORD0173531560",
+   "t": "FCL",
+   "st": "MENUNGGU_PENUGASAN"
+  }
+ ]
+}

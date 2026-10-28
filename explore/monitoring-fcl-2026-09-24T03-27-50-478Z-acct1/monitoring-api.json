@@ -1,0 +1,22 @@
+{
+ "summary": {
+  "status": 404,
+  "body": null
+ },
+ "fleet": {
+  "status": 404,
+  "body": null
+ },
+ "cases": {
+  "status": 404,
+  "body": null
+ },
+ "nearby-muat": {
+  "status": 404,
+  "body": null
+ },
+ "nearby-bongkar": {
+  "status": 404,
+  "body": null
+ }
+}

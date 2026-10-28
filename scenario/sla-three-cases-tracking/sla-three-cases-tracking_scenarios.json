@@ -1,0 +1,175 @@
+{
+  "source": "User clarification27Oktober2026 dan instruksi lanjutkan setelah setup3order; scenario/progres-pengiriman-sla/progres-pengiriman-sla_requirement-20261026.md",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "N: durasi belum berjalan sebelum Berangkat Bongkar",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Catat Berangkat Muat dan Selesai Muat sesuai urutan lokasi melalui UI",
+        "Baca progres exact order sebelum pemicu SLA yang ditetapkan user",
+        "Cocokkan absence/presence event pemicu dan assignmentId"
+      ],
+      "expected": [
+        "Selesai Muat saja belum memulai durasi SLA"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "N: titik awal memakai Berangkat Bongkar menuju Semarang",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Simpan status keberangkatan yang menjadi pemicu SLA",
+        "Baca response Progres dan screenshot dengan filter exact order",
+        "Hitung selisih meta.lastUpdate dengan timestamp event, dalam UTC yang sama",
+        "Bandingkan dengan hipotesis Berangkat Muat pertama dan observasi ulang"
+      ],
+      "expected": [
+        "Durasi mengikuti Berangkat Bongkar, bukan Berangkat Muat pertama"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "N: SLA berhenti pada Selesai Bongkar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001"
+      ],
+      "steps": [
+        "Simpan Selesai Bongkar",
+        "Baca Progres segera dan ulang setelah jeda",
+        "Rekonsiliasi GET Order, detail, stops/context, events dan Timeline"
+      ],
+      "expected": [
+        "Durasi final berakhir pada timestamp Selesai Bongkar",
+        "Nilai final sistem dapat dibandingkan dengan selisih event awal/akhir"
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "MP1: belum mulai sebelum Berangkat Bongkar meski dua pickup selesai",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Catat Berangkat Muat dan Selesai Muat sesuai urutan lokasi melalui UI",
+        "Baca progres exact order sebelum pemicu SLA yang ditetapkan user",
+        "Cocokkan absence/presence event pemicu dan assignmentId"
+      ],
+      "expected": [
+        "Kedua lokasi muat di Surabaya harus selesai; SLA baru mulai setelah Berangkat Bongkar tersimpan"
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "MP1: titik awal Berangkat Bongkar setelah dua lokasi Surabaya",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Simpan status keberangkatan yang menjadi pemicu SLA",
+        "Baca response Progres dan screenshot dengan filter exact order",
+        "Hitung selisih meta.lastUpdate dengan timestamp event, dalam UTC yang sama",
+        "Bandingkan dengan hipotesis Berangkat Muat pertama dan observasi ulang"
+      ],
+      "expected": [
+        "Waktu dua pickup di Surabaya dikecualikan dari durasi SLA"
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "MP1: SLA berhenti pada Selesai Bongkar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002"
+      ],
+      "steps": [
+        "Simpan Selesai Bongkar",
+        "Baca Progres segera dan ulang setelah jeda",
+        "Rekonsiliasi GET Order, detail, stops/context, events dan Timeline"
+      ],
+      "expected": [
+        "Durasi final berakhir pada timestamp Selesai Bongkar",
+        "Nilai final sistem dapat dibandingkan dengan selisih event awal/akhir"
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "MP2: titik awal Berangkat Muat menuju Gresik",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Simpan status keberangkatan yang menjadi pemicu SLA",
+        "Baca response Progres dan screenshot dengan filter exact order",
+        "Hitung selisih meta.lastUpdate dengan timestamp event, dalam UTC yang sama",
+        "Bandingkan dengan hipotesis Berangkat Muat pertama dan observasi ulang"
+      ],
+      "expected": [
+        "SLA mulai pada Berangkat Muat kota kedua setelah Surabaya selesai",
+        "Tidak memakai keberangkatan menuju pickup Surabaya pertama"
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "title": "MP2: waktu muat Gresik ikut berjalan dan tidak reset saat Berangkat Bongkar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Amati saat Gresik belum Selesai Muat, setelah selesai, lalu Berangkat Bongkar ke Semarang",
+        "Bandingkan delta waktu dan target minimum SLA antarsampel",
+        "Pastikan durasi tidak berubah menjadi waktu sejak Berangkat Bongkar"
+      ],
+      "expected": [
+        "Proses muat Gresik termasuk waktu berjalan",
+        "Berangkat Bongkar tidak mengatur ulang awal SLA"
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "title": "MP2: SLA berhenti pada Selesai Bongkar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-003"
+      ],
+      "steps": [
+        "Simpan Selesai Bongkar",
+        "Baca Progres segera dan ulang setelah jeda",
+        "Rekonsiliasi GET Order, detail, stops/context, events dan Timeline"
+      ],
+      "expected": [
+        "Durasi final berakhir pada timestamp Selesai Bongkar",
+        "Nilai final sistem dapat dibandingkan dengan selisih event awal/akhir"
+      ]
+    }
+  ]
+}

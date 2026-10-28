@@ -1,0 +1,145 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 31/5000 0,62%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "99+":
+    - text: 99+
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem:
+      - link "Daftar Order":
+        - /url: /order
+    - listitem: Detail Order
+- button "Detail Order"
+- heading "Jenis Pengiriman dan Rute" [level=3]
+- text: "Proses Pengiriman ID Order :"
+- button "Salin ORD0061555399": ORD0061555399
+- text: "Jenis Pengiriman : FCL (Full Container Load) Tanggal Dibuat : 22/09/2026 14:19 Jenis Kontainer : 40 HC Jumlah Kontainer : 1 Pelabuhan Asal : Tanjung Perak Pelabuhan Tujuan : Makassar Tipe Pengiriman : Multidrop Metode Pengiriman : CY to Door Waktu Perjalanan : 6 Hari"
+- button "Data Pengirim":
+  - heading "Data Pengirim" [level=3]
+- text: "Drop Point Asal : EL - Gudang Surabaya Pengirim : PT. Haier Sales Indonesia PIC Pengirim : Retno Cahyaning No. WhatsApp PIC : 6289556142910 Provinsi Asal : Jawa Timur Kota/Kab. Asal : Kota Surabaya Kecamatan Asal : Krembangan Desa/Kelurahan Asal : Krembangan Selatan Kode Pos : 60175 Alamat Asal : Jl. Rajawali No 109 Catatan : -"
+- button "Data Penerima":
+  - heading "Data Penerima" [level=3]
+- paragraph: Bongkar 1
+- text: "Drop Point Tujuan : EL - Gudang Bandung Penerima : PT. Haier Sales Indonesia PIC Penerima : Ahmad Priyanto No. WhatsApp PIC : 6285710291792 Provinsi Tujuan : Jawa Barat Kota/Kab. Tujuan : Kota Bandung Kecamatan Tujuan : Coblong Desa/Kelurahan Tujuan : Dago Kode Pos : 40135 Alamat Tujuan : Jl. Dipatiukur No 16 Catatan : -"
+- paragraph: Bongkar 2
+- text: "Drop Point Tujuan : EL - Gudang Bandung [Gudang Surya] Penerima : PT. Surya Elektronik PIC Penerima : Pamungkas Hardiansyah No. WhatsApp PIC : 62891020192819 Provinsi Tujuan : Jawa Barat Kota/Kab. Tujuan : Kota Bandung Kecamatan Tujuan : Antapani Desa/Kelurahan Tujuan : Antapani Tengah Kode Pos : 40291 Alamat Tujuan : Jl. Cikampek Raya No. 17 Catatan : -"
+- button "Data Barang":
+  - heading "Data Barang" [level=3]
+- paragraph: Kontainer 1
+- paragraph: "Drop Off: EL - Gudang Bandung"
+- text: "Deskripsi Barang : Tepung Nomor DO : - Berat : - Kubikasi : -"
+- paragraph: "Drop Off: EL - Gudang Bandung [Gudang Surya]"
+- text: "Deskripsi Barang : Gula Nomor DO : - Berat : - Kubikasi : -"
+- button "Vendor dan Harga":
+  - heading "Vendor dan Harga" [level=3]
+- text: "Vendor : Nusantara Logistik Utama Tanggal Permintaan Muat : 25/09/2026 05:13 Jenis Kontainer : 40 HC Harga : Rp. 12.000.000 Harga DPP Rp. 12.000.000 PPN (1.1%) Rp. 132.000 PPh (2%) - Rp. 240.000 Total Harga Rp. 11.892.000"
+- button "No. Perjalanan":
+  - heading "No. Perjalanan" [level=3]
+- text: OMS-TRC34649084
+- button "Salin nomor"
+- text: KO123•40 HC
+- list:
+  - listitem: Penugasan 22 Sep 2026, 14.20
+  - listitem: Proses Pengiriman 22 Sep 2026, 14.21
+- region "Notifications alt+T"
+- alert

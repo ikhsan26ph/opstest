@@ -1,0 +1,164 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 34/5000 0,68%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "99+":
+    - text: 99+
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Monitoring
+- heading "Monitoring" [level=2]
+- text: Total Armada
+- paragraph: "20"
+- paragraph: Armada dalam proses pengiriman
+- text: Tidak Update
+- paragraph: "19"
+- paragraph: ">30 menit tanpa sinyal GPS"
+- text: Melewati SLA
+- paragraph: "5"
+- paragraph: Melewati estimasi waktu tiba
+- text: Jumlah Kendala
+- paragraph: "1"
+- paragraph: Butuh tindakan segera
+- text: Keluar Jalur
+- paragraph: "0"
+- paragraph: Keluar dari rute yang direncanakan
+- text: Berpotensi Terlambat
+- paragraph: "7"
+- paragraph: Berpotensi akan terlambat tiba
+- button "Semua Tahapan 20"
+- button "Berangkat Muat 7"
+- button "Sampai Tempat Muat 0"
+- button "Selesai Muat 9"
+- button "Berangkat Bongkar 4"
+- button "Sampai Tempat Bongkar 0"
+- button "Selesai Bongkar 0"
+- button "Kendala 1"
+- button "Keluar Jalur 0"
+- button "Berpotensi Terlambat 7"
+- button "Tidak Update 19"
+- button "Melewati SLA 5"
+- text: "Pembaruan terakhir: 24 Sep, 10.29"
+- button "14"
+- button "3"
+- button "2"
+- button
+- link "OpenStreetMap":
+  - /url: https://www.openstreetmap.org/copyright
+- button "Perbesar": +
+- button "Perkecil": −
+- button "Layar penuh"
+- button "Semua Customer":
+  - text: Semua Customer
+  - img
+- button "Data Kasus"
+- button "Armada Terdekat"
+- button "Refresh"
+- button "Semua"
+- button "Lokasi Muat"
+- button "Lokasi Bongkar"
+- button "Pilih Nopol":
+  - text: Pilih Nopol
+  - img
+- paragraph: Tidak ada armada terdekat
+- region "Notifications alt+T"
+- alert

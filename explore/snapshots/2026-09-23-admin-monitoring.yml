@@ -1,0 +1,464 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e222]:
+    - complementary [ref=e223]:
+      - link [ref=e225] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e226]:
+          - img "Prahu Hub - TMS" [ref=e227]
+          - text: Prahu Hub - TMS
+      - generic [ref=e228]:
+        - navigation [ref=e229]:
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - heading [level=2]
+              - list [ref=e232]:
+                - listitem [ref=e233]:
+                  - button "Dashboard" [ref=e235] [cursor=pointer]
+                  - list [ref=e246]:
+                    - listitem [ref=e247]:
+                      - link "Monitoring" [ref=e248] [cursor=pointer]:
+                        - /url: /monitoring
+                    - listitem [ref=e249]:
+                      - link "Tracking & Location" [ref=e250] [cursor=pointer]:
+                        - /url: /tracking-location
+                    - listitem [ref=e251]:
+                      - link "Progres Pengiriman" [ref=e252] [cursor=pointer]:
+                        - /url: /progres-pengiriman
+                    - listitem [ref=e253]:
+                      - link "Operasional" [ref=e254] [cursor=pointer]:
+                        - /url: /dashboard-operasional
+                - listitem [ref=e255]:
+                  - link "Order" [ref=e256] [cursor=pointer]:
+                    - /url: /order
+                - listitem [ref=e261]:
+                  - link "Penugasan Tracking" [ref=e262] [cursor=pointer]:
+                    - /url: /penugasan-tracking
+                - listitem [ref=e270]:
+                  - button "Master Wilayah" [ref=e271] [cursor=pointer]
+                  - list [ref=e280]:
+                    - listitem [ref=e281]:
+                      - link "Master Provinsi" [ref=e282] [cursor=pointer]:
+                        - /url: /master/provinsi
+                    - listitem [ref=e283]:
+                      - link "Master Kota" [ref=e284] [cursor=pointer]:
+                        - /url: /master/kota
+                    - listitem [ref=e285]:
+                      - link "Master Kecamatan" [ref=e286] [cursor=pointer]:
+                        - /url: /master/kecamatan
+                    - listitem [ref=e287]:
+                      - link "Master Kelurahan" [ref=e288] [cursor=pointer]:
+                        - /url: /master/kelurahan
+                - listitem [ref=e289]:
+                  - button "Master Operasional" [ref=e290] [cursor=pointer]
+                  - list [ref=e299]:
+                    - listitem [ref=e300]:
+                      - link "Master Drop Point" [ref=e301] [cursor=pointer]:
+                        - /url: /master/customer
+                    - listitem [ref=e302]:
+                      - link "Master Waktu Perjalanan" [ref=e303] [cursor=pointer]:
+                        - /url: /master/waktu-perjalanan
+                    - listitem [ref=e304]:
+                      - link "Master Pelabuhan" [ref=e305] [cursor=pointer]:
+                        - /url: /master/pelabuhan
+                    - listitem [ref=e306]:
+                      - link "Master Pelayaran" [ref=e307] [cursor=pointer]:
+                        - /url: /master/pelayaran
+                    - listitem [ref=e308]:
+                      - link "Master Unit" [ref=e309] [cursor=pointer]:
+                        - /url: /master/unit
+                    - listitem [ref=e310]:
+                      - link "Master Sopir" [ref=e311] [cursor=pointer]:
+                        - /url: /master/sopir
+                    - listitem [ref=e312]:
+                      - link "Master CS" [ref=e313] [cursor=pointer]:
+                        - /url: /master/cs
+                - listitem [ref=e314]:
+                  - link "Manajemen Vendor" [ref=e315] [cursor=pointer]:
+                    - /url: /manajemen-vendor
+                - listitem [ref=e323]:
+                  - link "Pengaturan Akun" [ref=e324] [cursor=pointer]:
+                    - /url: /pengaturan-akun
+                - listitem [ref=e339]:
+                  - link "Akun Saya" [ref=e340] [cursor=pointer]:
+                    - /url: /akun-saya
+                - listitem [ref=e346]:
+                  - link "Pengaturan Sistem" [ref=e347] [cursor=pointer]:
+                    - /url: /setting/sistem
+                - listitem [ref=e353]:
+                  - button "Pusat Notifikasi" [ref=e354] [cursor=pointer]
+                  - list [ref=e362]:
+                    - listitem [ref=e363]:
+                      - link "Pengaturan Notifikasi" [ref=e364] [cursor=pointer]:
+                        - /url: /setting/general
+                    - listitem [ref=e365]:
+                      - link "Preferensi Notifikasi" [ref=e366] [cursor=pointer]:
+                        - /url: /setting/preferensi-notifikasi
+            - generic [ref=e367]:
+              - heading [level=2]
+        - generic [ref=e368]:
+          - heading "Kuota Order" [level=3] [ref=e369]
+          - generic [ref=e372]:
+            - generic [ref=e373]: 18/5000
+            - generic [ref=e374]: 0,36%
+          - paragraph [ref=e375]: Prahu Hub - TMS - Versi 1.0.0
+      - button "Aktifkan mode gelap" [ref=e377] [cursor=pointer]
+    - generic [ref=e380]:
+      - banner [ref=e381]:
+        - generic [ref=e382]:
+          - generic [ref=e384]:
+            - button "Toggle Sidebar" [ref=e385] [cursor=pointer]
+            - generic [ref=e387]:
+              - generic [ref=e388]: Admin
+              - generic [ref=e389]: Administrator
+          - generic [ref=e390]:
+            - button "77" [ref=e393] [cursor=pointer]
+            - generic [ref=e397]:
+              - generic [ref=e399]:
+                - generic [ref=e400]: Admin
+                - generic [ref=e401]: finance.roro1@gmail.com
+              - button "Logout" [ref=e403] [cursor=pointer]
+      - generic [ref=e408]:
+        - generic [ref=e409]:
+          - navigation [ref=e411]:
+            - list [ref=e412]:
+              - listitem [ref=e413]:
+                - link "Beranda" [ref=e414] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e417]: Monitoring
+          - heading "Monitoring" [level=2] [ref=e420]
+        - generic [ref=e421]:
+          - generic [ref=e422]:
+            - generic [ref=e423]:
+              - generic [ref=e424]: Total Armada
+              - paragraph [ref=e432]: "12"
+              - paragraph [ref=e433]: Armada dalam proses pengiriman
+            - generic [ref=e434]:
+              - generic [ref=e435]: Tidak Update
+              - paragraph [ref=e441]: "12"
+              - paragraph [ref=e442]: ">30 menit tanpa sinyal GPS"
+            - generic [ref=e443]:
+              - generic [ref=e444]: Melewati SLA
+              - paragraph [ref=e450]: "4"
+              - paragraph [ref=e451]: Melewati estimasi waktu tiba
+            - generic [ref=e452]:
+              - generic [ref=e453]: Jumlah Kendala
+              - paragraph [ref=e458]: "1"
+              - paragraph [ref=e459]: Butuh tindakan segera
+            - generic [ref=e460]:
+              - generic [ref=e461]: Keluar Jalur
+              - paragraph [ref=e471]: "0"
+              - paragraph [ref=e472]: Keluar dari rute yang direncanakan
+            - generic [ref=e473]:
+              - generic [ref=e474]: Berpotensi Terlambat
+              - paragraph [ref=e480]: "0"
+              - paragraph [ref=e481]: Berpotensi akan terlambat tiba
+          - generic [ref=e482]:
+            - button "Semua Tahapan 12" [ref=e483] [cursor=pointer]:
+              - generic [ref=e484]: Semua Tahapan
+              - generic [ref=e486]: "12"
+            - button "Berangkat Muat 5" [ref=e487] [cursor=pointer]:
+              - generic [ref=e488]: Berangkat Muat
+              - generic [ref=e491]: "5"
+            - button "Sampai Tempat Muat 0" [ref=e492] [cursor=pointer]:
+              - generic [ref=e493]: Sampai Tempat Muat
+              - generic [ref=e496]: "0"
+            - button "Selesai Muat 4" [ref=e497] [cursor=pointer]:
+              - generic [ref=e498]: Selesai Muat
+              - generic [ref=e501]: "4"
+            - button "Berangkat Bongkar 3" [ref=e502] [cursor=pointer]:
+              - generic [ref=e503]: Berangkat Bongkar
+              - generic [ref=e506]: "3"
+            - button "Sampai Tempat Bongkar 0" [ref=e507] [cursor=pointer]:
+              - generic [ref=e508]: Sampai Tempat Bongkar
+              - generic [ref=e511]: "0"
+            - button "Selesai Bongkar 0" [ref=e512] [cursor=pointer]:
+              - generic [ref=e513]: Selesai Bongkar
+              - generic [ref=e516]: "0"
+            - button "Kendala 1" [ref=e517] [cursor=pointer]:
+              - generic [ref=e518]: Kendala
+              - generic [ref=e521]: "1"
+            - button "Keluar Jalur 0" [ref=e522] [cursor=pointer]:
+              - generic [ref=e523]: Keluar Jalur
+              - generic [ref=e526]: "0"
+            - button "Berpotensi Terlambat 0" [ref=e527] [cursor=pointer]:
+              - generic [ref=e528]: Berpotensi Terlambat
+              - generic [ref=e531]: "0"
+            - button "Tidak Update 12" [ref=e532] [cursor=pointer]:
+              - generic [ref=e533]: Tidak Update
+              - generic [ref=e536]: "12"
+            - button "Melewati SLA 4" [ref=e537] [cursor=pointer]:
+              - generic [ref=e538]: Melewati SLA
+              - generic [ref=e541]: "4"
+          - generic [ref=e542]:
+            - generic [ref=e543]: "Pembaruan terakhir:"
+            - generic [ref=e544]: 23 Sep, 09.42
+          - generic [ref=e545]:
+            - generic [ref=e547]:
+              - generic [ref=e548]:
+                - generic:
+                  - generic:
+                    - img:
+                      - generic [ref=e549] [cursor=pointer]
+                  - generic:
+                    - button "11" [ref=e550] [cursor=pointer]
+                    - button [ref=e556] [cursor=pointer]
+                    - button [ref=e833] [cursor=pointer]
+                - link "OpenStreetMap" [ref=e560] [cursor=pointer]:
+                  - /url: https://www.openstreetmap.org/copyright
+                - generic [ref=e561]:
+                  - button "Perbesar" [ref=e562] [cursor=pointer]: +
+                  - button "Perkecil" [ref=e563] [cursor=pointer]: −
+              - button "Layar penuh" [ref=e564] [cursor=pointer]
+              - button "Semua Customer" [ref=e575] [cursor=pointer]:
+                - generic "Semua Customer" [ref=e577]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Lokasi muat/bongkar
+                    - generic: Armada (dalam 5 km)
+                    - generic: Radius 5 km
+            - generic [ref=e581]:
+              - generic [ref=e582]:
+                - generic [ref=e583]:
+                  - button "Data Kasus" [ref=e584] [cursor=pointer]
+                  - button "Armada Terdekat" [ref=e585] [cursor=pointer]
+                - button "Refresh" [ref=e586] [cursor=pointer]
+              - generic [ref=e592]:
+                - button "Semua Kasus" [ref=e596] [cursor=pointer]:
+                  - generic "Semua Kasus" [ref=e598]
+                - link "Riwayat" [ref=e601] [cursor=pointer]:
+                  - /url: /monitoring/riwayat
+              - generic [ref=e602]:
+                - generic [ref=e603]:
+                  - 'button "L 1090 EL • Sukri No. Kontainer: EMCU53454353" [ref=e604] [cursor=pointer]':
+                    - generic [ref=e605]:
+                      - generic [ref=e606]: L 1090 EL
+                      - generic [ref=e607]: •
+                      - generic [ref=e608]: Sukri
+                    - paragraph [ref=e609]: "No. Kontainer: EMCU53454353"
+                  - paragraph [ref=e611]: Tidak update lebih dari 19 jam 14 menit
+                  - paragraph [ref=e612]: 22/09/2026 07:27
+                  - generic [ref=e613]:
+                    - generic [ref=e614]: Tidak Update
+                    - link "Lacak" [ref=e615] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD9719032965&nopol=L1090EL
+                - generic [ref=e616]:
+                  - 'button "L 1090 EL • Sukri No. Kontainer: MRTU20987543" [ref=e617] [cursor=pointer]':
+                    - generic [ref=e618]:
+                      - generic [ref=e619]: L 1090 EL
+                      - generic [ref=e620]: •
+                      - generic [ref=e621]: Sukri
+                    - paragraph [ref=e622]: "No. Kontainer: MRTU20987543"
+                  - paragraph [ref=e624]: Tidak update lebih dari 7 hari 33 menit
+                  - paragraph [ref=e625]: 16/09/2026 02:09
+                  - generic [ref=e626]:
+                    - generic [ref=e627]: Tidak Update
+                    - link "Lacak" [ref=e628] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD9523666757&nopol=L1090EL
+                - generic [ref=e629]:
+                  - button "B 1111 LO • Sukri" [ref=e630] [cursor=pointer]:
+                    - generic [ref=e631]:
+                      - generic [ref=e632]: B 1111 LO
+                      - generic [ref=e633]: •
+                      - generic [ref=e634]: Sukri
+                  - generic [ref=e635]:
+                    - paragraph [ref=e636]: Tidak update lebih dari 12 hari 9 jam 42…
+                    - button "Lihat" [ref=e637] [cursor=pointer]
+                  - paragraph [ref=e638]: 10/09/2026 17:00
+                  - generic [ref=e639]:
+                    - generic [ref=e640]: Tidak Update
+                    - generic [ref=e641]:
+                      - button "Lacak" [disabled] [ref=e643]
+                      - tooltip "Tersedia jika ditugaskan ke sopir"
+                - generic [ref=e644]:
+                  - button "L 9180 EL • Rahmat Nurdiansyah" [ref=e645] [cursor=pointer]:
+                    - generic [ref=e646]:
+                      - generic [ref=e647]: L 9180 EL
+                      - generic [ref=e648]: •
+                      - generic [ref=e649]: Rahmat Nurdiansyah
+                  - generic [ref=e650]:
+                    - paragraph [ref=e651]: Tidak update lebih dari 12 hari 16 jam 3…
+                    - button "Lihat" [ref=e652] [cursor=pointer]
+                  - paragraph [ref=e653]: 10/09/2026 10:04
+                  - generic [ref=e654]:
+                    - generic [ref=e655]: Tidak Update
+                    - link "Lacak" [ref=e656] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8849924264&nopol=L9180EL
+                - generic [ref=e657]:
+                  - button "L 9180 EL • Rahmat Nurdiansyah" [ref=e658] [cursor=pointer]:
+                    - generic [ref=e659]:
+                      - generic [ref=e660]: L 9180 EL
+                      - generic [ref=e661]: •
+                      - generic [ref=e662]: Rahmat Nurdiansyah
+                  - paragraph [ref=e664]: Terlambat 14 hari 10 jam 56 menit
+                  - paragraph [ref=e665]: 08/09/2026 15:46
+                  - generic [ref=e666]:
+                    - generic [ref=e667]: Melewati SLA
+                    - link "Lacak" [ref=e668] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8849924264&nopol=L9180EL
+                - generic [ref=e669]:
+                  - button "L 1090 EL • Sukri" [ref=e670] [cursor=pointer]:
+                    - generic [ref=e671]:
+                      - generic [ref=e672]: L 1090 EL
+                      - generic [ref=e673]: •
+                      - generic [ref=e674]: Sukri
+                  - generic [ref=e675]:
+                    - paragraph [ref=e676]: Tidak update lebih dari 14 hari 17 jam 4…
+                    - button "Lihat" [ref=e677] [cursor=pointer]
+                  - paragraph [ref=e678]: 08/09/2026 08:59
+                  - generic [ref=e679]:
+                    - generic [ref=e680]: Tidak Update
+                    - link "Lacak" [ref=e681] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8852599515&nopol=L1090EL
+                - generic [ref=e682]:
+                  - button "L 1090 EL • Sukri" [ref=e683] [cursor=pointer]:
+                    - generic [ref=e684]:
+                      - generic [ref=e685]: L 1090 EL
+                      - generic [ref=e686]: •
+                      - generic [ref=e687]: Sukri
+                  - paragraph [ref=e689]: Terlambat 14 hari 19 jam 22 menit
+                  - paragraph [ref=e690]: 08/09/2026 07:20
+                  - generic [ref=e691]:
+                    - generic [ref=e692]: Melewati SLA
+                    - link "Lacak" [ref=e693] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8852599515&nopol=L1090EL
+                - generic [ref=e694]:
+                  - button "L 9180 EL • Rahmat Nurdiansyah" [ref=e695] [cursor=pointer]:
+                    - generic [ref=e696]:
+                      - generic [ref=e697]: L 9180 EL
+                      - generic [ref=e698]: •
+                      - generic [ref=e699]: Rahmat Nurdiansyah
+                  - paragraph [ref=e701]: Ban bocor
+                  - paragraph [ref=e702]: 08/09/2026 07:02
+                  - generic [ref=e703]:
+                    - generic [ref=e704]: Kendala
+                    - link "Lacak" [ref=e705] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8849924264&nopol=L9180EL
+                - generic [ref=e706]:
+                  - button "L 9001 BB • Sukri" [ref=e707] [cursor=pointer]:
+                    - generic [ref=e708]:
+                      - generic [ref=e709]: L 9001 BB
+                      - generic [ref=e710]: •
+                      - generic [ref=e711]: Sukri
+                  - paragraph [ref=e713]: Terlambat 14 hari 19 jam 42 menit
+                  - paragraph [ref=e714]: 08/09/2026 07:00
+                  - generic [ref=e715]:
+                    - generic [ref=e716]: Melewati SLA
+                    - generic [ref=e717]:
+                      - button "Lacak" [disabled] [ref=e719]
+                      - tooltip "Tersedia jika ditugaskan ke sopir"
+                - generic [ref=e720]:
+                  - button "L 8009 BB • Sukri" [ref=e721] [cursor=pointer]:
+                    - generic [ref=e722]:
+                      - generic [ref=e723]: L 8009 BB
+                      - generic [ref=e724]: •
+                      - generic [ref=e725]: Sukri
+                  - paragraph [ref=e727]: Terlambat 14 hari 19 jam 42 menit
+                  - paragraph [ref=e728]: 08/09/2026 07:00
+                  - generic [ref=e729]:
+                    - generic [ref=e730]: Melewati SLA
+                    - link "Lacak" [ref=e731] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8851083707&nopol=L8009BB
+                - generic [ref=e732]:
+                  - button "L 9180 EL • Sukri" [ref=e733] [cursor=pointer]:
+                    - generic [ref=e734]:
+                      - generic [ref=e735]: L 9180 EL
+                      - generic [ref=e736]: •
+                      - generic [ref=e737]: Sukri
+                  - generic [ref=e738]:
+                    - paragraph [ref=e739]: Tidak update lebih dari 14 hari 19 jam 4…
+                    - button "Lihat" [ref=e740] [cursor=pointer]
+                  - paragraph [ref=e741]: 08/09/2026 07:00
+                  - generic [ref=e742]:
+                    - generic [ref=e743]: Tidak Update
+                    - link "Lacak" [ref=e744] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8851727865&nopol=L9180EL
+                - generic [ref=e745]:
+                  - button "L 9001 BB • Sukri" [ref=e746] [cursor=pointer]:
+                    - generic [ref=e747]:
+                      - generic [ref=e748]: L 9001 BB
+                      - generic [ref=e749]: •
+                      - generic [ref=e750]: Sukri
+                  - generic [ref=e751]:
+                    - paragraph [ref=e752]: Tidak update lebih dari 14 hari 21 jam 4…
+                    - button "Lihat" [ref=e753] [cursor=pointer]
+                  - paragraph [ref=e754]: 08/09/2026 05:00
+                  - generic [ref=e755]:
+                    - generic [ref=e756]: Tidak Update
+                    - generic [ref=e757]:
+                      - button "Lacak" [disabled] [ref=e759]
+                      - tooltip "Tersedia jika ditugaskan ke sopir"
+                - generic [ref=e760]:
+                  - button "L 8009 BB • Sukri" [ref=e761] [cursor=pointer]:
+                    - generic [ref=e762]:
+                      - generic [ref=e763]: L 8009 BB
+                      - generic [ref=e764]: •
+                      - generic [ref=e765]: Sukri
+                  - generic [ref=e766]:
+                    - paragraph [ref=e767]: Tidak update lebih dari 14 hari 21 jam 4…
+                    - button "Lihat" [ref=e768] [cursor=pointer]
+                  - paragraph [ref=e769]: 08/09/2026 05:00
+                  - generic [ref=e770]:
+                    - generic [ref=e771]: Tidak Update
+                    - link "Lacak" [ref=e772] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8851083707&nopol=L8009BB
+                - generic [ref=e773]:
+                  - button "L 9180 EL • Rahmat Nurdiansyah" [ref=e774] [cursor=pointer]:
+                    - generic [ref=e775]:
+                      - generic [ref=e776]: L 9180 EL
+                      - generic [ref=e777]: •
+                      - generic [ref=e778]: Rahmat Nurdiansyah
+                  - generic [ref=e779]:
+                    - paragraph [ref=e780]: Belum ada update sejak 14 hari 19 jam 56…
+                    - button "Lihat" [ref=e781] [cursor=pointer]
+                  - paragraph [ref=e782]: "-"
+                  - generic [ref=e783]:
+                    - generic [ref=e784]: Tidak Update
+                    - link "Lacak" [ref=e785] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8849924264&nopol=L9180EL
+                - generic [ref=e786]:
+                  - button "L 1090 EL • Rahmat Nurdiansyah" [ref=e787] [cursor=pointer]:
+                    - generic [ref=e788]:
+                      - generic [ref=e789]: L 1090 EL
+                      - generic [ref=e790]: •
+                      - generic [ref=e791]: Rahmat Nurdiansyah
+                  - generic [ref=e792]:
+                    - paragraph [ref=e793]: Belum ada update sejak 13 hari 17 jam 58…
+                    - button "Lihat" [ref=e794] [cursor=pointer]
+                  - paragraph [ref=e795]: "-"
+                  - generic [ref=e796]:
+                    - generic [ref=e797]: Tidak Update
+                    - link "Lacak" [ref=e798] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD8939795982&nopol=L1090EL
+                - generic [ref=e799]:
+                  - button "B 2138 LL • Jonatan" [ref=e800] [cursor=pointer]:
+                    - generic [ref=e801]:
+                      - generic [ref=e802]: B 2138 LL
+                      - generic [ref=e803]: •
+                      - generic [ref=e804]: Jonatan
+                  - generic [ref=e805]:
+                    - paragraph [ref=e806]: Belum ada update sejak 12 hari 18 jam 22…
+                    - button "Lihat" [ref=e807] [cursor=pointer]
+                  - paragraph [ref=e808]: "-"
+                  - generic [ref=e809]:
+                    - generic [ref=e810]: Tidak Update
+                    - generic [ref=e811]:
+                      - button "Lacak" [disabled] [ref=e813]
+                      - tooltip "Tersedia jika ditugaskan ke sopir"
+                - generic [ref=e814]:
+                  - 'button "L 1090 EL • Sukri No. Kontainer: LABB345678" [ref=e815] [cursor=pointer]':
+                    - generic [ref=e816]:
+                      - generic [ref=e817]: L 1090 EL
+                      - generic [ref=e818]: •
+                      - generic [ref=e819]: Sukri
+                    - paragraph [ref=e820]: "No. Kontainer: LABB345678"
+                  - generic [ref=e821]:
+                    - paragraph [ref=e822]: Belum ada update sejak 1 hari 22 jam 3 m…
+                    - button "Lihat" [ref=e823] [cursor=pointer]
+                  - paragraph [ref=e824]: "-"
+                  - generic [ref=e825]:
+                    - generic [ref=e826]: Tidak Update
+                    - link "Lacak" [ref=e827] [cursor=pointer]:
+                      - /url: /tracking-location?orderCode=ORD9965441127&nopol=L1090EL
+  - region "Notifications alt+T"
+  - alert [ref=e39]: Monitoring | Prahu Hub - TMS

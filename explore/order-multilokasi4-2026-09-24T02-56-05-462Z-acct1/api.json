@@ -1,0 +1,1564 @@
+[
+ {
+  "at": "2026-09-24T02:56:08.187Z",
+  "method": "POST",
+  "path": "/api/auth/login",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Login successful",
+   "data": {
+    "accessToken": "[REDACTED_TOKEN]",
+    "user": {
+     "id": "db523d55-3c99-4825-944d-4a1b596c70a8",
+     "email": "[REDACTED]",
+     "name": "Admin",
+     "role": "ADMIN",
+     "kind": "ADMIN"
+    }
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:09.600Z",
+  "method": "GET",
+  "path": "/api/setting/general",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "OK",
+   "data": {
+    "systemVersion": "1.0.0",
+    "globalEnabled": true,
+    "activeCount": 10,
+    "totalCount": 10,
+    "notifications": [
+     {
+      "notifKey": "notif.order_selesai",
+      "label": "Order Selesai",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.order_dibatalkan",
+      "label": "Order Dibatalkan",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.order_ditugaskan",
+      "label": "Order Telah Ditugaskan",
+      "category": "Order",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_muat",
+      "label": "Tahap Pengiriman - Selesai Muat",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_bongkar",
+      "label": "Tahap Pengiriman - Selesai Bongkar",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.tahap_alihkan",
+      "label": "Tahap Pengiriman - Alihkan Armada/Petugas",
+      "category": "Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.kendala_armada",
+      "label": "Reminder Kendala Armada",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.armada_no_update",
+      "label": "Reminder Armada Tidak Update",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.armada_overdue",
+      "label": "Reminder Armada Melewati SLA",
+      "category": "Monitoring & Tracking",
+      "channels": [
+       "PUSH"
+      ],
+      "enabled": true
+     },
+     {
+      "notifKey": "notif.kir_armada",
+      "label": "Reminder Masa Berlaku KIR & Pajak Armada",
+      "category": "KIR Armada",
+      "channels": [
+       "EMAIL",
+       "PUSH"
+      ],
+      "enabled": true
+     }
+    ]
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:09.667Z",
+  "method": "GET",
+  "path": "/api/order/asuransi-rate",
+  "query": "",
+  "status": 404,
+  "body": {
+   "success": false,
+   "message": "Not found",
+   "error": "PRODUCT_NOT_ACTIVE"
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:09.707Z",
+  "method": "GET",
+  "path": "/api/order/859ec416-b037-4d82-909c-756548020437",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Order retrieved",
+   "data": {
+    "id": "859ec416-b037-4d82-909c-756548020437",
+    "orderCode": "ORD0173400693",
+    "serviceType": "FTL",
+    "kotaAsalId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+    "kotaAsalName": "Kota Surabaya",
+    "kotaTujuanId": "23200cbb-44b4-4f3c-85bf-b5c8be8e464a",
+    "kotaTujuanName": "Kota Bandung",
+    "tanggalMuat": "2026-09-25T01:00:00.000Z",
+    "tanggalMuatInput": "2026-09-25T01:00:00.000Z",
+    "shipmentId": null,
+    "jenisArmadaId": "3357eff4-1847-4ce8-9045-8691fab651c4",
+    "jenisArmadaName": "Truck Trailer 40ft",
+    "jenisArmadaKapasitasKg": "26000",
+    "jenisArmadaVolumeM3": "72",
+    "transitKota": null,
+    "segmenEstimasiIds": null,
+    "waktuPerjalananId": "907161cf-035f-41e7-bf28-7fe3565e4557",
+    "targetWaktuJam": "9",
+    "pelabuhanAsalId": null,
+    "pelabuhanAsalName": "",
+    "pelabuhanTujuanId": null,
+    "pelabuhanTujuanName": "",
+    "jenisKontainerId": null,
+    "jenisKontainerName": "",
+    "kontainerKapasitasKg": null,
+    "kontainerVolumeM3": null,
+    "jenisJadwal": null,
+    "pelayaranId": null,
+    "pelayaranName": "",
+    "namaKapal": "",
+    "voyage": "",
+    "closingTime": null,
+    "etd": null,
+    "eta": null,
+    "bandaraAsalId": null,
+    "bandaraAsalName": "",
+    "dropPointAsalId": null,
+    "dropPointAsalName": "",
+    "bandaraTujuanId": null,
+    "bandaraTujuanName": "",
+    "dropPointTujuanId": null,
+    "dropPointTujuanName": "",
+    "maskapaiId": null,
+    "maskapaiName": "",
+    "nomorPenerbangan": "",
+    "tipePengiriman": "MULTIPICKUP",
+    "jumlahArmada": 1,
+    "metodePengiriman": null,
+    "jenisArmadaDimensiId": "1da1d3f7-15ab-49c0-8bd8-f798d3bc1990",
+    "totalNilaiBarang": "0",
+    "asuransiPersen": "0.2",
+    "asuransiAmount": "0",
+    "autoStuffingApplied": false,
+    "vendorId": "65600e75-d2c8-48dc-8355-6049380db5c0",
+    "vendorName": "Nusantara Logistik Utama",
+    "waktuPerjalananJam": "9",
+    "estimasiWaktuId": null,
+    "gunakanKomponenHarga": true,
+    "ppn": "1.1",
+    "pph": "2",
+    "hargaDPP": "1000000",
+    "ppnAmount": "11000",
+    "pphAmount": "20000",
+    "totalHarga": "991000",
+    "cancelledAt": null,
+    "cancelledById": null,
+    "cancelledByType": null,
+    "createdById": "db523d55-3c99-4825-944d-4a1b596c70a8",
+    "createdByType": "ADMIN",
+    "status": "MENUNGGU_PENUGASAN",
+    "cancelReason": null,
+    "deleted": false,
+    "createdAt": "2026-09-23T14:23:20.698Z",
+    "updatedAt": "2026-09-23T14:23:20.698Z",
+    "pengirimRows": [
+     {
+      "id": "1a296ba2-d1d7-4061-89e1-c86429a9ac7a",
+      "orderId": "859ec416-b037-4d82-909c-756548020437",
+      "dropPointId": "853eee65-5281-4f31-b636-f66031b8fc2c",
+      "dropPointName": "EL - Gudang Surabaya",
+      "pengirimName": "PT. Haier Sales Indonesia",
+      "picName": "Retno Cahyaning",
+      "picWhatsapp": "6289556142910",
+      "provinceId": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+      "provinceName": "Jawa Timur",
+      "cityId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+      "cityName": "Kota Surabaya",
+      "districtId": "bbee9be7-e395-451d-9c97-006a7a4e6334",
+      "districtName": "Krembangan",
+      "kelurahanId": "bb716487-e6b8-4ae0-bd28-984b8ad71828",
+      "kelurahanName": "Krembangan Selatan",
+      "kodePos": "60175",
+      "address": "Jl. Rajawali No 109",
+      "catatan": "QA-PT-S20260923-1411 DS-03",
+      "urutan": 1,
+      "createdAt": "2026-09-23T14:23:20.698Z"
+     },
+     {
+      "id": "cda3d65d-5465-4d72-8f34-e9ff3264af95",
+      "orderId": "859ec416-b037-4d82-909c-756548020437",
+      "dropPointId": "b3a72797-4015-42fc-be79-2cf6430e9903",
+      "dropPointName": "BB WH Krembangan",
+      "pengirimName": "PT Bahan Berkualitas",
+      "picName": "Raja",
+      "picWhatsapp": "6285753221459",
+      "provinceId": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+      "provinceName": "Jawa Timur",
+      "cityId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+      "cityName": "Kota Surabaya",
+      "districtId": "bbee9be7-e395-451d-9c97-006a7a4e6334",
+      "districtName": "Krembangan",
+      "kelurahanId": "c6ddd4b5-5a64-403e-b9b1-c91bcd0c8bcc",
+      "kelurahanName": "Kemayoran",
+      "kodePos": "60176",
+      "address": "Jalan Rajawali 109",
+      "catatan": "QA-PT-S20260923-1411 DS-03",
+      "urutan": 2,
+      "createdAt": "2026-09-23T14:23:20.698Z"
+     }
+    ],
+    "penerimaRows": [
+     {
+      "id": "a68f1cec-fe88-4723-8de9-c21e138f286d",
+      "orderId": "859ec416-b037-4d82-909c-756548020437",
+      "dropPointId": "6c71e398-1fc5-43ab-9a2a-303bac7d6634",
+      "dropPointName": "EL - Gudang Bandung [Gudang Surya]",
+      "penerimaName": "PT. Surya Elektronik",
+      "picName": "Pamungkas Hardiansyah",
+      "picWhatsapp": "62891020192819",
+      "provinceId": "2a928c54-3552-40f4-ae03-7c275b59c381",
+      "provinceName": "Jawa Barat",
+      "cityId": "23200cbb-44b4-4f3c-85bf-b5c8be8e464a",
+      "cityName": "Kota Bandung",
+      "districtId": "2d83bed1-4269-4814-aa47-61a0c87e84fa",
+      "districtName": "Antapani",
+      "kelurahanId": "d8704152-e036-4420-be6f-034412cd1bb0",
+      "kelurahanName": "Antapani Tengah",
+      "kodePos": "40291",
+      "address": "Jl. Cikampek Raya No. 17",
+      "catatan": "QA-PT-S20260923-1411 DS-03",
+      "urutan": 1,
+      "createdAt": "2026-09-23T14:23:20.698Z"
+     }
+    ],
+    "armadaRows": [
+     {
+      "id": "729aa2e7-fbe2-4fd5-a2a7-65146eb4eff9",
+      "orderId": "859ec416-b037-4d82-909c-756548020437",
+      "urutan": 1,
+      "createdAt": "2026-09-23T14:23:20.698Z",
+      "asuransi": false,
+      "totalNilaiBarang": "0",
+      "totalBeratKg": "0",
+      "totalKubikasiM3": "0",
+      "stuffingSnapshot": null,
+      "barang": [
+       {
+        "id": "8d8ca96d-88f5-4f81-aa43-646fb2e363e3",
+        "orderArmadaId": "729aa2e7-fbe2-4fd5-a2a7-65146eb4eff9",
+        "pickupPartyIdx": 0,
+        "dropOffPartyIdx": 0,
+        "deskripsiBarang": "QA-PT-S20260923-1411 DS-03 #1",
+        "nomorDo": "",
+        "beratKg": null,
+        "kubikasiM3": null,
+        "urutan": 1,
+        "barangId": null,
+        "kodeSku": "",
+        "namaBarang": "",
+        "kemasanName": "",
+        "panjangCm": null,
+        "lebarCm": null,
+        "tinggiCm": null,
+        "beratSatuanKg": null,
+        "kubikasiSatuanM3": null,
+        "jumlah": null,
+        "nilaiBarang": null,
+        "asuransi": false,
+        "barangAktif": true
+       },
+       {
+        "id": "621b20d6-199d-43df-9b6a-bcf4852f4ffc",
+        "orderArmadaId": "729aa2e7-fbe2-4fd5-a2a7-65146eb4eff9",
+        "pickupPartyIdx": 1,
+        "dropOffPartyIdx": 0,
+        "deskripsiBarang": "QA-PT-S20260923-1411 DS-03 #2",
+        "nomorDo": "",
+        "beratKg": null,
+        "kubikasiM3": null,
+        "urutan": 2,
+        "barangId": null,
+        "kodeSku": "",
+        "namaBarang": "",
+        "kemasanName": "",
+        "panjangCm": null,
+        "lebarCm": null,
+        "tinggiCm": null,
+        "beratSatuanKg": null,
+        "kubikasiSatuanM3": null,
+        "jumlah": null,
+        "nilaiBarang": null,
+        "asuransi": false,
+        "barangAktif": true
+       }
+      ]
+     }
+    ],
+    "vendor": {
+     "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "namaPerusahaan": "Nusantara Logistik Utama",
+     "aliasPerusahaan": "NLU",
+     "whatsapp": "6281232460612"
+    },
+    "waktuPerjalananLclHari": null
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:09.891Z",
+  "method": "GET",
+  "path": "/api/jenis-armada/grouped",
+  "query": "?status=true&limit=999",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Jenis armada retrieved",
+   "data": [
+    {
+     "id": "a09958fa-aa40-4380-91c3-06a9cdef5f9b",
+     "name": "Trailer 40 FT",
+     "kapasitasKg": 30000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "00151633-e838-4a43-afbf-c27ba5722f66",
+       "jenisArmadaId": "a09958fa-aa40-4380-91c3-06a9cdef5f9b",
+       "panjangCm": 1220,
+       "lebarCm": 240,
+       "tinggiCm": 260,
+       "volumeM3": 76.13
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.232Z",
+     "updatedAt": "2026-09-08T07:06:17.232Z"
+    },
+    {
+     "id": "1d648194-e150-4d55-a77d-5c01475d72af",
+     "name": "Trailer 20 FT",
+     "kapasitasKg": 25000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "f07cf0ad-a2a7-4142-ac06-67e547407a9f",
+       "jenisArmadaId": "1d648194-e150-4d55-a77d-5c01475d72af",
+       "panjangCm": 600,
+       "lebarCm": 240,
+       "tinggiCm": 260,
+       "volumeM3": 37.44
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.229Z",
+     "updatedAt": "2026-09-08T07:06:17.229Z"
+    },
+    {
+     "id": "e59071b9-b7cf-4db7-b680-c442f5c02112",
+     "name": "Tronton Bak",
+     "kapasitasKg": 18000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "cc9de5fe-7625-48f5-9270-707d69c3941b",
+       "jenisArmadaId": "e59071b9-b7cf-4db7-b680-c442f5c02112",
+       "panjangCm": 950,
+       "lebarCm": 245,
+       "tinggiCm": 260,
+       "volumeM3": 60.52
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.227Z",
+     "updatedAt": "2026-09-08T07:06:17.227Z"
+    },
+    {
+     "id": "502457e9-0a45-4fae-a52c-6e0fbb87e92e",
+     "name": "Tronton Wingbox",
+     "kapasitasKg": 18000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "8b2b622a-6278-48aa-8f42-8ccbda08353a",
+       "jenisArmadaId": "502457e9-0a45-4fae-a52c-6e0fbb87e92e",
+       "panjangCm": 950,
+       "lebarCm": 245,
+       "tinggiCm": 250,
+       "volumeM3": 58.19
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.225Z",
+     "updatedAt": "2026-09-08T07:06:17.225Z"
+    },
+    {
+     "id": "996b44e0-89d3-4d47-884b-b8da3977940e",
+     "name": "Tronton Box",
+     "kapasitasKg": 15000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "269fee8e-473a-4993-b48f-aab0a004868d",
+       "jenisArmadaId": "996b44e0-89d3-4d47-884b-b8da3977940e",
+       "panjangCm": 960,
+       "lebarCm": 240,
+       "tinggiCm": 220,
+       "volumeM3": 50.69
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.221Z",
+     "updatedAt": "2026-09-08T07:06:17.221Z"
+    },
+    {
+     "id": "2328bb78-7349-4a54-bd4d-c70e9268f5ea",
+     "name": "Fuso Gandeng",
+     "kapasitasKg": 30000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "cabca1e7-618e-4c40-a501-e78e04bf7864",
+       "jenisArmadaId": "2328bb78-7349-4a54-bd4d-c70e9268f5ea",
+       "panjangCm": 1200,
+       "lebarCm": 245,
+       "tinggiCm": 180,
+       "volumeM3": 52.92
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.214Z",
+     "updatedAt": "2026-09-08T07:06:17.214Z"
+    },
+    {
+     "id": "6e9663a7-c5f1-437a-a220-eea63c41dca6",
+     "name": "Fuso Berat Bak",
+     "kapasitasKg": 10000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "7afee29f-afd0-4cb4-acf8-f068d1788101",
+       "jenisArmadaId": "6e9663a7-c5f1-437a-a220-eea63c41dca6",
+       "panjangCm": 650,
+       "lebarCm": 235,
+       "tinggiCm": 245,
+       "volumeM3": 37.42
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.209Z",
+     "updatedAt": "2026-09-08T07:06:17.209Z"
+    },
+    {
+     "id": "74d1f61b-6274-4a3c-93a9-cb27d6116d1f",
+     "name": "Fuso Box",
+     "kapasitasKg": 10000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "a8beeb45-4e8e-41fc-9294-b70c5d1818b6",
+       "jenisArmadaId": "74d1f61b-6274-4a3c-93a9-cb27d6116d1f",
+       "panjangCm": 620,
+       "lebarCm": 235,
+       "tinggiCm": 235,
+       "volumeM3": 34.24
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.203Z",
+     "updatedAt": "2026-09-08T07:06:17.203Z"
+    },
+    {
+     "id": "3492b17a-e00a-44e2-8eba-21b8a9d54481",
+     "name": "CDD Long Box",
+     "kapasitasKg": 6000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "46910540-57da-42a5-b209-9dabd0181a4b",
+       "jenisArmadaId": "3492b17a-e00a-44e2-8eba-21b8a9d54481",
+       "panjangCm": 530,
+       "lebarCm": 200,
+       "tinggiCm": 210,
+       "volumeM3": 22.26
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.198Z",
+     "updatedAt": "2026-09-08T07:06:17.198Z"
+    },
+    {
+     "id": "b4e45176-c6c6-4f3c-8dec-bee7c834415b",
+     "name": "CDD Box",
+     "kapasitasKg": 5000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "391d65f5-3d2d-405b-828c-f4df9332b95d",
+       "jenisArmadaId": "b4e45176-c6c6-4f3c-8dec-bee7c834415b",
+       "panjangCm": 440,
+       "lebarCm": 200,
+       "tinggiCm": 190,
+       "volumeM3": 16.72
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.190Z",
+     "updatedAt": "2026-09-08T07:06:17.190Z"
+    },
+    {
+     "id": "773d5ea7-5dba-48f9-b4bd-f1061af77be9",
+     "name": "CDD Bak",
+     "kapasitasKg": 5000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "0acb0be5-f067-43bd-86de-3d6aa457d075",
+       "jenisArmadaId": "773d5ea7-5dba-48f9-b4bd-f1061af77be9",
+       "panjangCm": 440,
+       "lebarCm": 200,
+       "tinggiCm": 190,
+       "volumeM3": 16.72
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.187Z",
+     "updatedAt": "2026-09-08T07:06:17.187Z"
+    },
+    {
+     "id": "05ab5d6e-de56-43c4-9efc-65e64984b766",
+     "name": "CDE Bak",
+     "kapasitasKg": 2600,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "e4190cf3-5add-438b-9395-79f391107d6d",
+       "jenisArmadaId": "05ab5d6e-de56-43c4-9efc-65e64984b766",
+       "panjangCm": 320,
+       "lebarCm": 170,
+       "tinggiCm": 180,
+       "volumeM3": 9.79
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.184Z",
+     "updatedAt": "2026-09-08T07:06:17.184Z"
+    },
+    {
+     "id": "c16a7210-7f16-49cf-9e95-fc9248938242",
+     "name": "CDE Box",
+     "kapasitasKg": 2200,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "75797d9e-c58c-4cbe-84ba-41b65473f464",
+       "jenisArmadaId": "c16a7210-7f16-49cf-9e95-fc9248938242",
+       "panjangCm": 320,
+       "lebarCm": 170,
+       "tinggiCm": 170,
+       "volumeM3": 9.25
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.181Z",
+     "updatedAt": "2026-09-08T07:06:17.181Z"
+    },
+    {
+     "id": "15c03a82-0226-46be-a8ca-60adadf42e36",
+     "name": "Pickup Box",
+     "kapasitasKg": 1000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "9da66a59-db30-4f3f-84c7-202e7410b6dd",
+       "jenisArmadaId": "15c03a82-0226-46be-a8ca-60adadf42e36",
+       "panjangCm": 235,
+       "lebarCm": 162,
+       "tinggiCm": 130,
+       "volumeM3": 4.95
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.176Z",
+     "updatedAt": "2026-09-08T07:06:17.176Z"
+    },
+    {
+     "id": "5cc07bba-e8aa-4d35-bc36-0bef5b7f0578",
+     "name": "Pickup Bak",
+     "kapasitasKg": 1000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "1c0aad5b-96df-42fe-9c41-ba73d8e90f05",
+       "jenisArmadaId": "5cc07bba-e8aa-4d35-bc36-0bef5b7f0578",
+       "panjangCm": 235,
+       "lebarCm": 162,
+       "tinggiCm": 130,
+       "volumeM3": 4.95
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.169Z",
+     "updatedAt": "2026-09-08T07:06:17.169Z"
+    },
+    {
+     "id": "3ab6efbe-8bde-46e4-b035-cdcf8557b3a6",
+     "name": "Van",
+     "kapasitasKg": 720,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "5ae5494d-7645-4a24-84bb-ee8279921515",
+       "jenisArmadaId": "3ab6efbe-8bde-46e4-b035-cdcf8557b3a6",
+       "panjangCm": 220,
+       "lebarCm": 135,
+       "tinggiCm": 130,
+       "volumeM3": 3.86
+      }
+     ],
+     "createdAt": "2026-09-08T07:06:17.161Z",
+     "updatedAt": "2026-09-08T07:06:17.161Z"
+    },
+    {
+     "id": "458216cd-8214-46ea-837e-57b2f8aad10e",
+     "name": "Fuso Berat",
+     "kapasitasKg": 8000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "18bd4dd3-fbe4-4e8a-b4e7-72c95f9ddf09",
+       "jenisArmadaId": "458216cd-8214-46ea-837e-57b2f8aad10e",
+       "panjangCm": 570,
+       "lebarCm": 230,
+       "tinggiCm": 220,
+       "volumeM3": 28.84
+      }
+     ],
+     "createdAt": "2026-09-03T02:26:38.342Z",
+     "updatedAt": "2026-09-03T02:26:38.342Z"
+    },
+    {
+     "id": "3357eff4-1847-4ce8-9045-8691fab651c4",
+     "name": "Truck Trailer 40ft",
+     "kapasitasKg": 26000,
+     "status": true,
+     "dimensions": [
+      {
+       "id": "1da1d3f7-15ab-49c0-8bd8-f798d3bc1990",
+       "jenisArmadaId": "3357eff4-1847-4ce8-9045-8691fab651c4",
+       "panjangCm": 1200,
+       "lebarCm": 240,
+       "tinggiCm": 250,
+       "volumeM3": 72
+      }
+     ],
+     "createdAt": "2026-09-03T02:25:47.768Z",
+     "updatedAt": "2026-09-03T02:25:47.768Z"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 18,
+    "totalPage": 1
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:09.933Z",
+  "method": "GET",
+  "path": "/api/pelabuhans",
+  "query": "?status=true&limit=999",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Pelabuhans retrieved",
+   "data": [
+    {
+     "id": "f6aade62-dbd8-488b-89cc-c34970e36a87",
+     "unCode": "BOA",
+     "name": "Pelabuhan Benoa",
+     "cityId": "40797239-11d6-45bf-ba06-8f69cc81c4b9",
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-24T01:22:40.694Z",
+     "updatedAt": "2026-09-24T01:22:40.694Z",
+     "city": {
+      "id": "40797239-11d6-45bf-ba06-8f69cc81c4b9",
+      "name": "Kota Denpasar"
+     }
+    },
+    {
+     "id": "a616d085-5bd2-49c2-bf4e-f577da4a6645",
+     "unCode": "PKU",
+     "name": "Pelabuhan Pekanbaru",
+     "cityId": "5cab016b-0a56-4fef-87a9-1f34baaa0a18",
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-24T01:15:52.592Z",
+     "updatedAt": "2026-09-24T01:15:52.592Z",
+     "city": {
+      "id": "5cab016b-0a56-4fef-87a9-1f34baaa0a18",
+      "name": "Kota Pekanbaru"
+     }
+    },
+    {
+     "id": "a41500cf-5a64-4daf-8ac9-314f1744a9cb",
+     "unCode": "JKT",
+     "name": "Tanjung Priok",
+     "cityId": "69a5bea3-30a3-4ca5-9773-f84ec3f6899f",
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-21T04:36:21.561Z",
+     "updatedAt": "2026-09-21T04:36:21.561Z",
+     "city": {
+      "id": "69a5bea3-30a3-4ca5-9773-f84ec3f6899f",
+      "name": "Kota Administrasi Jakarta Utara "
+     }
+    },
+    {
+     "id": "2727fbbe-efa1-40e6-9d11-453e22f147a0",
+     "unCode": "SUB",
+     "name": "Tanjung Perak",
+     "cityId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-03T02:21:37.028Z",
+     "updatedAt": "2026-09-08T07:08:59.592Z",
+     "city": {
+      "id": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+      "name": "Kota Surabaya"
+     }
+    },
+    {
+     "id": "811e25ed-bd81-4012-8e19-68b9312324ee",
+     "unCode": "MAK",
+     "name": "Makassar",
+     "cityId": "b10c806d-c7f5-403d-a75c-5d2608df011e",
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-03T01:21:16.234Z",
+     "updatedAt": "2026-09-03T01:21:16.234Z",
+     "city": {
+      "id": "b10c806d-c7f5-403d-a75c-5d2608df011e",
+      "name": "Kota Makassar"
+     }
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 999,
+    "totalData": 5,
+    "totalPage": 1
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:09.943Z",
+  "method": "GET",
+  "path": "/api/vendors/options",
+  "query": "?status=AKTIF&pengelola=ALL&aksesFTL=true",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Vendor options retrieved",
+   "data": [
+    {
+     "id": "d2661e44-eb87-48a6-853b-83e76ab4678c",
+     "namaPerusahaan": "Alexa Powell Trucks",
+     "aliasPerusahaan": "APT",
+     "pengelola": "VENDOR"
+    },
+    {
+     "id": "21732f11-059d-479f-848c-932de564ee28",
+     "namaPerusahaan": "Kerinci Cargo Group",
+     "aliasPerusahaan": "KCG",
+     "pengelola": "ADMIN"
+    },
+    {
+     "id": "65600e75-d2c8-48dc-8355-6049380db5c0",
+     "namaPerusahaan": "Nusantara Logistik Utama",
+     "aliasPerusahaan": "NLU",
+     "pengelola": "ADMIN"
+    },
+    {
+     "id": "9044cd30-f6ec-4e70-aa01-e6247dc2f8d2",
+     "namaPerusahaan": "PT Jalur Besi Transindo",
+     "aliasPerusahaan": "JBT",
+     "pengelola": "VENDOR"
+    },
+    {
+     "id": "edee4eaa-d65c-4b29-a629-94d005e36bce",
+     "namaPerusahaan": "PT Jalur Besi Transindo Jya",
+     "aliasPerusahaan": "JBL",
+     "pengelola": "VENDOR"
+    },
+    {
+     "id": "442a697c-7629-41b8-862b-394a1af52ca5",
+     "namaPerusahaan": "PT. Ikatan Kuat",
+     "aliasPerusahaan": "IKIK",
+     "pengelola": "VENDOR"
+    },
+    {
+     "id": "a2238343-b088-4869-9e88-a8d3bffbea9d",
+     "namaPerusahaan": "PT. Indah Permata Jaya",
+     "aliasPerusahaan": "IPJA",
+     "pengelola": "VENDOR"
+    },
+    {
+     "id": "620951d3-5183-4449-975d-c17a8876df39",
+     "namaPerusahaan": "PT. Jaya Wihaya",
+     "aliasPerusahaan": null,
+     "pengelola": "VENDOR"
+    },
+    {
+     "id": "bed09b23-a7fe-47c7-ad89-9cc7021639e3",
+     "namaPerusahaan": "Wahana Logistik",
+     "aliasPerusahaan": "WLG",
+     "pengelola": "VENDOR"
+    }
+   ]
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:09.948Z",
+  "method": "GET",
+  "path": "/api/order/travel-time",
+  "query": "?kotaAsalId=26ccee90-bd59-4c71-bacd-ee025ecd4142&kotaTujuanId=23200cbb-44b4-4f3c-85bf-b5c8be8e464a",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Travel time retrieved",
+   "data": {
+    "exists": true,
+    "waktuJam": 9,
+    "waktuPerjalananId": "907161cf-035f-41e7-bf28-7fe3565e4557"
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:09.964Z",
+  "method": "GET",
+  "path": "/api/jenis-kontainers",
+  "query": "?status=true&limit=999",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Jenis Kontainer retrieved",
+   "data": [
+    {
+     "id": "076a41e8-7ad9-49c1-b032-9b497f578865",
+     "name": "40 HC",
+     "panjangCm": 1219,
+     "lebarCm": 244,
+     "tinggiCm": 290,
+     "volumeM3": 86.2564,
+     "kapasitasKg": 26000,
+     "status": true,
+     "createdAt": "2026-09-03T02:42:45.136Z",
+     "updatedAt": "2026-09-03T02:42:45.136Z"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 1,
+    "totalPage": 1
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:10.003Z",
+  "method": "GET",
+  "path": "/api/droppoints",
+  "query": "?status=true&limit=999",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Drop points retrieved",
+   "data": [
+    {
+     "id": "51515972-aed2-46c3-8503-d93c209df1be",
+     "name": "Sesetan Drop Point",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "d040bf4a-8dee-4acd-9511-0a0d3b1b07a6",
+     "bandaraId": null,
+     "provinceId": "75ea8ca7-bccc-41d9-86da-64bd31222834",
+     "cityId": "40797239-11d6-45bf-ba06-8f69cc81c4b9",
+     "districtId": "072f7aa5-54da-48fd-806c-bb9e46514f85",
+     "kelurahanId": "7fd779fd-ddcf-4f28-9395-4c8ab4ded874",
+     "address": "Jalan Raya Pelabuhan Benoa",
+     "latitude": -8.730047393023074,
+     "longitude": 115.21272245275169,
+     "linkMaps": null,
+     "picName": "Teuku Omar",
+     "picWhatsapp": "6285245457666",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-24T01:25:56.604Z",
+     "updatedAt": "2026-09-24T01:25:56.604Z",
+     "customer": {
+      "id": "d040bf4a-8dee-4acd-9511-0a0d3b1b07a6",
+      "name": "Sri Sesetan"
+     },
+     "bandara": null,
+     "province": {
+      "id": "75ea8ca7-bccc-41d9-86da-64bd31222834",
+      "name": "Bali"
+     },
+     "city": {
+      "id": "40797239-11d6-45bf-ba06-8f69cc81c4b9",
+      "name": "Kota Denpasar"
+     },
+     "district": {
+      "id": "072f7aa5-54da-48fd-806c-bb9e46514f85",
+      "name": "Denpasar Selatan"
+     },
+     "kelurahan": {
+      "id": "7fd779fd-ddcf-4f28-9395-4c8ab4ded874",
+      "name": "Sesetan",
+      "kodePos": "80223"
+     }
+    },
+    {
+     "id": "1e5dbc2d-4f8b-48e7-ba07-3ef18adb5bbe",
+     "name": "Kerinci Cargo Drop Point",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "4d0e8fc4-c1a4-4073-b149-c35f43ebc18c",
+     "bandaraId": null,
+     "provinceId": "b5e9746b-3752-4cc9-b1fb-a7b6cd2003d6",
+     "cityId": "5cab016b-0a56-4fef-87a9-1f34baaa0a18",
+     "districtId": "f72c4ab6-3f99-4c79-b040-33931e325f57",
+     "kelurahanId": "569ab412-d4ab-4400-aaab-66158ba49c66",
+     "address": "Jl. Indah Bersama No.67A",
+     "latitude": -8.640889,
+     "longitude": 115.179943,
+     "linkMaps": null,
+     "picName": "Monica L.",
+     "picWhatsapp": "6281275679099",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-24T01:12:20.998Z",
+     "updatedAt": "2026-09-24T01:12:20.998Z",
+     "customer": {
+      "id": "4d0e8fc4-c1a4-4073-b149-c35f43ebc18c",
+      "name": "Kerinci Cargo Group"
+     },
+     "bandara": null,
+     "province": {
+      "id": "b5e9746b-3752-4cc9-b1fb-a7b6cd2003d6",
+      "name": "Riau"
+     },
+     "city": {
+      "id": "5cab016b-0a56-4fef-87a9-1f34baaa0a18",
+      "name": "Kota Pekanbaru"
+     },
+     "district": {
+      "id": "f72c4ab6-3f99-4c79-b040-33931e325f57",
+      "name": "Pekanbaru Kota"
+     },
+     "kelurahan": {
+      "id": "569ab412-d4ab-4400-aaab-66158ba49c66",
+      "name": "Kota Baru",
+      "kodePos": "28114"
+     }
+    },
+    {
+     "id": "907ec2b6-71aa-4228-873b-04f28183300f",
+     "name": "Warehouse Krembangan Surabaya",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "75ca49bb-3bf3-44d3-a5d5-dfca5b375075",
+     "bandaraId": null,
+     "provinceId": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+     "cityId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "districtId": "bbee9be7-e395-451d-9c97-006a7a4e6334",
+     "kelurahanId": "ca1b4971-0144-483e-a9bd-da615c0d7c19",
+     "address": "Jl. Demak No. 380, morokrembangan",
+     "latitude": -7.237880048429513,
+     "longitude": 112.72074204208799,
+     "linkMaps": null,
+     "picName": "Komang",
+     "picWhatsapp": "6287582325567",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-22T08:20:56.804Z",
+     "updatedAt": "2026-09-22T08:20:56.804Z",
+     "customer": {
+      "id": "75ca49bb-3bf3-44d3-a5d5-dfca5b375075",
+      "name": "PT Maju Jaya Sejahtera"
+     },
+     "bandara": null,
+     "province": {
+      "id": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+      "name": "Jawa Timur"
+     },
+     "city": {
+      "id": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+      "name": "Kota Surabaya"
+     },
+     "district": {
+      "id": "bbee9be7-e395-451d-9c97-006a7a4e6334",
+      "name": "Krembangan"
+     },
+     "kelurahan": {
+      "id": "ca1b4971-0144-483e-a9bd-da615c0d7c19",
+      "name": "Morokrembangan",
+      "kodePos": "60178"
+     }
+    },
+    {
+     "id": "cf5c1a5d-ea4b-4b18-9ca6-d17bf7c2dc17",
+     "name": "BB Mill Ngoro",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+     "bandaraId": null,
+     "provinceId": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+     "cityId": "51e01a87-0558-4a0b-948c-a45d1322739b",
+     "districtId": "6d196a09-3065-4a6e-8b8d-310d1400cecb",
+     "kelurahanId": "a8309c57-9791-4736-94b2-ead730a7baca",
+     "address": "Jalan Raya Kembangsri No.100",
+     "latitude": null,
+     "longitude": null,
+     "linkMaps": null,
+     "picName": "Luna",
+     "picWhatsapp": "6283456789011",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-22T08:16:30.805Z",
+     "updatedAt": "2026-09-22T08:16:30.805Z",
+     "customer": {
+      "id": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+      "name": "PT Bahan Berkualitas"
+     },
+     "bandara": null,
+     "province": {
+      "id": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+      "name": "Jawa Timur"
+     },
+     "city": {
+      "id": "51e01a87-0558-4a0b-948c-a45d1322739b",
+      "name": "Kabupaten Mojokerto"
+     },
+     "district": {
+      "id": "6d196a09-3065-4a6e-8b8d-310d1400cecb",
+      "name": "Ngoro"
+     },
+     "kelurahan": {
+      "id": "a8309c57-9791-4736-94b2-ead730a7baca",
+      "name": "Sukoanyar",
+      "kodePos": "61385"
+     }
+    },
+    {
+     "id": "4e7d4c48-80b4-4804-b941-3970e9943abb",
+     "name": "Warehouse Gunung Pati",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "75ca49bb-3bf3-44d3-a5d5-dfca5b375075",
+     "bandaraId": null,
+     "provinceId": "b7d0fac3-1d88-437b-90b6-73746a5c1f1c",
+     "cityId": "f07caa4f-5b48-41e0-8c0b-91dbff9bb718",
+     "districtId": "b3b56126-019d-4145-bdc1-279b6e022889",
+     "kelurahanId": "41c19ec9-c604-478e-b5dc-4aa11bc16487",
+     "address": "Semarang",
+     "latitude": -7.0875,
+     "longitude": 110.36194,
+     "linkMaps": null,
+     "picName": "Toni Surojo",
+     "picWhatsapp": "6281117121212",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-08T06:54:02.481Z",
+     "updatedAt": "2026-09-08T06:54:02.481Z",
+     "customer": {
+      "id": "75ca49bb-3bf3-44d3-a5d5-dfca5b375075",
+      "name": "PT Maju Jaya Sejahtera"
+     },
+     "bandara": null,
+     "province": {
+      "id": "b7d0fac3-1d88-437b-90b6-73746a5c1f1c",
+      "name": "Jawa Tengah"
+     },
+     "city": {
+      "id": "f07caa4f-5b48-41e0-8c0b-91dbff9bb718",
+      "name": "Kota Semarang"
+     },
+     "district": {
+      "id": "b3b56126-019d-4145-bdc1-279b6e022889",
+      "name": "Gunungpati"
+     },
+     "kelurahan": {
+      "id": "41c19ec9-c604-478e-b5dc-4aa11bc16487",
+      "name": "Cepoko",
+      "kodePos": "50223"
+     }
+    },
+    {
+     "id": "c754b70d-ac44-4b4b-92ed-35fb6da983f5",
+     "name": "BB Mill Wanaherang",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+     "bandaraId": null,
+     "provinceId": "2a928c54-3552-40f4-ae03-7c275b59c381",
+     "cityId": "f4bf01c6-095e-495e-b364-0b841f00b601",
+     "districtId": "eb0e28d1-20c9-4901-bc7f-26dd92ccc81f",
+     "kelurahanId": "78b4a55f-e118-4e03-ad74-182fbd75abd1",
+     "address": "Jl. Raya Cikuda Wanaherang, Wanaherang, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16965",
+     "latitude": -6.558714,
+     "longitude": 106.689192,
+     "linkMaps": null,
+     "picName": "Luis",
+     "picWhatsapp": "6283349871247",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-08T06:42:41.864Z",
+     "updatedAt": "2026-09-08T06:42:41.864Z",
+     "customer": {
+      "id": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+      "name": "PT Bahan Berkualitas"
+     },
+     "bandara": null,
+     "province": {
+      "id": "2a928c54-3552-40f4-ae03-7c275b59c381",
+      "name": "Jawa Barat"
+     },
+     "city": {
+      "id": "f4bf01c6-095e-495e-b364-0b841f00b601",
+      "name": "Kabupaten Bogor"
+     },
+     "district": {
+      "id": "eb0e28d1-20c9-4901-bc7f-26dd92ccc81f",
+      "name": "Gunungputri"
+     },
+     "kelurahan": {
+      "id": "78b4a55f-e118-4e03-ad74-182fbd75abd1",
+      "name": "Wanaherang",
+      "kodePos": "16965"
+     }
+    },
+    {
+     "id": "cec9b6cd-9cce-42df-94e7-dd15aa9d0fe2",
+     "name": "BB WH Marunda",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+     "bandaraId": null,
+     "provinceId": "4dda9703-4e3b-4ee0-b9be-2d75e5861029",
+     "cityId": "69a5bea3-30a3-4ca5-9773-f84ec3f6899f",
+     "districtId": "2007c409-ee2b-4fe6-aa0b-c3fb6584c259",
+     "kelurahanId": "5ff49378-2b33-45ed-9c1d-63f7870f57a4",
+     "address": "Jl. Marunda Baru 18 No.36B, RT.7/RW.5, Marunda, Kec. Cilincing, Jkt Utara, Daerah Khusus Ibukota Jakarta 14150",
+     "latitude": -6.121152,
+     "longitude": 106.954429,
+     "linkMaps": null,
+     "picName": "Cika",
+     "picWhatsapp": "6282345679210",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-08T06:41:08.389Z",
+     "updatedAt": "2026-09-08T06:41:08.389Z",
+     "customer": {
+      "id": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+      "name": "PT Bahan Berkualitas"
+     },
+     "bandara": null,
+     "province": {
+      "id": "4dda9703-4e3b-4ee0-b9be-2d75e5861029",
+      "name": "Dki Jakarta"
+     },
+     "city": {
+      "id": "69a5bea3-30a3-4ca5-9773-f84ec3f6899f",
+      "name": "Kota Administrasi Jakarta Utara "
+     },
+     "district": {
+      "id": "2007c409-ee2b-4fe6-aa0b-c3fb6584c259",
+      "name": "Cilincing"
+     },
+     "kelurahan": {
+      "id": "5ff49378-2b33-45ed-9c1d-63f7870f57a4",
+      "name": "Marunda",
+      "kodePos": "14150"
+     }
+    },
+    {
+     "id": "3f75eac8-fe0f-42a1-8282-55f18c6aeb8a",
+     "name": "BB WH Priok",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+     "bandaraId": null,
+     "provinceId": "4dda9703-4e3b-4ee0-b9be-2d75e5861029",
+     "cityId": "69a5bea3-30a3-4ca5-9773-f84ec3f6899f",
+     "districtId": "236a9032-4652-4b92-baa8-b51dbe473119",
+     "kelurahanId": "3747b74c-3f76-495a-9240-5b050c35e512",
+     "address": "Jl. Raya Sulawesi No.1, RT.7/RW.1, Ujung, Kec. Tj. Priok, Jkt Utara, Daerah Khusus Ibukota Jakarta 14310",
+     "latitude": -6.20596,
+     "longitude": 106.82776,
+     "linkMaps": null,
+     "picName": "Surya",
+     "picWhatsapp": "6285872349012",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-08T06:39:57.891Z",
+     "updatedAt": "2026-09-08T06:39:57.891Z",
+     "customer": {
+      "id": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+      "name": "PT Bahan Berkualitas"
+     },
+     "bandara": null,
+     "province": {
+      "id": "4dda9703-4e3b-4ee0-b9be-2d75e5861029",
+      "name": "Dki Jakarta"
+     },
+     "city": {
+      "id": "69a5bea3-30a3-4ca5-9773-f84ec3f6899f",
+      "name": "Kota Administrasi Jakarta Utara "
+     },
+     "district": {
+      "id": "236a9032-4652-4b92-baa8-b51dbe473119",
+      "name": "Tanjung Priok"
+     },
+     "kelurahan": {
+      "id": "3747b74c-3f76-495a-9240-5b050c35e512",
+      "name": "Tanjung Priok",
+      "kodePos": "14310"
+     }
+    },
+    {
+     "id": "b3a72797-4015-42fc-be79-2cf6430e9903",
+     "name": "BB WH Krembangan",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+     "bandaraId": null,
+     "provinceId": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+     "cityId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "districtId": "bbee9be7-e395-451d-9c97-006a7a4e6334",
+     "kelurahanId": "c6ddd4b5-5a64-403e-b9b1-c91bcd0c8bcc",
+     "address": "Jalan Rajawali 109",
+     "latitude": -7.2336136,
+     "longitude": 112.7295926,
+     "linkMaps": null,
+     "picName": "Raja",
+     "picWhatsapp": "6285753221459",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-08T06:37:52.926Z",
+     "updatedAt": "2026-09-08T06:37:52.926Z",
+     "customer": {
+      "id": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+      "name": "PT Bahan Berkualitas"
+     },
+     "bandara": null,
+     "province": {
+      "id": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+      "name": "Jawa Timur"
+     },
+     "city": {
+      "id": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+      "name": "Kota Surabaya"
+     },
+     "district": {
+      "id": "bbee9be7-e395-451d-9c97-006a7a4e6334",
+      "name": "Krembangan"
+     },
+     "kelurahan": {
+      "id": "c6ddd4b5-5a64-403e-b9b1-c91bcd0c8bcc",
+      "name": "Kemayoran",
+      "kodePos": "60176"
+     }
+    },
+    {
+     "id": "44d92533-b68e-4402-809d-1f6799448558",
+     "name": "BB WH Rungkut",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+     "bandaraId": null,
+     "provinceId": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+     "cityId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "districtId": "44c296bf-7465-4088-89e5-51c173874d7f",
+     "kelurahanId": "76a3457e-2337-4e2b-afd3-2d47a5f12278",
+     "address": "Jalan Rungkut Alang-alang",
+     "latitude": -7.3227039,
+     "longitude": 112.7751138,
+     "linkMaps": null,
+     "picName": "Kiky",
+     "picWhatsapp": "628189765432",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-08T06:35:47.115Z",
+     "updatedAt": "2026-09-08T06:35:47.115Z",
+     "customer": {
+      "id": "3aaed7db-618a-446f-83b7-a98fcb983b93",
+      "name": "PT Bahan Berkualitas"
+     },
+     "bandara": null,
+     "province": {
+      "id": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+      "name": "Jawa Timur"
+     },
+     "city": {
+      "id": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+      "name": "Kota Surabaya"
+     },
+     "district": {
+      "id": "44c296bf-7465-4088-89e5-51c173874d7f",
+      "name": "Rungkut"
+     },
+     "kelurahan": {
+      "id": "76a3457e-2337-4e2b-afd3-2d47a5f12278",
+      "name": "Kalirungkut",
+      "kodePos": "60293"
+     }
+    },
+    {
+     "id": "6c71e398-1fc5-43ab-9a2a-303bac7d6634",
+     "name": "EL - Gudang Bandung [Gudang Surya]",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "fe60d782-9d21-478b-87ec-b7d3166b818b",
+     "bandaraId": null,
+     "provinceId": "2a928c54-3552-40f4-ae03-7c275b59c381",
+     "cityId": "23200cbb-44b4-4f3c-85bf-b5c8be8e464a",
+     "districtId": "2d83bed1-4269-4814-aa47-61a0c87e84fa",
+     "kelurahanId": "d8704152-e036-4420-be6f-034412cd1bb0",
+     "address": "Jl. Cikampek Raya No. 17",
+     "latitude": -6.88981,
+     "longitude": 107.599767,
+     "linkMaps": null,
+     "picName": "Pamungkas Hardiansyah",
+     "picWhatsapp": "62891020192819",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-08T06:34:37.340Z",
+     "updatedAt": "2026-09-08T06:34:37.340Z",
+     "customer": {
+      "id": "fe60d782-9d21-478b-87ec-b7d3166b818b",
+      "name": "PT. Surya Elektronik"
+     },
+     "bandara": null,
+     "province": {
+      "id": "2a928c54-3552-40f4-ae03-7c275b59c381",
+      "name": "Jawa Barat"
+     },
+     "city": {
+      "id": "23200cbb-44b4-4f3c-85bf-b5c8be8e464a",
+      "name": "Kota Bandung"
+     },
+     "district": {
+      "id": "2d83bed1-4269-4814-aa47-61a0c87e84fa",
+      "name": "Antapani"
+     },
+     "kelurahan": {
+      "id": "d8704152-e036-4420-be6f-034412cd1bb0",
+      "name": "Antapani Tengah",
+      "kodePos": "40291"
+     }
+    },
+    {
+     "id": "094683cf-ed85-42e6-94a0-d4354581bbe8",
+     "name": "EL - Gudang Bandung",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "beb52dcf-a1e1-4c20-a75b-7e3ce0c9f20d",
+     "bandaraId": null,
+     "provinceId": "2a928c54-3552-40f4-ae03-7c275b59c381",
+     "cityId": "23200cbb-44b4-4f3c-85bf-b5c8be8e464a",
+     "districtId": "e171d67f-b71b-45f6-b1c0-0d478e072590",
+     "kelurahanId": "7f91aeec-1cbd-4751-ac60-c20d4de91249",
+     "address": "Jl. Dipatiukur No 16",
+     "latitude": -6.8851985,
+     "longitude": 107.6137503,
+     "linkMaps": null,
+     "picName": "Ahmad Priyanto",
+     "picWhatsapp": "6285710291792",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-03T01:16:10.231Z",
+     "updatedAt": "2026-09-03T01:16:10.231Z",
+     "customer": {
+      "id": "beb52dcf-a1e1-4c20-a75b-7e3ce0c9f20d",
+      "name": "PT. Haier Sales Indonesia"
+     },
+     "bandara": null,
+     "province": {
+      "id": "2a928c54-3552-40f4-ae03-7c275b59c381",
+      "name": "Jawa Barat"
+     },
+     "city": {
+      "id": "23200cbb-44b4-4f3c-85bf-b5c8be8e464a",
+      "name": "Kota Bandung"
+     },
+     "district": {
+      "id": "e171d67f-b71b-45f6-b1c0-0d478e072590",
+      "name": "Coblong"
+     },
+     "kelurahan": {
+      "id": "7f91aeec-1cbd-4751-ac60-c20d4de91249",
+      "name": "Dago",
+      "kodePos": "40135"
+     }
+    },
+    {
+     "id": "6e32d65d-c7d7-47e8-b296-34dc5fc8daa5",
+     "name": "EL- Gudang Makassar",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "beb52dcf-a1e1-4c20-a75b-7e3ce0c9f20d",
+     "bandaraId": null,
+     "provinceId": "f1badba1-15c4-4046-b19a-aa93efae9aee",
+     "cityId": "b10c806d-c7f5-403d-a75c-5d2608df011e",
+     "districtId": "e0a0debd-3469-4ff2-b0f6-5adf16107edf",
+     "kelurahanId": "0181bf02-2eff-4a78-ba1a-8d3c12b2c94d",
+     "address": "Jl. Penghibur No 78",
+     "latitude": -5.138315,
+     "longitude": 119.458405,
+     "linkMaps": null,
+     "picName": "Dwi Astuti",
+     "picWhatsapp": "6281452810382",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-03T01:14:46.311Z",
+     "updatedAt": "2026-09-03T01:15:08.220Z",
+     "customer": {
+      "id": "beb52dcf-a1e1-4c20-a75b-7e3ce0c9f20d",
+      "name": "PT. Haier Sales Indonesia"
+     },
+     "bandara": null,
+     "province": {
+      "id": "f1badba1-15c4-4046-b19a-aa93efae9aee",
+      "name": "Sulawesi Selatan"
+     },
+     "city": {
+      "id": "b10c806d-c7f5-403d-a75c-5d2608df011e",
+      "name": "Kota Makassar"
+     },
+     "district": {
+      "id": "e0a0debd-3469-4ff2-b0f6-5adf16107edf",
+      "name": "Ujung Pandang"
+     },
+     "kelurahan": {
+      "id": "0181bf02-2eff-4a78-ba1a-8d3c12b2c94d",
+      "name": "Losari",
+      "kodePos": "90112"
+     }
+    },
+    {
+     "id": "853eee65-5281-4f31-b636-f66031b8fc2c",
+     "name": "EL - Gudang Surabaya",
+     "type": "GUDANG_CUSTOMER",
+     "customerId": "beb52dcf-a1e1-4c20-a75b-7e3ce0c9f20d",
+     "bandaraId": null,
+     "provinceId": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+     "cityId": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+     "districtId": "bbee9be7-e395-451d-9c97-006a7a4e6334",
+     "kelurahanId": "bb716487-e6b8-4ae0-bd28-984b8ad71828",
+     "address": "Jl. Rajawali No 109",
+     "latitude": null,
+     "longitude": null,
+     "linkMaps": null,
+     "picName": "Retno Cahyaning",
+     "picWhatsapp": "6289556142910",
+     "catatan": null,
+     "status": true,
+     "deleted": false,
+     "createdAt": "2026-09-03T01:11:40.463Z",
+     "updatedAt": "2026-09-03T01:11:40.463Z",
+     "customer": {
+      "id": "beb52dcf-a1e1-4c20-a75b-7e3ce0c9f20d",
+      "name": "PT. Haier Sales Indonesia"
+     },
+     "bandara": null,
+     "province": {
+      "id": "4b168bc8-88f1-460a-b1c2-8b5b9210d18f",
+      "name": "Jawa Timur"
+     },
+     "city": {
+      "id": "26ccee90-bd59-4c71-bacd-ee025ecd4142",
+      "name": "Kota Surabaya"
+     },
+     "district": {
+      "id": "bbee9be7-e395-451d-9c97-006a7a4e6334",
+      "name": "Krembangan"
+     },
+     "kelurahan": {
+      "id": "bb716487-e6b8-4ae0-bd28-984b8ad71828",
+      "name": "Krembangan Selatan",
+      "kodePos": "60175"
+     }
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 999,
+    "totalData": 14,
+    "totalPage": 1
+   }
+  }
+ },
+ {
+  "at": "2026-09-24T02:56:14.821Z",
+  "method": "POST",
+  "path": "/api/auth/logout",
+  "query": "",
+  "status": 200,
+  "body": {
+   "success": true,
+   "message": "Logged out"
+  }
+ }
+]

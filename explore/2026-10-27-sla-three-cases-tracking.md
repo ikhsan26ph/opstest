@@ -1,0 +1,15 @@
+# Pengujian SLA tiga case — SLAT-20261027-015203
+
+User meminta “lanjutkan!” sesudah pembuatan tiga order contoh. Penugasan dan tracking dilanjutkan hanya pada ORD3065530524 (Normal), ORD3065572668 (MP1kota), ORD3065617875 (MPbedaKota). Target OPS staging, akun1 config/env.md, header Admin Administrator. Peran berurutan pada agent utama; tidak mendelegasikan.
+
+Baseline GET membuktikan semua Menunggu Penugasan dan tanpa assignment. Dibuat tepat tiga assignment manual/Pengurus: N b3f10070-55d2-4adb-893c-35e04db2ff73 / QASLA27N1; MP1 357abf7f-d7ff-411b-8cd8-86d7b06e282a / QASLA27MP11; MP2 51d8756a-09a1-4150-824a-b4fea51c9fbb / QASLA27MP21. Semua mutasi melalui UI, guard berdasarkan ownOrder/assignment/stopID; ctx.request hanya GET.
+
+Normal dan MP1 counter sudah positif sebelum Berangkat Bongkar. Setelah pemicu, waktu masih cocok dengan Berangkat Muat pertama. Contoh MP1 pada09:04:37.032WIB: BB09:04:31.507, expected5.525detik, aktual9menit. MP2 setelah prasyarat dilepas pada09:03:04.794WIB: BM menujuGresik08:58:17.289, expected4m47.505detik, aktual7menit. AngkaAPI dibandingtimestampUTC; bukan perbedaanzona waktu atau tampilan UI saja. Kodebackend tidak diperiksa. SLA-FND-01 dikonfirmasi pada ketiga case.
+
+MP2 awalnya tidak mempunyai kartu progres meskipun event sah. Koordinat ownQA Gresik null. GET geocoder OPS dan reverse wilayah dipakai untuk memilih titik dalam KabupatenGresik; lookup yang meleset keluarwilayah tidak digunakan. Satu PATCHUI200 ownQA765d4ace-7ece-4cb7-b5da-a16768e724c5 menambah koordinat/linkMaps serta menyesuaikan alamat/kelurahanGapuroSukolilo. KotaId tidak berubah. Kartu muncul sesudah setup, sehingga blocker pengamatan dilepas. Tidak mengubah Order snapshot ataupun master pihak lain. Sebelum setup, tidak mengklaim counterMP2 benar/salah dari data[].
+
+MP2 tidak reset saat BB dan waktu muatGresik ikut berjalan; ini satu aspek passed, bukan kelulusan seluruhperhitungan. Total9checks:1passed/5failed/3blocked, satu defectrequirement yang sama. Tiga finalcap blocked: setelah SelesaiBongkar Progresdata[] segera dan recheck~3menit. Fresh Order/detail/events/context serta Timeline dievaluasi, tidak ada computedfinalSLA. Oraclefinal hanya expected.
+
+Lifecycle selesai:16event unik (N4,MP1 6,MP2 6),8foto sintetis; Order danAssignment semuaSELESAI,stopDONE.20request bisnis (3POSTassignment201+16POSTtracking200+1PATCHownQA200),0guarddenied. Loginsekali200,logout200 ke/login,browserclosed. Tidak menungguSLA1jam untukthreshold; tidak mengklaimDriverHub/rolelain/FCL/LCL/LTL/MD/Multipoint. Tidakcommit/push.
+
+Evidence artifacts/evidence/SLAT-20261027-015203; laporan reports/sla-three-cases-tracking_test-report-20261027.md; Excel danJSON module sla-three-cases-tracking. Reviewartifact meredaksi kodeakses dari responsmaster yang tersimpan; tidak mencetak nilainya. Foto/inputQA tidak mengandungcredential. Masalahharness (pathbuktigeocodepanjang,waitresponse setelahevent,locatorambigumaster,filtertakmemicurequest) dipisahkan dariappbug dan tidak menimbulkanmutasiganda.

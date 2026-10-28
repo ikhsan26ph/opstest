@@ -1,0 +1,191 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Jaya Administrator
+  - button "16":
+    - text: "16"
+    - img
+  - text: Jaya [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Master Unit
+- heading "Master Unit" [level=2]
+- tablist:
+  - tab "Armada"
+  - tab "Jenis Armada"
+  - tab "Jenis Kontainer" [selected]
+- link "Tambah Jenis Kontainer":
+  - /url: /master/unit/tambah-jenis-kontainer
+- button "Filter"
+- button "Riwayat"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Jenis Kontainer
+- textbox "Masukkan Jenis Kontainer"
+- text: Dimensi Area Kargo
+- spinbutton "Panjang"
+- text: cm
+- spinbutton "Lebar"
+- text: cm
+- spinbutton "Tinggi"
+- text: cm Volume
+- textbox "Masukkan Volume"
+- text: m³ Kapasitas
+- spinbutton "Masukkan Kapasitas"
+- text: kg Status
+- button "Pilih Status":
+  - text: Pilih Status
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "No Jenis Kontainer Dimensi Area Kargo Volume Kapasitas Status Aksi":
+      - columnheader "No"
+      - columnheader "Jenis Kontainer Dimensi Area Kargo"
+      - columnheader "Volume"
+      - columnheader "Kapasitas"
+      - columnheader "Status"
+      - columnheader "Aksi"
+  - rowgroup:
+    - row:
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+- paragraph: Menampilkan 0–0 data dari 0 data
+- region "Notifications alt+T"
+- alert

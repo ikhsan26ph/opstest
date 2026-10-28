@@ -1,0 +1,9 @@
+# Coverage status tahap daftar Penugasan
+
+| Requirement | Skenario | Hasil / batas |
+|---|---|---|
+| REQ-001 | SCN-0001, SCN-0002, SCN-0003, SCN-0004, SCN-0007, SCN-0008, SCN-0009, SCN-0010, SCN-0011, SCN-0012, SCN-0013, SCN-0014, SCN-0016, SCN-0017, SCN-0018, SCN-0019, SCN-0020, SCN-0021, SCN-0022, SCN-0023, SCN-0025, SCN-0026, SCN-0027, SCN-0028, SCN-0029, SCN-0030, SCN-0032, SCN-0033, SCN-0034, SCN-0035, SCN-0036, SCN-0037, SCN-0038, SCN-0039, SCN-0040, SCN-0041 | Passed pada lifecycle FTL dan sampel read-only FCL/LCL/LTL. |
+| REQ-002 | SCN-0007, SCN-0008, SCN-0009, SCN-0010, SCN-0011, SCN-0012, SCN-0024, SCN-0025, SCN-0026, SCN-0027, SCN-0028, SCN-0029, SCN-0030, SCN-0041 | Passed: MP urutan3→1→2 dan lintas kota urutan2→1→3; Berangkat/Selesai Muat count1→2→3. |
+| REQ-003 | SCN-0018, SCN-0019, SCN-0020, SCN-0021, SCN-0022, SCN-0023, SCN-0024, SCN-0032, SCN-0033, SCN-0034, SCN-0035, SCN-0036, SCN-0037, SCN-0038, SCN-0041 | Passed: MD urutan3→1→2 dan lintas kota urutan2→1→3; Berangkat/Selesai Bongkar count1→2→3. |
+| REQ-004 | SCN-0025, SCN-0026, SCN-0027, SCN-0028, SCN-0029, SCN-0030, SCN-0032, SCN-0033, SCN-0034, SCN-0035, SCN-0036, SCN-0037, SCN-0042 | Passed. User mengonfirmasi poin4 adalah Multipoint. Data MULTIPOINT3×3 lulus12transisi: hitungan kedua sisi1→2→3, termasuk perpindahan kota. |
+| REQ-005 | SCN-0001, SCN-0002, SCN-0003, SCN-0004, SCN-0005, SCN-0006, SCN-0007, SCN-0008, SCN-0009, SCN-0010, SCN-0011, SCN-0012, SCN-0013, SCN-0014, SCN-0015, SCN-0016, SCN-0017, SCN-0018, SCN-0019, SCN-0020, SCN-0021, SCN-0022, SCN-0023, SCN-0024, SCN-0025, SCN-0026, SCN-0027, SCN-0028, SCN-0029, SCN-0030, SCN-0031, SCN-0032, SCN-0033, SCN-0034, SCN-0035, SCN-0036, SCN-0037, SCN-0038, SCN-0039, SCN-0040, SCN-0041, SCN-0043 | Passed: current step, bukan next form; status perunit terpisah, count tetap setelah navigasi/refresh; final Selesai Bongkar. |

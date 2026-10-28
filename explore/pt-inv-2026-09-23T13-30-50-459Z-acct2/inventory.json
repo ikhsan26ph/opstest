@@ -1,0 +1,190 @@
+{
+ "authHeaderSeen": true,
+ "res": {
+  "/api/vendors": {
+   "status": 401,
+   "all": [],
+   "body": {
+    "success": false,
+    "message": "INVALID_TOKEN"
+   }
+  },
+  "/api/penugasan-tracking": {
+   "status": 200,
+   "all": [
+    {
+     "id": "4869ac36-47d7-4aac-923f-0ee076f08e89",
+     "penugasanId": "d1d8948b-7ee6-4f94-9af2-f8529305c407",
+     "order": {
+      "id": "31e3727e-1690-461b-8050-9276fbd26a37",
+      "orderCode": "ORD0135699597",
+      "serviceType": "FTL",
+      "metodePengiriman": null,
+      "kotaAsalName": "Kota Surabaya",
+      "kotaTujuanName": "Kabupaten Bogor",
+      "tipePengiriman": "NORMAL",
+      "ftlShipmentId": null,
+      "pengirimRows": [
+       {
+        "dropPointName": "EL - Gudang Surabaya",
+        "cityName": "Kota Surabaya",
+        "address": "Jl. Rajawali No 109"
+       }
+      ],
+      "penerimaRows": [
+       {
+        "dropPointName": "BB Mill Wanaherang",
+        "cityName": "Kabupaten Bogor",
+        "address": "Jl. Raya Cikuda Wanaherang, Wanaherang, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16965"
+       }
+      ],
+      "vendor": {
+       "id": "442a697c-7629-41b8-862b-394a1af52ca5",
+       "nama": "PT. Ikatan Kuat",
+       "pengelola": "VENDOR"
+      }
+     },
+     "unit": {
+      "type": "ARMADA",
+      "id": "",
+      "label": "E832AA"
+     },
+     "petugas": {
+      "sopir": {
+       "id": "35e0777c-3c5c-439c-9c86-6809362c9b46",
+       "name": "Julian"
+      },
+      "subUser": null
+     },
+     "muat": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkar": {
+      "nopol": null,
+      "sopir": null
+     },
+     "bongkarStarted": false,
+     "perluTugaskanBongkar": false,
+     "usePengurus": false,
+     "status": "BELUM_BERANGKAT",
+     "kendalaAktif": false,
+     "createdAt": "2026-09-23T03:56:13.832Z"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 1,
+    "totalPage": 1
+   }
+  },
+  "/api/order": {
+   "status": 401,
+   "all": [],
+   "body": {
+    "success": false,
+    "message": "INVALID_TOKEN"
+   }
+  },
+  "/api/orders?hasPenugasan=false&status=DRAFT,ASSIGNED,MENUNGGU_PENUGASAN": {
+   "status": 200,
+   "all": [],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 0,
+    "totalPage": 0
+   }
+  },
+  "/api/armadas/vendors": {
+   "status": 401,
+   "all": [],
+   "body": {
+    "success": false,
+    "message": "INVALID_TOKEN"
+   }
+  },
+  "/api/sopirs/vendors": {
+   "status": 401,
+   "all": [],
+   "body": {
+    "success": false,
+    "message": "INVALID_TOKEN"
+   }
+  },
+  "/api/vendor/order": {
+   "status": 200,
+   "all": [
+    {
+     "id": "31e3727e-1690-461b-8050-9276fbd26a37",
+     "orderCode": "ORD0135699597",
+     "serviceType": "FTL",
+     "kotaAsalName": "Kota Surabaya",
+     "warehouseAsalName": "EL - Gudang Surabaya",
+     "kotaTujuanName": "Kabupaten Bogor",
+     "warehouseTujuanName": "BB Mill Wanaherang",
+     "totalHarga": "4196885",
+     "status": "DITUGASKAN",
+     "tipePengiriman": "NORMAL",
+     "tanggalMuat": "2026-09-29T17:00:00.000Z",
+     "createdAt": "2026-09-23T03:54:59.624Z"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 1,
+    "totalPage": 1
+   }
+  },
+  "/api/vendor/armadas": {
+   "status": 200,
+   "all": [],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 0,
+    "totalPage": 0
+   }
+  },
+  "/api/vendor/sopirs": {
+   "status": 200,
+   "all": [
+    {
+     "id": "35e0777c-3c5c-439c-9c86-6809362c9b46",
+     "name": "Julian",
+     "whatsapp": "6283830011881",
+     "nomorKTP": null,
+     "nomorSIM": null,
+     "provinsiId": null,
+     "jenisPetugas": "SOPIR",
+     "kotaId": null,
+     "kecamatanId": null,
+     "kelurahanId": null,
+     "kodePos": null,
+     "alamatLengkap": null,
+     "fotoKTP": null,
+     "fotoSIM": null,
+     "fotoSopir": null,
+     "status": true,
+     "deleted": false,
+     "vendorId": "442a697c-7629-41b8-862b-394a1af52ca5",
+     "createdAt": "2026-09-23T03:55:59.302Z",
+     "updatedAt": "2026-09-23T03:55:59.302Z",
+     "provinsi": null,
+     "kota": null,
+     "kecamatan": null,
+     "kelurahan": null,
+     "kodeAkses": "373686"
+    }
+   ],
+   "meta": {
+    "page": 1,
+    "limit": 100,
+    "totalData": 1,
+    "totalPage": 1
+   }
+  }
+ }
+}

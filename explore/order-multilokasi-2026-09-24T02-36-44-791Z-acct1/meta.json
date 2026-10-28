@@ -1,0 +1,597 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "open-form",
+   "ok": true,
+   "info": {
+    "url": "https://ops-staging.prahu-hub.com/order/buat",
+    "snap": "01-default.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Normal — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Jenis Armada",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FTL-1x1",
+   "ok": true,
+   "info": {
+    "snap": "02-FTL-1x1.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Normal — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Jenis Armada",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FTL-2muat-1bongkar",
+   "ok": true,
+   "info": {
+    "snap": "03-FTL-2x1.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Multipickup — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [
+      "Muat 1",
+      "Muat 2"
+     ],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Jenis Armada",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FTL-3muat-1bongkar",
+   "ok": true,
+   "info": {
+    "snap": "04-FTL-3x1.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Multipickup — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [
+      "Muat 1",
+      "Muat 2",
+      "Muat 3"
+     ],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Jenis Armada",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FTL-3muat-2bongkar",
+   "ok": true,
+   "info": {
+    "snap": "05-FTL-3x2.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Multipoint — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [
+      "Muat 1",
+      "Muat 2",
+      "Muat 3",
+      "Bongkar 1",
+      "Bongkar 2"
+     ],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Jenis Armada",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "[icon]",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "[icon]",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FTL-delete-candidates",
+   "ok": true,
+   "info": []
+  },
+  {
+   "step": "FCL-1x1",
+   "ok": true,
+   "info": {
+    "snap": "06-FCL-1x1.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Normal — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Pelabuhan Asal",
+      "Pilih Pelabuhan Tujuan",
+      "Pilih Jenis Kontainer",
+      "Door to Door\nKontainer diambil dari lokasi pengirim dan dian",
+      "Door to CY\nKontainer diambil dari lokasi pengirim dan dikiri",
+      "CY to CY\nKontainer diambil dari Container Yard (CY) asal dan",
+      "CY to Door\nKontainer diambil dari Container Yard (CY) dan di",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FCL-2muat-1bongkar",
+   "ok": true,
+   "info": {
+    "snap": "07-FCL-2x1.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Multipickup — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [
+      "Muat 1",
+      "Muat 2"
+     ],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Pelabuhan Asal",
+      "Pilih Pelabuhan Tujuan",
+      "Pilih Jenis Kontainer",
+      "Door to Door\nKontainer diambil dari lokasi pengirim dan dian",
+      "Door to CY\nKontainer diambil dari lokasi pengirim dan dikiri",
+      "CY to CY\nKontainer diambil dari Container Yard (CY) asal dan",
+      "CY to Door\nKontainer diambil dari Container Yard (CY) dan di",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FCL-3muat-1bongkar",
+   "ok": true,
+   "info": {
+    "snap": "08-FCL-3x1.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Multipickup — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [
+      "Muat 1",
+      "Muat 2",
+      "Muat 3"
+     ],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Pelabuhan Asal",
+      "Pilih Pelabuhan Tujuan",
+      "Pilih Jenis Kontainer",
+      "Door to Door\nKontainer diambil dari lokasi pengirim dan dian",
+      "Door to CY\nKontainer diambil dari lokasi pengirim dan dikiri",
+      "CY to CY\nKontainer diambil dari Container Yard (CY) asal dan",
+      "CY to Door\nKontainer diambil dari Container Yard (CY) dan di",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FCL-3muat-2bongkar",
+   "ok": true,
+   "info": {
+    "snap": "09-FCL-3x2.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Multipoint — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [
+      "Muat 1",
+      "Muat 2",
+      "Muat 3",
+      "Bongkar 1",
+      "Bongkar 2"
+     ],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Pelabuhan Asal",
+      "Pilih Pelabuhan Tujuan",
+      "Pilih Jenis Kontainer",
+      "Door to Door\nKontainer diambil dari lokasi pengirim dan dian",
+      "Door to CY\nKontainer diambil dari lokasi pengirim dan dikiri",
+      "CY to CY\nKontainer diambil dari Container Yard (CY) asal dan",
+      "CY to Door\nKontainer diambil dari Container Yard (CY) dan di",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "[icon]",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "[icon]",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "[icon]",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "FCL-delete-candidates",
+   "ok": true,
+   "info": []
+  },
+  {
+   "step": "switch-LTL-after-rows",
+   "ok": true,
+   "info": {
+    "snap": "10-LTL-after-rows.yml",
+    "state": {
+     "tipe": null,
+     "labels": [],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "switch-LCL",
+   "ok": true,
+   "info": {
+    "snap": "11-LCL.yml",
+    "state": {
+     "tipe": null,
+     "labels": [],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Pelabuhan Asal",
+      "Pilih Pelabuhan Tujuan",
+      "Door to Door\nKontainer diambil dari lokasi pengirim dan dian",
+      "Door to CY\nKontainer diambil dari lokasi pengirim dan dikiri",
+      "CY to CY\nKontainer diambil dari Container Yard (CY) asal dan",
+      "CY to Door\nKontainer diambil dari Container Yard (CY) dan di",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "switch-back-FTL",
+   "ok": true,
+   "info": {
+    "snap": "12-FTL-back.yml",
+    "state": {
+     "tipe": "Tipe Pengiriman: Normal — mengikuti jumlah baris Data Pengirim & Data Penerima",
+     "labels": [],
+     "dropPointButtons": [
+      "Pilih Drop Point Asal",
+      "Pilih Drop Point Tujuan"
+     ],
+     "buttons": [
+      "Dashboard",
+      "Master Wilayah",
+      "Master Operasional",
+      "Pusat Notifikasi",
+      "Aktifkan mode gelap",
+      "Toggle Sidebar",
+      "99+",
+      "Logout",
+      "FTL\nFull Truck Load",
+      "FCL\nFull Container Load",
+      "LTL\nLess Than Truck Load",
+      "LCL\nLess Than Container Load",
+      "Pilih Jenis Armada",
+      "Pilih Drop Point Asal",
+      "Semua Pengirim",
+      "Tambah Lokasi Muat",
+      "Pilih Drop Point Tujuan",
+      "Semua Penerima",
+      "Tambah Lokasi Bongkar",
+      "Batal",
+      "Simpan ke Draf",
+      "Selanjutnya"
+     ]
+    }
+   }
+  },
+  {
+   "step": "order-inventory",
+   "ok": false,
+   "error": "SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+  }
+ ]
+}

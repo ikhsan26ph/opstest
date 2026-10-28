@@ -1,0 +1,15 @@
+# Status tahap aktual Penugasan Tracking — ST20261026-030049
+
+OPS staging,26Oktober2026, Admin/Administrator akun1 config/env.md; Playwright lokal, viewport1440×1000, Asia/Jakarta. Route daftar /penugasan-tracking dan aksi Isi Data Tracking /penugasan-tracking/<assignmentId>/isi-tracking diamati dari UI. Peran dijalankan berurutan pada agent utama. Login sekali per sesi, logout200 terkonfirmasi ke /login. Dua sesi sengaja terpisah: core dan tambahan navigasi SPA; bukan retry login gagal.
+
+Exploration read-only awal mendata105assignment dalam dua pageAPI100+5. Daftar sudah menampilkan nama tahap pada paragraf di bawah badge status umum. latestTracking menyediakan tahapan, occurredAt, recordedAddressCount, totalAddressCount. Sampel Multipoint selesai menampilkan Selesai Bongkar2, bukan wajib format2/2. Tidak mengarang kebutuhan denominator atau menghapus badge umum.
+
+Tracking form memproses city group. Native select hanya menawarkan alamat kota aktif; ketika sudah Berangkat, select disabled sampai Selesai. Milestone BERANGKAT/SELESAI disimpan sebagai POST /api/penugasan-tracking/<assignmentId>/stops/<stopId>/events. Foto sintetis multipart untuk Selesai. Current list label diverifikasi setelah setiap save, bukan memakai next-step title pada form sebagai actual current stage.
+
+Eksekusi terpisah dari exploration:4order QA baru,5assignment,33eventtracking (32core+1SPA),16foto sintetis. Master existing tidak diedit; satu Master Waktu Perjalanan dibuat otomatis oleh Order untuk rute lintas kota yang belum ada, nilai24jam sintetis, ID9e8f00f9-bd0f-4cbb-bc20-e4fa48b03656. Seluruh request bisnis41 diizinkan guard dan200/201. Core32event direkonsiliasi lewat detail/context/history; eventSPA via history/detail (stops/context tidak mengekspos eventID).
+
+Normal:empat tahap benar dan satu unit tidak mengubah sibling. Multipickup muat3→1→2, Multidrop bongkar3→1→2: counter1→2→3 pada Berangkat dan Selesai. MULTIPOINT3×3 lintas Surabaya/Sidoarjo/Bandung/Bekasi: urutan2→1→3 dan counter1→2→3 tidak reset saat ganti kota. Membuka next form tanpa save tidak mengubah current stage. TambahanSPA lewat linkKembali tanpa reload menunjukkan currentstage setelah refetch selesai. FCL/LCL/LTL hanya spot-checkread-only, bukan lifecyclelengkap.
+
+Hasil aktif setelah klarifikasi:43checks43P/0F/0B/0S. User mengonfirmasi “poin 4 itu multipoint”. SCN-0042 yang semula blocked karena istilah kini passed berdasarkan12transisi MULTIPOINT3×3 existing; tanpa rerun atau mutasi tambahan. Histori pending dipertahankan pada evidence, bukan blocker aktif. Tidak ada defectbaru pada cakupan dieksekusi. Tidak commit/push atau ubah kode aplikasi.
+
+Sumber lengkap: reports/status-tahap-penugasan_test-report-20261026.md, results/status-tahap-penugasan__ST20261026-030049.json, artifacts/evidence/ST20261026-030049 dan subfolder spa-recheck. Snapshot01 adalah smoke daftar aktual;02 sempat tercapture sebelum navigasi form selesai, sehingga form diharvest ulang lewat04/05 setelah heading+combobox+Simpan siap. Verdict bisnis tidak memakai snapshot02yangbelumsiap. Filter collapsed memerlukan trial-click, bukan isVisible saja; diagnosis tersebut bukan bug aplikasi.

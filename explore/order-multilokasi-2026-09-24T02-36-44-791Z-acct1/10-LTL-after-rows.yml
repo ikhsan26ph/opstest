@@ -1,0 +1,177 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 31/5000 0,62%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "99+":
+    - text: 99+
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem:
+      - link "Daftar Order":
+        - /url: /order
+    - listitem: Buat Order
+- heading "Buat Order" [level=2]
+- text: 01 Data Pengiriman 02 Data Barang 03 Vendor dan Harga 04 Review
+- heading "Jenis Pengiriman" [level=3]
+- button "FTL Full Truck Load"
+- button "FCL Full Container Load"
+- button "LTL Less Than Truck Load"
+- button "LCL Less Than Container Load"
+- heading "Data Pengirim" [level=3]
+- text: Drop Point Asal *
+- button "Pilih Drop Point Asal":
+  - text: Pilih Drop Point Asal
+  - img
+- text: Pengirim
+- button "Semua Pengirim":
+  - text: Semua Pengirim
+  - img
+- text: PIC Pengirim *
+- textbox "Masukkan PIC Pengirim"
+- text: No. WhatsApp PIC *
+- textbox "Masukkan No. WhatsApp PIC"
+- text: Provinsi Asal
+- textbox "Provinsi Asal" [disabled]
+- text: Kota/Kab. Asal
+- textbox "Kota/Kab. Asal" [disabled]
+- text: Kecamatan Asal
+- textbox "Kecamatan Asal" [disabled]
+- text: Desa/Kelurahan Asal
+- textbox "Desa/Kelurahan Asal" [disabled]
+- text: Kode Pos
+- textbox "Kode Pos" [disabled]
+- text: Alamat Asal
+- textbox "Alamat Asal" [disabled]
+- text: Catatan
+- textbox "Masukkan Catatan"
+- heading "Data Penerima" [level=3]
+- text: Drop Point Tujuan *
+- button "Pilih Drop Point Tujuan":
+  - text: Pilih Drop Point Tujuan
+  - img
+- text: Penerima
+- button "Semua Penerima":
+  - text: Semua Penerima
+  - img
+- text: PIC Penerima *
+- textbox "Masukkan PIC Penerima"
+- text: No. WhatsApp PIC *
+- textbox "Masukkan No. WhatsApp PIC"
+- text: Provinsi Tujuan
+- textbox "Provinsi Tujuan" [disabled]
+- text: Kota/Kab. Tujuan
+- textbox "Kota/Kab. Tujuan" [disabled]
+- text: Kecamatan Tujuan
+- textbox "Kecamatan Tujuan" [disabled]
+- text: Desa/Kelurahan Tujuan
+- textbox "Desa/Kelurahan Tujuan" [disabled]
+- text: Kode Pos
+- textbox "Kode Pos" [disabled]
+- text: Alamat Tujuan
+- textbox "Alamat Tujuan" [disabled]
+- text: Catatan
+- textbox "Masukkan Catatan"
+- button "Batal"
+- button "Simpan ke Draf"
+- button "Selanjutnya"
+- region "Notifications alt+T"
+- alert

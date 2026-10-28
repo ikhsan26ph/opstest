@@ -1,0 +1,387 @@
+[
+ {
+  "id": "fddbf86c-3895-4f12-bd22-977b8fa0f810",
+  "orderCode": "ORD0216002102",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "0a9e7793-5e68-4c4b-b7b0-fd989c091ebe",
+  "orderCode": "ORD0213664177",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "7dd1187a-4200-4978-a208-61be103f5968",
+  "orderCode": "ORD0213405188",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "e4f60a95-d702-4679-a9e5-0337b2e89646",
+  "orderCode": "ORD0212503970",
+  "serviceType": "FTL",
+  "tipe": "MULTIDROP",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "4d44cd30-f1d8-4d30-8757-4aa4ccd66f85",
+  "orderCode": "ORD0211382256",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "f113ab24-a7d0-4386-a690-3f9a9a544034",
+  "orderCode": "ORD0173587094",
+  "serviceType": "LCL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "eefda4a7-d820-4a99-875e-0ede47349add",
+  "orderCode": "ORD0173560594",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "DITUGASKAN"
+ },
+ {
+  "id": "9986feb2-e3ef-4f59-bef7-06f8c05c1e26",
+  "orderCode": "ORD0173531560",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "e183ddd3-f876-4a7f-a3b3-5cba5e9f90c9",
+  "orderCode": "ORD0173502745",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "65bded2e-42f5-4500-a559-e246b4f4d1e8",
+  "orderCode": "ORD0173474018",
+  "serviceType": "LTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "859ec416-b037-4d82-909c-756548020437",
+  "orderCode": "ORD0173400693",
+  "serviceType": "FTL",
+  "tipe": "MULTIPICKUP",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "abe5c859-2af1-4276-a2ed-08473aa53731",
+  "orderCode": "ORD0173372926",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "c959e3ae-7993-4911-b693-7516394c3bd3",
+  "orderCode": "ORD0173348181",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "a41a212f-6bb9-4221-9736-f357ae8ef2ab",
+  "orderCode": "ORD0173323143",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "ca04b028-2c54-45c7-88f4-83f5e95f840f",
+  "orderCode": "ORD0173297592",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "54636983-4dfd-46ed-b5d8-cd3aff4f602b",
+  "orderCode": "ORD0173206791",
+  "serviceType": "FTL",
+  "tipe": "MULTIPICKUP",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "b8ae551b-6529-4897-9bc2-b7d48502a28b",
+  "orderCode": "ORD0173180342",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "DITUGASKAN"
+ },
+ {
+  "id": "0789a56d-fe3d-44b5-9db3-25a91f9e420a",
+  "orderCode": "ORD0173155789",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "ce5f59d4-5e18-4ef6-b4c0-2a47b2c186b0",
+  "orderCode": "ORD0173131181",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "ed0491e8-a0a4-47c3-a4fb-08729331f3c9",
+  "orderCode": "ORD0173105981",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "94b92be9-a94b-432c-87ea-50adfeae207c",
+  "orderCode": "ORD0173057559",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "f457dac2-4e02-43d7-b32e-e5f152b98f29",
+  "orderCode": "ORD0150788933",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "8cb1d15b-fa2c-429b-8327-74b46a425651",
+  "orderCode": "ORD0149116896",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "31e3727e-1690-461b-8050-9276fbd26a37",
+  "orderCode": "ORD0135699597",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "b40b076e-a89c-401f-8637-3dc977b54dd9",
+  "orderCode": "ORD0065597914",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "16231a8b-46bf-4691-9424-5a0016e5495b",
+  "orderCode": "ORD0065468154",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "ae1820d9-aa27-41d5-a022-b9671bd7599c",
+  "orderCode": "ORD0061555399",
+  "serviceType": "FCL",
+  "tipe": "MULTIDROP",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "8427cd19-b24e-4d6a-aeb9-10d76b9f0d78",
+  "orderCode": "ORD0059771455",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "da944057-46bf-4d19-8424-9ec717882754",
+  "orderCode": "ORD0059547619",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "c3fb455a-d22a-4b87-9d5a-10560a361488",
+  "orderCode": "ORD9965441127",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "f11eeaa2-6906-48bd-9228-ae6e88fd52f9",
+  "orderCode": "ORD9719032965",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "92e3db8d-9e33-45ed-b9a6-5d92c9ac137c",
+  "orderCode": "ORD9523666757",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "9625bbb6-ea88-430c-b236-a88e40ada2b5",
+  "orderCode": "ORD9027710531",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "ad11c430-8a69-478f-a3cc-b9294c9864e6",
+  "orderCode": "ORD8939795982",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "c545787f-7627-4060-9d9e-6b5997f4b6a7",
+  "orderCode": "ORD8939717339",
+  "serviceType": "LTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "3e1684c2-7148-40e1-a606-ea924bdecc79",
+  "orderCode": "ORD8929973577",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "e92e0375-2d60-4ef0-be13-7a5c8645f25f",
+  "orderCode": "ORD8929845367",
+  "serviceType": "LTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "88b85b34-48ce-486a-bb44-40bc1e53bda8",
+  "orderCode": "ORD8925038898",
+  "serviceType": "FTL",
+  "tipe": "MULTIPICKUP",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "7fe1666f-2c9e-450d-8eb1-c7cf84a7e79e",
+  "orderCode": "ORD8925038186",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "5476abef-802d-48c5-a3b1-50f2a247c1a8",
+  "orderCode": "ORD8924736516",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "081c34be-9431-4d54-ad47-1946da1239ba",
+  "orderCode": "ORD8921306495",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "928a5228-5139-4477-aa7c-259cdf056302",
+  "orderCode": "ORD8855762870",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "9a239bc2-2354-451f-b6ef-a0fb6042eb9f",
+  "orderCode": "ORD8852894517",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "4ea66aae-7b53-41d3-90b9-c9c83f0c3608",
+  "orderCode": "ORD8852857447",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "c184749c-773f-44c5-af4d-26414001fdb8",
+  "orderCode": "ORD8852599515",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "56984f87-90c9-433c-9dd5-bf8e121599a2",
+  "orderCode": "ORD8851727865",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "59b37e84-6a06-47bb-9c13-ac7a0f045e01",
+  "orderCode": "ORD8851309000",
+  "serviceType": "LTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "7521dbd9-ca32-47b8-bcb1-9a056433fa0e",
+  "orderCode": "ORD8851102035",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "DIBATALKAN"
+ },
+ {
+  "id": "5eb7941e-3366-4daa-95c7-54bfddf875d9",
+  "orderCode": "ORD8851083707",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "02b4f18e-c816-4567-9286-e6405ebd4135",
+  "orderCode": "ORD8850936301",
+  "serviceType": "LTL",
+  "tipe": "NORMAL",
+  "status": "SELESAI"
+ },
+ {
+  "id": "1b4eb11a-d035-40af-ada4-770943734c53",
+  "orderCode": "ORD8850666561",
+  "serviceType": "LTL",
+  "tipe": "NORMAL",
+  "status": "DITUGASKAN"
+ },
+ {
+  "id": "5e9f8f23-e5c4-4e82-affd-8bc82be8f57f",
+  "orderCode": "ORD8849924264",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "PROSES_PENGIRIMAN"
+ },
+ {
+  "id": "1594c6f1-54cb-4091-a45c-e5210906dc27",
+  "orderCode": "ORD8849482554",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "DITUGASKAN"
+ },
+ {
+  "id": "f52aae3f-569e-45d1-ae5e-afeaa5099153",
+  "orderCode": "ORD8849401052",
+  "serviceType": "FTL",
+  "tipe": "NORMAL",
+  "status": "MENUNGGU_PENUGASAN"
+ },
+ {
+  "id": "81d07adc-fbb3-41c4-9e6a-2a7f65577c6a",
+  "orderCode": "ORD8407225847",
+  "serviceType": "FCL",
+  "tipe": "NORMAL",
+  "status": "DITUGASKAN"
+ }
+]

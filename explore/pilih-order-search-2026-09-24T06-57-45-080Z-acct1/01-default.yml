@@ -1,0 +1,164 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 36/5000 0,72%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "99+":
+    - text: 99+
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem:
+      - link "Penugasan Tracking":
+        - /url: /penugasan-tracking
+    - listitem: Tambah Penugasan
+- heading "Tambah Penugasan" [level=1]
+- paragraph: Buat penugasan baru untuk order yang belum ditugaskan
+- heading "Pilih Order *" [level=3]
+- textbox "Cari order..."
+- button "ORD0221467425 • Kerinci Cargo Group LTL Kota Denpasar → Kota Pekanbaru":
+  - text: ORD0221467425 • Kerinci Cargo Group LTL
+  - paragraph: Kota Denpasar → Kota Pekanbaru
+- button "ORD0218760775 • Nusantara Logistik Utama FTL Kota Surabaya, Kota Surabaya → Kota Bandung, Kota Surabaya • Truck Trailer 40ft × 1":
+  - text: ORD0218760775 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya, Kota Surabaya → Kota Bandung, Kota Surabaya • Truck Trailer 40ft × 1
+- button "ORD0218730224 • Nusantara Logistik Utama FTL Kota Surabaya → Kota Bandung, Kota Surabaya • Truck Trailer 40ft × 1":
+  - text: ORD0218730224 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya → Kota Bandung, Kota Surabaya • Truck Trailer 40ft × 1
+- button "ORD0213405188 • Kerinci Cargo Group FCL Kota Pekanbaru → Kota Denpasar • 40 HC • Door to CY":
+  - text: ORD0213405188 • Kerinci Cargo Group FCL
+  - paragraph: Kota Pekanbaru → Kota Denpasar • 40 HC • Door to CY
+- button "ORD0211382256 • Nusantara Logistik Utama FTL Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1":
+  - text: ORD0211382256 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1
+- button "ORD0173474018 • Nusantara Logistik Utama LTL Kota Surabaya → Kota Bandung":
+  - text: ORD0173474018 • Nusantara Logistik Utama LTL
+  - paragraph: Kota Surabaya → Kota Bandung
+- button "ORD0173400693 • Nusantara Logistik Utama FTL Kota Surabaya, Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1":
+  - text: ORD0173400693 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya, Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1
+- button "ORD0173348181 • Nusantara Logistik Utama FTL Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 2":
+  - text: ORD0173348181 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 2
+- button "ORD0173323143 • Nusantara Logistik Utama FTL Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1":
+  - text: ORD0173323143 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1
+- button "ORD0173297592 • Nusantara Logistik Utama FTL Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1":
+  - text: ORD0173297592 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1
+- button "ORD0173155789 • Nusantara Logistik Utama FTL Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 2":
+  - text: ORD0173155789 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 2
+- button "ORD0065597914 • Nusantara Logistik Utama FTL Kabupaten Mojokerto → Kota Surabaya • Fuso Box × 1":
+  - text: ORD0065597914 • Nusantara Logistik Utama FTL
+  - paragraph: Kabupaten Mojokerto → Kota Surabaya • Fuso Box × 1
+- button "ORD0059771455 • Nusantara Logistik Utama FCL Kota Surabaya → Kota Makassar • 40 HC • Door to Door":
+  - text: ORD0059771455 • Nusantara Logistik Utama FCL
+  - paragraph: Kota Surabaya → Kota Makassar • 40 HC • Door to Door
+- button "ORD0059547619 • Nusantara Logistik Utama FTL Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1":
+  - text: ORD0059547619 • Nusantara Logistik Utama FTL
+  - paragraph: Kota Surabaya → Kota Bandung • Truck Trailer 40ft × 1
+- button "ORD8939717339 • Nusantara Logistik Utama LTL Kota Surabaya → Kota Surabaya":
+  - text: ORD8939717339 • Nusantara Logistik Utama LTL
+  - paragraph: Kota Surabaya → Kota Surabaya
+- button "Batal"
+- button "Simpan"
+- region "Notifications alt+T"
+- alert: Tambah Penugasan | Prahu Hub - TMS

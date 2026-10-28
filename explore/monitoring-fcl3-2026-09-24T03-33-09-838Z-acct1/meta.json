@@ -1,0 +1,408 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "open-monitoring",
+   "ok": true,
+   "info": {
+    "pane": "translate3d(0px, 0px, 0px)",
+    "zoom": "5",
+    "popups": [],
+    "markers": [
+     "14@297, 387",
+     "3@295, 395",
+     "2@354, 422",
+     "@163, 363"
+    ]
+   }
+  },
+  {
+   "step": "kasus-click",
+   "ok": true,
+   "info": {
+    "count": 12,
+    "res": [
+     {
+      "i": 0,
+      "label": "L 1090 EL • QA Sopir G20260924-013528",
+      "before": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "5"
+      },
+      "after": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14",
+       "popups": [],
+       "markers": [
+        "@417, 257",
+        "@428, 260",
+        "@436, 268",
+        "@439, 279",
+        "@436, 290",
+        "@428, 298",
+        "@417, 301",
+        "@406, 298",
+        "@398, 290",
+        "@395, 279",
+        "@398, 268",
+        "@406, 260"
+       ]
+      }
+     },
+     {
+      "i": 1,
+      "label": "L 9180 EL • Marwanto",
+      "before": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14"
+      },
+      "after": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14",
+       "popups": [],
+       "markers": [
+        "@417, 257",
+        "@428, 260",
+        "@436, 268",
+        "@439, 279",
+        "@436, 290",
+        "@428, 298",
+        "@417, 301",
+        "@406, 298",
+        "@398, 290",
+        "@395, 279",
+        "@398, 268",
+        "@406, 260"
+       ]
+      }
+     },
+     {
+      "i": 6,
+      "label": "L 9878 KL • Septian",
+      "before": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14"
+      },
+      "after": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14",
+       "popups": [],
+       "markers": [
+        "@417, 257",
+        "@428, 260",
+        "@436, 268",
+        "@439, 279",
+        "@436, 290",
+        "@428, 298",
+        "@417, 301",
+        "@406, 298",
+        "@398, 290",
+        "@395, 279",
+        "@398, 268",
+        "@406, 260"
+       ]
+      }
+     },
+     {
+      "i": 8,
+      "label": "BM 6767 J • Septian No. Kontainer: MSCB6576759",
+      "before": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14"
+      },
+      "after": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14",
+       "popups": [],
+       "markers": [
+        "@-28500, -17543",
+        "@-28489, -17540",
+        "@-28481, -17532",
+        "@-28478, -17521",
+        "@-28481, -17510",
+        "@-28489, -17502",
+        "@-28500, -17499",
+        "@-28511, -17502",
+        "@-28519, -17510",
+        "@-28522, -17521",
+        "@-28519, -17532",
+        "@-28511, -17540"
+       ]
+      }
+     },
+     {
+      "i": 9,
+      "label": "BM 6767 J • Septian No. Kontainer: MSCU8988760",
+      "before": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14"
+      },
+      "after": {
+       "pane": "translate3d(0px, 0px, 0px)",
+       "zoom": "14",
+       "popups": [],
+       "markers": [
+        "@-28500, -17543",
+        "@-28489, -17540",
+        "@-28481, -17532",
+        "@-28478, -17521",
+        "@-28481, -17510",
+        "@-28489, -17502",
+        "@-28500, -17499",
+        "@-28511, -17502",
+        "@-28519, -17510",
+        "@-28522, -17521",
+        "@-28519, -17532",
+        "@-28511, -17540"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "step": "lihat-click",
+   "ok": true,
+   "info": {
+    "f": "06-lihat.yml",
+    "before": {
+     "pane": "translate3d(0px, 0px, 0px)",
+     "zoom": "14"
+    },
+    "after": {
+     "pane": "translate3d(0px, 0px, 0px)",
+     "zoom": "14",
+     "popups": [],
+     "markers": [
+      "@-28500, -17543",
+      "@-28489, -17540",
+      "@-28481, -17532",
+      "@-28478, -17521",
+      "@-28481, -17510",
+      "@-28489, -17502",
+      "@-28500, -17499",
+      "@-28511, -17502",
+      "@-28519, -17510",
+      "@-28522, -17521",
+      "@-28519, -17532",
+      "@-28511, -17540"
+     ]
+    }
+   }
+  },
+  {
+   "step": "armada-terdekat",
+   "ok": true,
+   "info": {
+    "f": "07-terdekat-nopol-open.yml",
+    "r": {
+     "Lokasi Muat": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nTidak ada armada terdekat",
+     "Lokasi Bongkar": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\nL 9878 KL\n•\n2 m dari lokasi bongkar\n\nID Order: ORD0219508697\n\nTiba dalam 0 menit\n\nLokasi Bongkar\n\nJl. Indah Bersama No.67A, Kota Baru, Pekanbaru Kota, Riau, 28114\n\nLokasi Saat Ini\n\nJalan Rajawali, RW 03, Kemayoran, Krembangan, Surabaya, Jawa Timur, Jawa, 60176, Indonesia\n\nLihat\nLihat Data Barang",
+     "Semua": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nTidak ada armada terdekat",
+     "options": [
+      "Pilih Nopol"
+     ],
+     "searchPh": "Cari nopol/no. kontainer...",
+     "afterPick": "\nSemua\nLokasi Muat\nLokasi Bongkar\nPilih Nopol\n\nTidak ada armada terdekat",
+     "map": {
+      "pane": "translate3d(0px, 0px, 0px)",
+      "zoom": "14",
+      "popups": [],
+      "markers": [
+       "@-28500, -17543",
+       "@-28489, -17540",
+       "@-28481, -17532",
+       "@-28478, -17521",
+       "@-28481, -17510",
+       "@-28489, -17502",
+       "@-28500, -17499",
+       "@-28511, -17502",
+       "@-28519, -17510",
+       "@-28522, -17521",
+       "@-28519, -17532",
+       "@-28511, -17540"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "step": "tracking",
+   "ok": true,
+   "info": true
+  },
+  {
+   "step": "idorder-search",
+   "ok": true,
+   "info": [
+    {
+     "term": "ORD0173206791",
+     "opts": [],
+     "empty": [
+      "Tidak ada pilihan"
+     ],
+     "bodyHint": "Tidak ada pilihan"
+    },
+    {
+     "term": "ORD0213664177",
+     "opts": [
+      "ORD0213664177"
+     ],
+     "empty": [
+      "ORD0213664177"
+     ],
+     "bodyHint": "ORD0213664177"
+    },
+    {
+     "term": "BM 6767 J",
+     "opts": [],
+     "empty": [
+      "Tidak ada pilihan"
+     ],
+     "bodyHint": "Tidak ada pilihan"
+    },
+    {
+     "term": "BM 6767",
+     "opts": [],
+     "empty": [
+      "Tidak ada pilihan"
+     ],
+     "bodyHint": "Tidak ada pilihan"
+    },
+    {
+     "term": "MSCB6576759",
+     "opts": [],
+     "empty": [
+      "Tidak ada pilihan"
+     ],
+     "bodyHint": "Tidak ada pilihan"
+    },
+    {
+     "term": "MSCU8988760",
+     "opts": [],
+     "empty": [
+      "Tidak ada pilihan"
+     ],
+     "bodyHint": "Tidak ada pilihan"
+    },
+    {
+     "term": "L9180EL",
+     "opts": [],
+     "empty": [
+      "Tidak ada pilihan"
+     ],
+     "bodyHint": "Tidak ada pilihan"
+    },
+    {
+     "term": "QAK14928b8",
+     "opts": [],
+     "empty": [
+      "Tidak ada pilihan"
+     ],
+     "bodyHint": "Tidak ada pilihan"
+    }
+   ]
+  },
+  {
+   "step": "pick-fcl-open-nopol",
+   "ok": true,
+   "info": {
+    "opts": [
+     "BM 6767 J / MSCU8988760"
+    ],
+    "ph": "Cari Nopol/No. Kontainer...",
+    "r": [
+     {
+      "term": "MSCB",
+      "opts": [],
+      "empty": [
+       "Tidak ada pilihan"
+      ],
+      "bodyHint": "Tidak ada pilihan"
+     },
+     {
+      "term": "MSCU",
+      "opts": [
+       "BM 6767 J / MSCU8988760"
+      ],
+      "empty": [
+       "BM 6767 J / MSCU8988760"
+      ],
+      "bodyHint": "BM 6767 J / MSCU8988760"
+     },
+     {
+      "term": "BM 6767",
+      "opts": [
+       "BM 6767 J / MSCU8988760"
+      ],
+      "empty": [
+       "BM 6767 J / MSCU8988760"
+      ],
+      "bodyHint": "BM 6767 J / MSCU8988760"
+     }
+    ]
+   }
+  },
+  {
+   "step": "multi-armada-ftl",
+   "ok": true,
+   "info": [
+    "D3232SS",
+    "L4234PP",
+    "M3233PP"
+   ]
+  },
+  {
+   "step": "riwayat-lcl",
+   "ok": true,
+   "info": {
+    "r": [
+     {
+      "term": "QAK14928bL",
+      "opts": [],
+      "empty": [
+       "Tidak ada pilihan"
+      ],
+      "bodyHint": "Tidak ada pilihan"
+     },
+     {
+      "term": "L1111LO",
+      "opts": [],
+      "empty": [
+       "Tidak ada pilihan"
+      ],
+      "bodyHint": "Tidak ada pilihan"
+     },
+     {
+      "term": "ORD0173587094",
+      "opts": [
+       "ORD0173587094"
+      ],
+      "empty": [
+       "ORD0173587094"
+      ],
+      "bodyHint": "ORD0173587094"
+     }
+    ],
+    "opts": [
+     "L1090EL / QAK14928bL",
+     "L1111LO / QAK14928bL"
+    ]
+   }
+  },
+  {
+   "step": "riwayat-pengurus-ftl",
+   "ok": true,
+   "info": {
+    "term": "ORD0173057559",
+    "opts": [],
+    "empty": [
+     "Tidak ada pilihan"
+    ],
+    "bodyHint": "Tidak ada pilihan"
+   }
+  }
+ ]
+}

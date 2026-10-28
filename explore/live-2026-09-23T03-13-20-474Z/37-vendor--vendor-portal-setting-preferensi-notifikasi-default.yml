@@ -1,0 +1,113 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /vendor-portal/order
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - link "Order":
+          - /url: /vendor-portal/order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Armada":
+              - /url: /vendor-portal/master/armada
+          - listitem:
+            - link "Master Sopir":
+              - /url: /vendor-portal/master/sopir
+      - listitem:
+        - link "Akun Saya":
+          - /url: /vendor-portal/akun-saya
+      - listitem:
+        - link "Pusat Notifikasi":
+          - /url: /vendor-portal/setting/preferensi-notifikasi
+    - heading [level=2]
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: PT. Ikatan Kuat Vendor
+  - button:
+    - img
+  - text: IKIK [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /vendor-portal/order
+    - listitem:
+      - link "Pusat Notifikasi":
+        - /url: /vendor-portal/notifikasi
+    - listitem: Preferensi
+- heading "Preferensi Notifikasi" [level=2]
+- heading "Order (5/5)" [level=3]
+- text: Semua
+- switch [checked]
+- text: Order Baru
+- checkbox "Email" [checked]
+- img
+- text: Email
+- checkbox "Push" [checked]
+- img
+- text: Push Order Telah Ditugaskan
+- checkbox "Push" [checked]
+- img
+- text: Push Order Selesai
+- checkbox "Push" [checked]
+- img
+- text: Push Order Dibatalkan
+- checkbox "Push" [checked]
+- img
+- text: Push
+- heading "Tracking (7/7)" [level=3]
+- text: Semua
+- switch [checked]
+- text: Tahap Pengiriman - Berangkat Muat
+- checkbox "Push" [checked]
+- img
+- text: Push Tahap Pengiriman - Selesai Muat
+- checkbox "Push" [checked]
+- img
+- text: Push Tahap Pengiriman - Kapal Berlayar
+- checkbox "Push" [checked]
+- img
+- text: Push Tahap Pengiriman - Kapal Sandar
+- checkbox "Push" [checked]
+- img
+- text: Push Tahap Pengiriman - Berangkat Bongkar
+- checkbox "Push" [checked]
+- img
+- text: Push Tahap Pengiriman - Selesai Bongkar
+- checkbox "Push" [checked]
+- img
+- text: Push Tahap Pengiriman - Alihkan Armada/Petugas
+- checkbox "Push" [checked]
+- img
+- text: Push
+- heading "Monitoring & Tracking (1/1)" [level=3]
+- text: Semua
+- switch [checked]
+- text: Reminder Kendala Armada
+- checkbox "Push" [checked]
+- img
+- text: Push
+- heading "KIR Armada (2/2)" [level=3]
+- text: Semua
+- switch [checked]
+- text: Reminder Masa Berlaku KIR & Pajak Armada
+- checkbox "Email" [checked]
+- img
+- text: Email
+- checkbox "Push" [checked]
+- img
+- text: Push
+- button "Batal"
+- button "Simpan"
+- region "Notifications alt+T"
+- alert

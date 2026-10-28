@@ -1,0 +1,187 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Jaya Administrator
+  - button "16":
+    - text: "16"
+    - img
+  - text: Jaya [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Pengaturan Akun
+- heading "Pengaturan Akun" [level=2]
+- button "Sub User"
+- button "Hak Akses"
+- button "Tambah Sub User"
+- button "Riwayat"
+- button "Filter"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Nama Sub User
+- textbox "Masukkan Nama Sub User"
+- text: Email
+- textbox "Masukkan Email"
+- text: Bagian Staff
+- textbox "Masukkan Bagian Staff"
+- text: Status
+- button "Pilih Status":
+  - text: Pilih Status
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "No Nama Sub User Email Bagian Staff Status Aksi":
+      - columnheader "No"
+      - columnheader "Nama Sub User"
+      - columnheader "Email"
+      - columnheader "Bagian Staff"
+      - columnheader "Status"
+      - columnheader "Aksi"
+  - rowgroup:
+    - row:
+      - cell
+    - row "1 Jaya [REDACTED] Administrator Aktif Lihat detail Edit data Hapus data":
+      - cell "1"
+      - cell "Jaya"
+      - cell "[REDACTED]"
+      - cell "Administrator"
+      - cell "Aktif"
+      - cell "Lihat detail Edit data Hapus data":
+        - button "Lihat detail"
+        - button "Edit data"
+        - button "Hapus data"
+    - row "2 Rizal purchasing@transcon-indonesia.com purchasing Aktif Lihat detail Edit data Hapus data":
+      - cell "2"
+      - cell "Rizal"
+      - cell "purchasing@transcon-indonesia.com"
+      - cell "purchasing"
+      - cell "Aktif"
+      - cell "Lihat detail Edit data Hapus data":
+        - button "Lihat detail"
+        - button "Edit data"
+        - button "Hapus data"
+    - row "3 Aam aam123@yopmail.com Programmer Aktif Lihat detail Edit data Hapus data":
+      - cell "3"
+      - cell "Aam"
+      - cell "aam123@yopmail.com"
+      - cell "Programmer"
+      - cell "Aktif"
+      - cell "Lihat detail Edit data Hapus data":
+        - button "Lihat detail"
+        - button "Edit data"
+        - button "Hapus data"
+    - row "4 Prahu-Hub cobabidowner@gmail.com Demo TMS Aktif Lihat detail Edit data Hapus data":
+      - cell "4"
+      - cell "Prahu-Hub"
+      - cell "cobabidowner@gmail.com"
+      - cell "Demo TMS"
+      - cell "Aktif"
+      - cell "Lihat detail Edit data Hapus data":
+        - button "Lihat detail"
+        - button "Edit data"
+        - button "Hapus data"
+- paragraph: Menampilkan 1–4 data dari 4 data
+- region "Notifications alt+T"
+- alert

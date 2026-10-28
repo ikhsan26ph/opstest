@@ -1,0 +1,79 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "at": "3x2",
+   "tipe": "Tipe Pengiriman: Multipoint — mengikuti jumlah baris Data Pengirim & Data Penerima",
+   "labels": [
+    "Muat 1",
+    "Muat 2",
+    "Muat 3",
+    "Bongkar 1",
+    "Bongkar 2"
+   ],
+   "pic": [
+    "A-row1",
+    "B-row2",
+    "C-row3"
+   ],
+   "iconBtns": [
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500",
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500",
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500",
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500",
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500"
+   ]
+  },
+  {
+   "trashCount": 5
+  },
+  {
+   "at": "hapus Muat1",
+   "tipe": "Tipe Pengiriman: Multipoint — mengikuti jumlah baris Data Pengirim & Data Penerima",
+   "labels": [
+    "Muat 1",
+    "Muat 2",
+    "Bongkar 1",
+    "Bongkar 2"
+   ],
+   "pic": [
+    "B-row2",
+    "C-row3"
+   ],
+   "iconBtns": [
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500",
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500",
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500",
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500"
+   ]
+  },
+  {
+   "at": "hapus Muat1 lagi",
+   "tipe": "Tipe Pengiriman: Multidrop — mengikuti jumlah baris Data Pengirim & Data Penerima",
+   "labels": [
+    "Bongkar 1",
+    "Bongkar 2"
+   ],
+   "pic": [
+    "C-row3"
+   ],
+   "iconBtns": [
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500",
+    " flex items-center justify-center w-7 h-7 rounded-full bg-error-50 text-error-500"
+   ],
+   "trashCount": 2
+  },
+  {
+   "at": "hapus Bongkar1",
+   "tipe": "Tipe Pengiriman: Normal — mengikuti jumlah baris Data Pengirim & Data Penerima",
+   "labels": [],
+   "pic": [
+    "C-row3"
+   ],
+   "iconBtns": [],
+   "trashCount": 0
+  }
+ ]
+}

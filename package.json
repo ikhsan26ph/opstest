@@ -1,0 +1,16 @@
+{
+  "name": "opstest",
+  "version": "1.0.0",
+  "description": "Framework automation testing OPS; evidence-driven exploration.",
+  "scripts": {
+    "test": "bash scripts/run-playwright.sh",
+    "test:list": "playwright test --list --pass-with-no-tests",
+    "smoke:public": "node scripts/public-smoke.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
+  }
+}

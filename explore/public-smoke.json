@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-23T02:21:15.004Z",
+  "requestedUrl": "https://ops-staging.prahu-hub.com",
+  "finalUrl": "https://ops-staging.prahu-hub.com/login",
+  "httpStatus": 200,
+  "title": "Login | Prahu Hub - TMS",
+  "observed": [
+    {
+      "tag": "H1",
+      "type": null,
+      "role": null,
+      "placeholder": null,
+      "text": "Selamat Datang"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "role": null,
+      "placeholder": "Masukkan Email",
+      "text": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "password",
+      "role": null,
+      "placeholder": "Masukkan Password",
+      "text": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": null,
+      "role": null,
+      "placeholder": null,
+      "text": "Login"
+    },
+    {
+      "tag": "BUTTON",
+      "type": null,
+      "role": null,
+      "placeholder": null,
+      "text": ""
+    }
+  ],
+  "scope": "Public DOM only; no login submitted. Not a business scenario verdict."
+}

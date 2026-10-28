@@ -1,0 +1,68 @@
+{
+  "source": "Permintaan user27Oktober2026 membuat tepat3order baru sesuai3contohSLA.",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "Buat order baru Normal Surabaya–Semarang",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-SETUP-1"
+      ],
+      "steps": [
+        "Buat order FTL satu armada dengan marker unik",
+        "Pilih lokasi sesuai kota dan jumlah yang ditetapkan user",
+        "Review lokasi, jadwal, tipe, vendor, harga dan waktu perjalanan",
+        "Simpan sekali dan cocokkan HTTP201",
+        "Baca ulang GET order serta buka ulang detail melalui browser"
+      ],
+      "expected": [
+        "Order baru tersimpan dengan kota dan urutan lokasi sesuai kasus",
+        "Status Menunggu Penugasan; satu armada; tidak ada tracking yang diisi"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Buat order baru Multipickup dua lokasi Surabaya–Semarang",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-SETUP-2"
+      ],
+      "steps": [
+        "Buat order FTL satu armada dengan marker unik",
+        "Pilih lokasi sesuai kota dan jumlah yang ditetapkan user",
+        "Review lokasi, jadwal, tipe, vendor, harga dan waktu perjalanan",
+        "Simpan sekali dan cocokkan HTTP201",
+        "Baca ulang GET order serta buka ulang detail melalui browser"
+      ],
+      "expected": [
+        "Order baru tersimpan dengan kota dan urutan lokasi sesuai kasus",
+        "Status Menunggu Penugasan; satu armada; tidak ada tracking yang diisi"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "Buat order baru Multipickup Surabaya–Gresik–Semarang",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-SETUP-3"
+      ],
+      "steps": [
+        "Buat order FTL satu armada dengan marker unik",
+        "Pilih lokasi sesuai kota dan jumlah yang ditetapkan user",
+        "Review lokasi, jadwal, tipe, vendor, harga dan waktu perjalanan",
+        "Simpan sekali dan cocokkan HTTP201",
+        "Baca ulang GET order serta buka ulang detail melalui browser"
+      ],
+      "expected": [
+        "Order baru tersimpan dengan kota dan urutan lokasi sesuai kasus",
+        "Status Menunggu Penugasan; satu armada; tidak ada tracking yang diisi"
+      ]
+    }
+  ]
+}

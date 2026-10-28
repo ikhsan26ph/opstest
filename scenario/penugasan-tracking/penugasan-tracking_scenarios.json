@@ -1,0 +1,2382 @@
+{
+ "module": "penugasan-tracking",
+ "source": "TMS.S015 via penugasan-tracking_analysis.md + _preconditions.md",
+ "generatedBy": "artifacts/scenario-gen/pt_gen.py",
+ "screens": {
+  "SCR-01": "Daftar Penugasan Tracking",
+  "SCR-02": "Tambah Penugasan",
+  "SCR-03": "Tugaskan Sopir Bongkar",
+  "SCR-04": "Edit Penugasan",
+  "SCR-05": "Isi Data Tracking",
+  "SCR-06": "Isi Kendala",
+  "SCR-07": "Detail Penugasan",
+  "SCR-08": "Alihkan Armada",
+  "SCR-09": "Driver Hub (eksternal)"
+ },
+ "scenarios": [
+  {
+   "id": "SCN-0001",
+   "title": "Daftar penugasan menampilkan 20 data per halaman dengan pagination, terbaru di atas",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-004",
+    "REQ-005"
+   ],
+   "acceptance": [
+    "AC-004"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-15"
+   ],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Login ACC-ADM",
+    "Buka menu Penugasan Tracking",
+    "Hitung baris pada halaman 1 dan periksa kontrol pagination",
+    "Bandingkan urutan baris dengan waktu pembuatan (createdAt) data"
+   ],
+   "expected": [
+    "Tampil 20 baris pada halaman 1",
+    "Pagination tersedia",
+    "Urutan dari data paling baru ditambahkan"
+   ]
+  },
+  {
+   "id": "SCN-0002",
+   "title": "Panel filter memuat field sesuai spec dan kosong secara default",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-015",
+    "REQ-016"
+   ],
+   "acceptance": [
+    "AC-012"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "UI teramati juga memuat \"Pilih Tahapan\" dan \"Semua Vendor\" yang tidak disebut spec — dicatat sebagai observasi, bukan failed",
+   "steps": [
+    "Buka Daftar Penugasan Tracking",
+    "Buka panel Filter",
+    "Periksa field filter dan nilainya"
+   ],
+   "expected": [
+    "Tersedia field ID Order, Kota Asal, Kota Tujuan, Jenis Shipment, No. Polisi/No. Kontainer, Nama Sopir, Tanggal Mulai Tracking, Status",
+    "Seluruh field kosong"
+   ]
+  },
+  {
+   "id": "SCN-0003",
+   "title": "Filter ID Order + Terapkan menampilkan data sesuai filter",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-017"
+   ],
+   "acceptance": [
+    "AC-013"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-15"
+   ],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Buka panel Filter",
+    "Isi ID Order dengan ID order existing yang teramati di list",
+    "Klik \"Terapkan\""
+   ],
+   "expected": [
+    "Hanya baris dengan ID Order tersebut yang tampil"
+   ]
+  },
+  {
+   "id": "SCN-0004",
+   "title": "Reset mengosongkan filter dan mengembalikan list default",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-018"
+   ],
+   "acceptance": [
+    "AC-014"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Terapkan filter ID Order",
+    "Klik \"Reset\""
+   ],
+   "expected": [
+    "Field filter kosong",
+    "List kembali ke kondisi default (20 data halaman 1)"
+   ]
+  },
+  {
+   "id": "SCN-0005",
+   "title": "Opsi dropdown filter Status mengikuti daftar status",
+   "category": "edge",
+   "priority": "low",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-014"
+   ],
+   "acceptance": [],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": "BLK-09",
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "Q-12: apakah Kapal Berlayar, Kapal Sandar, Dialihkan termasuk — dicatat tanpa verdict",
+   "steps": [
+    "Buka panel Filter",
+    "Buka dropdown Status",
+    "Catat seluruh opsi"
+   ],
+   "expected": [
+    "Opsi memuat status Belum Berangkat, Berangkat Muat, Selesai Muat, Berangkat Bongkar, Pengiriman Selesai"
+   ]
+  },
+  {
+   "id": "SCN-0006",
+   "title": "Menu Aksi baris FTL: Alihkan Armada tersedia, Tugaskan Sopir Bongkar tidak tersedia",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-019",
+    "REQ-020",
+    "REQ-021"
+   ],
+   "acceptance": [
+    "AC-015",
+    "AC-018"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "Riwayat Perubahan tidak dirinci (Q-03): hanya keberadaan item yang dicek",
+   "steps": [
+    "Buka menu Aksi (titik tiga) pada baris FTL milik vendor Nusantara",
+    "Catat item menu"
+   ],
+   "expected": [
+    "Item menu termasuk dalam: Detail Penugasan, Edit Penugasan, Isi Data Tracking, Isi Kendala, Alihkan Armada, Tugaskan Sopir Bongkar, Riwayat Perubahan",
+    "\"Alihkan Armada\" tersedia",
+    "\"Tugaskan Sopir Bongkar\" tidak tersedia"
+   ]
+  },
+  {
+   "id": "SCN-0007",
+   "title": "Menu Aksi baris LTL: Alihkan Armada tersedia, Tugaskan Sopir Bongkar tidak tersedia",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-020",
+    "REQ-021"
+   ],
+   "acceptance": [
+    "AC-018"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Buka menu Aksi pada baris LTL",
+    "Catat item menu"
+   ],
+   "expected": [
+    "\"Alihkan Armada\" tersedia",
+    "\"Tugaskan Sopir Bongkar\" tidak tersedia"
+   ]
+  },
+  {
+   "id": "SCN-0008",
+   "title": "Menu Aksi baris FCL Door to Door: Tugaskan Sopir Bongkar tersedia, Alihkan Armada tidak",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-020",
+    "REQ-021"
+   ],
+   "acceptance": [
+    "AC-016",
+    "AC-017"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Buka menu Aksi pada baris FCL dengan Metode Door to Door",
+    "Catat item menu"
+   ],
+   "expected": [
+    "\"Tugaskan Sopir Bongkar\" tersedia",
+    "\"Alihkan Armada\" tidak tersedia"
+   ]
+  },
+  {
+   "id": "SCN-0009",
+   "title": "Menu Aksi baris FCL CY to Door: Tugaskan Sopir Bongkar tersedia",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-021"
+   ],
+   "acceptance": [
+    "AC-017"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Buka menu Aksi pada baris FCL Metode CY to Door (ORD0061555399 teramati)",
+    "Catat item menu"
+   ],
+   "expected": [
+    "\"Tugaskan Sopir Bongkar\" tersedia",
+    "\"Alihkan Armada\" tidak tersedia"
+   ]
+  },
+  {
+   "id": "SCN-0010",
+   "title": "Menu Aksi baris FCL Door to CY: Tugaskan Sopir Bongkar tidak tersedia",
+   "category": "negative",
+   "priority": "medium",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-021"
+   ],
+   "acceptance": [
+    "AC-017"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "Data existing berstatus Selesai; bila hasil dipengaruhi status, ulangi pada DS-08 (Belum Berangkat)",
+   "steps": [
+    "Buka menu Aksi pada baris FCL Metode Door to CY (penugasan Selesai teramati, ENV-06)",
+    "Catat item menu"
+   ],
+   "expected": [
+    "\"Tugaskan Sopir Bongkar\" tidak tersedia"
+   ]
+  },
+  {
+   "id": "SCN-0011",
+   "title": "Shipper dengan vendor kelolaan dapat menjalankan penugasan untuk order vendor tersebut",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-001"
+   ],
+   "acceptance": [
+    "AC-001"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-01"
+   ],
+   "flow": "F-FTL-1:1",
+   "ambiguousParts": null,
+   "steps": [
+    "Login ACC-ADM",
+    "Buka Tambah Penugasan",
+    "Pilih order milik vendor Nusantara (pengelola ADMIN) dari setup DS-01",
+    "Lengkapi field wajib dan Simpan"
+   ],
+   "expected": [
+    "Tombol \"Tambah Penugasan\" tersedia",
+    "Penugasan untuk order vendor kelolaan tersimpan"
+   ]
+  },
+  {
+   "id": "SCN-0012",
+   "title": "Shipper tanpa vendor kelolaan hanya dapat melihat penugasan tracking",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-002"
+   ],
+   "acceptance": [
+    "AC-002"
+   ],
+   "actor": "ACC-shipper-tanpa-vendor-kelolaan",
+   "readiness": "BLOCKED",
+   "blocker": "BLK-04",
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Login shipper yang tidak memiliki vendor pengelola ADMIN",
+    "Buka Penugasan Tracking"
+   ],
+   "expected": [
+    "Akses hanya lihat (tidak dapat menambah/mengubah penugasan)"
+   ]
+  },
+  {
+   "id": "SCN-0013",
+   "title": "Vendor memiliki akses penuh penugasan tracking di akun vendor",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-003"
+   ],
+   "acceptance": [
+    "AC-003"
+   ],
+   "actor": "ACC-VEN",
+   "readiness": "SETUP",
+   "blocker": "BLK-03",
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-10",
+    "DS-11"
+   ],
+   "flow": null,
+   "ambiguousParts": "ENV-08: tombol Tambah Penugasan tidak teramati di akun vendor sebelum DS-10; bila tetap absen setelah DS-10 → failed REQ-003",
+   "steps": [
+    "ACC-ADM membuat order untuk vendor PT. Ikatan Kuat (DS-10)",
+    "Login ACC-VEN",
+    "Buka Penugasan Tracking",
+    "Tambah penugasan untuk order DS-10 (armada Isi Data Manual atau master DS-11), Simpan",
+    "Buka menu Aksi penugasan tersebut"
+   ],
+   "expected": [
+    "Vendor dapat menambah penugasan",
+    "Aksi penugasan (Detail, Edit, Isi Data Tracking, Isi Kendala) tersedia bagi vendor"
+   ]
+  },
+  {
+   "id": "SCN-0014",
+   "title": "List Pilih Order hanya menampilkan order yang belum dilakukan penugasan",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-022"
+   ],
+   "acceptance": [
+    "AC-019"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "ENV-05: request list memakai status DRAFT,ASSIGNED,MENUNGGU_PENUGASAN — status order yang boleh tampil tidak dibatasi spec; dicatat sebagai observasi",
+   "steps": [
+    "Buka Tambah Penugasan",
+    "Catat order pada list \"Pilih Order\"",
+    "Bandingkan dengan order yang sudah memiliki penugasan di Daftar Penugasan dan status order di menu Order"
+   ],
+   "expected": [
+    "Tidak ada order yang sudah memiliki penugasan pada list \"Pilih Order\""
+   ]
+  },
+  {
+   "id": "SCN-0015",
+   "title": "Pilih order mendraft Kota Asal/Tujuan berprefix Kota/Kab. dan jenis/jumlah armada read-only",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-023",
+    "REQ-024"
+   ],
+   "acceptance": [
+    "AC-020"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "Q-14 (baru): data kota memakai \"Kabupaten ...\" (mis. \"Kabupaten Mojokerto\"), spec menyebut prefix \"Kab.\" dengan contoh hanya \"Kota\" — bentuk prefix Kabupaten dicatat sebagai observasi tanpa verdict",
+   "steps": [
+    "Buka Tambah Penugasan",
+    "Pilih order FTL existing (tanpa Simpan)",
+    "Periksa Kota Asal, Kota Tujuan, Jenis Armada, Jumlah Armada"
+   ],
+   "expected": [
+    "Kota Asal/Tujuan terisi dengan prefix \"Kota\" atau \"Kab.\"",
+    "Jenis Armada & Jumlah Armada terisi dari order",
+    "Seluruh field hasil draft read-only"
+   ]
+  },
+  {
+   "id": "SCN-0016",
+   "title": "Order FTL jumlah armada 2 menampilkan 2 card input armada",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-025"
+   ],
+   "acceptance": [
+    "AC-021"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-02"
+   ],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Siapkan DS-02",
+    "Buka Tambah Penugasan, pilih order DS-02"
+   ],
+   "expected": [
+    "Tampil card \"Armada 1\" dan \"Armada 2\""
+   ]
+  },
+  {
+   "id": "SCN-0017",
+   "title": "Order LTL menampilkan 1 card input",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-026"
+   ],
+   "acceptance": [
+    "AC-022"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Buka Tambah Penugasan",
+    "Pilih order LTL existing (tanpa Simpan)"
+   ],
+   "expected": [
+    "Tampil tepat 1 card input"
+   ]
+  },
+  {
+   "id": "SCN-0018",
+   "title": "Order LCL menampilkan 1 card input",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-026"
+   ],
+   "acceptance": [
+    "AC-022"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": "BLK-01",
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-09"
+   ],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Siapkan DS-09",
+    "Buka Tambah Penugasan, pilih order LCL"
+   ],
+   "expected": [
+    "Tampil tepat 1 card input"
+   ]
+  },
+  {
+   "id": "SCN-0019",
+   "title": "Metode Pilih Dari Master menampilkan seluruh jenis armada; Isi Data Manual menampilkan text field",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-027",
+    "REQ-029"
+   ],
+   "acceptance": [
+    "AC-023"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-09",
+    "ENV-02"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih order FTL existing (tanpa Simpan)",
+    "Pilih metode \"Pilih Dari Master\" pada No. Polisi, buka dropdown",
+    "Bandingkan jenis armada pada opsi dengan master armada Nusantara",
+    "Ganti ke \"Isi Data Manual\""
+   ],
+   "expected": [
+    "Dropdown berisi armada master tanpa difilter jenis tertentu",
+    "\"Isi Data Manual\" menampilkan text field"
+   ]
+  },
+  {
+   "id": "SCN-0020",
+   "title": "Sopir Isi Data Manual: opsi Tugaskan ke Sopir disable, Tugaskan ke Pengurus tersedia",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-032",
+    "REQ-034"
+   ],
+   "acceptance": [
+    "AC-025"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih order FTL existing (tanpa Simpan)",
+    "Isi Sopir dengan \"Isi Data Manual\"",
+    "Periksa opsi Mode Penugasan"
+   ],
+   "expected": [
+    "\"Tugaskan ke Sopir\" disable",
+    "\"Tugaskan ke Pengurus\" dapat dipilih"
+   ]
+  },
+  {
+   "id": "SCN-0021",
+   "title": "Armada manual + Sopir master: kedua mode penugasan dapat dipilih",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-033",
+    "REQ-034"
+   ],
+   "acceptance": [
+    "AC-026"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih order FTL existing (tanpa Simpan)",
+    "Isi No. Polisi dengan \"Isi Data Manual\"",
+    "Pilih Sopir dari master",
+    "Periksa opsi Mode Penugasan"
+   ],
+   "expected": [
+    "\"Tugaskan ke Sopir\" dan \"Tugaskan ke Pengurus\" dapat dipilih"
+   ]
+  },
+  {
+   "id": "SCN-0022",
+   "title": "Sopir manual tanpa No. WhatsApp tidak menimbulkan error wajib",
+   "category": "edge",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-028"
+   ],
+   "acceptance": [
+    "AC-024"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-01"
+   ],
+   "flow": "F-FTL-2:1",
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih order DS-01",
+    "Isi No. Polisi (master), Sopir \"Isi Data Manual\" hanya Nama, kosongkan No. WhatsApp",
+    "Pilih \"Tugaskan ke Pengurus\"",
+    "Simpan"
+   ],
+   "expected": [
+    "Tidak ada helper error pada No. WhatsApp sopir",
+    "Penugasan tersimpan"
+   ]
+  },
+  {
+   "id": "SCN-0023",
+   "title": "Simpan Tambah Penugasan FTL tanpa field wajib menampilkan helper error",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-037",
+    "REQ-040"
+   ],
+   "acceptance": [
+    "AC-028",
+    "AC-031"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "Teks helper tidak disebut spec (Q-13); hanya keberadaan helper & border error yang dicek",
+   "steps": [
+    "Pilih order FTL existing",
+    "Kosongkan No. Polisi, Sopir, Mode Penugasan",
+    "Klik Simpan"
+   ],
+   "expected": [
+    "Field kosong menampilkan helper error dan border berwarna error",
+    "Penugasan tidak tersimpan (order tetap ada di list Pilih Order)"
+   ]
+  },
+  {
+   "id": "SCN-0024",
+   "title": "Batal pada Tambah Penugasan menampilkan alert konfirmasi",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-038"
+   ],
+   "acceptance": [
+    "AC-029"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "Pada alert, pilih opsi untuk tetap/kembali tanpa menyimpan; copy tidak dicek (Q-13)",
+   "steps": [
+    "Buka Tambah Penugasan, pilih order",
+    "Klik Batal"
+   ],
+   "expected": [
+    "Tampil alert konfirmasi pembatalan"
+   ]
+  },
+  {
+   "id": "SCN-0025",
+   "title": "Simpan Tambah Penugasan FTL valid (mode pengurus) → status awal Belum Berangkat",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-039",
+    "REQ-040",
+    "REQ-067",
+    "REQ-031"
+   ],
+   "acceptance": [
+    "AC-030",
+    "AC-047"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-01"
+   ],
+   "flow": "F-FTL-1:1",
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih order DS-01",
+    "Isi No. Polisi dan Sopir dari master Nusantara",
+    "Pilih \"Tugaskan ke Pengurus\"",
+    "Simpan",
+    "Cari penugasan di Daftar"
+   ],
+   "expected": [
+    "Penugasan tersimpan",
+    "Status penugasan \"Belum Berangkat\"",
+    "Order tidak lagi muncul di list Pilih Order"
+   ]
+  },
+  {
+   "id": "SCN-0026",
+   "title": "Simpan Tambah Penugasan FCL tanpa field wajib menampilkan helper error",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-037",
+    "REQ-041"
+   ],
+   "acceptance": [
+    "AC-032"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih order FCL existing (tanpa menyimpan data valid)",
+    "Kosongkan No. Kontainer, No. Segel, Armada Muat, Sopir Muat, Mode Penugasan, Pilih jadwal kapal",
+    "Klik Simpan"
+   ],
+   "expected": [
+    "Setiap field wajib kosong menampilkan helper error & border error",
+    "Penugasan tidak tersimpan"
+   ]
+  },
+  {
+   "id": "SCN-0027",
+   "title": "Jadwal kapal FCL 2 kontainer diisi satu kali (bukan per kontainer)",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-042",
+    "REQ-025"
+   ],
+   "acceptance": [
+    "AC-033",
+    "AC-021"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-07"
+   ],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Siapkan DS-07",
+    "Pilih order DS-07 di Tambah Penugasan"
+   ],
+   "expected": [
+    "Tampil card \"Kontainer 1\" dan \"Kontainer 2\"",
+    "Section jadwal kapal hanya satu, tidak ada di tiap card"
+   ]
+  },
+  {
+   "id": "SCN-0028",
+   "title": "Jenis Jadwal Kapal Direct tidak dapat menambah baris kapal connecting",
+   "category": "negative",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-043",
+    "REQ-044"
+   ],
+   "acceptance": [
+    "AC-034"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih order FCL existing (tanpa Simpan)",
+    "Pilih Jenis Jadwal Kapal \"Direct\"",
+    "Cari kontrol tambah baris kapal connecting"
+   ],
+   "expected": [
+    "Baris kapal connecting tidak dapat ditambahkan"
+   ]
+  },
+  {
+   "id": "SCN-0029",
+   "title": "Jenis Jadwal Kapal Connecting menampilkan Data Kapal Connecting dan dapat >1 baris",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-045",
+    "REQ-047"
+   ],
+   "acceptance": [
+    "AC-035"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": "REQ-047 TERPOTONG (Q-05): isi field tiap baris tidak diverifikasi",
+   "steps": [
+    "Pilih order FCL existing (tanpa Simpan)",
+    "Pilih \"Connecting\"",
+    "Tambah 2 baris data kapal connecting"
+   ],
+   "expected": [
+    "Field \"Data Kapal Connecting\" muncul",
+    "Dapat lebih dari 1 baris"
+   ]
+  },
+  {
+   "id": "SCN-0030",
+   "title": "ETD Connecting melebihi ETA kapal utama tidak diterima",
+   "category": "negative",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-046"
+   ],
+   "acceptance": [
+    "AC-036"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-06"
+   ],
+   "flow": null,
+   "ambiguousParts": "Bentuk penolakan tidak disebut (Q-13); bila ternyata tersimpan → failed, lalu penugasan dibatalkan tidak mungkin — jalankan hanya pada order milik run (DS-06 buatan run)",
+   "steps": [
+    "Pilih order FCL existing (tanpa Simpan)",
+    "Pilih \"Connecting\", isi ETA kapal utama",
+    "Isi ETD Connecting setelah ETA kapal utama",
+    "Klik Simpan"
+   ],
+   "expected": [
+    "Input ditolak / penugasan tidak tersimpan"
+   ]
+  },
+  {
+   "id": "SCN-0031",
+   "title": "Edit Penugasan saat Belum Berangkat membuka halaman penuh dan menyimpan perubahan",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-04",
+   "requirements": [
+    "REQ-056",
+    "REQ-057",
+    "REQ-059",
+    "REQ-061"
+   ],
+   "acceptance": [
+    "AC-043",
+    "AC-046"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:2",
+   "ambiguousParts": null,
+   "steps": [
+    "Pada penugasan F-FTL-1 (Belum Berangkat) klik \"Edit Penugasan\"",
+    "Ganti sopir ke sopir master lain",
+    "Simpan"
+   ],
+   "expected": [
+    "Tampil halaman penuh sama dengan Tambah Penugasan",
+    "Perubahan tersimpan dan tampil di list/detail"
+   ]
+  },
+  {
+   "id": "SCN-0032",
+   "title": "Batal pada Edit Penugasan menampilkan alert konfirmasi",
+   "category": "positive",
+   "priority": "low",
+   "screen": "SCR-04",
+   "requirements": [
+    "REQ-060"
+   ],
+   "acceptance": [
+    "AC-045"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:3",
+   "ambiguousParts": null,
+   "steps": [
+    "Buka Edit Penugasan F-FTL-1",
+    "Klik Batal"
+   ],
+   "expected": [
+    "Tampil alert konfirmasi"
+   ]
+  },
+  {
+   "id": "SCN-0033",
+   "title": "Isi Data Tracking Berangkat Muat FTL menampilkan info sopir, wa sopir, nopol lalu tersimpan",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-071",
+    "REQ-068",
+    "REQ-070"
+   ],
+   "acceptance": [
+    "AC-052",
+    "AC-049",
+    "AC-051"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13",
+    "DS-12"
+   ],
+   "flow": "F-FTL-1:4",
+   "ambiguousParts": "Q-06: kewajiban foto di Berangkat Muat tidak jelas — bila form meminta foto, unggah DS-12 dan catat",
+   "steps": [
+    "Klik \"Isi Data Tracking\" pada F-FTL-1",
+    "Periksa text info",
+    "Simpan step Berangkat Muat"
+   ],
+   "expected": [
+    "Tampil text info sopir, wa sopir, nopol",
+    "Tersimpan dan tampil alert berhasil update tracking",
+    "Status menjadi \"Berangkat Muat\""
+   ]
+  },
+  {
+   "id": "SCN-0034",
+   "title": "Edit Penugasan setelah Berangkat Muat menampilkan pop up tidak dapat diedit",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-04",
+   "requirements": [
+    "REQ-057",
+    "REQ-058"
+   ],
+   "acceptance": [
+    "AC-044"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:5",
+   "ambiguousParts": null,
+   "steps": [
+    "Pada F-FTL-1 (status Berangkat Muat) buka menu Aksi",
+    "Klik \"Edit Penugasan\""
+   ],
+   "expected": [
+    "Aksi \"Edit Penugasan\" tetap tampil",
+    "Tampil pop up informasi edit tidak dapat dilakukan karena sudah masuk proses pengiriman",
+    "Halaman edit tidak terbuka"
+   ]
+  },
+  {
+   "id": "SCN-0035",
+   "title": "Selesai Muat FTL tanpa foto tidak tersimpan",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-072"
+   ],
+   "acceptance": [
+    "AC-053"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:6",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi Data Tracking F-FTL-1 step Selesai Muat",
+    "Jangan unggah foto",
+    "Simpan"
+   ],
+   "expected": [
+    "Data tidak tersimpan (Foto Required)",
+    "Status tetap \"Berangkat Muat\""
+   ]
+  },
+  {
+   "id": "SCN-0036",
+   "title": "Batal pada Isi Data Tracking menampilkan alert konfirmasi",
+   "category": "positive",
+   "priority": "low",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-069"
+   ],
+   "acceptance": [
+    "AC-050"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:7",
+   "ambiguousParts": null,
+   "steps": [
+    "Buka Isi Data Tracking F-FTL-1",
+    "Klik Batal"
+   ],
+   "expected": [
+    "Tampil alert konfirmasi"
+   ]
+  },
+  {
+   "id": "SCN-0037",
+   "title": "Selesai Muat FTL dengan foto, keterangan kosong → tersimpan",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-072",
+    "REQ-064",
+    "REQ-070"
+   ],
+   "acceptance": [
+    "AC-053",
+    "AC-051"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13",
+    "DS-12"
+   ],
+   "flow": "F-FTL-1:8",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi Data Tracking F-FTL-1 step Selesai Muat",
+    "Periksa text info",
+    "Unggah DS-12, kosongkan keterangan",
+    "Simpan"
+   ],
+   "expected": [
+    "Tampil text info alamat, sopir, wa sopir, nopol",
+    "Tersimpan dengan alert berhasil",
+    "Status \"Selesai Muat\""
+   ]
+  },
+  {
+   "id": "SCN-0038",
+   "title": "Isi Kendala: halaman menampilkan card sesuai spec",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-06",
+   "requirements": [
+    "REQ-083",
+    "REQ-084",
+    "REQ-085",
+    "REQ-086"
+   ],
+   "acceptance": [
+    "AC-059",
+    "AC-060"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:9",
+   "ambiguousParts": null,
+   "steps": [
+    "Klik \"Isi Kendala\" pada F-FTL-1",
+    "Periksa card",
+    "Buka Card Detail Armada/Kontainer"
+   ],
+   "expected": [
+    "Tampil Card Detail Data Order, card berjudul \"Kendala\", Card Detail Armada/Kontainer (default tertutup), Card History Tracking (default tertutup, hanya lihat)",
+    "Card armada memuat No. Polisi, Nama Sopir, No. WhatsApp Sopir, Jenis Armada"
+   ]
+  },
+  {
+   "id": "SCN-0039",
+   "title": "Batal pada Isi Kendala menampilkan alert konfirmasi",
+   "category": "positive",
+   "priority": "low",
+   "screen": "SCR-06",
+   "requirements": [
+    "REQ-089"
+   ],
+   "acceptance": [
+    "AC-063"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:10",
+   "ambiguousParts": null,
+   "steps": [
+    "Buka Isi Kendala F-FTL-1",
+    "Klik Batal"
+   ],
+   "expected": [
+    "Tampil alert konfirmasi"
+   ]
+  },
+  {
+   "id": "SCN-0040",
+   "title": "Simpan kendala tanpa foto → tersimpan, status tetap step berjalan dengan ikon kendala",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-06",
+   "requirements": [
+    "REQ-081",
+    "REQ-088",
+    "REQ-090",
+    "REQ-008"
+   ],
+   "acceptance": [
+    "AC-062",
+    "AC-006"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:11",
+   "ambiguousParts": "Q-09: keterangan diisi karena status wajib tidak jelas; tidak menguji keterangan kosong",
+   "steps": [
+    "Isi Kendala F-FTL-1: keterangan \"QA-PT-<runId> kendala uji\", tanpa foto",
+    "Simpan",
+    "Kembali ke Daftar, hover ikon di kolom Status"
+   ],
+   "expected": [
+    "Tersimpan dengan alert berhasil",
+    "Status tetap \"Selesai Muat\"",
+    "Ikon kendala tampil dengan tooltip \"Terdapat Kendala\""
+   ]
+  },
+  {
+   "id": "SCN-0041",
+   "title": "Berangkat Bongkar FTL tanpa foto tidak tersimpan",
+   "category": "negative",
+   "priority": "medium",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-073"
+   ],
+   "acceptance": [
+    "AC-054"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:12",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi Data Tracking F-FTL-1 step Berangkat Bongkar tanpa foto",
+    "Simpan"
+   ],
+   "expected": [
+    "Data tidak tersimpan (Foto Required)"
+   ]
+  },
+  {
+   "id": "SCN-0042",
+   "title": "Berangkat Bongkar FTL dengan foto → tersimpan",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-073"
+   ],
+   "acceptance": [
+    "AC-054"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13",
+    "DS-12"
+   ],
+   "flow": "F-FTL-1:13",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi step Berangkat Bongkar: periksa field, unggah DS-12",
+    "Simpan"
+   ],
+   "expected": [
+    "Form memuat Foto (Required), Keterangan (Opsional), text info sopir, wa sopir, nopol",
+    "Status \"Berangkat Bongkar\""
+   ]
+  },
+  {
+   "id": "SCN-0043",
+   "title": "Selesai Bongkar FTL → status Pengiriman Selesai; urutan status tanpa step kapal",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-074",
+    "REQ-010",
+    "REQ-012"
+   ],
+   "acceptance": [
+    "AC-053",
+    "AC-009"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13",
+    "DS-12"
+   ],
+   "flow": "F-FTL-1:14",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi step Selesai Bongkar dengan DS-12",
+    "Simpan",
+    "Lihat status di Daftar dan riwayat step di Detail"
+   ],
+   "expected": [
+    "Status \"Pengiriman Selesai\"",
+    "Riwayat step: Berangkat Muat → Selesai Muat → Berangkat Bongkar → Selesai Bongkar tanpa Kapal Berlayar/Kapal Sandar"
+   ]
+  },
+  {
+   "id": "SCN-0044",
+   "title": "Detail Penugasan FTL: card, history per step, format waktu, link Detail/Edit",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-07",
+   "requirements": [
+    "REQ-091",
+    "REQ-092",
+    "REQ-094",
+    "REQ-095",
+    "REQ-096",
+    "REQ-097"
+   ],
+   "acceptance": [
+    "AC-064",
+    "AC-066",
+    "AC-069"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:15",
+   "ambiguousParts": null,
+   "steps": [
+    "Buka \"Detail Penugasan\" F-FTL-1"
+   ],
+   "expected": [
+    "Tampil Card Detail Data Order, 1 card \"Informasi Penugasan\", Card History Tracking",
+    "History per step dengan Nopol dan waktu format DD/MM/YYYY hh:mm",
+    "Tiap step punya text link \"Detail\" dan \"Edit\""
+   ]
+  },
+  {
+   "id": "SCN-0045",
+   "title": "Detail step: pop up data, data kosong ditampilkan \"-\"",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-07",
+   "requirements": [
+    "REQ-098"
+   ],
+   "acceptance": [
+    "AC-067"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:16",
+   "ambiguousParts": null,
+   "steps": [
+    "Pada History Tracking F-FTL-1 klik \"Detail\" step Selesai Muat (keterangan kosong)"
+   ],
+   "expected": [
+    "Pop up berisi data step",
+    "Keterangan kosong ditampilkan \"-\""
+   ]
+  },
+  {
+   "id": "SCN-0046",
+   "title": "Edit step: pop up ter-draft sesuai input sebelumnya",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-07",
+   "requirements": [
+    "REQ-099"
+   ],
+   "acceptance": [
+    "AC-068"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-1:17",
+   "ambiguousParts": null,
+   "steps": [
+    "Pada History Tracking F-FTL-1 klik \"Edit\" step Berangkat Bongkar",
+    "Tutup tanpa menyimpan"
+   ],
+   "expected": [
+    "Pop up edit terisi data yang diinput sebelumnya"
+   ]
+  },
+  {
+   "id": "SCN-0047",
+   "title": "Penugasan mode Tugaskan ke Sopir tetap dapat dikelola melalui web",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-030"
+   ],
+   "acceptance": [
+    "AC-027"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-01"
+   ],
+   "flow": "F-FTL-3:1",
+   "ambiguousParts": "Penanda teramati: title \"Ditugaskan ke sopir — tampil di aplikasi Driver Hub\" (tidak disebut spec; observasi)",
+   "steps": [
+    "Tambah penugasan order DS-05/DS-01 kedua dengan Sopir dari master dan mode \"Tugaskan ke Sopir\"",
+    "Dari web lakukan Isi Data Tracking step Berangkat Muat"
+   ],
+   "expected": [
+    "Penugasan tersimpan",
+    "Baris list bertanda penugasan ke sopir",
+    "Step dapat diisi dari web"
+   ]
+  },
+  {
+   "id": "SCN-0048",
+   "title": "Penugasan tampil/tidak tampil di aplikasi Driver Hub sesuai Mode Penugasan",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-09",
+   "requirements": [
+    "REQ-030",
+    "REQ-031",
+    "REQ-035",
+    "REQ-036"
+   ],
+   "acceptance": [
+    "AC-027",
+    "AC-042"
+   ],
+   "actor": "Sopir (Driver Hub)",
+   "readiness": "BLOCKED",
+   "blocker": "BLK-05",
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Login Driver Hub sebagai sopir master",
+    "Periksa penugasan mode Sopir vs mode Pengurus",
+    "FCL: periksa step yang dapat dikelola sebelum/sesudah Tugaskan Sopir Bongkar"
+   ],
+   "expected": [
+    "Mode Sopir tampil, mode Pengurus tidak tampil",
+    "FCL/LCL: hanya Berangkat/Selesai Muat sebelum sopir bongkar ditugaskan"
+   ]
+  },
+  {
+   "id": "SCN-0049",
+   "title": "Alihkan Armada: tampilan card dan section Armada Pengganti default",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-08",
+   "requirements": [
+    "REQ-100",
+    "REQ-101"
+   ],
+   "acceptance": [
+    "AC-070"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13",
+    "DS-12"
+   ],
+   "flow": "F-FTL-2:2",
+   "ambiguousParts": null,
+   "steps": [
+    "Pada F-FTL-2 isi Berangkat Muat, Selesai Muat, Berangkat Bongkar",
+    "Klik \"Alihkan Armada\""
+   ],
+   "expected": [
+    "Tampil Card Detail Order, Total Berat, Total Kubikasi, Detail Armada Saat Ini, Armada Pengganti",
+    "Armada Pengganti default hanya Jenis Armada, Jumlah Armada, Berat Maks., Kubikasi Maks."
+   ]
+  },
+  {
+   "id": "SCN-0050",
+   "title": "Alihkan Armada: detail Armada 1 muncul setelah Jumlah Armada diisi",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-08",
+   "requirements": [
+    "REQ-102"
+   ],
+   "acceptance": [
+    "AC-071"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-2:3",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi Jenis Armada dan Jumlah Armada = 1"
+   ],
+   "expected": [
+    "Section detail \"Armada 1\" muncul"
+   ]
+  },
+  {
+   "id": "SCN-0051",
+   "title": "Alihkan Armada tanpa armada/sopir tidak tersimpan",
+   "category": "negative",
+   "priority": "medium",
+   "screen": "SCR-08",
+   "requirements": [
+    "REQ-103"
+   ],
+   "acceptance": [
+    "AC-072"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-2:4",
+   "ambiguousParts": "Q-11: master vs manual dan tampilan error tidak disebut",
+   "steps": [
+    "Kosongkan Armada dan Sopir pada Armada 1",
+    "Simpan"
+   ],
+   "expected": [
+    "Pengalihan tidak tersimpan"
+   ]
+  },
+  {
+   "id": "SCN-0052",
+   "title": "Alihkan Armada berhasil: data baru ID Order sama, lama \"Dialihkan\", step melanjutkan",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-08",
+   "requirements": [
+    "REQ-104",
+    "REQ-105",
+    "REQ-106",
+    "REQ-013"
+   ],
+   "acceptance": [
+    "AC-073",
+    "AC-074",
+    "AC-011"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-2:5",
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih Armada dan Sopir master lain pada Armada 1",
+    "Simpan",
+    "Lihat Daftar",
+    "Buka Isi Data Tracking pada data baru"
+   ],
+   "expected": [
+    "Muncul baris baru dengan ID Order sama",
+    "Baris lama berstatus \"Dialihkan\"",
+    "Data baru tidak mulai dari awal; armada pengganti mengisi kembali Berangkat Bongkar untuk titik bongkar yang sama"
+   ]
+  },
+  {
+   "id": "SCN-0053",
+   "title": "Penanda pengalihan pada detail armada lama & baru",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-07",
+   "requirements": [
+    "REQ-107",
+    "REQ-108"
+   ],
+   "acceptance": [
+    "AC-075"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-2:6",
+   "ambiguousParts": null,
+   "steps": [
+    "Buka Detail Penugasan armada lama dan armada baru"
+   ],
+   "expected": [
+    "Armada lama: penanda dialihkan ke armada apa saja",
+    "Armada baru: penanda hasil pengalihan dari armada apa"
+   ]
+  },
+  {
+   "id": "SCN-0054",
+   "title": "History tracking setelah pengalihan: detail penugasan baru vs detail order",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-07",
+   "requirements": [
+    "REQ-109",
+    "REQ-110"
+   ],
+   "acceptance": [
+    "AC-076"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FTL-2:7",
+   "ambiguousParts": null,
+   "steps": [
+    "Buka History Tracking di Detail Penugasan data baru",
+    "Buka detail order (menu Order) untuk ID Order yang sama"
+   ],
+   "expected": [
+    "Detail penugasan baru hanya segment lanjutan armada pengganti",
+    "Detail order menggabungkan history armada lama & baru"
+   ]
+  },
+  {
+   "id": "SCN-0055",
+   "title": "Berangkat Muat multipickup: pilih alamat; alamat terpilih tidak muncul lagi",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-062",
+    "REQ-065",
+    "REQ-071"
+   ],
+   "acceptance": [
+    "AC-048",
+    "AC-052"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-03",
+    "DS-12"
+   ],
+   "flow": "F-MP:1",
+   "ambiguousParts": "Urutan step multipickup (kembali ke Berangkat Muat setelah Selesai Muat) tidak dijabarkan spec; dicatat hasil aktual",
+   "steps": [
+    "Siapkan DS-03 dan tambah penugasan",
+    "Isi Berangkat Muat memilih alamat pick up 1, Simpan",
+    "Lanjut Selesai Muat",
+    "Isi Berangkat Muat berikutnya"
+   ],
+   "expected": [
+    "Step Berangkat Muat menampilkan pilihan alamat muat",
+    "Alamat pick up 1 tidak muncul lagi pada pilihan berikutnya"
+   ]
+  },
+  {
+   "id": "SCN-0056",
+   "title": "Berangkat Bongkar multidrop: pilih alamat bongkar",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-062",
+    "REQ-073"
+   ],
+   "acceptance": [
+    "AC-054"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-04",
+    "DS-12"
+   ],
+   "flow": "F-MD:1",
+   "ambiguousParts": null,
+   "steps": [
+    "Siapkan DS-04, tambah penugasan, jalankan sampai Berangkat Bongkar"
+   ],
+   "expected": [
+    "Step Berangkat Bongkar menampilkan pilihan alamat bongkar"
+   ]
+  },
+  {
+   "id": "SCN-0057",
+   "title": "Tambah Penugasan FCL Door to Door valid (Direct) → Belum Berangkat",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-041",
+    "REQ-043",
+    "REQ-067"
+   ],
+   "acceptance": [
+    "AC-030",
+    "AC-047"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-06"
+   ],
+   "flow": "F-FCL:1",
+   "ambiguousParts": null,
+   "steps": [
+    "Pilih order DS-06",
+    "Isi No. Kontainer & No. Segel (QA-PT-<runId>), Armada Muat & Sopir Muat dari master, Mode \"Tugaskan ke Pengurus\", jadwal kapal Direct",
+    "Simpan"
+   ],
+   "expected": [
+    "Penugasan tersimpan, status \"Belum Berangkat\""
+   ]
+  },
+  {
+   "id": "SCN-0058",
+   "title": "Isi Data Tracking FCL Berangkat/Selesai Muat menampilkan info kontainer",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-075",
+    "REQ-076"
+   ],
+   "acceptance": [
+    "AC-055",
+    "AC-058"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13",
+    "DS-12"
+   ],
+   "flow": "F-FCL:2",
+   "ambiguousParts": "Q-07 catatan \"[LTL tidak bisa pilih alamat]\" tidak diverifikasi",
+   "steps": [
+    "Isi Berangkat Muat F-FCL",
+    "Isi Selesai Muat dengan DS-12"
+   ],
+   "expected": [
+    "Text info memuat no kontainer, no segel, sopir, wa sopir, nopol",
+    "Selesai Muat: Foto Required, Keterangan Opsional"
+   ]
+  },
+  {
+   "id": "SCN-0059",
+   "title": "Kapal Berlayar tanpa tanggal tidak tersimpan",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-077"
+   ],
+   "acceptance": [
+    "AC-056"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:3",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi step Kapal Berlayar F-FCL tanpa Tanggal Kapal Layar",
+    "Simpan"
+   ],
+   "expected": [
+    "Data tidak tersimpan"
+   ]
+  },
+  {
+   "id": "SCN-0060",
+   "title": "Kapal Berlayar valid → ikon \"Siap tugaskan sopir bongkar\" di list",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-01",
+   "requirements": [
+    "REQ-077",
+    "REQ-009",
+    "REQ-011"
+   ],
+   "acceptance": [
+    "AC-056",
+    "AC-007"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:4",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi Kapal Berlayar: tanggal diisi, info kapal & voyage dapat diubah, foto & keterangan kosong",
+    "Simpan",
+    "Lihat baris di Daftar"
+   ],
+   "expected": [
+    "Tersimpan; status \"Kapal Berlayar\"",
+    "Ikon alert \"Siap tugaskan sopir bongkar\" tampil di kolom Status"
+   ]
+  },
+  {
+   "id": "SCN-0061",
+   "title": "Kapal Sandar tanpa tanggal tidak tersimpan; dengan tanggal tersimpan",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-078"
+   ],
+   "acceptance": [
+    "AC-057"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:5",
+   "ambiguousParts": "Q-08: perilaku field kapal utama/connecting hanya dicatat",
+   "steps": [
+    "Isi Kapal Sandar tanpa tanggal → Simpan",
+    "Isi tanggal → Simpan"
+   ],
+   "expected": [
+    "Tanpa tanggal: tidak tersimpan",
+    "Dengan tanggal: status \"Kapal Sandar\""
+   ]
+  },
+  {
+   "id": "SCN-0062",
+   "title": "Berangkat Bongkar FCL tidak dapat diisi sebelum sopir bongkar ditugaskan",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-055"
+   ],
+   "acceptance": [
+    "AC-041"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:6",
+   "ambiguousParts": null,
+   "steps": [
+    "Pada F-FCL (Kapal Sandar, belum ada sopir bongkar) klik Isi Data Tracking"
+   ],
+   "expected": [
+    "Step Berangkat Bongkar tidak dapat dilakukan"
+   ]
+  },
+  {
+   "id": "SCN-0063",
+   "title": "Tugaskan Sopir Bongkar: field read-only dan field wajib",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-03",
+   "requirements": [
+    "REQ-048",
+    "REQ-049",
+    "REQ-050",
+    "REQ-051",
+    "REQ-052"
+   ],
+   "acceptance": [
+    "AC-037",
+    "AC-038"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:7",
+   "ambiguousParts": null,
+   "steps": [
+    "Klik \"Tugaskan Sopir Bongkar\" pada F-FCL",
+    "Periksa No. Kontainer, No. Segel, Mode Penugasan",
+    "Simpan dengan Tanggal Permintaan Bongkar, Armada Bongkar, Sopir Bongkar kosong"
+   ],
+   "expected": [
+    "No. Kontainer, No. Segel, Mode Penugasan read-only",
+    "Penugasan bongkar tidak tersimpan"
+   ]
+  },
+  {
+   "id": "SCN-0064",
+   "title": "Tugaskan Sopir Bongkar valid dengan sopir berbeda → ikon hilang, badge +1, hover Sopir Asal/Tujuan",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-03",
+   "requirements": [
+    "REQ-053",
+    "REQ-006",
+    "REQ-007",
+    "REQ-009"
+   ],
+   "acceptance": [
+    "AC-008",
+    "AC-005"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:8",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi Tanggal Permintaan Bongkar, Armada Bongkar & Sopir Bongkar (master, sopir berbeda dari sopir muat)",
+    "Simpan",
+    "Lihat baris di Daftar, hover badge sopir"
+   ],
+   "expected": [
+    "Tersimpan",
+    "Ikon \"Siap tugaskan sopir bongkar\" tidak tampil",
+    "Kolom Sopir menampilkan badge \"+1\"",
+    "Hover menampilkan \"Sopir Asal\" dan \"Sopir Tujuan\""
+   ]
+  },
+  {
+   "id": "SCN-0065",
+   "title": "Tugaskan Sopir Bongkar dapat diedit sebelum Berangkat Bongkar",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-03",
+   "requirements": [
+    "REQ-053",
+    "REQ-054"
+   ],
+   "acceptance": [
+    "AC-039"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:9",
+   "ambiguousParts": null,
+   "steps": [
+    "Buka lagi \"Tugaskan Sopir Bongkar\" F-FCL",
+    "Ubah Tanggal Permintaan Bongkar",
+    "Simpan"
+   ],
+   "expected": [
+    "Perubahan tersimpan"
+   ]
+  },
+  {
+   "id": "SCN-0066",
+   "title": "Tugaskan Sopir Bongkar tidak dapat diedit setelah Berangkat Bongkar",
+   "category": "negative",
+   "priority": "high",
+   "screen": "SCR-03",
+   "requirements": [
+    "REQ-054"
+   ],
+   "acceptance": [
+    "AC-040"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13",
+    "DS-12"
+   ],
+   "flow": "F-FCL:10",
+   "ambiguousParts": "Q-07: Berangkat Bongkar FCL bertanda \"Multipickup\" — hanya dicatat",
+   "steps": [
+    "Isi Berangkat Bongkar F-FCL",
+    "Buka \"Tugaskan Sopir Bongkar\""
+   ],
+   "expected": [
+    "Proses edit tidak dapat dilakukan"
+   ]
+  },
+  {
+   "id": "SCN-0067",
+   "title": "Selesai Bongkar FCL → Pengiriman Selesai; urutan status FCL lengkap",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-080",
+    "REQ-011",
+    "REQ-012"
+   ],
+   "acceptance": [
+    "AC-055",
+    "AC-010"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13",
+    "DS-12"
+   ],
+   "flow": "F-FCL:11",
+   "ambiguousParts": null,
+   "steps": [
+    "Isi Selesai Bongkar dengan DS-12",
+    "Lihat status & history"
+   ],
+   "expected": [
+    "Status \"Pengiriman Selesai\"",
+    "Urutan: Belum Berangkat → Berangkat Muat → Selesai Muat → Kapal Berlayar → Kapal Sandar → Berangkat Bongkar → Pengiriman Selesai"
+   ]
+  },
+  {
+   "id": "SCN-0068",
+   "title": "Detail Penugasan FCL: card Informasi Penugasan Muat & Bongkar",
+   "category": "positive",
+   "priority": "high",
+   "screen": "SCR-07",
+   "requirements": [
+    "REQ-093"
+   ],
+   "acceptance": [
+    "AC-065"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:12",
+   "ambiguousParts": null,
+   "steps": [
+    "Buka Detail Penugasan F-FCL"
+   ],
+   "expected": [
+    "Tampil card \"Informasi Penugasan Muat\" dan \"Informasi Penugasan Bongkar\""
+   ]
+  },
+  {
+   "id": "SCN-0069",
+   "title": "Isi Kendala FCL: card armada/kontainer memuat data kontainer",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-06",
+   "requirements": [
+    "REQ-087"
+   ],
+   "acceptance": [
+    "AC-061"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-13"
+   ],
+   "flow": "F-FCL:3b",
+   "ambiguousParts": null,
+   "steps": [
+    "Pada F-FCL (sebelum selesai) buka \"Isi Kendala\", buka Card Detail Armada/Kontainer",
+    "Batal tanpa menyimpan"
+   ],
+   "expected": [
+    "Card memuat Jenis Kontainer, No. Kontainer, No. Segel, dan No. Polisi, Nama Sopir, No. WhatsApp Sopir, Jenis Armada"
+   ]
+  },
+  {
+   "id": "SCN-0070",
+   "title": "Isi Data Tracking penugasan tanpa data sopir menghilangkan info sopir",
+   "category": "edge",
+   "priority": "low",
+   "screen": "SCR-05",
+   "requirements": [
+    "REQ-068"
+   ],
+   "acceptance": [
+    "AC-049"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "RO",
+   "blocker": null,
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-14"
+   ],
+   "flow": null,
+   "ambiguousParts": null,
+   "steps": [
+    "Buka Isi Data Tracking pada penugasan FCL CY to Door tanpa sopir (DS-14)",
+    "Tutup tanpa Simpan"
+   ],
+   "expected": [
+    "Info sopir tidak ditampilkan"
+   ]
+  },
+  {
+   "id": "SCN-0071",
+   "title": "Flow LCL Door to Door: tambah, muat, kapal, tugaskan sopir bongkar",
+   "category": "positive",
+   "priority": "medium",
+   "screen": "SCR-02",
+   "requirements": [
+    "REQ-026",
+    "REQ-041",
+    "REQ-021",
+    "REQ-011"
+   ],
+   "acceptance": [
+    "AC-022",
+    "AC-017",
+    "AC-010"
+   ],
+   "actor": "ACC-ADM",
+   "readiness": "SETUP",
+   "blocker": "BLK-01",
+   "preconditions": [
+    "ENV-11"
+   ],
+   "setup": [
+    "DS-09",
+    "DS-12"
+   ],
+   "flow": "F-LCL:1",
+   "ambiguousParts": null,
+   "steps": [
+    "Siapkan DS-09",
+    "Tambah penugasan LCL (1 card), Simpan",
+    "Isi Berangkat Muat, Selesai Muat, Kapal Berlayar, Kapal Sandar",
+    "Cek menu Aksi",
+    "Tugaskan Sopir Bongkar, lalu Berangkat & Selesai Bongkar"
+   ],
+   "expected": [
+    "1 card input",
+    "\"Tugaskan Sopir Bongkar\" tersedia; \"Alihkan Armada\" tidak",
+    "Urutan status sama dengan FCL"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,479 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Jaya Administrator
+  - button "16":
+    - text: "16"
+    - img
+  - text: Jaya [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Daftar Order
+- heading "Daftar Order" [level=2]
+- button "Buat Order"
+- button "Batch Order"
+- button "Riwayat Pembatalan"
+- button "Filter"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data ID Order
+- textbox "Masukkan ID Order"
+- text: Jenis Order
+- button "Semua Jenis":
+  - text: Semua Jenis
+  - img
+- text: Vendor
+- textbox "Masukkan Vendor"
+- text: Kota Asal
+- button "Semua Kota":
+  - text: Semua Kota
+  - img
+- text: Kota Tujuan
+- button "Semua Kota":
+  - text: Semua Kota
+  - img
+- text: Tanggal Buat
+- button "Pilih Tanggal"
+- text: Tanggal Permintaan Muat
+- button "Pilih Tanggal"
+- text: Tipe Pengiriman
+- button "Semua Tipe":
+  - text: Semua Tipe
+  - img
+- text: Drop Point Asal
+- button "Semua Drop Point":
+  - text: Semua Drop Point
+  - img
+- text: Drop Point Tujuan
+- button "Semua Drop Point":
+  - text: Semua Drop Point
+  - img
+- text: Pengirim
+- textbox "Masukkan Nama Pengirim"
+- text: Penerima
+- textbox "Masukkan Nama Penerima"
+- text: Status
+- button "Semua Status":
+  - text: Semua Status
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "ID Order Vendor Kota Asal Warehouse Asal Kota Tujuan Warehouse Tujuan Total Harga Status":
+      - columnheader "ID Order Vendor"
+      - columnheader "Kota Asal Warehouse Asal"
+      - columnheader "Kota Tujuan Warehouse Tujuan"
+      - columnheader "Total Harga Status"
+      - columnheader
+  - rowgroup:
+    - row:
+      - cell
+    - row "Salin ORD0065597914 FTL Nusantara Logistik Utama Kabupaten Mojokerto BB Mill Ngoro Kota Surabaya EL - Gudang Surabaya Rp. 3.000.000 Menunggu Penugasan":
+      - cell "Salin ORD0065597914 FTL Nusantara Logistik Utama":
+        - button "Salin ORD0065597914": ORD0065597914
+        - text: FTL Nusantara Logistik Utama
+      - cell "Kabupaten Mojokerto BB Mill Ngoro":
+        - paragraph: Kabupaten Mojokerto
+        - text: BB Mill Ngoro
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Rp. 3.000.000 Menunggu Penugasan":
+        - paragraph: Rp. 3.000.000
+        - text: Menunggu Penugasan
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD0065468154 FTL Alexa Powell Trucks Kota Surabaya Warehouse Krembangan Surabaya Kabupaten Mojokerto BB Mill Ngoro Rp. 3.000.000 Ditugaskan":
+      - cell "Salin ORD0065468154 FTL Alexa Powell Trucks":
+        - button "Salin ORD0065468154": ORD0065468154
+        - text: FTL Alexa Powell Trucks
+      - cell "Kota Surabaya Warehouse Krembangan Surabaya":
+        - paragraph: Kota Surabaya
+        - text: Warehouse Krembangan Surabaya
+      - cell "Kabupaten Mojokerto BB Mill Ngoro":
+        - paragraph: Kabupaten Mojokerto
+        - text: BB Mill Ngoro
+      - cell "Rp. 3.000.000 Ditugaskan":
+        - paragraph: Rp. 3.000.000
+        - text: Ditugaskan
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD0061555399 FCL Nusantara Logistik Utama Kota Surabaya EL - Gudang Surabaya Multidrop Rp. 11.892.000 Proses Pengiriman":
+      - cell "Salin ORD0061555399 FCL Nusantara Logistik Utama":
+        - button "Salin ORD0061555399": ORD0061555399
+        - text: FCL Nusantara Logistik Utama
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Multidrop":
+        - button "Multidrop"
+      - cell "Rp. 11.892.000 Proses Pengiriman":
+        - paragraph: Rp. 11.892.000
+        - text: Proses Pengiriman
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD0059771455 FCL Nusantara Logistik Utama Kota Surabaya EL - Gudang Surabaya Kota Makassar EL- Gudang Makassar Rp. 11.892.000 Menunggu Penugasan":
+      - cell "Salin ORD0059771455 FCL Nusantara Logistik Utama":
+        - button "Salin ORD0059771455": ORD0059771455
+        - text: FCL Nusantara Logistik Utama
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Kota Makassar EL- Gudang Makassar":
+        - paragraph: Kota Makassar
+        - text: EL- Gudang Makassar
+      - cell "Rp. 11.892.000 Menunggu Penugasan":
+        - paragraph: Rp. 11.892.000
+        - text: Menunggu Penugasan
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD0059547619 FTL Nusantara Logistik Utama Kota Surabaya EL - Gudang Surabaya Kota Bandung EL - Gudang Bandung Rp. 9.711.800 Menunggu Penugasan":
+      - cell "Salin ORD0059547619 FTL Nusantara Logistik Utama":
+        - button "Salin ORD0059547619": ORD0059547619
+        - text: FTL Nusantara Logistik Utama
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Kota Bandung EL - Gudang Bandung":
+        - paragraph: Kota Bandung
+        - text: EL - Gudang Bandung
+      - cell "Rp. 9.711.800 Menunggu Penugasan":
+        - paragraph: Rp. 9.711.800
+        - text: Menunggu Penugasan
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD9965441127 FCL Nusantara Logistik Utama Kabupaten Bogor BB Mill Wanaherang Kota Makassar EL- Gudang Makassar Rp. 12.000.000 Proses Pengiriman":
+      - cell "Salin ORD9965441127 FCL Nusantara Logistik Utama":
+        - button "Salin ORD9965441127": ORD9965441127
+        - text: FCL Nusantara Logistik Utama
+      - cell "Kabupaten Bogor BB Mill Wanaherang":
+        - paragraph: Kabupaten Bogor
+        - text: BB Mill Wanaherang
+      - cell "Kota Makassar EL- Gudang Makassar":
+        - paragraph: Kota Makassar
+        - text: EL- Gudang Makassar
+      - cell "Rp. 12.000.000 Proses Pengiriman":
+        - paragraph: Rp. 12.000.000
+        - text: Proses Pengiriman
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD9719032965 FCL Nusantara Logistik Utama Kota Surabaya EL - Gudang Surabaya Kota Makassar EL- Gudang Makassar Rp. 4.162.200 Proses Pengiriman":
+      - cell "Salin ORD9719032965 FCL Nusantara Logistik Utama":
+        - button "Salin ORD9719032965": ORD9719032965
+        - text: FCL Nusantara Logistik Utama
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Kota Makassar EL- Gudang Makassar":
+        - paragraph: Kota Makassar
+        - text: EL- Gudang Makassar
+      - cell "Rp. 4.162.200 Proses Pengiriman":
+        - paragraph: Rp. 4.162.200
+        - text: Proses Pengiriman
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD9523666757 FCL Nusantara Logistik Utama Kota Surabaya BB WH Rungkut Kota Makassar EL- Gudang Makassar Rp. 22.000.000 Proses Pengiriman":
+      - cell "Salin ORD9523666757 FCL Nusantara Logistik Utama":
+        - button "Salin ORD9523666757": ORD9523666757
+        - text: FCL Nusantara Logistik Utama
+      - cell "Kota Surabaya BB WH Rungkut":
+        - paragraph: Kota Surabaya
+        - text: BB WH Rungkut
+      - cell "Kota Makassar EL- Gudang Makassar":
+        - paragraph: Kota Makassar
+        - text: EL- Gudang Makassar
+      - cell "Rp. 22.000.000 Proses Pengiriman":
+        - paragraph: Rp. 22.000.000
+        - text: Proses Pengiriman
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD9027710531 FTL Nusantara Logistik Utama Kabupaten Bogor BB Mill Wanaherang Kota Semarang Warehouse Gunung Pati Rp. 3.000.000 Terkirim":
+      - cell "Salin ORD9027710531 FTL Nusantara Logistik Utama":
+        - button "Salin ORD9027710531": ORD9027710531
+        - text: FTL Nusantara Logistik Utama
+      - cell "Kabupaten Bogor BB Mill Wanaherang":
+        - paragraph: Kabupaten Bogor
+        - text: BB Mill Wanaherang
+      - cell "Kota Semarang Warehouse Gunung Pati":
+        - paragraph: Kota Semarang
+        - text: Warehouse Gunung Pati
+      - cell "Rp. 3.000.000 Terkirim":
+        - paragraph: Rp. 3.000.000
+        - text: Terkirim
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8939795982 FTL Nusantara Logistik Utama Kota Surabaya BB WH Krembangan Kota Surabaya BB WH Rungkut Rp. 2.011.730 Proses Pengiriman":
+      - cell "Salin ORD8939795982 FTL Nusantara Logistik Utama":
+        - button "Salin ORD8939795982": ORD8939795982
+        - text: FTL Nusantara Logistik Utama
+      - cell "Kota Surabaya BB WH Krembangan":
+        - paragraph: Kota Surabaya
+        - text: BB WH Krembangan
+      - cell "Kota Surabaya BB WH Rungkut":
+        - paragraph: Kota Surabaya
+        - text: BB WH Rungkut
+      - cell "Rp. 2.011.730 Proses Pengiriman":
+        - paragraph: Rp. 2.011.730
+        - text: Proses Pengiriman
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8939717339 LTL Nusantara Logistik Utama Kota Surabaya BB WH Krembangan Kota Surabaya BB WH Rungkut Rp. 1.189.200 Menunggu Penugasan":
+      - cell "Salin ORD8939717339 LTL Nusantara Logistik Utama":
+        - button "Salin ORD8939717339": ORD8939717339
+        - text: LTL Nusantara Logistik Utama
+      - cell "Kota Surabaya BB WH Krembangan":
+        - paragraph: Kota Surabaya
+        - text: BB WH Krembangan
+      - cell "Kota Surabaya BB WH Rungkut":
+        - paragraph: Kota Surabaya
+        - text: BB WH Rungkut
+      - cell "Rp. 1.189.200 Menunggu Penugasan":
+        - paragraph: Rp. 1.189.200
+        - text: Menunggu Penugasan
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8929973577 FTL Nusantara Logistik Utama Kota Surabaya BB WH Krembangan Kota Surabaya BB WH Rungkut Rp. 8.919.000 Terkirim":
+      - cell "Salin ORD8929973577 FTL Nusantara Logistik Utama":
+        - button "Salin ORD8929973577": ORD8929973577
+        - text: FTL Nusantara Logistik Utama
+      - cell "Kota Surabaya BB WH Krembangan":
+        - paragraph: Kota Surabaya
+        - text: BB WH Krembangan
+      - cell "Kota Surabaya BB WH Rungkut":
+        - paragraph: Kota Surabaya
+        - text: BB WH Rungkut
+      - cell "Rp. 8.919.000 Terkirim":
+        - paragraph: Rp. 8.919.000
+        - text: Terkirim
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8929845367 LTL Nusantara Logistik Utama Kota Surabaya EL - Gudang Surabaya Kota Bandung EL - Gudang Bandung Rp. 198.200 Terkirim":
+      - cell "Salin ORD8929845367 LTL Nusantara Logistik Utama":
+        - button "Salin ORD8929845367": ORD8929845367
+        - text: LTL Nusantara Logistik Utama
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Kota Bandung EL - Gudang Bandung":
+        - paragraph: Kota Bandung
+        - text: EL - Gudang Bandung
+      - cell "Rp. 198.200 Terkirim":
+        - paragraph: Rp. 198.200
+        - text: Terkirim
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8925038898 FTL PT Jalur Besi Transindo Multipickup Kota Bandung EL - Gudang Bandung Rp. 7.928.000 Menunggu Penugasan":
+      - cell "Salin ORD8925038898 FTL PT Jalur Besi Transindo":
+        - button "Salin ORD8925038898": ORD8925038898
+        - text: FTL PT Jalur Besi Transindo
+      - cell "Multipickup":
+        - button "Multipickup"
+      - cell "Kota Bandung EL - Gudang Bandung":
+        - paragraph: Kota Bandung
+        - text: EL - Gudang Bandung
+      - cell "Rp. 7.928.000 Menunggu Penugasan":
+        - paragraph: Rp. 7.928.000
+        - text: Menunggu Penugasan
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8925038186 FTL Nusantara Logistik Utama Kota Surabaya EL - Gudang Surabaya Kota Bandung EL - Gudang Bandung Rp. 8.010.000 Terkirim":
+      - cell "Salin ORD8925038186 FTL Nusantara Logistik Utama":
+        - button "Salin ORD8925038186": ORD8925038186
+        - text: FTL Nusantara Logistik Utama
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Kota Bandung EL - Gudang Bandung":
+        - paragraph: Kota Bandung
+        - text: EL - Gudang Bandung
+      - cell "Rp. 8.010.000 Terkirim":
+        - paragraph: Rp. 8.010.000
+        - text: Terkirim
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8924736516 FCL Nusantara Logistik Utama Kota Surabaya EL - Gudang Surabaya Kota Makassar EL- Gudang Makassar Rp. 10.299.999 Terkirim":
+      - cell "Salin ORD8924736516 FCL Nusantara Logistik Utama":
+        - button "Salin ORD8924736516": ORD8924736516
+        - text: FCL Nusantara Logistik Utama
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Kota Makassar EL- Gudang Makassar":
+        - paragraph: Kota Makassar
+        - text: EL- Gudang Makassar
+      - cell "Rp. 10.299.999 Terkirim":
+        - paragraph: Rp. 10.299.999
+        - text: Terkirim
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8921306495 FTL Alexa Powell Trucks Kabupaten Bogor BB Mill Wanaherang Kota Surabaya BB WH Krembangan Rp. 6.200.000 Menunggu Penugasan":
+      - cell "Salin ORD8921306495 FTL Alexa Powell Trucks":
+        - button "Salin ORD8921306495": ORD8921306495
+        - text: FTL Alexa Powell Trucks
+      - cell "Kabupaten Bogor BB Mill Wanaherang":
+        - paragraph: Kabupaten Bogor
+        - text: BB Mill Wanaherang
+      - cell "Kota Surabaya BB WH Krembangan":
+        - paragraph: Kota Surabaya
+        - text: BB WH Krembangan
+      - cell "Rp. 6.200.000 Menunggu Penugasan":
+        - paragraph: Rp. 6.200.000
+        - text: Menunggu Penugasan
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8855762870 FTL Nusantara Logistik Utama Kota Administrasi Jakarta Utara BB WH Priok Kota Administrasi Jakarta Utara BB WH Marunda Rp. 2.000.000 Proses Pengiriman":
+      - cell "Salin ORD8855762870 FTL Nusantara Logistik Utama":
+        - button "Salin ORD8855762870": ORD8855762870
+        - text: FTL Nusantara Logistik Utama
+      - cell "Kota Administrasi Jakarta Utara BB WH Priok":
+        - paragraph: Kota Administrasi Jakarta Utara
+        - text: BB WH Priok
+      - cell "Kota Administrasi Jakarta Utara BB WH Marunda":
+        - paragraph: Kota Administrasi Jakarta Utara
+        - text: BB WH Marunda
+      - cell "Rp. 2.000.000 Proses Pengiriman":
+        - paragraph: Rp. 2.000.000
+        - text: Proses Pengiriman
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8852894517 FTL Nusantara Logistik Utama Kota Surabaya EL - Gudang Surabaya Kota Semarang Warehouse Gunung Pati Rp. 4.230.000 Terkirim":
+      - cell "Salin ORD8852894517 FTL Nusantara Logistik Utama":
+        - button "Salin ORD8852894517": ORD8852894517
+        - text: FTL Nusantara Logistik Utama
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Kota Semarang Warehouse Gunung Pati":
+        - paragraph: Kota Semarang
+        - text: Warehouse Gunung Pati
+      - cell "Rp. 4.230.000 Terkirim":
+        - paragraph: Rp. 4.230.000
+        - text: Terkirim
+      - cell:
+        - button "Aksi"
+    - row "Salin ORD8852857447 FTL Alexa Powell Trucks Kota Surabaya EL - Gudang Surabaya Kota Bandung EL - Gudang Bandung Rp. 2.000.000 Menunggu Penugasan":
+      - cell "Salin ORD8852857447 FTL Alexa Powell Trucks":
+        - button "Salin ORD8852857447": ORD8852857447
+        - text: FTL Alexa Powell Trucks
+      - cell "Kota Surabaya EL - Gudang Surabaya":
+        - paragraph: Kota Surabaya
+        - text: EL - Gudang Surabaya
+      - cell "Kota Bandung EL - Gudang Bandung":
+        - paragraph: Kota Bandung
+        - text: EL - Gudang Bandung
+      - cell "Rp. 2.000.000 Menunggu Penugasan":
+        - paragraph: Rp. 2.000.000
+        - text: Menunggu Penugasan
+      - cell:
+        - button "Aksi"
+- paragraph: Menampilkan 1–20 data dari 31 data
+- button "Halaman pertama" [disabled]
+- button "Sebelumnya" [disabled]
+- button "1"
+- button "2"
+- button "Berikutnya"
+- button "Halaman terakhir"
+- region "Notifications alt+T"
+- alert

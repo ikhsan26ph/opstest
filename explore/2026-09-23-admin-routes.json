@@ -1,0 +1,3105 @@
+[
+  {
+    "route": "/order",
+    "started": "2026-09-23T02:45:13.755Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/order?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/droppoints?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/city?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/order",
+    "title": "Daftar Order | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Daftar Order"
+    ],
+    "headings": [
+      "H2: Daftar Order"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Buat Order",
+      "Batch Order",
+      "Riwayat Pembatalan",
+      "Filter",
+      "Semua Jenis",
+      "Semua Kota",
+      "Pilih Tanggal",
+      "Semua Tipe",
+      "Semua Drop Point",
+      "Semua Status",
+      "Reset",
+      "Terapkan",
+      "ORD0065597914",
+      "Aksi",
+      "ORD0065468154",
+      "ORD0061555399",
+      "Multidrop",
+      "ORD0059771455",
+      "ORD0059547619",
+      "ORD9965441127",
+      "ORD9719032965",
+      "ORD9523666757",
+      "ORD9027710531",
+      "ORD8939795982",
+      "ORD8939717339",
+      "ORD8929973577",
+      "ORD8929845367",
+      "ORD8925038898",
+      "Multipickup",
+      "ORD8925038186",
+      "ORD8924736516",
+      "ORD8921306495",
+      "ORD8855762870",
+      "ORD8852894517",
+      "ORD8852857447",
+      "Halaman pertama",
+      "Sebelumnya",
+      "1",
+      "2",
+      "Berikutnya",
+      "Halaman terakhir"
+    ],
+    "ths": [
+      "ID OrderVendor",
+      "Kota AsalWarehouse Asal",
+      "Kota TujuanWarehouse Tujuan",
+      "Total HargaStatus"
+    ],
+    "rows": 21,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan ID Order",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Vendor",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Pengirim",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Penerima",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/penugasan-tracking",
+    "started": "2026-09-23T02:45:17.689Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/city?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendors/options?limit=999&pengelola=ALL",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/penugasan-tracking?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/orders?hasPenugasan=false&status=DRAFT,ASSIGNED,MENUNGGU_PENUGASAN&page=1&limit=1",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/penugasan-tracking",
+    "title": "Penugasan Tracking | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Penugasan Tracking"
+    ],
+    "headings": [
+      "H2: Penugasan Tracking"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Tambah Penugasan",
+      "Filter",
+      "Pilih Jenis Order",
+      "Pilih Rute",
+      "Pilih Status",
+      "Pilih Tahapan",
+      "Pilih Tanggal",
+      "Semua Vendor",
+      "Reset",
+      "Terapkan",
+      "Aksi",
+      "Multidrop",
+      "Halaman pertama",
+      "Sebelumnya",
+      "1",
+      "2",
+      "Berikutnya",
+      "Halaman terakhir"
+    ],
+    "ths": [
+      "ID OrderVendor",
+      "Rute",
+      "No. Polisi/No. KontainerSopir",
+      "Status"
+    ],
+    "rows": 21,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan ID Order",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan No. Polisi/No. Kontainer",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Sopir/Petugas",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/provinsi",
+    "started": "2026-09-23T02:45:20.873Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/provinces?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/provinsi",
+    "title": "Master Provinsi | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Provinsi"
+    ],
+    "headings": [
+      "H2: Master Provinsi"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Tambah Provinsi",
+      "Filter",
+      "Riwayat",
+      "Pilih Status",
+      "Reset",
+      "Terapkan",
+      "Edit Data",
+      "Hapus Data",
+      "Halaman pertama",
+      "Sebelumnya",
+      "1",
+      "2",
+      "Berikutnya",
+      "Halaman terakhir"
+    ],
+    "ths": [
+      "No",
+      "Nama Provinsi",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 21,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Provinsi",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/kota",
+    "started": "2026-09-23T02:45:24.258Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/provinces?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/city?page=1&limit=20",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/kota",
+    "title": "Master Kota | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Kota"
+    ],
+    "headings": [
+      "H2: Master Kota"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Riwayat",
+      "Pilih Provinsi",
+      "Semua Status",
+      "Reset",
+      "Terapkan",
+      "Edit",
+      "Hapus",
+      "Halaman pertama",
+      "Sebelumnya",
+      "1",
+      "2",
+      "26",
+      "Berikutnya",
+      "Halaman terakhir"
+    ],
+    "ths": [
+      "No",
+      "Kota/Kab.",
+      "Provinsi",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 21,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan nama kota",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Kota -> /master/kota/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/kecamatan",
+    "started": "2026-09-23T02:45:27.730Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/provinces?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/city?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/districts?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/kecamatan",
+    "title": "Master Kecamatan | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Kecamatan"
+    ],
+    "headings": [
+      "H2: Master Kecamatan"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Riwayat",
+      "Pilih Kota/Kab.",
+      "Pilih Provinsi",
+      "Pilih Status",
+      "Reset",
+      "Terapkan",
+      "Edit",
+      "Hapus",
+      "Halaman pertama",
+      "Sebelumnya",
+      "1",
+      "2",
+      "365",
+      "Berikutnya",
+      "Halaman terakhir"
+    ],
+    "ths": [
+      "No",
+      "Kecamatan",
+      "Kota/Kab.",
+      "Provinsi",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 21,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan kecamatan",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Kecamatan -> /master/kecamatan/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/kelurahan",
+    "started": "2026-09-23T02:45:36.740Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/provinces?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/city?limit=1000",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/kelurahans?page=1&limit=20",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/kelurahan",
+    "title": "Master Kelurahan | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Kelurahan"
+    ],
+    "headings": [
+      "H2: Master Kelurahan"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Riwayat",
+      "Pilih Provinsi",
+      "Pilih Kota/Kab.",
+      "Pilih Status",
+      "Reset",
+      "Terapkan",
+      "Edit Data",
+      "Hapus Data",
+      "Halaman pertama",
+      "Sebelumnya",
+      "1",
+      "2",
+      "4189",
+      "Berikutnya",
+      "Halaman terakhir"
+    ],
+    "ths": [
+      "No",
+      "Kelurahan/DesaKode Pos",
+      "Kecamatan",
+      "Kota/Kab.",
+      "Provinsi",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 21,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Kelurahan/Desa",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Kode Pos",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Kecamatan",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Kelurahan -> /master/kelurahan/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/customer",
+    "started": "2026-09-23T02:45:40.168Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/customers?page=1&limit=20&type=PERUSAHAAN",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/customer",
+    "title": "Master Drop Point | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Drop Point"
+    ],
+    "headings": [
+      "H2: Master Drop Point"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Riwayat",
+      "Pilih Status",
+      "Reset",
+      "Terapkan",
+      "Detail",
+      "Edit Informasi Perusahaan",
+      "Hapus data"
+    ],
+    "ths": [
+      "No",
+      "Nama PerusahaanAlias",
+      "Nama PIC",
+      "No. WhatsApp PIC",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 5,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Perusahaan",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Alias",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama PIC",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan No. WhatsApp PIC",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Perusahaan -> /master/customer/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/waktu-perjalanan",
+    "started": "2026-09-23T02:45:43.749Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/waktu-perjalanan?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/waktu-perjalanan",
+    "title": "Master Waktu Perjalanan | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Waktu Perjalanan"
+    ],
+    "headings": [
+      "H2: Master Waktu Perjalanan"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Perbarui Waktu Perjalanan",
+      "Filter",
+      "Riwayat",
+      "Pilih Sumber Data",
+      "Reset",
+      "Terapkan",
+      "Edit target waktu (rute terkunci)",
+      "Tidak dapat dihapus — rute sudah digunakan pada order"
+    ],
+    "ths": [
+      "No.",
+      "Rute",
+      "Waktu PerjalananSumber Data",
+      "Aksi"
+    ],
+    "rows": 8,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Rute",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Waktu Perjalanan -> /master/waktu-perjalanan/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/pelabuhan",
+    "started": "2026-09-23T02:45:46.916Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/pelabuhans?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/city?limit=999",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/pelabuhan",
+    "title": "Master Pelabuhan | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Pelabuhan"
+    ],
+    "headings": [
+      "H2: Master Pelabuhan"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Riwayat",
+      "Pilih Kota/Kab.",
+      "Pilih Status",
+      "Reset",
+      "Terapkan",
+      "Edit data",
+      "Hapus data"
+    ],
+    "ths": [
+      "No",
+      "UN Code",
+      "Nama Pelabuhan",
+      "Nama Kota/Kab.",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 4,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan UN Code",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukan Nama Pelabuhan",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Pelabuhan -> /master/pelabuhan/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/pelayaran",
+    "started": "2026-09-23T02:45:50.059Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/pelayarans?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/uploads/pelayaran/2026/09/b886f7fb-59db-415c-8b5c-fc48553e8d97.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/pelayaran",
+    "title": "Master Pelayaran | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Pelayaran"
+    ],
+    "headings": [
+      "H2: Master Pelayaran"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Riwayat",
+      "Pilih Status",
+      "Reset",
+      "Terapkan",
+      "Edit",
+      "Hapus"
+    ],
+    "ths": [
+      "No",
+      "Nama Pelayaran",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 2,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Pelayaran",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Pelayaran -> /master/pelayaran/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/unit",
+    "started": "2026-09-23T02:45:59.042Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/armadas/vendors?limit=1",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/armadas/vendors?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/armadas/vendors?limit=999",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/unit",
+    "title": "Master Unit | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Unit"
+    ],
+    "headings": [
+      "H2: Master Unit"
+    ],
+    "tabs": [
+      "Armada",
+      "Jenis Armada",
+      "Jenis Kontainer"
+    ],
+    "buttons": [
+      "Armada",
+      "Jenis Armada",
+      "Jenis Kontainer",
+      "Tambah Armada",
+      "Filter",
+      "Pilih Nama Vendor",
+      "Reset",
+      "Terapkan",
+      "Kelola Armada"
+    ],
+    "ths": [
+      "No.",
+      "Nama Vendor",
+      "Jumlah Armada",
+      "Tanggal Update"
+    ],
+    "rows": 2,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "Masukkan Jumlah Armada",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "DD/MM/YYYY",
+        "n": null,
+        "id": "dp-_r_1_",
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/sopir",
+    "started": "2026-09-23T02:46:02.933Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/sopirs/vendors?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/sopirs/vendors?limit=999",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/sopir",
+    "title": "Master Sopir | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Sopir"
+    ],
+    "headings": [
+      "H2: Master Sopir"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Tambah Sopir",
+      "Filter",
+      "Pilih Nama Vendor",
+      "Reset",
+      "Terapkan",
+      "Kelola Sopir"
+    ],
+    "ths": [
+      "No.",
+      "Nama Vendor",
+      "Jumlah Sopir",
+      "Tanggal Update"
+    ],
+    "rows": 2,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "Masukkan Jumlah Sopir",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "DD/MM/YYYY",
+        "n": null,
+        "id": "dp-_r_1_",
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/master/cs",
+    "started": "2026-09-23T02:46:05.888Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/customer-services?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/master/cs",
+    "title": "Master Customer Service | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Master Customer Service"
+    ],
+    "headings": [
+      "H2: Master Customer Service"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Riwayat",
+      "Pilih Status",
+      "Reset",
+      "Terapkan",
+      "1 Vendor",
+      "Edit data",
+      "Hapus data"
+    ],
+    "ths": [
+      "No",
+      "Nama CS",
+      "No. WhatsApp CS",
+      "Jumlah Vendor",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 2,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama CS",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan No. WhatsApp CS",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Customer Service -> /master/cs/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/manajemen-vendor",
+    "started": "2026-09-23T02:46:09.014Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/vendors?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/customer-services/options",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/manajemen-vendor",
+    "title": "Manajemen Vendor | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Manajemen Vendor"
+    ],
+    "headings": [
+      "H2: Manajemen Vendor"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Riwayat",
+      "Pilih Status",
+      "Pilih Pengelola",
+      "Pilih CS Penanggung Jawab",
+      "Reset",
+      "Terapkan",
+      "Aksi"
+    ],
+    "ths": [
+      "Nama VendorAlias",
+      "EmailNo. WhatsApp",
+      "Pengelola",
+      "CS Penanggung JawabNo. WhatsApp CS",
+      "Status"
+    ],
+    "rows": 9,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Vendor",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Alias",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Email",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan No. WhatsApp",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan No. WhatsApp CS",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Tambah Vendor -> /manajemen-vendor/tambah"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/pengaturan-akun",
+    "started": "2026-09-23T02:46:12.551Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/sub-users?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/pengaturan-akun",
+    "title": "Pengaturan Akun | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Pengaturan Akun"
+    ],
+    "headings": [
+      "H2: Pengaturan Akun"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Sub User",
+      "Hak Akses",
+      "Tambah Sub User",
+      "Riwayat",
+      "Filter",
+      "Pilih Status",
+      "Reset",
+      "Terapkan",
+      "Lihat detail",
+      "Edit data",
+      "Hapus data"
+    ],
+    "ths": [
+      "No",
+      "Nama Sub User",
+      "Email",
+      "Bagian Staff",
+      "Status",
+      "Aksi"
+    ],
+    "rows": 5,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Sub User",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Email",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Bagian Staff",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/akun-saya",
+    "started": "2026-09-23T02:46:20.749Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/account/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/akun-saya",
+    "title": "Akun Saya | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Akun Saya"
+    ],
+    "headings": [
+      "H2: Akun Saya"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Edit Informasi",
+      "Ubah Password",
+      "Riwayat"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/setting/sistem",
+    "started": "2026-09-23T02:46:23.787Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/system",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/setting/sistem",
+    "title": "Pengaturan Sistem | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Pengaturan Sistem"
+    ],
+    "headings": [
+      "H2: Pengaturan Sistem"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Durasi Kedaluwarsa Undangan VendorBatas waktu tautan undanga",
+      "Notifikasi LokasiJarak dari lokasi muat/bongkar di mana noti",
+      "Deteksi Tidak UpdateBatas waktu armada/kontainer tidak berge",
+      "Deteksi Keluar JalurLebar koridor toleransi di sekeliling pr",
+      "Koridor HistorisJumlah minimum trip selesai pada rute yang s",
+      "Notifikasi Dini Berisiko TerlambatAmbang batas proyeksi kete",
+      "Nomor WhatsApp CSNomor tujuan tombol \"Hubungi Kami\" di halam",
+      "Pembatasan Kelayakan ArmadaPembatasan armada terkait masa be",
+      "Armada DibatasiArmada dengan dokumen kedaluwarsa tidak bisa ",
+      "PeringatanArmada tetap bisa dipilih, tapi sistem menampilkan",
+      "Tidak Ada PengecekanSistem tidak memeriksa masa berlaku doku",
+      "Batal",
+      "Simpan"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [
+      {
+        "t": "input:number",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:number",
+        "ph": "0",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "08xxxxxxxxxx",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/setting/general",
+    "started": "2026-09-23T02:46:26.661Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/setting/general",
+    "title": "Pengaturan Notifikasi | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Pengaturan Notifikasi"
+    ],
+    "headings": [
+      "H2: Pengaturan Notifikasi",
+      "H3: Daftar Notifikasi"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Batal",
+      "Simpan"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/setting/preferensi-notifikasi",
+    "started": "2026-09-23T02:46:29.526Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/notification-preference",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/setting/preferensi-notifikasi",
+    "title": "Preferensi Notifikasi | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Preferensi Notifikasi"
+    ],
+    "headings": [
+      "H2: Preferensi Notifikasi",
+      "H3: Order (3/3)",
+      "H3: Tracking (3/3)",
+      "H3: Monitoring & Tracking (3/3)",
+      "H3: KIR Armada (2/2)"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Batal",
+      "Simpan"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:checkbox",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/",
+    "started": "2026-09-23T02:46:38.745Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/system",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/monitoring-tracking/cases?type=ALL",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/monitoring-tracking/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/monitoring-tracking/nearby-muat",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/monitoring-tracking/fleet",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/monitoring",
+    "title": "Monitoring | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Monitoring"
+    ],
+    "headings": [
+      "H2: Monitoring"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Semua Tahapan12",
+      "Berangkat Muat5",
+      "Sampai Tempat Muat0",
+      "Selesai Muat4",
+      "Berangkat Bongkar3",
+      "Sampai Tempat Bongkar0",
+      "Selesai Bongkar0",
+      "Kendala1",
+      "Keluar Jalur0",
+      "Berpotensi Terlambat0",
+      "Tidak Update12",
+      "Melewati SLA4",
+      "+",
+      "−",
+      "Layar penuh",
+      "Semua Customer",
+      "Data Kasus",
+      "Armada Terdekat",
+      "Refresh",
+      "Semua Kasus",
+      "L 1090 EL•SukriNo. Kontainer: EMCU53454353",
+      "L 1090 EL•SukriNo. Kontainer: MRTU20987543",
+      "L 9180 EL•Rahmat Nurdiansyah",
+      "Lihat",
+      "L 1090 EL•Sukri",
+      "L 9001 BB•Sukri",
+      "Lacak",
+      "L 8009 BB•Sukri",
+      "L 9180 EL•Sukri",
+      "B 1111 LO•Sukri",
+      "L 1090 EL•Rahmat Nurdiansyah",
+      "B 2138 LL•Jonatan",
+      "L 1090 EL•SukriNo. Kontainer: LABB345678"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "OpenStreetMap -> https://www.openstreetmap.org/copyright",
+      "Riwayat -> /monitoring/riwayat",
+      "Lacak -> /tracking-location?orderCode=ORD9719032965&nopol=L1090EL",
+      "Lacak -> /tracking-location?orderCode=ORD9523666757&nopol=L1090EL",
+      "Lacak -> /tracking-location?orderCode=ORD8849924264&nopol=L9180EL",
+      "Lacak -> /tracking-location?orderCode=ORD8852599515&nopol=L1090EL",
+      "Lacak -> /tracking-location?orderCode=ORD8851083707&nopol=L8009BB",
+      "Lacak -> /tracking-location?orderCode=ORD8851727865&nopol=L9180EL",
+      "Lacak -> /tracking-location?orderCode=ORD8939795982&nopol=L1090EL",
+      "Lacak -> /tracking-location?orderCode=ORD9965441127&nopol=L1090EL"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": [
+      "Belum ada update sejak 14 hari 20 jam 1 …",
+      "Belum ada update sejak 14 hari 18 jam 21…",
+      "Belum ada update sejak 13 hari 18 jam 2 …"
+    ]
+  },
+  {
+    "route": "/monitoring/riwayat",
+    "started": "2026-09-23T02:46:42.597Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/monitoring-tracking/riwayat-kasus?page=1&limit=20",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/monitoring/riwayat",
+    "title": "Riwayat Kasus | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Monitoring",
+      "Riwayat Kasus"
+    ],
+    "headings": [
+      "H2: Riwayat Kasus"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Filter",
+      "Pilih Kasus",
+      "Reset",
+      "Terapkan",
+      "Halaman pertama",
+      "Sebelumnya",
+      "1",
+      "2",
+      "Berikutnya",
+      "Halaman terakhir"
+    ],
+    "ths": [
+      "No.",
+      "Nopol/No. KontainerNama Sopir",
+      "KasusDeskripsi Kasus",
+      "Tanggal KasusTanggal Selesai",
+      "Alasan Selesai"
+    ],
+    "rows": 21,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nopol/No. Kontainer",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Sopir",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "DD/MM/YYYY",
+        "n": null,
+        "id": "dp-_r_0_",
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "DD/MM/YYYY",
+        "n": null,
+        "id": "dp-_r_1_",
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Deskripsi Kasus",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Keterangan",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /",
+      "Monitoring -> /monitoring",
+      "← Kembali -> /monitoring"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": [
+      "Belum ada update sejak 30 menit lalu",
+      "Belum ada update sejak 1 hari 22 jam 12 menit lalu",
+      "Belum ada update sejak 1 hari 3 jam 52 menit lalu"
+    ]
+  },
+  {
+    "route": "/tracking-location",
+    "started": "2026-09-23T02:46:45.805Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/monitoring-tracking/track/orders?scope=active",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/tracking-location",
+    "title": "Tracking & Location | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Tracking & Location"
+    ],
+    "headings": [
+      "H2: Tracking & Location",
+      "H3: Tracking Armada"
+    ],
+    "tabs": [
+      "Tracking Terkini",
+      "Riwayat Tracking"
+    ],
+    "buttons": [
+      "Tracking Terkini",
+      "Riwayat Tracking",
+      "Pilih ID Order",
+      "Pilih Nopol/No. Kontainer",
+      "Cari"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/progres-pengiriman",
+    "started": "2026-09-23T02:46:48.833Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/progres-pengiriman",
+    "title": "Progres Pengiriman | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Beranda",
+      "Progres Pengiriman"
+    ],
+    "headings": [
+      "H2: Progres Pengiriman"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Refresh",
+      "Filter",
+      "Pilih Status",
+      "Reset",
+      "Terapkan"
+    ],
+    "ths": [],
+    "rows": 0,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nopol",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan Nama Sopir",
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Masukkan ID Order",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Beranda -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  },
+  {
+    "route": "/dashboard-operasional",
+    "started": "2026-09-23T02:46:52.311Z",
+    "status": 200,
+    "err": null,
+    "api": [
+      {
+        "m": "GET",
+        "u": "/api/system/status",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/site",
+        "s": 200
+      },
+      {
+        "m": "POST",
+        "u": "/api/auth/refresh",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/auth/me",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/uploads/site/2026/09/d83f8723-80c5-4d44-aa3e-2d8e03fe21f4.png",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/setting/general",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/quota/summary",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/dashboard-operasional/keterlambatan?period=bulanan&page=1&limit=20&sortDir=desc&sortBy=persentase",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/dashboard-operasional/keterlambatan?period=bulanan&page=1&limit=100000&sortDir=desc&sortBy=persentase",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/dashboard-operasional?period=bulanan",
+        "s": 200
+      },
+      {
+        "m": "GET",
+        "u": "/api/notifications/unread-count",
+        "s": 200
+      }
+    ],
+    "url": "https://ops-staging.prahu-hub.com/dashboard-operasional",
+    "title": "Dashboard Operasional | Prahu Hub - TMS",
+    "breadcrumb": [
+      "Dashboard",
+      "Operasional"
+    ],
+    "headings": [
+      "H2: Dashboard Operasional",
+      "H2: Volume dan Aktivitas",
+      "H3: Jenis Pengiriman",
+      "H3: Tren Volume Order",
+      "H2: Produktivitas Vendor",
+      "H3: 5 Vendor Paling Produktif",
+      "H2: Performa Pengiriman",
+      "H3: Ketepatan Waktu",
+      "H3: Daftar Keterlambatan Pengiriman"
+    ],
+    "tabs": [],
+    "buttons": [
+      "Harian",
+      "Mingguan",
+      "Bulanan",
+      "Tahunan",
+      "Pilih Tanggal",
+      "Export",
+      "Vendor",
+      "Keterlambatan",
+      "Persentase Keterlambatan",
+      "Lihat detail keterlambatan Nusantara Logistik Utama"
+    ],
+    "ths": [
+      "No",
+      "Vendor",
+      "Trip Selesai",
+      "Order Terkirim",
+      "Keterlambatan",
+      "Persentase Keterlambatan",
+      "Aksi"
+    ],
+    "rows": 6,
+    "inputs": [
+      {
+        "t": "select:select-one",
+        "ph": null,
+        "n": null,
+        "id": null,
+        "al": null
+      },
+      {
+        "t": "input:text",
+        "ph": "Cari data",
+        "n": null,
+        "id": null,
+        "al": null
+      }
+    ],
+    "combos": [],
+    "links": [
+      "Dashboard -> /"
+    ],
+    "testids": [],
+    "alerts": [],
+    "emptyState": []
+  }
+]

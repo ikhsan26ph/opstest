@@ -1,0 +1,201 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "delete-flow",
+   "ok": false,
+   "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('button:has(svg)').filter({ hasText: /^$/ }).filter({ has: locator('svg') }).locator('xpath=self::*[contains(@class,\"red\") or contains(@class,\"danger\") or contains(@class,\"destructive\")]').first()\n"
+  },
+  {
+   "step": "inventory",
+   "ok": true,
+   "info": {
+    "total": 55,
+    "counts": {
+     "FTL/NORMAL": 32,
+     "FCL/NORMAL": 11,
+     "FTL/MULTIDROP": 1,
+     "LCL/NORMAL": 1,
+     "LTL/NORMAL": 6,
+     "FTL/MULTIPICKUP": 3,
+     "FCL/MULTIDROP": 1
+    }
+   }
+  },
+  {
+   "step": "detail-FTL-MULTIDROP",
+   "ok": true,
+   "info": {
+    "order": {
+     "id": "e4f60a95-d702-4679-a9e5-0337b2e89646",
+     "orderCode": "ORD0212503970",
+     "serviceType": "FTL",
+     "tipe": "MULTIDROP",
+     "status": "PROSES_PENGIRIMAN"
+    },
+    "url": "https://ops-staging.prahu-hub.com/order/e4f60a95-d702-4679-a9e5-0337b2e89646",
+    "snap": "01-detail-FTL-MULTIDROP.yml",
+    "edit": 0,
+    "lines": [
+     "Progres Pengiriman",
+     "Jenis Pengiriman dan Rute",
+     "Proses Pengiriman",
+     "Jenis Pengiriman",
+     "Jenis Armada",
+     "Tipe Pengiriman",
+     "Multidrop",
+     "Data Pengirim",
+     "Pengirim",
+     "PIC Pengirim",
+     "Data Penerima",
+     "Bongkar 1",
+     "Penerima",
+     "PIC Penerima",
+     "Bongkar 2",
+     "Penerima",
+     "PIC Penerima",
+     "Tanggal Permintaan Muat",
+     "Jenis Armada",
+     "Proses Pengiriman"
+    ]
+   }
+  },
+  {
+   "step": "edit-FTL-MULTIDROP",
+   "ok": true,
+   "info": "tombol edit tidak ada di detail"
+  },
+  {
+   "step": "detail-FTL-MULTIPICKUP",
+   "ok": true,
+   "info": {
+    "order": {
+     "id": "859ec416-b037-4d82-909c-756548020437",
+     "orderCode": "ORD0173400693",
+     "serviceType": "FTL",
+     "tipe": "MULTIPICKUP",
+     "status": "MENUNGGU_PENUGASAN"
+    },
+    "url": "https://ops-staging.prahu-hub.com/order/859ec416-b037-4d82-909c-756548020437",
+    "snap": "02-detail-FTL-MULTIPICKUP.yml",
+    "edit": 1,
+    "lines": [
+     "Progres Pengiriman",
+     "Jenis Pengiriman dan Rute",
+     "Jenis Pengiriman",
+     "Jenis Armada",
+     "Tipe Pengiriman",
+     "Multipickup",
+     "Data Pengirim",
+     "Muat 1",
+     "Pengirim",
+     "PIC Pengirim",
+     "Muat 2",
+     "Pengirim",
+     "PIC Pengirim",
+     "Data Penerima",
+     "Penerima",
+     "PIC Penerima",
+     "Tanggal Permintaan Muat",
+     "Jenis Armada"
+    ]
+   }
+  },
+  {
+   "step": "edit-FTL-MULTIPICKUP",
+   "ok": true,
+   "info": {
+    "url": "https://ops-staging.prahu-hub.com/order/859ec416-b037-4d82-909c-756548020437/edit",
+    "snap": "03-edit-FTL-MULTIPICKUP.yml",
+    "before": {
+     "tipe": null,
+     "tipeText": [
+      "Tipe Pengiriman\n:\nMultipickup"
+     ],
+     "labels": [
+      "Muat 1",
+      "Muat 2"
+     ],
+     "iconButtons": 3,
+     "hapusButtons": 0,
+     "tambah": [
+      "Tambah Lokasi Muat"
+     ]
+    },
+    "afterDel": null,
+    "afterDel2": null,
+    "buttons": [
+     "Dashboard",
+     "Master Wilayah",
+     "Master Operasional",
+     "Pusat Notifikasi",
+     "[icon]",
+     "[icon]",
+     "99+",
+     "[icon]",
+     "Jenis Pengiriman dan Rute",
+     "Truck Trailer 40ft",
+     "EL - Gudang Surabaya",
+     "PT. Haier Sales Indonesia",
+     "BB WH Krembangan",
+     "PT Bahan Berkualitas",
+     "Tambah Lokasi Muat",
+     "EL - Gudang Bandung [Gudang Surya]",
+     "PT. Surya Elektronik",
+     "Data Barang - Armada 1",
+     "Vendor dan Harga",
+     "Nusantara Logistik Utama",
+     "Lihat Detail",
+     "Batal",
+     "Simpan"
+    ]
+   }
+  },
+  {
+   "step": "detail-FCL-MULTIDROP",
+   "ok": true,
+   "info": {
+    "order": {
+     "id": "ae1820d9-aa27-41d5-a022-b9671bd7599c",
+     "orderCode": "ORD0061555399",
+     "serviceType": "FCL",
+     "tipe": "MULTIDROP",
+     "status": "PROSES_PENGIRIMAN"
+    },
+    "url": "https://ops-staging.prahu-hub.com/order/ae1820d9-aa27-41d5-a022-b9671bd7599c",
+    "snap": "04-detail-FCL-MULTIDROP.yml",
+    "edit": 0,
+    "lines": [
+     "Progres Pengiriman",
+     "Jenis Pengiriman dan Rute",
+     "Proses Pengiriman",
+     "Jenis Pengiriman",
+     "Jenis Kontainer",
+     "Tipe Pengiriman",
+     "Multidrop",
+     "Metode Pengiriman",
+     "Data Pengirim",
+     "Pengirim",
+     "PIC Pengirim",
+     "Data Penerima",
+     "Bongkar 1",
+     "Penerima",
+     "PIC Penerima",
+     "Bongkar 2",
+     "Penerima",
+     "PIC Penerima",
+     "Tanggal Permintaan Muat",
+     "Jenis Kontainer",
+     "Proses Pengiriman"
+    ]
+   }
+  },
+  {
+   "step": "edit-FCL-MULTIDROP",
+   "ok": true,
+   "info": "tombol edit tidak ada di detail"
+  }
+ ]
+}

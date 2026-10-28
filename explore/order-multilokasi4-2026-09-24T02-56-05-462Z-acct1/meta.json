@@ -1,0 +1,65 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": false,
+ "notes": [
+  {
+   "step": "edit-open",
+   "ok": true,
+   "info": {
+    "tipe": "Tipe Pengiriman : Multipickup",
+    "labels": [
+     "Muat 1",
+     "Muat 2"
+    ],
+    "trash": 1,
+    "tambah": [
+     "Tambah Lokasi Muat"
+    ],
+    "barang": [
+     "Alamat Pick Up 1",
+     "Alamat Pick Up 2"
+    ],
+    "jenisCards": 0
+   }
+  },
+  {
+   "step": "edit-tambah-muat",
+   "ok": true,
+   "info": {
+    "tipe": "Tipe Pengiriman : Multipickup",
+    "labels": [
+     "Muat 1",
+     "Muat 2",
+     "Muat 3"
+    ],
+    "trash": 4,
+    "tambah": [
+     "Tambah Lokasi Muat"
+    ],
+    "barang": [
+     "Alamat Pick Up 1",
+     "Alamat Pick Up 2",
+     "Alamat Pick Up 3"
+    ],
+    "jenisCards": 0
+   }
+  },
+  {
+   "step": "edit-hapus-sampai-1",
+   "ok": false,
+   "error": "Error: page.evaluate: TypeError: Cannot read properties of null (reading 'replace')\n    at eval (eval at evaluate (:311:30), <anonymous>:2:82)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  },
+  {
+   "step": "trash-html",
+   "ok": true,
+   "info": []
+  },
+  {
+   "step": "filter-tipe",
+   "ok": false,
+   "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Filter', exact: true })\n"
+  }
+ ],
+ "mutations": []
+}

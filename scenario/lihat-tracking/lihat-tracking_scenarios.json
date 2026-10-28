@@ -1,0 +1,433 @@
+{
+  "source": "Empat poin requirement user 26 Oktober 2026; lihat-tracking_spec.md",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "FTL aktif L9180EL membuka Tracking Terkini terfilter",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0991110357; pilih Aksi > Detail pada unit L9180EL",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Tracking Terkini",
+        "Nopol/No. Kontainer L9180EL dan ID Order ORD0991110357 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Nopol sama pada order aktif lain tidak memakai order sebelumnya",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0932077885; pilih Aksi > Detail pada unit L9180EL",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Tracking Terkini",
+        "Nopol/No. Kontainer L9180EL dan ID Order ORD0932077885 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "FTL selesai nopol sama berpindah ke Riwayat Tracking",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0173105981; pilih Aksi > Detail pada unit L9180EL",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Riwayat Tracking",
+        "Nopol/No. Kontainer L9180EL dan ID Order ORD0173105981 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "Unit selesai pada order dengan unit belum berangkat tetap ke riwayat",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD1599718978; pilih Aksi > Detail pada unit L1090EL",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Riwayat Tracking",
+        "Nopol/No. Kontainer L1090EL dan ID Order ORD1599718978 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "Multipoint selesai armada pertama terfilter tepat",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0217664995; pilih Aksi > Detail pada unit D3232SS",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Riwayat Tracking",
+        "Nopol/No. Kontainer D3232SS dan ID Order ORD0217664995 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "Order sama armada kedua mengganti filter dan hasil armada pertama",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0217664995; pilih Aksi > Detail pada unit M3233PP",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Riwayat Tracking",
+        "Nopol/No. Kontainer M3233PP dan ID Order ORD0217664995 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "LTL aktif setelah riwayat kembali ke Tracking Terkini",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD1964760321; pilih Aksi > Detail pada unit L1090EL",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Tracking Terkini",
+        "Nopol/No. Kontainer L1090EL dan ID Order ORD1964760321 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "title": "LTL selesai mempertahankan nopol dengan spasi",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0219586047; pilih Aksi > Detail pada unit L 9876 KO",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Riwayat Tracking",
+        "Nopol/No. Kontainer L 9876 KO dan ID Order ORD0219586047 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "title": "LCL aktif memakai nopol truk terkait kontainer sumber",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD2557653613; pilih Aksi > Detail pada unit QA-OEALL-042339-LCL",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Tracking Terkini",
+        "Nopol sumber terkait unit QA-OEALL-042339-LCL dan ID Order ORD2557653613 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0010",
+      "title": "FCL Selesai Muat masih dalam perjalanan ke Tracking Terkini",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0327836588; pilih Aksi > Detail pada unit KO123",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Tracking Terkini",
+        "Nopol sumber terkait unit KO123 dan ID Order ORD0327836588 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0011",
+      "title": "FCL selesai membuka Riwayat dengan nopol truk dan kontainer yang benar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0263914913; pilih Aksi > Detail pada unit QATEST001",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Riwayat Tracking",
+        "Nopol sumber terkait unit QATEST001 dan ID Order ORD0263914913 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0012",
+      "title": "FCL berstatus selesai pada Selesai Muat tetap masuk Riwayat",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0213664177; pilih Aksi > Detail pada unit MSCU8988760",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Riwayat Tracking",
+        "Nopol sumber terkait unit MSCU8988760 dan ID Order ORD0213664177 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0013",
+      "title": "FTL selesai nopol berspasi tidak berubah saat diarahkan",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD0150788933; pilih Aksi > Detail pada unit L 1098 POL",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Riwayat Tracking",
+        "Nopol sumber terkait unit L 1098 POL dan ID Order ORD0150788933 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0014",
+      "title": "FTL aktif nopol berspasi tetap membuka Tracking Terkini",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004"
+      ],
+      "steps": [
+        "Buka daftar Penugasan melalui sidebar dari halaman sebelumnya",
+        "Filter ID order ORD1771932058; pilih Aksi > Detail pada unit W 2891 KP",
+        "Cocokkan status sumber, label Lihat Tracking dan href",
+        "Klik Lihat Tracking tanpa memilih filter atau Cari di tujuan",
+        "Periksa tab, dua field dan hasil yang dimuat otomatis"
+      ],
+      "expected": [
+        "Halaman Tracking & Location terbuka di Tracking Terkini",
+        "Nopol sumber terkait unit W 2891 KP dan ID Order ORD1771932058 sesuai sumber; assignment hasil sama"
+      ]
+    },
+    {
+      "id": "SCN-0015",
+      "title": "Refresh Tracking Terkini mempertahankan dua filter dan hasil",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002",
+        "REQ-003"
+      ],
+      "steps": [
+        "Dari hasil shortcut aktif W 2891 KP, refresh browser",
+        "Periksa tab, kedua field dan hasil otomatis"
+      ],
+      "expected": [
+        "Tracking Terkini dan identitas ORD1771932058 / W 2891 KP tetap sesuai"
+      ]
+    },
+    {
+      "id": "SCN-0016",
+      "title": "Refresh Riwayat Tracking mempertahankan dua filter dan hasil",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002",
+        "REQ-003"
+      ],
+      "steps": [
+        "Buka shortcut pengiriman selesai ORD0150788933",
+        "Refresh halaman tujuan lalu cocokkan filter dan hasil"
+      ],
+      "expected": [
+        "Riwayat Tracking dan identitas L 1098 POL tetap sesuai"
+      ]
+    },
+    {
+      "id": "SCN-0017",
+      "title": "Back dan Forward browser mempertahankan konteks shortcut selesai",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002",
+        "REQ-003"
+      ],
+      "steps": [
+        "Dari Riwayat ORD0150788933 tekan Back ke Detail Penugasan",
+        "Tekan Forward ke Tracking & Location tanpa mengisi field"
+      ],
+      "expected": [
+        "Tab Riwayat dan kedua filter serta detail order tetap sesuai sumber"
+      ]
+    },
+    {
+      "id": "SCN-0018",
+      "title": "Shortcut aktif setelah tab tujuan diganti manual tetap memakai status sumber",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-002",
+        "REQ-003"
+      ],
+      "steps": [
+        "Dari Riwayat yang terisi klik tab Tracking Terkini",
+        "Kembali ke Penugasan melalui sidebar; buka detail order aktif",
+        "Klik Lihat Tracking"
+      ],
+      "expected": [
+        "Tracking Terkini terpilih dan hasil sesuai W 2891 KP / ORD1771932058"
+      ]
+    },
+    {
+      "id": "SCN-0019",
+      "title": "Lihat Tracking nonaktif pada Pengurus sesuai klarifikasi user",
+      "category": "edge",
+      "priority": "high",
+      "screen": "SCR-01",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003"
+      ],
+      "steps": [
+        "Gunakan klarifikasi user bahwa perilaku saat ini sesuai",
+        "Tinjau bukti existing tombol Pengurus aktif dan selesai disabled serta sampel Sopir enabled"
+      ],
+      "expected": [
+        "Pembatasan Lihat Tracking untuk penugasan ke Sopir berlaku; Pengurus disabled sesuai"
+      ]
+    }
+  ]
+}

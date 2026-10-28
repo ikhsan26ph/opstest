@@ -1,0 +1,189 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Admin Administrator
+  - button "77":
+    - text: "77"
+    - img
+  - text: Admin [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Master Drop Point
+- heading "Master Drop Point" [level=2]
+- link "Tambah Perusahaan":
+  - /url: /master/customer/tambah
+- button "Filter"
+- button "Riwayat"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Nama Perusahaan
+- textbox "Masukkan Nama Perusahaan"
+- text: Alias
+- textbox "Masukkan Alias"
+- text: Nama PIC
+- textbox "Masukkan Nama PIC"
+- text: No. WhatsApp PIC
+- textbox "Masukkan No. WhatsApp PIC"
+- text: Status
+- button "Pilih Status":
+  - text: Pilih Status
+  - img
+- button "Reset"
+- button "Terapkan"
+- text: Drop point dikelola melalui halaman detail masing-masing perusahaan
+- table:
+  - rowgroup:
+    - row "No Nama Perusahaan Alias Nama PIC No. WhatsApp PIC Status Aksi":
+      - columnheader "No"
+      - columnheader "Nama Perusahaan Alias"
+      - columnheader "Nama PIC"
+      - columnheader "No. WhatsApp PIC"
+      - columnheader "Status"
+      - columnheader "Aksi"
+  - rowgroup:
+    - row:
+      - cell
+    - row "1 PT Maju Jaya Sejahtera - - Aktif Detail Edit Informasi Perusahaan Hapus data":
+      - cell "1"
+      - cell "PT Maju Jaya Sejahtera"
+      - cell "-"
+      - cell "-"
+      - cell "Aktif"
+      - cell "Detail Edit Informasi Perusahaan Hapus data":
+        - button "Detail"
+        - button "Edit Informasi Perusahaan"
+        - button "Hapus data"
+    - row "2 PT Bahan Berkualitas - - Aktif Detail Edit Informasi Perusahaan Hapus data":
+      - cell "2"
+      - cell "PT Bahan Berkualitas"
+      - cell "-"
+      - cell "-"
+      - cell "Aktif"
+      - cell "Detail Edit Informasi Perusahaan Hapus data":
+        - button "Detail"
+        - button "Edit Informasi Perusahaan"
+        - button "Hapus data"
+    - row "3 PT. Surya Elektronik - - Aktif Detail Edit Informasi Perusahaan Hapus data":
+      - cell "3"
+      - cell "PT. Surya Elektronik"
+      - cell "-"
+      - cell "-"
+      - cell "Aktif"
+      - cell "Detail Edit Informasi Perusahaan Hapus data":
+        - button "Detail"
+        - button "Edit Informasi Perusahaan"
+        - button "Hapus data"
+    - row "4 PT. Haier Sales Indonesia - - Aktif Detail Edit Informasi Perusahaan Hapus data":
+      - cell "4"
+      - cell "PT. Haier Sales Indonesia"
+      - cell "-"
+      - cell "-"
+      - cell "Aktif"
+      - cell "Detail Edit Informasi Perusahaan Hapus data":
+        - button "Detail"
+        - button "Edit Informasi Perusahaan"
+        - button "Hapus data"
+- paragraph: Menampilkan 1–4 data dari 4 data
+- region "Notifications alt+T"
+- alert

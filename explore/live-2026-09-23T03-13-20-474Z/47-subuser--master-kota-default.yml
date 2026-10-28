@@ -1,0 +1,313 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - button "Dashboard"
+        - list:
+          - listitem:
+            - link "Monitoring":
+              - /url: /monitoring
+          - listitem:
+            - link "Tracking & Location":
+              - /url: /tracking-location
+          - listitem:
+            - link "Progres Pengiriman":
+              - /url: /progres-pengiriman
+          - listitem:
+            - link "Operasional":
+              - /url: /dashboard-operasional
+      - listitem:
+        - link "Order":
+          - /url: /order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Wilayah"
+        - list:
+          - listitem:
+            - link "Master Provinsi":
+              - /url: /master/provinsi
+          - listitem:
+            - link "Master Kota":
+              - /url: /master/kota
+          - listitem:
+            - link "Master Kecamatan":
+              - /url: /master/kecamatan
+          - listitem:
+            - link "Master Kelurahan":
+              - /url: /master/kelurahan
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Drop Point":
+              - /url: /master/customer
+          - listitem:
+            - link "Master Waktu Perjalanan":
+              - /url: /master/waktu-perjalanan
+          - listitem:
+            - link "Master Pelabuhan":
+              - /url: /master/pelabuhan
+          - listitem:
+            - link "Master Pelayaran":
+              - /url: /master/pelayaran
+          - listitem:
+            - link "Master Unit":
+              - /url: /master/unit
+          - listitem:
+            - link "Master Sopir":
+              - /url: /master/sopir
+          - listitem:
+            - link "Master CS":
+              - /url: /master/cs
+      - listitem:
+        - link "Manajemen Vendor":
+          - /url: /manajemen-vendor
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /pengaturan-akun
+      - listitem:
+        - link "Akun Saya":
+          - /url: /akun-saya
+      - listitem:
+        - link "Pengaturan Sistem":
+          - /url: /setting/sistem
+      - listitem:
+        - button "Pusat Notifikasi"
+        - list:
+          - listitem:
+            - link "Pengaturan Notifikasi":
+              - /url: /setting/general
+          - listitem:
+            - link "Preferensi Notifikasi":
+              - /url: /setting/preferensi-notifikasi
+    - heading [level=2]
+  - heading "Kuota Order" [level=3]
+  - text: 18/5000 0,36%
+  - paragraph: Prahu Hub - TMS - Versi 1.0.0
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: Jaya Administrator
+  - button "16":
+    - text: "16"
+    - img
+  - text: Jaya [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /
+    - listitem: Master Kota
+- heading "Master Kota" [level=2]
+- link "Tambah Kota":
+  - /url: /master/kota/tambah
+- button "Filter"
+- button "Riwayat"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Kota/Kab.
+- textbox "Masukkan nama kota"
+- text: Provinsi
+- button "Pilih Provinsi":
+  - text: Pilih Provinsi
+  - img
+- text: Status
+- button "Semua Status":
+  - text: Semua Status
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "No Kota/Kab. Provinsi Status Aksi":
+      - columnheader "No"
+      - columnheader "Kota/Kab."
+      - columnheader "Provinsi"
+      - columnheader "Status"
+      - columnheader "Aksi"
+  - rowgroup:
+    - row:
+      - cell
+    - row "1 Kota Tebing Tinggi Sumatera Utara Tidak Aktif Edit Hapus":
+      - cell "1"
+      - cell "Kota Tebing Tinggi"
+      - cell "Sumatera Utara"
+      - cell "Tidak Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "2 Kota Tanjungbalai Sumatera Utara Aktif Edit Hapus":
+      - cell "2"
+      - cell "Kota Tanjungbalai"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "3 Kota Sibolga Sumatera Utara Aktif Edit Hapus":
+      - cell "3"
+      - cell "Kota Sibolga"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "4 Kota Pematangsiantar Sumatera Utara Aktif Edit Hapus":
+      - cell "4"
+      - cell "Kota Pematangsiantar"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "5 Kota Padangsidimpuan Sumatera Utara Aktif Edit Hapus":
+      - cell "5"
+      - cell "Kota Padangsidimpuan"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "6 Kota Medan Sumatera Utara Aktif Edit Hapus":
+      - cell "6"
+      - cell "Kota Medan"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "7 Kota Gunungsitoli Sumatera Utara Aktif Edit Hapus":
+      - cell "7"
+      - cell "Kota Gunungsitoli"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "8 Kota Binjai Sumatera Utara Aktif Edit Hapus":
+      - cell "8"
+      - cell "Kota Binjai"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "9 Kabupaten Toba Sumatera Utara Aktif Edit Hapus":
+      - cell "9"
+      - cell "Kabupaten Toba"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "10 Kabupaten Tapanuli Utara Sumatera Utara Aktif Edit Hapus":
+      - cell "10"
+      - cell "Kabupaten Tapanuli Utara"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "11 Kabupaten Tapanuli Tengah Sumatera Utara Aktif Edit Hapus":
+      - cell "11"
+      - cell "Kabupaten Tapanuli Tengah"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "12 Kabupaten Tapanuli Selatan Sumatera Utara Aktif Edit Hapus":
+      - cell "12"
+      - cell "Kabupaten Tapanuli Selatan"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "13 Kabupaten Simalungun Sumatera Utara Aktif Edit Hapus":
+      - cell "13"
+      - cell "Kabupaten Simalungun"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "14 Kabupaten Serdang Bedagai Sumatera Utara Aktif Edit Hapus":
+      - cell "14"
+      - cell "Kabupaten Serdang Bedagai"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "15 Kabupaten Samosir Sumatera Utara Aktif Edit Hapus":
+      - cell "15"
+      - cell "Kabupaten Samosir"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "16 Kabupaten Pakpak Bharat Sumatera Utara Aktif Edit Hapus":
+      - cell "16"
+      - cell "Kabupaten Pakpak Bharat"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "17 Kabupaten Padang Lawas Utara Sumatera Utara Aktif Edit Hapus":
+      - cell "17"
+      - cell "Kabupaten Padang Lawas Utara"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "18 Kabupaten Padang Lawas Sumatera Utara Aktif Edit Hapus":
+      - cell "18"
+      - cell "Kabupaten Padang Lawas"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "19 Kabupaten Nias Utara Sumatera Utara Aktif Edit Hapus":
+      - cell "19"
+      - cell "Kabupaten Nias Utara"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+    - row "20 Kabupaten Nias Selatan Sumatera Utara Aktif Edit Hapus":
+      - cell "20"
+      - cell "Kabupaten Nias Selatan"
+      - cell "Sumatera Utara"
+      - cell "Aktif"
+      - cell "Edit Hapus":
+        - button "Edit"
+        - button "Hapus"
+- paragraph: Menampilkan 1–20 data dari 514 data
+- button "Halaman pertama" [disabled]
+- button "Sebelumnya" [disabled]
+- button "1"
+- button "2"
+- text: ...
+- button "26"
+- button "Berikutnya"
+- button "Halaman terakhir"
+- region "Notifications alt+T"
+- alert

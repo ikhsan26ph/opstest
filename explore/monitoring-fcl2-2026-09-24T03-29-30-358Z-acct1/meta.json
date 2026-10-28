@@ -1,0 +1,284 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "open-monitoring",
+   "ok": true,
+   "info": {
+    "pane": "translate3d(0px, 0px, 0px)",
+    "tile": "https://tile.openstreetmap.org/5/26/16.png",
+    "popups": [],
+    "markers": [
+     {
+      "t": "14",
+      "cls": "leaflet-marker-icon lkl-marker-wrap leaflet-zoom-animated leaflet-interactive",
+      "tr": "translate3d(297px, 387px, 0px)"
+     },
+     {
+      "t": "3",
+      "cls": "leaflet-marker-icon lkl-marker-wrap leaflet-zoom-animated leaflet-interactive",
+      "tr": "translate3d(295px, 395px, 0px)"
+     },
+     {
+      "t": "2",
+      "cls": "leaflet-marker-icon lkl-marker-wrap leaflet-zoom-animated leaflet-interactive",
+      "tr": "translate3d(354px, 422px, 0px)"
+     },
+     {
+      "t": "",
+      "cls": "leaflet-marker-icon lkl-marker-wrap leaflet-zoom-animated leaflet-interactive",
+      "tr": "translate3d(163px, 363px, 0px)"
+     }
+    ]
+   }
+  },
+  {
+   "step": "data",
+   "ok": true,
+   "info": {
+    "fleet": 20,
+    "cases": 32,
+    "pen": 51,
+    "det": 20,
+    "orders": 14
+   }
+  },
+  {
+   "step": "kasus-click",
+   "ok": true,
+   "info": []
+  },
+  {
+   "step": "kasus-lihat",
+   "ok": true,
+   "info": {
+    "f": "01-lihat.yml",
+    "map": {
+     "pane": "translate3d(0px, 0px, 0px)",
+     "tile": "https://tile.openstreetmap.org/5/26/16.png",
+     "popups": [],
+     "markers": [
+      {
+       "t": "14",
+       "cls": "leaflet-marker-icon lkl-marker-wrap leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(297px, 387px, 0px)"
+      },
+      {
+       "t": "3",
+       "cls": "leaflet-marker-icon lkl-marker-wrap leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(295px, 395px, 0px)"
+      },
+      {
+       "t": "2",
+       "cls": "leaflet-marker-icon lkl-marker-wrap leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(354px, 422px, 0px)"
+      },
+      {
+       "t": "",
+       "cls": "leaflet-marker-icon lkl-marker-wrap leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(163px, 363px, 0px)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "step": "armada-terdekat",
+   "ok": true,
+   "info": {
+    "f": "02-armada-terdekat.yml",
+    "res": []
+   }
+  },
+  {
+   "step": "tracking-default",
+   "ok": true,
+   "info": "03-tracking.yml"
+  },
+  {
+   "step": "tracking-idorder-dropdown",
+   "ok": true,
+   "info": "04-id-order-open.yml"
+  },
+  {
+   "step": "search-in-idorder",
+   "ok": true,
+   "info": [
+    {
+     "term": "ORD0173206791",
+     "opts": [
+      "Dashboard\nMonitoring\nTracking & Location\nProgres Pengiriman\nOperasional",
+      "Monitoring",
+      "Tracking & Location",
+      "Progres Pengiriman",
+      "Operasional",
+      "Order",
+      "Penugasan Tracking",
+      "Master Wilayah\nMaster Provinsi\nMaster Kota\nMaster Kecamatan\nMaster Kelurahan",
+      "Master Provinsi",
+      "Master Kota",
+      "Master Kecamatan",
+      "Master Kelurahan",
+      "Master Operasional\nMaster Drop Point\nMaster Waktu Perjalanan\nMaster Pelabuhan\nMaster Pelayaran\nMaster Unit\nMaster Sopir\nMaster CS",
+      "Master Drop Point",
+      "Master Waktu Perjalanan",
+      "Master Pelabuhan",
+      "Master Pelayaran",
+      "Master Unit",
+      "Master Sopir",
+      "Master CS",
+      "Manajemen Vendor",
+      "Pengaturan Akun",
+      "Akun Saya",
+      "Pengaturan Sistem",
+      "Pusat Notifikasi\nPengaturan Notifikasi\nPreferensi Notifikasi",
+      "Pengaturan Notifikasi",
+      "Preferensi Notifikasi",
+      "Beranda",
+      "Tracking & Location"
+     ]
+    },
+    {
+     "term": "ORD0213664177",
+     "opts": [
+      "Dashboard\nMonitoring\nTracking & Location\nProgres Pengiriman\nOperasional",
+      "Monitoring",
+      "Tracking & Location",
+      "Progres Pengiriman",
+      "Operasional",
+      "Order",
+      "Penugasan Tracking",
+      "Master Wilayah\nMaster Provinsi\nMaster Kota\nMaster Kecamatan\nMaster Kelurahan",
+      "Master Provinsi",
+      "Master Kota",
+      "Master Kecamatan",
+      "Master Kelurahan",
+      "Master Operasional\nMaster Drop Point\nMaster Waktu Perjalanan\nMaster Pelabuhan\nMaster Pelayaran\nMaster Unit\nMaster Sopir\nMaster CS",
+      "Master Drop Point",
+      "Master Waktu Perjalanan",
+      "Master Pelabuhan",
+      "Master Pelayaran",
+      "Master Unit",
+      "Master Sopir",
+      "Master CS",
+      "Manajemen Vendor",
+      "Pengaturan Akun",
+      "Akun Saya",
+      "Pengaturan Sistem",
+      "Pusat Notifikasi\nPengaturan Notifikasi\nPreferensi Notifikasi",
+      "Pengaturan Notifikasi",
+      "Preferensi Notifikasi",
+      "Beranda",
+      "Tracking & Location",
+      "ORD0213664177"
+     ]
+    },
+    {
+     "term": "BM 6767",
+     "opts": [
+      "Dashboard\nMonitoring\nTracking & Location\nProgres Pengiriman\nOperasional",
+      "Monitoring",
+      "Tracking & Location",
+      "Progres Pengiriman",
+      "Operasional",
+      "Order",
+      "Penugasan Tracking",
+      "Master Wilayah\nMaster Provinsi\nMaster Kota\nMaster Kecamatan\nMaster Kelurahan",
+      "Master Provinsi",
+      "Master Kota",
+      "Master Kecamatan",
+      "Master Kelurahan",
+      "Master Operasional\nMaster Drop Point\nMaster Waktu Perjalanan\nMaster Pelabuhan\nMaster Pelayaran\nMaster Unit\nMaster Sopir\nMaster CS",
+      "Master Drop Point",
+      "Master Waktu Perjalanan",
+      "Master Pelabuhan",
+      "Master Pelayaran",
+      "Master Unit",
+      "Master Sopir",
+      "Master CS",
+      "Manajemen Vendor",
+      "Pengaturan Akun",
+      "Akun Saya",
+      "Pengaturan Sistem",
+      "Pusat Notifikasi\nPengaturan Notifikasi\nPreferensi Notifikasi",
+      "Pengaturan Notifikasi",
+      "Preferensi Notifikasi",
+      "Beranda",
+      "Tracking & Location"
+     ]
+    }
+   ]
+  },
+  {
+   "step": "close-idorder",
+   "ok": true,
+   "info": true
+  },
+  {
+   "step": "tracking-nopol-dropdown",
+   "ok": false,
+   "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: /Pilih Nopol/ }).first()\n    - locator resolved to <button disabled type=\"button\" aria-expanded=\"false\" aria-haspopup=\"listbox\" class=\"flex w-full items-center justify-between rounded-lg border px-3 py-1.5 text-left text-sm transition-colors h-9 border-gray-300 focus:border-blue-500 focus:r"
+  },
+  {
+   "step": "search-in-nopol",
+   "ok": false,
+   "error": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('input:visible').last()\n"
+  },
+  {
+   "step": "close-nopol",
+   "ok": true,
+   "info": true
+  },
+  {
+   "step": "tracking-lacak-fcl",
+   "ok": true,
+   "info": {
+    "f": "08-lacak-fcl.yml",
+    "map": {
+     "pane": "translate3d(0px, 0px, 0px)",
+     "tile": "https://tile.openstreetmap.org/8/208/133.png",
+     "popups": [],
+     "markers": [
+      {
+       "t": "",
+       "cls": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(404px, 80px, 0px)"
+      },
+      {
+       "t": "",
+       "cls": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(404px, 80px, 0px)"
+      },
+      {
+       "t": "",
+       "cls": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(856px, 358px, 0px)"
+      },
+      {
+       "t": "",
+       "cls": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(856px, 358px, 0px)"
+      },
+      {
+       "t": "",
+       "cls": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+       "tr": "translate3d(856px, 358px, 0px)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "step": "tracking-pengurus-url",
+   "ok": true,
+   "info": "09-pengurus-url.yml"
+  },
+  {
+   "step": "riwayat-tab",
+   "ok": true,
+   "info": "10-riwayat.yml"
+  }
+ ]
+}

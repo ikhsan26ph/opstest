@@ -1,0 +1,81 @@
+- complementary:
+  - link "Prahu Hub - TMS Prahu Hub - TMS":
+    - /url: /vendor-portal/order
+    - img "Prahu Hub - TMS"
+    - text: Prahu Hub - TMS
+  - navigation:
+    - heading [level=2]
+    - list:
+      - listitem:
+        - link "Order":
+          - /url: /vendor-portal/order
+      - listitem:
+        - link "Penugasan Tracking":
+          - /url: /penugasan-tracking
+      - listitem:
+        - button "Master Operasional"
+        - list:
+          - listitem:
+            - link "Master Armada":
+              - /url: /vendor-portal/master/armada
+          - listitem:
+            - link "Master Sopir":
+              - /url: /vendor-portal/master/sopir
+      - listitem:
+        - link "Akun Saya":
+          - /url: /vendor-portal/akun-saya
+      - listitem:
+        - link "Pusat Notifikasi":
+          - /url: /vendor-portal/setting/preferensi-notifikasi
+    - heading [level=2]
+  - button "Aktifkan mode gelap"
+- banner:
+  - button "Toggle Sidebar"
+  - text: PT. Ikatan Kuat Vendor
+  - button:
+    - img
+  - text: IKIK [REDACTED]
+  - button "Logout"
+- navigation:
+  - list:
+    - listitem:
+      - link "Beranda":
+        - /url: /vendor-portal/order
+    - listitem: Master Sopir
+- heading "Master Sopir" [level=2]
+- link "Tambah Sopir":
+  - /url: /vendor-portal/master/sopir/tambah
+- button "Filter"
+- text: Tampilkan
+- combobox:
+  - option "10"
+  - option "20" [selected]
+  - option "50"
+  - option "100"
+- text: data Nama Sopir
+- textbox "Masukkan Nama Sopir"
+- text: No. WhatsApp
+- textbox "Masukkan No. WhatsApp"
+- text: Status
+- button "Pilih Status":
+  - text: Pilih Status
+  - img
+- button "Reset"
+- button "Terapkan"
+- table:
+  - rowgroup:
+    - row "No Nama Sopir No. WhatsApp Kode Akses Status Aksi":
+      - columnheader "No"
+      - columnheader "Nama Sopir"
+      - columnheader "No. WhatsApp"
+      - columnheader "Kode Akses"
+      - columnheader "Status"
+      - columnheader "Aksi"
+  - rowgroup:
+    - row:
+      - cell
+    - row "Tidak ada data.":
+      - cell "Tidak ada data."
+- paragraph: Menampilkan 0–0 data dari 0 data
+- region "Notifications alt+T"
+- alert

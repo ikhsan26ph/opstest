@@ -1,0 +1,58 @@
+{
+ "account": 1,
+ "role": "Admin Utama",
+ "loggedOut": true,
+ "notes": [
+  {
+   "step": "delete-flow",
+   "ok": false,
+   "error": "Error: page.evaluate: TypeError: Cannot read properties of undefined (reading 'trim')\n    at eval (eval at evaluate (:311:30), <anonymous>:4:148)\n    at Array.filter (<anonymous>)\n    at eval (eval at evaluate (:311:30), <anonymous>:4:49)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  },
+  {
+   "step": "inventory",
+   "ok": true,
+   "info": {
+    "total": 55,
+    "counts": {
+     "FTL/NORMAL": 32,
+     "FCL/NORMAL": 11,
+     "FTL/MULTIDROP": 1,
+     "LCL/NORMAL": 1,
+     "LTL/NORMAL": 6,
+     "FTL/MULTIPICKUP": 3,
+     "FCL/MULTIDROP": 1
+    }
+   }
+  },
+  {
+   "step": "detail-FTL-MULTIDROP",
+   "ok": false,
+   "error": "TimeoutError: locator.innerText: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('main')\n"
+  },
+  {
+   "step": "edit-FTL-MULTIDROP",
+   "ok": true,
+   "info": "tombol edit tidak ada di detail"
+  },
+  {
+   "step": "detail-FTL-MULTIPICKUP",
+   "ok": false,
+   "error": "TimeoutError: locator.innerText: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('main')\n"
+  },
+  {
+   "step": "edit-FTL-MULTIPICKUP",
+   "ok": false,
+   "error": "Error: page.evaluate: TypeError: Cannot read properties of undefined (reading 'trim')\n    at eval (eval at evaluate (:311:30), <anonymous>:4:148)\n    at Array.filter (<anonymous>)\n    at eval (eval at evaluate (:311:30), <anonymous>:4:49)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  },
+  {
+   "step": "detail-FCL-MULTIDROP",
+   "ok": false,
+   "error": "TimeoutError: locator.innerText: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('main')\n"
+  },
+  {
+   "step": "edit-FCL-MULTIDROP",
+   "ok": true,
+   "info": "tombol edit tidak ada di detail"
+  }
+ ]
+}
