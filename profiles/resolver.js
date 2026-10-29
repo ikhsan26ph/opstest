@@ -243,6 +243,9 @@ function resolveTarget(targetId, profileId, { dir = PROFILES_DIR } = {}) {
   const t = readJson(path.join(ctx.dir, ctx.reg.targets[targetId]), 'TARGET_INVALID');
   rejectUnknownKeys(t, ['id', 'description', 'environment', 'tenant', 'account', 'settings', 'allowedProfiles'], `target ${targetId}`, 'TARGET_INVALID');
   requireKeys(t, ['id', 'environment', 'tenant', 'account', 'settings', 'allowedProfiles'], `target ${targetId}`, 'TARGET_INVALID');
+  for (const k of ['environment', 'tenant', 'account', 'settings']) {
+    if (!isPlainObject(t[k])) throw new ProfileError('TARGET_INVALID', `target ${targetId}: '${k}' harus object`);
+  }
   if (t.id !== targetId) throw new ProfileError('TARGET_INVALID', `target ${targetId}: id file '${t.id}' tidak cocok`);
   requireKeys(t.environment, ['id', 'baseUrl', 'apiBaseUrl'], `target ${targetId}.environment`, 'TARGET_INVALID');
   for (const k of ['baseUrl', 'apiBaseUrl']) {

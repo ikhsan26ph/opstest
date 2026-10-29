@@ -232,6 +232,47 @@ check('Run profil: trace Playwright dimatikan (trace merekam credential/token)',
   assert.deepEqual(JSON.parse(d.stdout), { t: 'retain-on-failure', g: false });
 });
 
+// ---------- Perbaikan hasil code review ----------
+check('Requirement ID typo pada skenario ditolak; label konteks diterima', () => {
+  const { loadScenarios } = require('../tests/helpers/profile');
+  const tmp = path.join(ROOT, 'artifacts', `validate-sc-${process.pid}.json`);
+  const base = JSON.parse(fs.readFileSync(path.join(ROOT, tci.scenarioFile), 'utf8'));
+  base.scenarios.find((x) => x.id === 'SCN-0001').requirements = ['TCI0O1'];
+  fs.writeFileSync(tmp, JSON.stringify(base));
+  try {
+    assert.throws(() => loadScenarios({ ...tci, scenarioFile: path.relative(ROOT, tmp) }), /requirement tidak dikenal TCI0O1/);
+    assert.ok(loadScenarios(tci).length > 0);
+  } finally { fs.rmSync(tmp, { force: true }); }
+});
+check('Target dengan environment bukan object -> TARGET_INVALID (bukan TypeError)', () => {
+  const dir = fixture((rw) => rw('targets/ops-staging-admin.json', (d) => { d.environment = null; }));
+  throwsCode(() => R.resolveTarget('ops-staging-admin', 'default', { dir }), 'TARGET_INVALID');
+});
+check('Secret scan: password non-ASCII terdeteksi byte-level; artefak bersih lolos', () => {
+  const dir = fs.mkdtempSync(path.join(ROOT, 'artifacts', 'validate-scan-'));
+  try {
+    fs.writeFileSync(path.join(dir, 'a.json'), '{"x":"ok"}');
+    const run = () => spawnSync('node', ['scripts/scan-run-secrets.js', dir, 'ops-staging-admin'],
+      { cwd: ROOT, env: { ...process.env, OPS_ADMIN_EMAIL: 'e@x.test', OPS_ADMIN_PASSWORD: 'pässwörd€1' }, encoding: 'utf8' });
+    assert.equal(run().status, 0);
+    fs.writeFileSync(path.join(dir, 'b.json'), '{"pw":"pässwörd€1"}');
+    assert.equal(run().status, 3);
+  } finally { fs.rmSync(dir, { recursive: true, force: true }); }
+});
+check('Teardown tanpa OPS_RUN_ID tidak melepas lock milik run lain', () => {
+  const lock = require('../tests/helpers/target-lock');
+  const key = 'ops-staging';
+  assert.equal(lock.status(key), null, 'lock ops-staging harus kosong sebelum uji');
+  lock.acquire(key, { runId: 'OTHER', profileId: 'default' });
+  try {
+    const env = { ...process.env, OPS_PROFILE: 'default', OPS_RUN_DIR: fs.mkdtempSync(path.join(os.tmpdir(), 'td-')) };
+    delete env.OPS_RUN_ID;
+    const r = spawnSync('node', ['-e', 'require("./tests/helpers/profile-global-teardown")().then(()=>process.exit(0))'], { cwd: ROOT, env, encoding: 'utf8' });
+    assert.equal(r.status, 0, r.stderr);
+    assert.equal(lock.status(key).runId, 'OTHER');
+  } finally { lock.release(key, 'OTHER'); }
+});
+
 // ---------- Lock ----------
 check('Lock: run kedua pada lockKey sama ditolak; release hanya oleh pemilik', () => {
   const lock = require('../tests/helpers/target-lock');

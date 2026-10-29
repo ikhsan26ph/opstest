@@ -8,7 +8,7 @@ Framework automation OPS staging yang disiapkan dari arsitektur omstest. Belum a
 - Reporting: `python3 -m pip install -r requirements.txt` bila openpyxl belum tersedia.
 - config/env.md sudah disiapkan dengan akun kosong dan gitignored. Template: config/env.example.md. Jangan isi akun buatan.
 - Discovery: `npm run test:list` (0 test bisnis diharapkan; suite profil tidak ikut tanpa `OPS_PROFILE`).
-- Profil produk/customer (default, tci): `bash scripts/run-profile.sh <profil> [target]`; validasi offline `npm run validate:profiles`. Lihat docs/testing-profiles.md dan docs/customer-onboarding.md.
+- Profil produk/customer (aktif: default; tci nonaktif/arsip): `bash scripts/run-profile.sh <profil> [target]`; validasi offline `npm run validate:profiles`. Lihat docs/testing-profiles.md dan docs/customer-onboarding.md.
 - Public observation tanpa login: `npm run smoke:public`.
 - Auth fixture sengaja blocked sampai authenticated exploration selesai; isi credential saja belum mengaktifkannya.
 - Workflow lengkap dan kontrak reporting: docs/agent-guide.md; skema: scenario/README.md.

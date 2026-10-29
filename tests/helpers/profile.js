@@ -33,6 +33,10 @@ function loadScenarios(profile) {
     if (!Array.isArray(s.requirements)) throw new ProfileError('PROFILE_INVALID', `${profile.scenarioFile}: ${s.id} requirements harus array`);
     for (const r of s.requirements) {
       const req = profile.requirements[r];
+      // ID di luar requirements profil hanya boleh label konteks (CLARIFY-*, DEFAULT-*, <X>-CTX-*); typo ditolak.
+      if (!req && !/^(CLARIFY-.+|DEFAULT-.+|[A-Z0-9]+-CTX-.+)$/.test(r)) {
+        throw new ProfileError('PROFILE_INVALID', `${profile.scenarioFile}: ${s.id} requirement tidak dikenal ${r}`);
+      }
       if (req && !req.capabilities.includes(s.capability)) {
         throw new ProfileError('PROFILE_INVALID', `${s.id}: requirement ${r} tidak memetakan capability ${s.capability}`);
       }

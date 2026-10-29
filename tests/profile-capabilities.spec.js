@@ -20,7 +20,13 @@ if (active) {
         });
         const observe = (key, value) => testInfo.annotations.push({ type: 'observation', description: `${key}=${JSON.stringify(value)}` });
         try {
-          await check({ page, expected: leaf.expected, session: opsSession, observe });
+          if (leaf.expected === null) {
+            // Ekspektasi belum ditetapkan: check hanya mengamati. Hasilnya (termasuk error) tidak boleh
+            // menjadi passed/failed; dicatat sebagai observasi lalu skipped.
+            await check({ page, expected: null, session: opsSession, observe }).catch((e) => observe('observeError', String(e.message).split('\n')[0].slice(0, 200)));
+          } else {
+            await check({ page, expected: leaf.expected, session: opsSession, observe });
+          }
         } finally {
           const shot = testInfo.outputPath('evidence.png');
           if (!page.isClosed()) {

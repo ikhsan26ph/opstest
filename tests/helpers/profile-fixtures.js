@@ -96,7 +96,8 @@ const test = base.test.extend({
       if (h && req.url().startsWith(env.apiBaseUrl)) token = h;
     });
     const page = await context.newPage();
-    const meP = page.waitForResponse((r) => new URL(r.url()).pathname === '/api/auth/me', { timeout: 30_000 }).catch(() => null);
+    // Hanya /me sukses: panggilan /me pra-login (401) tidak boleh dipakai sebagai sumber role.
+    const meP = page.waitForResponse((r) => new URL(r.url()).pathname === '/api/auth/me' && r.status() === 200, { timeout: 30_000 }).catch(() => null);
     const result = await login(page, env.baseUrl, creds);
     creds = null;
     if (!result.ok) {
@@ -116,9 +117,15 @@ const test = base.test.extend({
     }
     await page.close();
 
+    // GET read-only di-cache per worker: pemindaian sampel dipakai ulang antar skenario (hindari
+    // puluhan request berulang ke staging bersama). Data dianggap stabil selama satu run.
+    const cache = new Map();
     const api = async (p) => {
+      if (cache.has(p)) return cache.get(p);
       const res = await context.request.get(`${env.apiBaseUrl}${p}`, { headers: token ? { authorization: token } : {} });
-      return { status: res.status(), body: await res.json().catch(() => null) };
+      const out = { status: res.status(), body: await res.json().catch(() => null) };
+      if (out.status === 200) cache.set(p, out);
+      return out;
     };
 
     await use({ context, api, observed, role, blocked });

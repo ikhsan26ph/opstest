@@ -34,7 +34,10 @@ module.exports = async () => {
     out.configDrift = null;
     out.error = e.message;
   } finally {
-    const r = lock.release(target.settings.lockKey, process.env.OPS_RUN_ID);
+    // Tanpa OPS_RUN_ID tidak ada kepemilikan yang dapat dibuktikan: jangan melepas lock siapa pun.
+    const r = process.env.OPS_RUN_ID
+      ? lock.release(target.settings.lockKey, process.env.OPS_RUN_ID)
+      : { released: false, reason: 'OPS_RUN_ID tidak diset' };
     out.lockReleased = r.released;
     if (!r.released) out.lockNote = r.reason;
     fs.writeFileSync(path.join(runDir, 'isolation.json'), JSON.stringify(out, null, 2));

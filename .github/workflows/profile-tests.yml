@@ -35,13 +35,25 @@ jobs:
       - run: node scripts/validate-profiles.js
       - run: python3 scripts/validate-framework.py
 
+  plan:
+    # Turunkan lockKey dari registry (satu sumber kebenaran) agar target baru tidak lupa dipetakan.
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    outputs:
+      lockKey: ${{ steps.lock.outputs.lockKey }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: lock
+        run: |
+          KEY=$(node -e 'const r=require("./profiles/registry.json");const t=require("./profiles/"+r.targets[process.argv[1]]);process.stdout.write(t.settings.lockKey)' "${{ inputs.target }}")
+          echo "lockKey=$KEY" >> "$GITHUB_OUTPUT"
+
   live:
     if: github.event_name == 'workflow_dispatch'
-    needs: offline-validation
+    needs: [offline-validation, plan]
     runs-on: ubuntu-latest
     concurrency:
-      # lockKey target ops-staging-admin = ops-staging. Tambah pemetaan bila target baru punya lockKey lain.
-      group: ops-settings-${{ inputs.target == 'ops-staging-admin' && 'ops-staging' || inputs.target }}
+      group: ops-settings-${{ needs.plan.outputs.lockKey }}
       cancel-in-progress: false
     environment: ops-staging
     env:
@@ -57,7 +69,12 @@ jobs:
       - run: python3 -m pip install -r requirements.txt
       # config/env.md tidak ada di CI: parseEnv memakai template (baseUrl saja); credential dari secret env.
       - run: bash scripts/run-profile.sh "${{ inputs.profile }}" "${{ inputs.target }}"
-      - if: always()
+      - id: scan
+        if: always()
+        continue-on-error: true
+        run: node scripts/scan-run-secrets.js "artifacts/runs/${{ inputs.profile }}/${{ inputs.target }}" "${{ inputs.target }}" results reports
+      # Artefak yang memuat secret tidak diunggah.
+      - if: always() && steps.scan.outcome != 'failure'
         uses: actions/upload-artifact@v4
         with:
           name: profile-${{ inputs.profile }}-${{ inputs.target }}-${{ github.run_id }}

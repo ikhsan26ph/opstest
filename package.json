@@ -8,7 +8,6 @@
     "smoke:public": "node scripts/public-smoke.js",
     "test:profile": "bash scripts/run-profile.sh",
     "test:profile:default": "bash scripts/run-profile.sh default",
-    "test:profile:tci": "bash scripts/run-profile.sh tci",
     "test:list:profile": "node scripts/list-profile.js",
     "profile:lock": "node scripts/profile-lock.js",
     "validate:profiles": "node scripts/validate-profiles.js"
