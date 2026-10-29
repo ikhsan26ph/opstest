@@ -6,6 +6,8 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 const { spawnSync } = require('child_process');
+// Profil nonaktif (arsip) tetap divalidasi offline; penolakan eksekusi diuji eksplisit di bawah.
+process.env.OPS_ALLOW_DISABLED_PROFILE = '1';
 const R = require('../profiles/resolver');
 
 const ROOT = path.join(__dirname, '..');
@@ -90,6 +92,22 @@ check('checkObservedConfig: cocok, mismatch, flag hilang', () => {
   assert.equal(R.checkObservedConfig(tci.requiredConfig, null).length, 1);
 });
 
+// ---------- Profil nonaktif ----------
+check('TCI nonaktif: resolve ditolak tanpa flag arsip, tetap valid dengan flag', () => {
+  assert.equal(tci.status, 'disabled');
+  const saved = process.env.OPS_ALLOW_DISABLED_PROFILE;
+  delete process.env.OPS_ALLOW_DISABLED_PROFILE;
+  try { throwsCode(() => R.resolveProfile('tci'), 'PROFILE_DISABLED'); } finally { process.env.OPS_ALLOW_DISABLED_PROFILE = saved; }
+  assert.equal(R.resolveProfile('default').status, 'active');
+});
+check('TCI nonaktif: run-profile.sh dan discovery default menolak sebelum menyentuh OPS', () => {
+  const env = { ...process.env }; delete env.OPS_ALLOW_DISABLED_PROFILE; env.OPS_PROFILE = '';
+  const r = spawnSync('bash', ['scripts/run-profile.sh', 'tci'], { cwd: ROOT, env, encoding: 'utf8' });
+  assert.notEqual(r.status, 0);
+  assert.match(r.stderr + r.stdout, /PROFILE_DISABLED/);
+  assert.ok(!fs.existsSync(path.join(ROOT, 'artifacts/locks/ops-staging.lock')));
+});
+
 // ---------- Input invalid ----------
 check('Tolak profil tidak terdaftar', () => throwsCode(() => R.resolveProfile('acme'), 'PROFILE_UNKNOWN'));
 check('Tolak profil bukan string', () => throwsCode(() => R.resolveProfile(undefined), 'PROFILE_UNKNOWN'));
@@ -172,7 +190,7 @@ check('Customer baru cukup file + entri registry', () => {
 
 // ---------- Discovery dan command default ----------
 function list(envExtra) {
-  const r = spawnSync('npx', ['playwright', 'test', '--list', '--pass-with-no-tests'], { cwd: ROOT, env: { ...process.env, OPS_PROFILE: '', OPS_TARGET: '', ...envExtra }, encoding: 'utf8' });
+  const r = spawnSync('npx', ['playwright', 'test', '--list', '--pass-with-no-tests'], { cwd: ROOT, env: { ...process.env, OPS_PROFILE: '', OPS_TARGET: '', OPS_ALLOW_DISABLED_PROFILE: '1', ...envExtra }, encoding: 'utf8' });
   const m = (r.stdout + r.stderr).match(/Total: (\d+) tests?/);
   return { code: r.status, total: m ? Number(m[1]) : null, out: r.stdout + r.stderr };
 }

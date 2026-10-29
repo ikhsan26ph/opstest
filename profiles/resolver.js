@@ -140,10 +140,13 @@ function loadProfileDoc(ctx, profileId) {
     throw new ProfileError('PROFILE_UNKNOWN', `profil tidak terdaftar: ${JSON.stringify(profileId)}. Terdaftar: ${Object.keys(ctx.reg.profiles).join(', ')}`);
   }
   const doc = readJson(path.join(ctx.dir, ctx.reg.profiles[profileId]), 'PROFILE_INVALID');
-  const allowed = ['id', 'kind', 'displayName', 'package', 'manifestVersion', 'scenarioFile', 'requiredCapabilities', 'overrides', 'requirements'];
+  const allowed = ['id', 'kind', 'displayName', 'status', 'disabledReason', 'package', 'manifestVersion', 'scenarioFile', 'requiredCapabilities', 'overrides', 'requirements'];
   rejectUnknownKeys(doc, allowed, `profil ${profileId}`, 'PROFILE_INVALID');
-  requireKeys(doc, allowed.filter((k) => k !== 'displayName'), `profil ${profileId}`, 'PROFILE_INVALID');
+  requireKeys(doc, allowed.filter((k) => !['displayName', 'status', 'disabledReason'].includes(k)), `profil ${profileId}`, 'PROFILE_INVALID');
   if (doc.id !== profileId) throw new ProfileError('PROFILE_INVALID', `profil ${profileId}: id file '${doc.id}' tidak cocok`);
+  if (doc.status !== undefined && !['active', 'disabled'].includes(doc.status)) {
+    throw new ProfileError('PROFILE_INVALID', `profil ${profileId}: status harus active|disabled`);
+  }
   if (!PROFILE_KINDS.has(doc.kind)) throw new ProfileError('PROFILE_INVALID', `profil ${profileId}: kind tidak valid: ${doc.kind}`);
   if (!Array.isArray(doc.requiredCapabilities) || !doc.requiredCapabilities.every((c) => typeof c === 'string')) {
     throw new ProfileError('PROFILE_INVALID', `profil ${profileId}: requiredCapabilities harus array string`);
@@ -168,6 +171,10 @@ function loadProfileDoc(ctx, profileId) {
 function resolveProfile(profileId, { dir = PROFILES_DIR } = {}) {
   const ctx = loadRegistry(dir);
   const doc = loadProfileDoc(ctx, profileId);
+  // Profil nonaktif tidak dapat dijalankan; OPS_ALLOW_DISABLED_PROFILE=1 hanya untuk validasi/arsip offline.
+  if (doc.status === 'disabled' && process.env.OPS_ALLOW_DISABLED_PROFILE !== '1') {
+    throw new ProfileError('PROFILE_DISABLED', `profil '${profileId}' nonaktif: ${doc.disabledReason || 'tanpa alasan tercatat'}`);
+  }
   const pkg = loadPackage(ctx, doc.package);
   flattenExpectations(doc.overrides, ctx.catalog, `override ${profileId}`);
   const manifest = deepMerge(pkg.capabilities, doc.overrides);
@@ -181,6 +188,7 @@ function resolveProfile(profileId, { dir = PROFILES_DIR } = {}) {
   return deepFreeze({
     profileId,
     kind: doc.kind,
+    status: doc.status || 'active',
     displayName: doc.displayName || profileId,
     packageId: pkg.id,
     packageVersion: pkg.version,

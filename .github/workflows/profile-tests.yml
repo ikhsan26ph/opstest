@@ -9,10 +9,10 @@ on:
   workflow_dispatch:
     inputs:
       profile:
-        description: 'Profil (default | tci)'
+        description: 'Profil aktif (tci nonaktif sejak 2026-10-29)'
         required: true
         type: choice
-        options: [default, tci]
+        options: [default]
       target:
         description: 'Target terdaftar di profiles/registry.json'
         required: true

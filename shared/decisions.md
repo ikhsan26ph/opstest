@@ -1,5 +1,7 @@
 # Keputusan OPS
 
+2026-10-29 (Claude): profil TCI dinonaktifkan di repo (status=disabled, dihapus dari pilihan CI) atas keputusan user; setting aplikasi OPS tidak diubah. TCI-FND-01 dan TCI003 manual tetap tercatat sebagai arsip.
+
 2026-10-29 (Claude): user memverifikasi manual garis deviasi TCI003; SCN-0005 tetap blocked (data), menunggu hasil manual. Tidak commit/push.
 
 2026-10-28 lanjutan (Claude): klarifikasi user — TCI001 hanya kontrol playback (tab+data riwayat tetap), legenda prediksi/penyimpangan harus hilang, Berpotensi Terlambat tetap karena Progres Pengiriman (rule Progres tidak diubah; T&L sembunyikan deviation+prediction). Run tci 20261028T050256Z-36864 15P/2F/1B: TCI-FND-01 legenda tetap tampil (SCN-0004 TCI002, SCN-0018 TCI003). Terbuka: Berpotensi Terlambat & Riwayat Kasus di Monitoring saat smart-alert false.

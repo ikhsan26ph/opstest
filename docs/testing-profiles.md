@@ -90,7 +90,11 @@ Teramati di DOM live 2026-10-28: sidebar `aside a[href=...]`, tab `role=tab` + `
 
 Berasal dari bundle client (komponen nonaktif sehingga belum teramati saat tampil): kontrol playback `button[aria-label=Mundur|Putar|Jeda|Maju|Ulang]`, slider `Garis waktu playback`; warna polyline prediksi `#16A34A`, penyimpangan `#F04438`; subtitle score card `Keluar dari rute yang direncanakan`. **NEEDS LIVE VALIDATION** saat fitur aktif sebelum dipakai untuk assertion positif.
 
-## Status TCI terkini
+## Profil nonaktif
+
+Profil dapat ditandai `"status": "disabled"` (+ `disabledReason`) di `profiles/customers/<id>.json`. Resolver menolak dengan `[PROFILE_DISABLED]`, sehingga `run-profile.sh`, discovery, dan CI tidak bisa menjalankannya; berkas tetap sebagai arsip. **TCI nonaktif sejak 2026-10-29** (keputusan user: tidak dijalankan lagi). Ini tidak mengubah setting aplikasi OPS. Aktifkan kembali: ubah `status` ke `active` dan tambahkan profil ke pilihan CI. Validasi offline tetap memeriksa profil nonaktif lewat `OPS_ALLOW_DISABLED_PROFILE=1` (hanya dipakai `validate-profiles.js`).
+
+## Status TCI terkini (arsip)
 
 Run `20261028T050256Z-36864`: 15 passed, 2 failed (TCI-FND-01 legenda prediksi/penyimpangan tetap tampil), 1 blocked (TCI003 garis deviasi: tidak ada data `deviationSegment`). Detail: `explore/2026-10-28-tci-devtools-scope.md`.
 

@@ -2,6 +2,8 @@
   "id": "tci",
   "kind": "customer",
   "displayName": "TCI",
+  "status": "disabled",
+  "disabledReason": "TCI tidak akan dijalankan lagi (keputusan user 2026-10-29). Berkas dipertahankan sebagai arsip; aktifkan kembali dengan status=active.",
   "package": "starter",
   "manifestVersion": "2026-10-28.2",
   "scenarioFile": "scenario/profile-capabilities/tci_scenarios.json",
