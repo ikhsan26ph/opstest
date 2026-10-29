@@ -1,0 +1,23 @@
+{
+  "id": "example-local",
+  "kind": "example",
+  "displayName": "Contoh lokal (BUKAN tenant nyata)",
+  "package": "starter",
+  "manifestVersion": "2026-10-28.1",
+  "scenarioFile": "scenario/profile-capabilities/example-local_scenarios.json",
+  "requiredCapabilities": [
+    "navigation.sidebar.monitoring",
+    "navigation.sidebar.dashboardOperasional",
+    "monitoring.scorecard.core"
+  ],
+  "overrides": {
+    "navigation": {
+      "sidebar": {
+        "dashboardOperasional": { "expected": false, "source": "Contoh sintetis untuk membuktikan registrasi customer tanpa mengubah logika inti", "confirmation": "example" }
+      }
+    }
+  },
+  "requirements": {
+    "EX001": { "title": "Contoh: menu Dashboard Operasional tidak tersedia", "capabilities": ["navigation.sidebar.dashboardOperasional"] }
+  }
+}

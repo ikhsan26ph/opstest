@@ -5,7 +5,12 @@
   "scripts": {
     "test": "bash scripts/run-playwright.sh",
     "test:list": "playwright test --list --pass-with-no-tests",
-    "smoke:public": "node scripts/public-smoke.js"
+    "smoke:public": "node scripts/public-smoke.js",
+    "test:profile": "bash scripts/run-profile.sh",
+    "test:profile:default": "bash scripts/run-profile.sh default",
+    "test:list:profile": "node scripts/list-profile.js",
+    "profile:lock": "node scripts/profile-lock.js",
+    "validate:profiles": "node scripts/validate-profiles.js"
   },
   "keywords": [],
   "author": "",

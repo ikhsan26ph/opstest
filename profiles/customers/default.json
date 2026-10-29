@@ -1,0 +1,21 @@
+{
+  "id": "default",
+  "kind": "product",
+  "displayName": "Produk default OPS",
+  "package": "product-default",
+  "manifestVersion": "2026-10-28.1",
+  "scenarioFile": "scenario/profile-capabilities/default_scenarios.json",
+  "requiredCapabilities": [
+    "navigation.sidebar.monitoring",
+    "navigation.sidebar.trackingLocation",
+    "navigation.sidebar.progresPengiriman",
+    "tracking.terkini.search",
+    "tracking.riwayat.tab",
+    "tracking.riwayat.search",
+    "monitoring.scorecard.core",
+    "monitoring.map",
+    "progres.page"
+  ],
+  "overrides": {},
+  "requirements": {}
+}

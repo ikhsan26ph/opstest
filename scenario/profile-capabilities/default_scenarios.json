@@ -1,0 +1,288 @@
+{
+  "profile": "default",
+  "source": "profiles/customers/default.json; brief user 2026-10-28; evidence artifacts/evidence/TCI-AUDIT",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "Menu Monitoring tetap tersedia di sidebar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-SIDEBAR",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "navigation.sidebar.monitoring",
+      "steps": [
+        "Login akun target",
+        "Buka /monitoring",
+        "Periksa sidebar"
+      ],
+      "expected": [
+        "Menu Monitoring tampil di sidebar"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Menu Tracking & Location tetap tersedia di sidebar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-SIDEBAR",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "navigation.sidebar.trackingLocation",
+      "steps": [
+        "Login akun target",
+        "Buka /monitoring",
+        "Periksa sidebar"
+      ],
+      "expected": [
+        "Menu Tracking & Location tampil di sidebar"
+      ]
+    },
+    {
+      "id": "SCN-0003",
+      "title": "Menu Progres Pengiriman tetap tersedia di sidebar",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-SIDEBAR",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "navigation.sidebar.progresPengiriman",
+      "steps": [
+        "Login akun target",
+        "Buka /monitoring",
+        "Periksa sidebar"
+      ],
+      "expected": [
+        "Menu Progres Pengiriman tampil di sidebar"
+      ]
+    },
+    {
+      "id": "SCN-0004",
+      "title": "Tracking Terkini menampilkan detail dan jalur armada untuk order aktif",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-TL-TERKINI",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "tracking.terkini.search",
+      "steps": [
+        "Pilih order aktif dengan jalur GPS >1 titik dari API opsi",
+        "Buka Tracking & Location tab Pengiriman Berjalan dengan order tersebut"
+      ],
+      "expected": [
+        "Tab aktif, Detail Armada menampilkan ID order, jalur peta dirender"
+      ]
+    },
+    {
+      "id": "SCN-0005",
+      "title": "Riwayat Tracking menampilkan detail dan jalur armada untuk order selesai",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-TL-RIWAYAT",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "tracking.riwayat.search",
+      "steps": [
+        "Pilih order selesai dengan jalur GPS >1 titik dari API opsi",
+        "Buka tab Pengiriman Selesai dengan order tersebut"
+      ],
+      "expected": [
+        "Tab aktif, Detail Armada menampilkan ID order, jalur peta dirender"
+      ]
+    },
+    {
+      "id": "SCN-0006",
+      "title": "Score card inti Monitoring tampil sesuai data API",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-MONITORING",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "monitoring.scorecard.core",
+      "steps": [
+        "Buka /monitoring",
+        "Tunggu summary API 200"
+      ],
+      "expected": [
+        "Score card Total Armada, Tidak Update, Melewati SLA, Jumlah Kendala tampil dengan nilai sama dengan API"
+      ]
+    },
+    {
+      "id": "SCN-0007",
+      "title": "Peta armada Monitoring tampil",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-MONITORING",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "monitoring.map",
+      "steps": [
+        "Buka /monitoring"
+      ],
+      "expected": [
+        "Peta armada tampil"
+      ]
+    },
+    {
+      "id": "SCN-0008",
+      "title": "Halaman Progres Pengiriman dapat dibuka",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-PROGRES",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "progres.page",
+      "steps": [
+        "Buka /progres-pengiriman"
+      ],
+      "expected": [
+        "Halaman Progres Pengiriman terbuka"
+      ]
+    },
+    {
+      "id": "SCN-0009",
+      "title": "Tab Riwayat Tracking tersedia",
+      "category": "positive",
+      "priority": "high",
+      "screen": "SCR-TL-RIWAYAT",
+      "requirements": [
+        "DEFAULT-BASELINE"
+      ],
+      "capability": "tracking.riwayat.tab",
+      "steps": [
+        "Buka Tracking & Location",
+        "Klik tab Pengiriman Selesai"
+      ],
+      "expected": [
+        "Tab tersedia dan dapat dipilih"
+      ]
+    },
+    {
+      "id": "SCN-0010",
+      "title": "Menu Dashboard Operasional pada produk default",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-SIDEBAR",
+      "requirements": [
+        "DEFAULT-PENDING"
+      ],
+      "capability": "navigation.sidebar.dashboardOperasional",
+      "steps": [
+        "Jalankan check capability yang sama dengan profil customer"
+      ],
+      "expected": [
+        "Ekspektasi produk default belum dikonfirmasi; diobservasi dan dilaporkan skipped sampai ditetapkan"
+      ]
+    },
+    {
+      "id": "SCN-0011",
+      "title": "Route Playback pada Riwayat Tracking produk default",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-TL-RIWAYAT",
+      "requirements": [
+        "DEFAULT-PENDING"
+      ],
+      "capability": "tracking.riwayat.routePlayback",
+      "steps": [
+        "Jalankan check capability yang sama dengan profil customer"
+      ],
+      "expected": [
+        "Ekspektasi produk default belum dikonfirmasi; diobservasi dan dilaporkan skipped sampai ditetapkan"
+      ]
+    },
+    {
+      "id": "SCN-0012",
+      "title": "Prediction Route pada Tracking Terkini produk default",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-TL-TERKINI",
+      "requirements": [
+        "DEFAULT-PENDING"
+      ],
+      "capability": "tracking.terkini.predictionRoute",
+      "steps": [
+        "Jalankan check capability yang sama dengan profil customer"
+      ],
+      "expected": [
+        "Ekspektasi produk default belum dikonfirmasi; diobservasi dan dilaporkan skipped sampai ditetapkan"
+      ]
+    },
+    {
+      "id": "SCN-0013",
+      "title": "Route Deviation pada Tracking Terkini produk default",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-TL-TERKINI",
+      "requirements": [
+        "DEFAULT-PENDING"
+      ],
+      "capability": "tracking.terkini.routeDeviation",
+      "steps": [
+        "Jalankan check capability yang sama dengan profil customer"
+      ],
+      "expected": [
+        "Ekspektasi produk default belum dikonfirmasi; diobservasi dan dilaporkan skipped sampai ditetapkan"
+      ]
+    },
+    {
+      "id": "SCN-0014",
+      "title": "Data Kasus pada Monitoring produk default",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-MONITORING",
+      "requirements": [
+        "DEFAULT-PENDING"
+      ],
+      "capability": "monitoring.panel.dataKasus",
+      "steps": [
+        "Jalankan check capability yang sama dengan profil customer"
+      ],
+      "expected": [
+        "Ekspektasi produk default belum dikonfirmasi; diobservasi dan dilaporkan skipped sampai ditetapkan"
+      ]
+    },
+    {
+      "id": "SCN-0015",
+      "title": "Armada Terdekat pada Monitoring produk default",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-MONITORING",
+      "requirements": [
+        "DEFAULT-PENDING"
+      ],
+      "capability": "monitoring.panel.armadaTerdekat",
+      "steps": [
+        "Jalankan check capability yang sama dengan profil customer"
+      ],
+      "expected": [
+        "Ekspektasi produk default belum dikonfirmasi; diobservasi dan dilaporkan skipped sampai ditetapkan"
+      ]
+    },
+    {
+      "id": "SCN-0016",
+      "title": "Score card Keluar Jalur pada Monitoring produk default",
+      "category": "positive",
+      "priority": "medium",
+      "screen": "SCR-MONITORING",
+      "requirements": [
+        "DEFAULT-PENDING"
+      ],
+      "capability": "monitoring.scorecard.keluarJalur",
+      "steps": [
+        "Jalankan check capability yang sama dengan profil customer"
+      ],
+      "expected": [
+        "Ekspektasi produk default belum dikonfirmasi; diobservasi dan dilaporkan skipped sampai ditetapkan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "product-default",
+  "version": "2026-10-28.2",
+  "description": "Baseline produk default OPS. Hanya kapabilitas yang terobservasi yang bernilai true; kapabilitas ber-flag belum dikonfirmasi sebagai bagian produk default.",
+  "capabilities": {
+    "navigation": {
+      "sidebar": {
+        "monitoring": {
+          "expected": true,
+          "source": "Observasi live 2026-09-23 s.d. 2026-10-28",
+          "confirmation": "observed"
+        },
+        "trackingLocation": {
+          "expected": true,
+          "source": "Observasi live 2026-09-23 s.d. 2026-10-28",
+          "confirmation": "observed"
+        },
+        "progresPengiriman": {
+          "expected": true,
+          "source": "Observasi live 2026-09-23 s.d. 2026-10-28",
+          "confirmation": "observed"
+        },
+        "dashboardOperasional": {
+          "expected": null,
+          "source": "Tersedia 2026-09-23, FEATURE_DISABLED sejak 2026-10-27; status produk default belum dikonfirmasi PO",
+          "confirmation": "pending"
+        }
+      }
+    },
+    "tracking": {
+      "terkini": {
+        "search": {
+          "expected": true,
+          "source": "LT20261026-035459; live 2026-10-28",
+          "confirmation": "observed"
+        },
+        "predictionRoute": {
+          "expected": null,
+          "source": "Flag route-prediction=false sejak observasi 2026-10-26; status produk default belum dikonfirmasi",
+          "confirmation": "pending"
+        },
+        "predictionLegend": {
+          "expected": null,
+          "source": "Belum ada requirement untuk legenda",
+          "confirmation": "pending"
+        },
+        "deviationLegend": {
+          "expected": null,
+          "source": "Belum ada requirement untuk legenda pada paket ini",
+          "confirmation": "pending"
+        },
+        "routeDeviation": {
+          "expected": null,
+          "source": "Flag route-deviation=false sejak observasi 2026-10-26; status produk default belum dikonfirmasi",
+          "confirmation": "pending"
+        }
+      },
+      "riwayat": {
+        "tab": {
+          "expected": true,
+          "source": "LT20261026-035459; live 2026-10-28",
+          "confirmation": "observed"
+        },
+        "search": {
+          "expected": true,
+          "source": "LT20261026-035459; live 2026-10-28",
+          "confirmation": "observed"
+        },
+        "routePlayback": {
+          "expected": null,
+          "source": "Kontrol tidak tampil 2026-10-26 (flag false); status produk default belum dikonfirmasi (reports/tracking-location-bagikan_test-report-20261026.md)",
+          "confirmation": "pending"
+        }
+      }
+    },
+    "monitoring": {
+      "scorecard": {
+        "core": {
+          "expected": true,
+          "source": "Observasi live 2026-09-23 s.d. 2026-10-28",
+          "confirmation": "observed"
+        },
+        "keluarJalur": {
+          "expected": null,
+          "source": "Chip Keluar Jalur tampil 2026-09-23; flag smart-alert/route-deviation false 2026-10-28; status produk default belum dikonfirmasi",
+          "confirmation": "pending"
+        }
+      },
+      "panel": {
+        "dataKasus": {
+          "expected": null,
+          "source": "Flag smart-alert=false 2026-10-28; status produk default belum dikonfirmasi",
+          "confirmation": "pending"
+        },
+        "armadaTerdekat": {
+          "expected": null,
+          "source": "Flag smart-alert=false 2026-10-28; status produk default belum dikonfirmasi",
+          "confirmation": "pending"
+        }
+      },
+      "map": {
+        "expected": true,
+        "source": "Observasi live 2026-10-28",
+        "confirmation": "observed"
+      }
+    },
+    "progres": {
+      "page": {
+        "expected": true,
+        "source": "Observasi live 2026-09-23 s.d. 2026-10-28",
+        "confirmation": "observed"
+      }
+    }
+  }
+}

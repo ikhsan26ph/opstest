@@ -1,0 +1,114 @@
+{
+  "catalogVersion": "2026-10-28.2",
+  "configSource": "GET <apiBaseUrl>/system/status -> data.features (publik, tanpa login)",
+  "capabilities": {
+    "navigation.sidebar.monitoring": {
+      "description": "Menu Dashboard > Monitoring di sidebar",
+      "evidence": "explore/module-map.md; live 2026-10-28"
+    },
+    "navigation.sidebar.trackingLocation": {
+      "description": "Menu Dashboard > Tracking & Location di sidebar",
+      "evidence": "explore/module-map.md; live 2026-10-28"
+    },
+    "navigation.sidebar.progresPengiriman": {
+      "description": "Menu Dashboard > Progres Pengiriman di sidebar",
+      "evidence": "explore/module-map.md; live 2026-10-28"
+    },
+    "navigation.sidebar.dashboardOperasional": {
+      "description": "Menu Dashboard > Operasional (Dashboard Operasional) di sidebar",
+      "config": {
+        "all": [
+          "dashboard-operasional"
+        ]
+      },
+      "evidence": "Bundle client 2026-10-28: item sidebar {path:/dashboard-operasional, feature:dashboard-operasional}"
+    },
+    "tracking.terkini.search": {
+      "description": "Tab Tracking Terkini (label UI: Pengiriman Berjalan) menampilkan Detail Armada dan jalur untuk order terpilih",
+      "evidence": "shared/selector-map-lihat-tracking.md; live 2026-10-28"
+    },
+    "tracking.terkini.predictionRoute": {
+      "description": "Garis Prediction Route (prediksi rute ke tujuan) di peta Tracking Terkini",
+      "config": {
+        "all": [
+          "route-prediction"
+        ]
+      },
+      "evidence": "Bundle client 2026-10-28: predictedRoute di-null-kan bila hasFeature(route-prediction)=false; polyline #16A34A"
+    },
+    "tracking.terkini.predictionLegend": {
+      "description": "Item legenda 'Prediksi rute ke tujuan' di peta Tracking Terkini",
+      "evidence": "Bundle client 2026-10-28: legenda dirender tanpa syarat flag; live 2026-10-28 tampil saat route-prediction false"
+    },
+    "tracking.terkini.deviationLegend": {
+      "description": "Item legenda 'Jalur di luar prediksi rute' di peta Tracking Terkini",
+      "evidence": "Bundle client 2026-10-28: legenda dirender tanpa syarat flag; live 2026-10-28 tampil saat route-deviation false"
+    },
+    "tracking.terkini.routeDeviation": {
+      "description": "Segmen Penyimpangan Jalur / Route Deviation di peta Tracking Terkini",
+      "config": {
+        "all": [
+          "route-deviation"
+        ]
+      },
+      "evidence": "Bundle client 2026-10-28: deviationSegment di-null-kan bila hasFeature(route-deviation)=false; polyline #F04438"
+    },
+    "tracking.riwayat.tab": {
+      "description": "Tab Riwayat Tracking (label UI: Pengiriman Selesai) tersedia",
+      "evidence": "live 2026-10-28; label tab berubah dari Riwayat Tracking (2026-10-26) menjadi Pengiriman Selesai"
+    },
+    "tracking.riwayat.search": {
+      "description": "Tab Riwayat Tracking menampilkan Detail Armada dan jalur GPS untuk order selesai",
+      "evidence": "live 2026-10-28"
+    },
+    "tracking.riwayat.routePlayback": {
+      "description": "Kontrol Route Playback (Mundur/Putar/Maju/Ulang, garis waktu, kecepatan) di peta Riwayat Tracking",
+      "config": {
+        "all": [
+          "route-playback"
+        ]
+      },
+      "evidence": "Bundle client 2026-10-28: komponen kontrol dirender hanya bila hasFeature(route-playback); tab tetap ada"
+    },
+    "monitoring.scorecard.core": {
+      "description": "Score card Monitoring: Total Armada, Tidak Update, Melewati SLA, Jumlah Kendala",
+      "evidence": "live 2026-10-28"
+    },
+    "monitoring.scorecard.keluarJalur": {
+      "description": "Score card Keluar Jalur di Dashboard Monitoring",
+      "config": {
+        "all": [
+          "smart-alert",
+          "route-deviation"
+        ]
+      },
+      "evidence": "Bundle client 2026-10-28: showKeluarJalur = smart-alert && route-deviation"
+    },
+    "monitoring.panel.dataKasus": {
+      "description": "Panel/tab Data Kasus di Dashboard Monitoring",
+      "config": {
+        "all": [
+          "smart-alert"
+        ]
+      },
+      "evidence": "Bundle client 2026-10-28: panel kasus dirender hanya bila smart-alert"
+    },
+    "monitoring.panel.armadaTerdekat": {
+      "description": "Tab Armada Terdekat di Dashboard Monitoring",
+      "config": {
+        "all": [
+          "smart-alert"
+        ]
+      },
+      "evidence": "Bundle client 2026-10-28: tab ada di panel yang sama dengan Data Kasus (smart-alert)"
+    },
+    "monitoring.map": {
+      "description": "Peta armada di Dashboard Monitoring",
+      "evidence": "live 2026-10-28"
+    },
+    "progres.page": {
+      "description": "Halaman Progres Pengiriman dapat dibuka",
+      "evidence": "explore/module-map.md; live 2026-10-28"
+    }
+  }
+}

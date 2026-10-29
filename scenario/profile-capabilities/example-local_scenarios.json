@@ -1,0 +1,40 @@
+{
+  "profile": "example-local",
+  "source": "profiles/customers/example-local.json; brief user 2026-10-28; evidence artifacts/evidence/TCI-AUDIT",
+  "scenarios": [
+    {
+      "id": "SCN-0001",
+      "title": "Contoh: Menu Dashboard Operasional tidak tersedia",
+      "category": "negative",
+      "priority": "low",
+      "screen": "SCR-SIDEBAR",
+      "requirements": [
+        "EX001"
+      ],
+      "capability": "navigation.sidebar.dashboardOperasional",
+      "steps": [
+        "Buka /monitoring"
+      ],
+      "expected": [
+        "Menu tidak ada"
+      ]
+    },
+    {
+      "id": "SCN-0002",
+      "title": "Contoh: Menu Monitoring tersedia",
+      "category": "positive",
+      "priority": "low",
+      "screen": "SCR-SIDEBAR",
+      "requirements": [
+        "EX-CTX-BASE"
+      ],
+      "capability": "navigation.sidebar.monitoring",
+      "steps": [
+        "Buka /monitoring"
+      ],
+      "expected": [
+        "Menu tampil"
+      ]
+    }
+  ]
+}

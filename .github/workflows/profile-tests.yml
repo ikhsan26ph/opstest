@@ -1,0 +1,85 @@
+# Suite capability per profil. Profil dan target WAJIB dipilih eksplisit (tidak ada trigger otomatis
+# ke environment nyata). Concurrency dikunci per scope setting target (lockKey), bukan per profil,
+# karena feature flag OPS staging berlaku environment-wide: default dan tci tidak boleh paralel.
+name: profile-tests
+
+on:
+  pull_request:
+    paths: ['profiles/**', 'scenario/profile-capabilities/**', 'tests/**', 'scripts/**', 'playwright.config.js']
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'Profil aktif (tci nonaktif sejak 2026-10-29)'
+        required: true
+        type: choice
+        options: [default]
+      target:
+        description: 'Target terdaftar di profiles/registry.json'
+        required: true
+        default: ops-staging-admin
+        type: choice
+        options: [ops-staging-admin]
+
+jobs:
+  offline-validation:
+    # Perubahan paket/capability divalidasi untuk SEMUA profil (resolver + discovery), tanpa akses OPS.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: npm ci
+      - run: python3 -m pip install -r requirements.txt
+      - run: node scripts/validate-profiles.js
+      - run: python3 scripts/validate-framework.py
+
+  plan:
+    # Turunkan lockKey dari registry (satu sumber kebenaran) agar target baru tidak lupa dipetakan.
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    outputs:
+      lockKey: ${{ steps.lock.outputs.lockKey }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: lock
+        run: |
+          KEY=$(node -e 'const r=require("./profiles/registry.json");const t=require("./profiles/"+r.targets[process.argv[1]]);process.stdout.write(t.settings.lockKey)' "${{ inputs.target }}")
+          echo "lockKey=$KEY" >> "$GITHUB_OUTPUT"
+
+  live:
+    if: github.event_name == 'workflow_dispatch'
+    needs: [offline-validation, plan]
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ops-settings-${{ needs.plan.outputs.lockKey }}
+      cancel-in-progress: false
+    environment: ops-staging
+    env:
+      OPS_ADMIN_EMAIL: ${{ secrets.OPS_ADMIN_EMAIL }}
+      OPS_ADMIN_PASSWORD: ${{ secrets.OPS_ADMIN_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: npm ci && npx playwright install --with-deps chromium
+      - run: python3 -m pip install -r requirements.txt
+      # config/env.md tidak ada di CI: parseEnv memakai template (baseUrl saja); credential dari secret env.
+      - run: bash scripts/run-profile.sh "${{ inputs.profile }}" "${{ inputs.target }}"
+      - id: scan
+        if: always()
+        continue-on-error: true
+        run: node scripts/scan-run-secrets.js "artifacts/runs/${{ inputs.profile }}/${{ inputs.target }}" "${{ inputs.target }}" results reports
+      # Artefak yang memuat secret tidak diunggah.
+      - if: always() && steps.scan.outcome != 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: profile-${{ inputs.profile }}-${{ inputs.target }}-${{ github.run_id }}
+          path: |
+            artifacts/runs/${{ inputs.profile }}/${{ inputs.target }}/
+            results/profile-capabilities__${{ inputs.profile }}__${{ inputs.target }}__*.json
+            reports/profile-capabilities__${{ inputs.profile }}__${{ inputs.target }}__*.xlsx
+          retention-days: 14

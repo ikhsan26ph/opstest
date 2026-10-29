@@ -20,7 +20,7 @@ function parseEnv({ requireCredentials = false } = {}) {
       const password = cells[3];
       const role = cells[4];
       if (email.includes('@') && password && !/ISI_DISINI/i.test(password) && !/ISI_DISINI/i.test(email)) {
-        accounts.push({ email, password, role });
+        accounts.push({ no: Number(cells[1]), email, password, role });
       }
     }
   }

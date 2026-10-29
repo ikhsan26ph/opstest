@@ -47,3 +47,5 @@ Aturan field:
 **Penting**: `scripts/playwright_to_results.py` mengandalkan format `id` `SCN-xxxx` dan field `requirements` (array) untuk menyalin metadata apa adanya ke `results/`. Modul dengan skema lain (mis. id `EXAMPLE-POS-001` atau field `requirement` tunggal) **harus dinormalisasi dulu** ke skema di atas sebelum bisa dieksekusi lewat pipeline.
 
 Belum ada skenario bisnis OPS. Semua steps/expected memerlukan requirement atau evidence yang diberikan user. Kedua suffix `_scenarios.json` dan `.scenarios.json` didukung.
+
+`scenario/profile-capabilities/<profil>_scenarios.json` memakai skema yang sama ditambah field `capability` (path katalog `profiles/catalog.json`). Requirement customer ditulis apa adanya (mis. `TCI001`); label `CLARIFY-*` menandai skenario yang menunggu klarifikasi, `*-CTX-*`/`DEFAULT-*` menandai regresi kontekstual tanpa ID requirement sumber.
