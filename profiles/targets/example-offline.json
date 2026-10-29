@@ -1,0 +1,27 @@
+{
+  "id": "example-offline",
+  "description": "Target contoh untuk discovery/resolusi profil example-local. Domain .invalid: tidak pernah menjangkau environment nyata.",
+  "environment": {
+    "id": "example-offline",
+    "baseUrl": "https://example.invalid",
+    "apiBaseUrl": "https://api.example.invalid/api"
+  },
+  "tenant": {
+    "id": "example-tenant",
+    "note": "Sintetis, bukan tenant nyata"
+  },
+  "account": {
+    "secretRef": {
+      "type": "env-md-row",
+      "row": 99
+    },
+    "expectedRole": "ADMIN"
+  },
+  "settings": {
+    "scope": "unknown",
+    "lockKey": "example-offline"
+  },
+  "allowedProfiles": [
+    "example-local"
+  ]
+}

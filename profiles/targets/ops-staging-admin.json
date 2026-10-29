@@ -1,0 +1,25 @@
+{
+  "id": "ops-staging-admin",
+  "description": "OPS staging, akun Admin. Konfigurasi fitur saat ini dibaca dari system/status; target ini BUKAN tenant TCI khusus.",
+  "environment": {
+    "id": "ops-staging",
+    "baseUrl": "https://ops-staging.prahu-hub.com",
+    "apiBaseUrl": "https://apiops-staging.prahu-hub.com/api",
+    "appEnv": "DEV"
+  },
+  "tenant": {
+    "id": "ops-staging-core",
+    "note": "system/status: products [TMS], productSource core. Tidak ada tenant ID terpisah yang teramati."
+  },
+  "account": {
+    "secretRef": { "type": "env-md-row", "row": 1 },
+    "envOverride": { "email": "OPS_ADMIN_EMAIL", "password": "OPS_ADMIN_PASSWORD" },
+    "expectedRole": "ADMIN"
+  },
+  "settings": {
+    "scope": "environment",
+    "evidence": "system/status publik tanpa sesi mengembalikan features; dev-tools PATCH /dev-tools/features/{key} tanpa parameter tenant/akun (bundle 2026-10-28)",
+    "lockKey": "ops-staging"
+  },
+  "allowedProfiles": ["default", "tci"]
+}

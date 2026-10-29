@@ -55,7 +55,8 @@ def latest_per_module():
     for p in sorted(RESULTS.glob("*.json")):
         if p.name.startswith("_"):
             continue
-        module = p.stem.split("__")[0]
+        # Legacy: <modul>__<runId>; profil: <modul>__<profil>__<target>__<runId> (dipisah per profil/target).
+        module = p.stem.rsplit("__", 1)[0]
         latest[module] = p  # sorted ascending -> yang terakhir menang
     return list(latest.values())
 
@@ -75,7 +76,7 @@ def write_detail(ws, runs):
                 ", ".join(s.get("requirements", []) or []),
                 s.get("status", ""), s.get("durationSec"),
                 s.get("error") or "", s.get("bugCandidate") or "",
-                s.get("screenshot") or "", s.get("notes") or "",
+                s.get("screenshot") or s.get("evidence") or "", s.get("notes") or "",
             ])
     widths = [5, 26, 12, 55, 10, 10, 22, 24, 10, 10, 45, 12, 30, 35]
     for i, w in enumerate(widths, 1):
@@ -103,6 +104,21 @@ def write_summary(ws, runs, total_rows):
         ("Environment", "; ".join(sorted({(r.get("environment") or {}).get("baseUrl", "") for r in runs if r.get("environment")})) or "-"),
         ("User / Role", "; ".join(sorted({f"{(r.get('environment') or {}).get('user','')} / {(r.get('environment') or {}).get('role','')}" for r in runs if r.get("environment")})) or "-"),
     ]
+    profile_runs = [r["profileRun"] for r in runs if r.get("profileRun")]
+    if profile_runs:
+        def join(key):
+            return "; ".join(sorted({str(p.get(key)) for p in profile_runs})) or "-"
+        iso = [p.get("isolation") or {} for p in profile_runs]
+        cfg = [((p.get("observedConfig") or {}).get("features")) for p in profile_runs]
+        meta += [
+            ("Profil", join("profile")),
+            ("Target", join("target")),
+            ("Manifest", join("manifestVersion")),
+            ("Paket", join("package")),
+            ("Commit", "; ".join(sorted({f"{p.get('commit')}{' (dirty)' if p.get('workingTreeDirty') else ''}" for p in profile_runs}))),
+            ("Konfigurasi observasi", "; ".join(json.dumps(c, sort_keys=True) for c in cfg if c) or "-"),
+            ("Isolasi/cleanup", "; ".join(f"configDrift={i.get('configDrift')}, lockReleased={i.get('lockReleased')}" for i in iso)),
+        ]
     row = 3
     for label, val in meta:
         ws.cell(row=row, column=1, value=label).font = BOLD
@@ -201,7 +217,9 @@ def main():
 
     REPORTS.mkdir(exist_ok=True)
     if len(runs) == 1:
-        name = f"{runs[0].get('module','run')}__{runs[0].get('runId','')}.xlsx"
+        pr = runs[0].get("profileRun")
+        prefix = f"{runs[0].get('module','run')}__{pr['profile']}__{pr['target']}" if pr else runs[0].get('module', 'run')
+        name = f"{prefix}__{runs[0].get('runId','')}.xlsx"
     else:
         name = f"rekap-all__{datetime.now().strftime('%Y%m%d-%H%M%S')}.xlsx"
     out = REPORTS / name

@@ -41,3 +41,9 @@ Baca docs/workflows/<nama>.md dan docs/roles/<peran>.md yang relevan. Peran dija
 Periksa tool browser yang benar-benar tersedia, jangan mengasumsikan nama tool atau menurunkan pengamanan. Jika unavailable, catat blocked.
 Utamakan locator role/label/testid yang telah diobservasi, tunggu state visible/enabled yang relevan. Snapshot boleh untuk exploration/diagnosis; tidak perlu snapshot berulang pada eksekusi yang sudah punya evidence selector.
 `task` belum diimplementasikan.
+
+## Profil multi-customer (sejak 2026-10-28)
+- Katalog/paket/override/registry/target di profiles/; skenario per profil di scenario/profile-capabilities/. Detail: docs/testing-profiles.md, docs/customer-onboarding.md.
+- Pilih profil eksplisit: `bash scripts/run-profile.sh <profil> [target]`. Tanpa OPS_PROFILE tidak ada test profil.
+- Feature flag OPS staging berscope environment (explore/2026-10-28-tci-devtools-scope.md): jangan jalankan profil berbeda ekspektasi flag secara paralel; jangan ubah dev-tools tanpa izin pemilik environment.
+- Trace Playwright dimatikan untuk run profil (terbukti merekam password/token). Jalankan scripts/scan-run-secrets.js sebelum membagikan artefak manual.

@@ -1,0 +1,22 @@
+{
+  "registryVersion": "2026-10-28.1",
+  "catalog": "catalog.json",
+  "packages": {
+    "product-default": "packages/product-default.json",
+    "starter": "packages/starter.json"
+  },
+  "profiles": {
+    "default": "customers/default.json",
+    "tci": "customers/tci.json",
+    "example-local": "customers/example-local.json"
+  },
+  "targets": {
+    "ops-staging-admin": "targets/ops-staging-admin.json",
+    "example-offline": "targets/example-offline.json"
+  },
+  "defaultTargets": {
+    "default": "ops-staging-admin",
+    "tci": "ops-staging-admin",
+    "example-local": "example-offline"
+  }
+}

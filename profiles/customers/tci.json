@@ -1,0 +1,139 @@
+{
+  "id": "tci",
+  "kind": "customer",
+  "displayName": "TCI",
+  "package": "starter",
+  "manifestVersion": "2026-10-28.2",
+  "scenarioFile": "scenario/profile-capabilities/tci_scenarios.json",
+  "requiredCapabilities": [
+    "navigation.sidebar.monitoring",
+    "navigation.sidebar.trackingLocation",
+    "navigation.sidebar.progresPengiriman",
+    "navigation.sidebar.dashboardOperasional",
+    "tracking.terkini.search",
+    "tracking.terkini.predictionRoute",
+    "tracking.terkini.routeDeviation",
+    "tracking.riwayat.tab",
+    "tracking.riwayat.search",
+    "tracking.riwayat.routePlayback",
+    "monitoring.scorecard.core",
+    "monitoring.scorecard.keluarJalur",
+    "monitoring.panel.dataKasus",
+    "monitoring.panel.armadaTerdekat",
+    "monitoring.map",
+    "progres.page",
+    "tracking.terkini.predictionLegend",
+    "tracking.terkini.deviationLegend"
+  ],
+  "overrides": {
+    "navigation": {
+      "sidebar": {
+        "dashboardOperasional": {
+          "expected": false,
+          "source": "TCI004",
+          "confirmation": "requirement"
+        }
+      }
+    },
+    "tracking": {
+      "terkini": {
+        "predictionRoute": {
+          "expected": false,
+          "source": "TCI002",
+          "confirmation": "requirement"
+        },
+        "routeDeviation": {
+          "expected": false,
+          "source": "TCI003",
+          "confirmation": "requirement"
+        },
+        "predictionLegend": {
+          "expected": false,
+          "source": "TCI002; Klarifikasi user 2026-10-28: legenda juga harus hilang",
+          "confirmation": "requirement"
+        },
+        "deviationLegend": {
+          "expected": false,
+          "source": "TCI003; Klarifikasi user 2026-10-28: legenda juga harus hilang",
+          "confirmation": "requirement"
+        }
+      },
+      "riwayat": {
+        "tab": {
+          "expected": true,
+          "source": "TCI001; Klarifikasi user 2026-10-28: hanya kontrol playback yang hilang, data riwayat perjalanan tetap tampil",
+          "confirmation": "requirement"
+        },
+        "search": {
+          "expected": true,
+          "source": "TCI001; Klarifikasi user 2026-10-28: data riwayat perjalanan tetap tampil",
+          "confirmation": "requirement"
+        },
+        "routePlayback": {
+          "expected": false,
+          "source": "TCI001",
+          "confirmation": "requirement"
+        }
+      }
+    },
+    "monitoring": {
+      "scorecard": {
+        "keluarJalur": {
+          "expected": false,
+          "source": "TCI005",
+          "confirmation": "requirement"
+        }
+      },
+      "panel": {
+        "dataKasus": {
+          "expected": false,
+          "source": "TCI005",
+          "confirmation": "requirement"
+        },
+        "armadaTerdekat": {
+          "expected": false,
+          "source": "TCI005",
+          "confirmation": "requirement"
+        }
+      }
+    }
+  },
+  "requirements": {
+    "TCI001": {
+      "title": "Route Playback tidak tersedia pada Tracking & Location > Riwayat Tracking",
+      "capabilities": [
+        "tracking.riwayat.routePlayback",
+        "tracking.riwayat.tab",
+        "tracking.riwayat.search"
+      ]
+    },
+    "TCI002": {
+      "title": "Prediction Route tidak tersedia pada Tracking & Location > Tracking Terkini",
+      "capabilities": [
+        "tracking.terkini.predictionRoute",
+        "tracking.terkini.predictionLegend"
+      ]
+    },
+    "TCI003": {
+      "title": "Penyimpangan Jalur/Route Deviation tidak tersedia pada Tracking & Location > Tracking Terkini",
+      "capabilities": [
+        "tracking.terkini.routeDeviation",
+        "tracking.terkini.deviationLegend"
+      ]
+    },
+    "TCI004": {
+      "title": "Menu Dashboard Operasional tidak tersedia",
+      "capabilities": [
+        "navigation.sidebar.dashboardOperasional"
+      ]
+    },
+    "TCI005": {
+      "title": "Dashboard Monitoring tidak menampilkan Data Kasus, Armada Terdekat, dan score card Keluar Jalur",
+      "capabilities": [
+        "monitoring.panel.dataKasus",
+        "monitoring.panel.armadaTerdekat",
+        "monitoring.scorecard.keluarJalur"
+      ]
+    }
+  }
+}

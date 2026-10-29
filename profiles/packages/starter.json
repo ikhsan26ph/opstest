@@ -1,0 +1,115 @@
+{
+  "id": "starter",
+  "version": "2026-10-28.2",
+  "description": "Paket starter. Baseline lengkap BELUM terverifikasi: hanya fungsi inti tracking/monitoring/navigasi yang dinyatakan tetap termasuk paket pada brief TCI 2026-10-28. Kapabilitas ber-flag dibiarkan null; customer wajib menetapkannya lewat override eksplisit.",
+  "capabilities": {
+    "navigation": {
+      "sidebar": {
+        "monitoring": {
+          "expected": true,
+          "source": "Brief TCI 2026-10-28: navigasi lain tetap termasuk paket",
+          "confirmation": "pending"
+        },
+        "trackingLocation": {
+          "expected": true,
+          "source": "Brief TCI 2026-10-28: navigasi lain tetap termasuk paket",
+          "confirmation": "pending"
+        },
+        "progresPengiriman": {
+          "expected": true,
+          "source": "Brief TCI 2026-10-28: navigasi lain tetap termasuk paket",
+          "confirmation": "pending"
+        },
+        "dashboardOperasional": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        }
+      }
+    },
+    "tracking": {
+      "terkini": {
+        "search": {
+          "expected": true,
+          "source": "Brief TCI 2026-10-28: fungsi tracking tetap termasuk paket",
+          "confirmation": "pending"
+        },
+        "predictionRoute": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        },
+        "predictionLegend": {
+          "expected": null,
+          "source": "Belum ada requirement untuk legenda",
+          "confirmation": "pending"
+        },
+        "deviationLegend": {
+          "expected": null,
+          "source": "Belum ada requirement untuk legenda pada paket ini",
+          "confirmation": "pending"
+        },
+        "routeDeviation": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        }
+      },
+      "riwayat": {
+        "tab": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        },
+        "search": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        },
+        "routePlayback": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        }
+      }
+    },
+    "monitoring": {
+      "scorecard": {
+        "core": {
+          "expected": true,
+          "source": "Brief TCI 2026-10-28: fungsi monitoring tetap termasuk paket",
+          "confirmation": "pending"
+        },
+        "keluarJalur": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        }
+      },
+      "panel": {
+        "dataKasus": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        },
+        "armadaTerdekat": {
+          "expected": null,
+          "source": "Baseline starter belum diverifikasi",
+          "confirmation": "pending"
+        }
+      },
+      "map": {
+        "expected": true,
+        "source": "Brief TCI 2026-10-28: fungsi monitoring tetap termasuk paket",
+        "confirmation": "pending"
+      }
+    },
+    "progres": {
+      "page": {
+        "expected": true,
+        "source": "Brief TCI 2026-10-28: navigasi lain tetap termasuk paket",
+        "confirmation": "pending"
+      }
+    }
+  }
+}
