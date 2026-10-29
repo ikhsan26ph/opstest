@@ -9,6 +9,8 @@ const { spawnSync } = require('child_process');
 // Profil nonaktif (arsip) tetap divalidasi offline; penolakan eksekusi diuji eksplisit di bawah.
 process.env.OPS_ALLOW_DISABLED_PROFILE = '1';
 const R = require('../profiles/resolver');
+// artifacts/ di-gitignore: tidak ada pada checkout bersih (CI).
+fs.mkdirSync(path.join(__dirname, '..', 'artifacts'), { recursive: true });
 
 const ROOT = path.join(__dirname, '..');
 const results = [];
